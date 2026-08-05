@@ -10,7 +10,11 @@ import connectDB from "./config/db.js";
 import quizRoutes from "./routes/quizRoutes.js";
 dotenv.config();
 
+console.log("EMAIL_USER:", process.env.EMAIL_USER);
+console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
+
 const app = express();
+
 console.log("URI:", process.env.MONGO_URI);
 connectDB();
 

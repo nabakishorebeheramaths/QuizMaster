@@ -12,7 +12,59 @@ function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const [otp, setOtp] = useState("");
+  const [otpSent, setOtpSent] = useState(false);
+  const [otpVerified, setOtpVerified] = useState(false);
+  const [otpLoading, setOtpLoading] = useState(false);
 
+const handleSendOTP = async () => {
+  if (!email) {
+    alert("Please enter your email");
+    return;
+  }
+
+  try {
+    setOtpLoading(true);
+
+    const res = await axios.post(
+      `${API_URL}/auth/send-otp`,
+      { email }
+    );
+
+    alert(res.data.message);
+    setOtpSent(true);
+
+  } catch (error) {
+    alert(error.response?.data?.message || "Failed to send OTP");
+  } finally {
+    setOtpLoading(false);
+  }
+};
+const handleVerifyOTP = async () => {
+  if (!otp) {
+    alert("Please enter OTP");
+    return;
+  }
+
+  try {
+    const res = await axios.post(
+      `${API_URL}/auth/verify-otp`,
+      {
+        email,
+        otp,
+      }
+    );
+
+    alert(res.data.message);
+    setOtpVerified(true);
+
+  } catch (error) {
+    alert(
+      error.response?.data?.message ||
+      "OTP verification failed"
+    );
+  }
+};
   const handleSignup = async () => {
   if (!name || !email || !password) {
     alert("Please fill all fields");
@@ -28,6 +80,11 @@ function Signup() {
 
   if (password.length < 6) {
     alert("Password must be at least 6 characters");
+    return;
+  }
+
+  if (!otpVerified) {
+    alert("Please verify OTP first");
     return;
   }
 
@@ -47,16 +104,12 @@ function Signup() {
     navigate("/login");
 
   } catch (error) {
-    console.error(error);
-
-    alert(
-      error.response?.data?.message || "Signup Failed"
-    );
-
+    alert(error.response?.data?.message || "Signup Failed");
   } finally {
     setLoading(false);
   }
 };
+
 
   return (
 
@@ -161,8 +214,34 @@ function Signup() {
   required
   autoComplete="email"
 />
+<div style={{ marginTop: "10px", marginBottom: "10px" }}>
+  <button
+    type="button"
+    onClick={handleSendOTP}
+    disabled={otpLoading}
+  >
+    {otpLoading ? "Sending OTP..." : "Send OTP"}
+  </button>
+</div>
+{otpSent && (
+  <>
+    <input
+      type="text"
+      placeholder="Enter OTP"
+      value={otp}
+      onChange={(e) => setOtp(e.target.value)}
+      required
+    />
 
-
+    <button
+      type="button"
+      onClick={handleVerifyOTP}
+      disabled={otpVerified}
+    >
+      {otpVerified ? "OTP Verified ✅" : "Verify OTP"}
+    </button>
+  </>
+)}
 
           <input
   type={showPassword ? "text" : "password"}
@@ -188,7 +267,7 @@ function Signup() {
 
 <button
   type="submit"
-  disabled={loading}
+  disabled={loading || !otpVerified}
 >
   {loading ? "Creating Account..." : "Create Account 🚀"}
 </button>

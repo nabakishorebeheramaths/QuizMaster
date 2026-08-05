@@ -2,6 +2,10 @@ import express from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
+import otpGenerator from "otp-generator";
+import Otp from "../models/Otp.js";
+import { sendOTP } from "../utils/mailer.js";
+import VerifiedEmail from "../models/VerifiedEmail.js";
 
 const router = express.Router();
 
@@ -9,7 +13,13 @@ const router = express.Router();
 router.post("/signup", async (req, res) => {
   try {
     const { name, email, password } = req.body;
+const verifiedEmail = await VerifiedEmail.findOne({ email });
 
+if (!verifiedEmail) {
+  return res.status(400).json({
+    message: "Please verify your email first",
+  });
+}
     const existingUser = await User.findOne({ email });
 
     if (existingUser) {
@@ -41,6 +51,95 @@ router.post("/signup", async (req, res) => {
   }
 });
 
+
+// =================== SEND OTP ===================
+router.post("/send-otp", async (req, res) => {
+  try {
+    const { email } = req.body;
+
+    const existingUser = await User.findOne({ email });
+
+    if (existingUser) {
+      return res.status(400).json({
+        message: "User already exists",
+      });
+    }
+
+    const otp = otpGenerator.generate(6, {
+      upperCaseAlphabets: false,
+      lowerCaseAlphabets: false,
+      specialChars: false,
+    });
+
+    await Otp.deleteMany({ email });
+
+    await Otp.create({
+      email,
+      otp,
+      expiresAt: new Date(Date.now() + 5 * 60 * 1000),
+    });
+
+    await sendOTP(email, otp);
+
+    res.status(200).json({
+      message: "OTP sent successfully",
+    });
+
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({
+      message: error.message,
+    });
+  }
+});
+
+
+// =================== VERIFY OTP ===================
+router.post("/verify-otp", async (req, res) => {
+  try {
+    const { email, otp } = req.body;
+
+    const otpRecord = await Otp.findOne({ email });
+
+    if (!otpRecord) {
+      return res.status(400).json({
+        message: "OTP not found. Please request a new OTP.",
+      });
+    }
+
+    if (new Date() > otpRecord.expiresAt) {
+      await Otp.deleteOne({ _id: otpRecord._id });
+
+      return res.status(400).json({
+        message: "OTP has expired",
+      });
+    }
+
+    if (otpRecord.otp !== otp) {
+      return res.status(400).json({
+        message: "Invalid OTP",
+      });
+    }
+
+    // OTP verified, delete it
+await Otp.deleteOne({ _id: otpRecord._id });
+
+// Save verified email
+await VerifiedEmail.create({
+  email,
+  verified: true,
+});
+
+res.status(200).json({
+  message: "OTP verified successfully",
+});
+
+  } catch (error) {
+    res.status(500).json({
+      message: error.message,
+    });
+  }
+});
 // =================== LOGIN ===================
 router.post("/login", async (req, res) => {
   try {
