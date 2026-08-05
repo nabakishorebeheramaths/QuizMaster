@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./frontend_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend</title>
+  <style type="text/css" data-vite-dev-id="E:/DailyQuizNABAKISHORE/frontend/src/index.css">:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+</style><style type="text/css" data-vite-dev-id="E:/DailyQuizNABAKISHORE/frontend/src/components/Navbar.css">
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* GOOGLE FONT */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.78);
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+}
+
+
+
+.logo{
+
+    text-decoration:none;
+
+    font-size:33px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    background:linear-gradient(
+    90deg,
+    #2563eb,
+    #7c3aed,
+    #ec4899);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    transition:.4s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+
+
+.nav-item{
+
+    text-decoration:none;
+
+    color:#111827;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+
+
+.nav-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-7px;
+
+    width:0;
+
+    height:3px;
+
+    background:#2563eb;
+
+    transition:.35s;
+
+    border-radius:20px;
+
+}
+
+
+
+.nav-item:hover{
+
+    color:#2563eb;
+
+}
+
+
+
+.nav-item:hover::after{
+
+    width:100%;
+
+}
+
+
+
+/* PREMIUM BUTTON */
+
+.start-btn{
+
+    text-decoration:none;
+
+    padding:13px 30px;
+
+    border-radius:50px;
+
+    color:white;
+
+    font-weight:700;
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed);
+
+    box-shadow:
+    0 12px 25px rgba(37,99,235,.35);
+
+    transition:.35s;
+
+}
+
+
+
+.start-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 18px 35px rgba(37,99,235,.45);
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:18px 6%;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+.nav-links{
+
+gap:15px;
+
+}
+
+.nav-item{
+
+font-size:15px;
+
+}
+
+.start-btn{
+
+padding:10px 20px;
+
+font-size:14px;
+
+}
+
+}</style><style type="text/css" data-vite-dev-id="E:/DailyQuizNABAKISHORE/frontend/src/pages/Home.css">@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#eef4ff,#f8f9ff,#ffffff);
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8% 60px;
+    gap:60px;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:40px;
+    background:#e0e7ff;
+    color:#2563eb;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.hero-left h1{
+    font-size:64px;
+    line-height:1.1;
+    color:#111827;
+    margin-bottom:20px;
+}
+
+.hero-left h1 span{
+    background:linear-gradient(90deg,#2563eb,#9333ea,#ec4899);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-left p{
+    font-size:20px;
+    color:#64748b;
+    line-height:1.8;
+    max-width:600px;
+}
+
+/* Created by */
+
+.creator{
+    margin-top:45px;
+    font-size:22px;
+    font-weight:600;
+    color:#334155;
+}
+
+.creator span{
+    font-weight:800;
+    background:linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
+    );
+    background-size:400%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:rainbow 6s linear infinite;
+}
+
+@keyframes rainbow{
+    0%{background-position:0%;}
+    100%{background-position:400%;}
+}
+
+/* Right Card */
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    width:380px;
+    padding:45px 35px;
+    border-radius:28px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+    text-align:center;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.emoji{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:65px;
+    background:linear-gradient(135deg,#dbeafe,#ede9fe);
+}
+
+.card h2{
+    margin-top:25px;
+    color:#111827;
+    font-size:32px;
+}
+
+.card p{
+    margin-top:15px;
+    color:#64748b;
+    line-height:1.6;
+}
+
+.info{
+    display:flex;
+    justify-content:space-around;
+    margin-top:35px;
+}
+
+.info h3{
+    color:#2563eb;
+    font-size:32px;
+}
+
+.info small{
+    color:#64748b;
+    font-size:15px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:110px;
+}
+
+.hero-left h1{
+    font-size:42px;
+}
+
+.hero-left p{
+    font-size:17px;
+    margin:auto;
+}
+
+.card{
+    width:100%;
+    max-width:360px;
+}
+
+.creator{
+    font-size:18px;
+}
+
+}</style><style type="text/css" data-vite-dev-id="E:/DailyQuizNABAKISHORE/frontend/src/pages/Login.css">.login-box {
+  width: 350px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px gray;
+  text-align: center;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  width: 95%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.show-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px;
+}
+
+.show-password input {
+  width: auto;
+}
+.login-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:100px;
+}</style><style type="text/css" data-vite-dev-id="E:/DailyQuizNABAKISHORE/frontend/src/pages/Signup.css">.signup-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:100px;
+}
+
+.signup-box {
+  width: 350px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px gray;
+  text-align: center;
+}
+
+.signup-box input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.signup-box button {
+  width: 95%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.show-password input {
+  width: auto;
+}</style></head>
+  <body>
+    <div id="root"><header class="navbar"><a class="logo" href="http://localhost:5173/" data-discover="true">🧠 QuizMaster</a><nav class="nav-links"><a class="nav-item" href="http://localhost:5173/" data-discover="true">Home</a><a class="nav-item" href="http://localhost:5173/login" data-discover="true">Login</a><a class="start-btn" href="http://localhost:5173/signup" data-discover="true">Get Started</a></nav></header><section class="hero"><div class="hero-left"><span class="badge">🚀 India's Smart Quiz Platform</span><h1>Learn Faster.<br><span>Play Smarter.</span></h1><p>Improve your knowledge with interactive quizzes, beautiful design, real-time scores and an exciting learning experience.</p><div class="creator">Created by <span>Nabakishore Behera</span></div></div><div class="hero-right"><div class="card"><div class="emoji">🧠</div><h2>Quiz Master</h2><p>Challenge yourself with hundreds of exciting quizzes.</p><div class="info"><div><h3>1000+</h3><small>Questions</small></div><div><h3>10+</h3><small>Categories</small></div></div></div></div></section></div>
+    <script type="module" src="./frontend_files/main.jsx"></script>
+  
+
+</body></html>
