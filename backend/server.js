@@ -24,7 +24,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/quiz", quizRoutes);
 app.use("/api/questions", questionRoute);
-app.use("/api/dailyquiz", dailyQuizRoutes);
+app.use("/api/daily-quiz", dailyQuizRoutes);
 app.get("/", (req, res) => {
   res.send("🚀 Daily Quiz Backend is Running...");
 });
