@@ -8,6 +8,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import quizRoutes from "./routes/quizRoutes.js";
+import dailyQuizRoutes from "./routes/dailyQuizRoutes.js";
 dotenv.config();
 
 console.log("EMAIL_USER:", process.env.EMAIL_USER);
@@ -23,6 +24,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/quiz", quizRoutes);
 app.use("/api/questions", questionRoute);
+app.use("/api/dailyquiz", dailyQuizRoutes);
 app.get("/", (req, res) => {
   res.send("🚀 Daily Quiz Backend is Running...");
 });
