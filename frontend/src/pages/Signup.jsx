@@ -213,13 +213,15 @@ const handleVerifyOTP = async () => {
   onChange={(e) => setEmail(e.target.value)}
   required
   autoComplete="email"
+  disabled={otpVerified}
 />
+
 <div style={{ marginTop: "10px", marginBottom: "10px" }}>
   <button
-    type="button"
-    onClick={handleSendOTP}
-    disabled={otpLoading}
-  >
+  type="button"
+  onClick={handleSendOTP}
+  disabled={otpLoading || otpVerified}
+>
     {otpLoading ? "Sending OTP..." : "Send OTP"}
   </button>
 </div>
