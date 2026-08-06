@@ -1,23 +1,22 @@
 import nodemailer from "nodemailer";
-import dns from "dns";
-
-dns.setDefaultResultOrder("ipv4first");
 
 const sendEmail = async (to, subject, text) => {
   try {
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
-      family: 4,
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: false, // 587 ke liye
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
-      tls: {
-        rejectUnauthorized: false,
-      },
+      connectionTimeout: 30000,
+      greetingTimeout: 30000,
+      socketTimeout: 30000,
     });
+
+    await transporter.verify();
+    console.log("SMTP Connected");
 
     await transporter.sendMail({
       from: `"QuizMaster 🧠" <${process.env.SMTP_FROM}>`,
@@ -27,9 +26,8 @@ const sendEmail = async (to, subject, text) => {
     });
 
     console.log("Email sent successfully");
-
   } catch (error) {
-    console.log("Email sending failed:", error.message);
+    console.error(error);
     throw error;
   }
 };
