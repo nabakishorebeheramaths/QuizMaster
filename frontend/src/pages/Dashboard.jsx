@@ -13,7 +13,6 @@ function Dashboard() {
   const [bestScore, setBestScore] = useState(0);
   const [dailyQuiz, setDailyQuiz] = useState(null);
 
-
   useEffect(() => {
 
     const token = localStorage.getItem("token");
@@ -23,276 +22,276 @@ function Dashboard() {
       return;
     }
 
-
-    // HISTORY
+    // Fetch Quiz History
     const fetchHistory = async () => {
 
       try {
 
         if (!user?._id) return;
 
-
         const res = await axios.get(
           `${import.meta.env.VITE_API_URL}/quiz/history/${user._id}`
         );
 
-
         const history = res.data.attempts || [];
-
 
         setQuizCompleted(history.length);
 
-
-        if(history.length > 0){
+        if (history.length > 0) {
 
           const maxScore = Math.max(
-            ...history.map(
-              item => item.percentage || 0
-            )
+            ...history.map(item => item.percentage || 0)
           );
 
           setBestScore(Math.round(maxScore));
 
+        } else {
+
+          setBestScore(0);
+
         }
 
+      } catch (error) {
 
-      }
-      catch(error){
-
-        console.log(
-          "History Error:",
-          error.response?.data || error.message
-        );
+        console.log("History Error:", error);
 
       }
 
     };
 
-
-
-
-    // DAILY QUIZ
+    // Fetch Daily Quiz
     const fetchDailyQuiz = async () => {
 
       try {
-
 
         const res = await axios.get(
           `${import.meta.env.VITE_API_URL}/dailyquiz/today`
         );
 
-
-        console.log(
-          "DAILY QUIZ:",
-          res.data
-        );
-
+        console.log("DAILY QUIZ:", res.data);
 
         setDailyQuiz(res.data);
 
+      } catch (error) {
 
-      }
-      catch(error){
-
-        console.log(
-          "Daily Quiz Error:",
-          error.response?.data || error.message
-        );
+        console.log("Daily Quiz Error:", error);
 
       }
 
     };
 
-
-
     fetchHistory();
     fetchDailyQuiz();
 
-
   }, [navigate]);
 
+  return (
 
+    <section className="dashboard">
 
+      {/* Header */}
 
-return (
+      <div className="dashboard-header">
 
-<section className="dashboard">
+        <div>
 
+          <h1>
+            Welcome, {user?.name || "Guest"} 👋
+          </h1>
 
-<div className="dashboard-header">
+          <p>
+            Ready to test your knowledge today?
+          </p>
 
-<div>
+        </div>
 
-<h1>
-Welcome, {user?.name || "Guest"} 👋
-</h1>
+        <div style={{ display: "flex", gap: "12px" }}>
 
-<p>
-Ready to test your knowledge today?
-</p>
+          <button onClick={() => navigate("/quiz")}>
+            🚀 Start Quiz
+          </button>
 
-</div>
+          <button
+            onClick={() => {
+              localStorage.clear();
+              navigate("/login");
+            }}
+          >
+            Logout
+          </button>
 
+        </div>
 
+      </div>
 
-<div>
+      {/* LIVE QUIZ CARD */}
 
-<button onClick={()=>navigate("/quiz")}>
-🚀 Start Quiz
-</button>
+      <div className="live-quiz-card">
 
+        <div className="live-header">
 
-<button
-onClick={()=>{
+          <h2>🔥 Daily Live Quiz</h2>
 
-localStorage.clear();
+          <span className="live-badge">
+            🟢 LIVE
+          </span>
 
-navigate("/login");
+        </div>
 
-}}
->
-Logout
-</button>
+        {
+          dailyQuiz ? (
 
+            <>
 
-</div>
+              <div className="quiz-info">
 
+                <div className="info-box">
+                  <h4>📅 Date</h4>
+                  <p>{dailyQuiz.date}</p>
+                </div>
 
-</div>
+                <div className="info-box">
+                  <h4>⏰ Start Time</h4>
+                  <p>
+                    {new Date(dailyQuiz.startTime).toLocaleString(
+                      "en-IN",
+                      {
+                        timeZone: "Asia/Kolkata",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        hour12: true,
+                      }
+                    )}
+                  </p>
+                </div>
 
+                <div className="info-box">
+                  <h4>🏁 End Time</h4>
+                  <p>
+                    {new Date(dailyQuiz.endTime).toLocaleString(
+                      "en-IN",
+                      {
+                        timeZone: "Asia/Kolkata",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        hour12: true,
+                      }
+                    )}
+                  </p>
+                </div>
 
+                <div className="info-box">
+                  <h4>📝 Questions</h4>
+                  <p>{dailyQuiz.questions?.length || 0}</p>
+                </div>
 
+              </div>
+
+              <div className="quiz-status">
 
-{/* LIVE DAILY QUIZ CARD */}
+                <h3>
+                  Today's Challenge is Ready 🚀
+                </h3>
 
-<div className="live-quiz-card">
+                <p>
+                  Attempt today's quiz and improve your score.
+                </p>
 
-<div className="live-header">
+                <button
+                  onClick={() => navigate("/quiz")}
+                >
+                  🚀 Start Live Quiz
+                </button>
 
-<h2>
-🔥 Daily Live Quiz
-</h2>
+              </div>
 
-<span className="live-badge">
-🟢 LIVE
-</span>
+                       </>
 
-</div>
+          ) : (
 
+            <h3>Loading Today's Quiz...</h3>
 
+          )
+        }
 
-{
-dailyQuiz ? (
+      </div>
 
-<>
+      {/* STATS */}
 
+      <div className="stats-card">
 
-<div className="quiz-info">
+        <div>
+          <h2>1000+</h2>
+          <p>Questions</p>
+        </div>
 
+        <div>
+          <h2>10+</h2>
+          <p>Categories</p>
+        </div>
 
-<div className="info-box">
+        <div>
+          <h2>{quizCompleted}</h2>
+          <p>Quiz Completed</p>
+        </div>
 
-<h4>📅 Date</h4>
+        <div>
+          <h2>{bestScore}%</h2>
+          <p>Best Score</p>
+        </div>
 
-<p>
-{dailyQuiz.date}
-</p>
+      </div>
 
-</div>
+            {/* CATEGORY */}
 
+      <h2 className="title">
+        Choose Category
+      </h2>
 
+      <div className="categories">
 
-<div className="info-box">
+        <div
+          className="category-card"
+          onClick={() => navigate("/quiz")}
+        >
+          <span>🧠</span>
+          <h3>General Knowledge</h3>
+          <p>Test your awareness</p>
+        </div>
 
-<h4>⏰ Start Time</h4>
+        <div
+          className="category-card"
+          onClick={() => navigate("/quiz")}
+        >
+          <span>💻</span>
+          <h3>Programming</h3>
+          <p>Coding & Technology</p>
+        </div>
 
-<p>
-{new Date(dailyQuiz.startTime).toLocaleTimeString()}
-</p>
+        <div
+          className="category-card"
+          onClick={() => navigate("/quiz")}
+        >
+          <span>🔬</span>
+          <h3>Science</h3>
+          <p>Explore discoveries</p>
+        </div>
 
-</div>
+        <div
+          className="category-card"
+          onClick={() => navigate("/quiz")}
+        >
+          <span>⚡</span>
+          <h3>Electronics</h3>
+          <p>ECE & Innovation</p>
+        </div>
 
+      </div>
 
+    </section>
 
-<div className="info-box">
-
-<h4>🏁 End Time</h4>
-
-<p>
-{new Date(dailyQuiz.endTime).toLocaleTimeString()}
-</p>
-
-</div>
-
-
-
-<div className="info-box">
-
-<h4>📝 Questions</h4>
-
-<p>
-{dailyQuiz.questions?.length || 0}
-</p>
-
-</div>
-
-
-
-</div>
-
-
-
-<div className="quiz-status">
-
-
-<h3>
-Today's Challenge is Ready 🚀
-</h3>
-
-
-<p>
-Attempt today's quiz and improve your score.
-</p>
-
-
-<button 
-onClick={()=>navigate("/quiz")}
->
-
-🚀 Start Live Quiz
-
-</button>
-
-
-</div>
-
-
-</>
-
-
-)
-
-:
-
-(
-
-<h3>
-Loading Today's Quiz...
-</h3>
-
-)
+  );
 
 }
-
-
-</div>
-
-</section>
-
-);
-
-
-}
-
 
 export default Dashboard;
