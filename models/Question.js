@@ -22,6 +22,8 @@ const questionSchema = new mongoose.Schema(
     category: {
       type: String,
       enum: [
+        "ECE",
+        "Engineering Mathematics",
         "Aptitude",
         "English",
         "Maths",
