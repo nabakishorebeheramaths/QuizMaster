@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
 import "./Result.css";
 
 function Result({ score, totalQuestions, onRetry }) {
@@ -18,6 +19,53 @@ function Result({ score, totalQuestions, onRetry }) {
     message = "Keep Practicing! You Can Do Better 💪";
     status = "TRY AGAIN";
   }
+
+
+  useEffect(() => {
+
+    const saveQuizAttempt = async () => {
+
+      try {
+
+        const user = JSON.parse(localStorage.getItem("user"));
+
+        if (!user?._id) {
+          console.log("User not found");
+          return;
+        }
+
+
+        const res = await axios.post(
+          `${import.meta.env.VITE_API_URL}/quiz/submit`,
+          {
+            user: user._id,
+            score: score,
+            totalQuestions: totalQuestions,
+            answers: []
+          }
+        );
+
+
+        console.log("Quiz Saved:", res.data);
+
+
+      } catch(error) {
+
+        console.log(
+          "Quiz Save Error:",
+          error.response?.data || error.message
+        );
+
+      }
+
+    };
+
+
+    saveQuizAttempt();
+
+  }, []);
+
+
 
   return (
     <div className="result-container">
@@ -46,10 +94,12 @@ function Result({ score, totalQuestions, onRetry }) {
             <p>Correct</p>
           </div>
 
+
           <div className="stat-box">
-            <h3>{totalQuestions-score}</h3>
+            <h3>{totalQuestions - score}</h3>
             <p>Wrong</p>
           </div>
+
 
           <div className="stat-box">
             <h3>{totalQuestions}</h3>
