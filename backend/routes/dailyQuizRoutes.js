@@ -15,6 +15,8 @@ const today = new Date(
 
 console.log("TODAY DATE:", today);
 
+const allQuiz = await DailyQuiz.find();
+console.log("DATABASE QUIZ:", allQuiz);
 
 let quiz = await DailyQuiz.findOne({
     date: today
