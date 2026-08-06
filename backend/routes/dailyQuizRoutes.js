@@ -4,85 +4,85 @@ import Question from "../models/Question.js";
 
 const router = express.Router();
 
-
 router.get("/today", async (req, res) => {
 
-try {
+  try {
 
-const today = new Date(
-  Date.now() + (5.5 * 60 * 60 * 1000)
-).toISOString().split("T")[0];
+    const today = new Date().toLocaleDateString("en-CA", {
+      timeZone: "Asia/Kolkata"
+    });
 
-console.log("TODAY DATE:", today);
+    console.log("TODAY DATE:", today);
 
-const allQuiz = await DailyQuiz.find();
-console.log("DATABASE QUIZ:", allQuiz);
-
-let quiz = await DailyQuiz.findOne({
-    date: today
-}).populate("questions");
+    const allQuiz = await DailyQuiz.find();
+    console.log("DATABASE QUIZ:", allQuiz);
 
 
-if(!quiz){
-
-const randomQuestions = await Question.aggregate([
-{
- $sample:{
-    size:30
- }
-}
-]);
+    let quiz = await DailyQuiz.findOne({
+      date: today
+    }).populate("questions");
 
 
-quiz = await DailyQuiz.create({
+    if (!quiz) {
 
-date: today,
-
-questions: randomQuestions.map(q=>q._id),
-
-startTime: new Date(),
-
-endTime: new Date(Date.now() + 24 * 60 * 60 * 1000)
-
-});
+      const randomQuestions = await Question.aggregate([
+        {
+          $sample: {
+            size: 30
+          }
+        }
+      ]);
 
 
-quiz = await DailyQuiz.findOne({
-    date: today
-}).populate("questions");
+      await DailyQuiz.create({
+
+        date: today,
+
+        questions: randomQuestions.map(q => q._id),
+
+        startTime: new Date(),
+
+        endTime: new Date(
+          Date.now() + 24 * 60 * 60 * 1000
+        )
+
+      });
 
 
-}
+      quiz = await DailyQuiz.findOne({
+        date: today
+      }).populate("questions");
 
 
-res.json({
-
-success:true,
-
-date: today,
-
-status:"LIVE",
-
-questions:quiz.questions,
-
-startTime:quiz.startTime,
-
-endTime:quiz.endTime
-
-});
+    }
 
 
-}
-catch(error){
+    res.json({
 
-console.log(error);
+      success: true,
 
-res.status(500).json({
-message:error.message
-});
+      date: today,
 
-}
+      status: "LIVE",
 
+      questions: quiz.questions,
+
+      startTime: quiz.startTime,
+
+      endTime: quiz.endTime
+
+    });
+
+
+  } catch(error) {
+
+    console.log(error);
+
+    res.status(500).json({
+      message: error.message
+    });
+
+  }
 
 });
 
