@@ -22,7 +22,7 @@ router.get("/today", async (req, res) => {
       date: today
     }).populate("questions");
 
-
+await DailyQuiz.deleteMany({});
     if (!quiz) {
 
       const randomQuestions = await Question.aggregate([
