@@ -209,9 +209,43 @@ function Dashboard() {
 
           ) : (
 
-            <h3>Loading Today's Quiz...</h3>
+  <>
 
-          )
+    <div className="quiz-info">
+
+      <div className="info-box">
+        <h4>📅 Date</h4>
+        <p>{new Date().toLocaleDateString("en-IN")}</p>
+      </div>
+
+      <div className="info-box">
+        <h4>⏰ Start</h4>
+        <p>12:00 AM</p>
+      </div>
+
+      <div className="info-box">
+        <h4>🏁 End</h4>
+        <p>11:59 PM</p>
+      </div>
+
+      <div className="info-box">
+        <h4>📝 Questions</h4>
+        <p>30</p>
+      </div>
+
+    </div>
+
+    <div className="quiz-status">
+
+      <h3>Loading Today's Quiz...</h3>
+
+      <p>Please wait while today's quiz is being prepared.</p>
+
+    </div>
+
+  </>
+
+)
         }
 
       </div>

@@ -87,11 +87,18 @@
 }
 
 .info-box{
-    background:#fff;
+    background:#ffffff;
     color:#222;
-    padding:18px;
+    padding:22px;
     border-radius:18px;
     text-align:center;
+    border:2px solid rgba(37,99,235,.15);
+    transition:.3s;
+}
+
+.info-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
 .info-box h4{
