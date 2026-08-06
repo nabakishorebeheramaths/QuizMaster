@@ -1,35 +1,32 @@
-import nodemailer from "nodemailer";
+import axios from "axios";
 
 const sendEmail = async (to, subject, text) => {
   try {
-    console.log("SMTP_HOST:", process.env.SMTP_HOST);
-    console.log("SMTP_PORT:", process.env.SMTP_PORT);
-    console.log("SMTP_USER:", process.env.SMTP_USER);
-    console.log("SMTP_FROM:", process.env.SMTP_FROM);
-
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT),
-      secure: false,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
+    await axios.post(
+      "https://api.brevo.com/v3/smtp/email",
+      {
+        sender: {
+          name: "QuizMaster 🧠",
+          email: process.env.SMTP_FROM,
+        },
+        to: [{ email: to }],
+        subject,
+        textContent: text,
       },
-      connectionTimeout: 30000,
-      greetingTimeout: 30000,
-      socketTimeout: 30000,
-    });
+      {
+        headers: {
+          "api-key": process.env.BREVO_API_KEY,
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
-    await transporter.sendMail({
-      from: `"QuizMaster 🧠" <${process.env.SMTP_FROM}>`,
-      to,
-      subject,
-      text,
-    });
-
-    console.log("Email sent successfully");
+    console.log("✅ Email sent successfully");
   } catch (error) {
-    console.error("Email sending failed:", error);
+    console.error(
+      "Brevo Error:",
+      error.response?.data || error.message
+    );
     throw error;
   }
 };
