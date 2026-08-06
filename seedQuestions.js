@@ -1,3 +1,39 @@
+
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import connectDB from "./config/db.js";
+import Question from "./models/Question.js";
+import DailyQuiz from "./models/DailyQuiz.js";  // 👈 add karo
+
+dotenv.config();
+
+const questions = [
+  // yaha tumhare 100 questions hain
+];
+
+
+const seed = async () => {
+  try {
+
+    await connectDB();
+
+    await Question.deleteMany();
+
+    await DailyQuiz.deleteMany();   // 👈 ye add karo
+
+    await Question.insertMany(questions);
+
+    console.log("✅ Questions inserted successfully");
+
+    mongoose.connection.close();
+
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+seed();
+
 const questions = [
 
 {
