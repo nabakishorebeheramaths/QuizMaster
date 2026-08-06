@@ -13,11 +13,11 @@ import authRoutes from "./routes/authRoutes.js";
 import questionRoute from "./routes/question.js";
 import quizRoutes from "./routes/quizRoutes.js";
 
-
 const app = express();
 
 console.log("URI:", process.env.MONGO_URI);
-console.log("SMTP_HOST:", process.env.SMTP_HOST);
+console.log("BREVO_API_KEY:", process.env.BREVO_API_KEY ? "FOUND" : "NOT FOUND");
+
 connectDB();
 
 app.use(cors());
