@@ -17,7 +17,7 @@ import quizRoutes from "./routes/quizRoutes.js";
 const app = express();
 
 console.log("URI:", process.env.MONGO_URI);
-
+console.log("SMTP_HOST:", process.env.SMTP_HOST);
 connectDB();
 
 app.use(cors());
