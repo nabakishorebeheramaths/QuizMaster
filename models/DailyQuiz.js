@@ -23,15 +23,15 @@ router.get("/", async (req, res) => {
     if (!dailyQuiz) {
 
 
-      const randomQuestions = await Question.aggregate([
-        {
-          $sample:{
-            size:30
-          }
-        }
-      ]);
+      const totalQuestions = await Question.countDocuments();
 
-
+const randomQuestions = await Question.aggregate([
+  {
+    $sample:{
+      size: Math.min(30, totalQuestions)
+    }
+  }
+]);
       dailyQuiz = await DailyQuiz.create({
 
         date: today,
