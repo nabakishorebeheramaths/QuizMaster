@@ -3,12 +3,25 @@ import QuizAttempt from "../models/QuizAttempt.js";
 
 const router = express.Router();
 
+
 // Submit Quiz
 router.post("/submit", async (req, res) => {
   try {
+
     const { user, score, totalQuestions, answers } = req.body;
 
-    const percentage = (score / totalQuestions) * 100;
+    if (!user || score === undefined || !totalQuestions) {
+      return res.status(400).json({
+        success: false,
+        message: "Missing quiz data"
+      });
+    }
+
+
+    const percentage = Number(
+      ((score / totalQuestions) * 100).toFixed(2)
+    );
+
 
     const attempt = await QuizAttempt.create({
       user,
@@ -16,38 +29,64 @@ router.post("/submit", async (req, res) => {
       score,
       totalQuestions,
       percentage,
-      answers,
+      answers
     });
 
-    res.json({
+
+    console.log("✅ Quiz Attempt Saved:", attempt._id);
+
+
+    res.status(201).json({
       success: true,
-      attempt,
+      message: "Quiz submitted successfully",
+      attempt
     });
+
+
   } catch (error) {
+
+    console.log("❌ Submit Error:", error.message);
+
     res.status(500).json({
       success: false,
-      message: error.message,
+      message: error.message
     });
+
   }
 });
+
+
 
 // Get Quiz History
 router.get("/history/:userId", async (req, res) => {
+
   try {
+
     const attempts = await QuizAttempt.find({
-      user: req.params.userId,
-    }).sort({ createdAt: -1 });
+      user: req.params.userId
+    })
+    .sort({ createdAt: -1 });
+
 
     res.json({
       success: true,
-      attempts,
+      count: attempts.length,
+      attempts
     });
+
+
   } catch (error) {
+
+    console.log("❌ History Error:", error.message);
+
     res.status(500).json({
-      success: false,
-      message: error.message,
+      success:false,
+      message:error.message
     });
+
   }
+
 });
+
 
 export default router;
