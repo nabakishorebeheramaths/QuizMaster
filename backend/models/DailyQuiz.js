@@ -1,79 +1,24 @@
-import express from "express";
-import Question from "../models/Question.js";
-import DailyQuiz from "../models/DailyQuiz.js";
+import mongoose from "mongoose";
 
-const router = express.Router();
+const dailyQuizSchema = new mongoose.Schema({
+  date:{
+    type:String,
+    required:true,
+    unique:true
+  },
 
-
-router.get("/", async (req, res) => {
-
-  try {
-
-    const today = new Date()
-      .toISOString()
-      .split("T")[0];
-
-
-    let dailyQuiz = await DailyQuiz.findOne({
-      date: today
-    }).populate("questions");
-
-
-    // Agar aaj ka quiz nahi bana hai
-    if (!dailyQuiz) {
-
-
-      const randomQuestions = await Question.aggregate([
-        {
-          $sample:{
-            size:30
-          }
-        }
-      ]);
-
-
-      dailyQuiz = await DailyQuiz.create({
-
-        date: today,
-
-        questions: randomQuestions.map(
-          q => q._id
-        )
-
-      });
-
-
-      dailyQuiz = await DailyQuiz.findOne({
-        date: today
-      }).populate("questions");
-
+  questions:[
+    {
+      type:mongoose.Schema.Types.ObjectId,
+      ref:"Question"
     }
+  ]
 
-
-    res.json({
-
-      success:true,
-
-      count:dailyQuiz.questions.length,
-
-      questions:dailyQuiz.questions
-
-    });
-
-
-  } catch(error){
-
-    res.status(500).json({
-
-      success:false,
-
-      message:error.message
-
-    });
-
-  }
-
+},{
+  timestamps:true
 });
 
 
-export default router;
+const DailyQuiz = mongoose.model("DailyQuiz", dailyQuizSchema);
+
+export default DailyQuiz;
