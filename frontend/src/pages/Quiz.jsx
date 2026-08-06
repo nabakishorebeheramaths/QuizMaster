@@ -19,46 +19,60 @@ function Quiz() {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [answers, setAnswers] = useState([]);
+
   useEffect(() => {
     fetchQuestions();
   }, []);
 
   const fetchQuestions = async () => {
-  try {
-    const res = await axios.get(`${API_URL}/questions`);
-
-    setQuestions(res.data.questions);
-
-  } catch (error) {
-    console.error(error);
-    alert("Failed to load questions");
-  } finally {
-    setLoading(false);
-  }
-};
-const handleAnswer = (index) => {
-
-  setSelectedAnswer(index);
-
-  const current = questions[currentQuestion];
-
-  const answerData = {
-    questionId: current._id,
-    selectedAnswer: index,
-    correctAnswer: current.correctAnswer
+    try {
+      const res = await axios.get(`${API_URL}/questions`);
+      setQuestions(res.data.questions || []);
+    } catch (error) {
+      console.error(error);
+      alert("Failed to load questions");
+    } finally {
+      setLoading(false);
+    }
   };
 
-  setAnswers((prev) => {
+  const handleAnswer = (index) => {
+    setSelectedAnswer(index);
 
-    const filtered = prev.filter(
-      (item) => item.questionId !== current._id
-    );
+    const current = questions[currentQuestion];
 
-    return [...filtered, answerData];
+    const answerData = {
+      questionId: current._id,
+      selectedAnswer: index,
+      correctAnswer: current.correctAnswer,
+    };
 
-  });
+    setAnswers((prev) => {
+      const filtered = prev.filter(
+        (item) => item.questionId !== current._id
+      );
 
-};
+      return [...filtered, answerData];
+    });
+  };
+
+  const submitQuiz = async (finalScore) => {
+    try {
+      const user = JSON.parse(localStorage.getItem("user"));
+
+      const res = await axios.post(`${API_URL}/quiz/submit`, {
+        user: user._id,
+        score: finalScore,
+        totalQuestions: questions.length,
+        answers,
+      });
+
+      console.log("Quiz Saved:", res.data);
+    } catch (error) {
+      console.error("Submit Error:", error.response?.data || error);
+    }
+  };
+
   const nextQuestion = async () => {
     if (selectedAnswer === null) {
       alert("Please select an answer");
@@ -68,64 +82,31 @@ const handleAnswer = (index) => {
     let updatedScore = score;
 
     if (
-      selectedAnswer ===
-      questions[currentQuestion].correctAnswer
+      selectedAnswer === questions[currentQuestion].correctAnswer
     ) {
       updatedScore++;
       setScore(updatedScore);
     }
 
-    setSelectedAnswer(null);
-    setTimeLeft(30);
-
     if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion((prev) => prev + 1);
+      setSelectedAnswer(null);
+      setTimeLeft(30);
+    } else {
+      await submitQuiz(updatedScore);
 
-  setCurrentQuestion(currentQuestion + 1);
-
-} else {
-
-  await submitQuiz(updatedScore);
-
-  setShowResult(true);
-
-}
+      setScore(updatedScore);
+      setShowResult(true);
+    }
   };
-const submitQuiz = async ( finalScore) => {
 
-  try {
-
-    const user = JSON.parse(
-      localStorage.getItem("user")
-    );
-
-    await axios.post(
-      `${API_URL}/quiz/submit`,
-      {
-        user: user._id,
-        score: finalScore,
-        totalQuestions: questions.length,
-        answers
-      }
-    );
-
-    console.log("Quiz saved successfully ✅");
-
-  } catch(error) {
-
-    console.log(
-      "Submit Error:",
-      error
-    );
-
-  }
-
-};
   const retryQuiz = () => {
     setCurrentQuestion(0);
     setScore(0);
     setSelectedAnswer(null);
     setTimeLeft(30);
     setShowResult(false);
+    setAnswers([]);
   };
 
   if (loading) {
@@ -153,7 +134,7 @@ const submitQuiz = async ( finalScore) => {
 
           <div className="question-card">
             <h2>
-              Question {currentQuestion + 1}/{questions.length}
+              Question {currentQuestion + 1} / {questions.length}
             </h2>
 
             <QuestionCard

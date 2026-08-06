@@ -12,38 +12,43 @@ function Dashboard() {
   const [bestScore, setBestScore] = useState(0);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+  const token = localStorage.getItem("token");
 
-    if (!token) {
-      navigate("/login");
-      return;
-    }
+  if (!token) {
+    navigate("/login");
+    return;
+  }
 
-    const fetchHistory = async () => {
-      try {
-        const res = await axios.get(
-          `${import.meta.env.VITE_API_URL}/quiz/history/${user._id}`
+  const fetchHistory = async () => {
+    try {
+      const user = JSON.parse(localStorage.getItem("user"));
+
+      const res = await axios.get(
+        `${import.meta.env.VITE_API_URL}/quiz/history/${user._id}`
+      );
+
+      const history = res.data.attempts || [];
+
+      setQuizCompleted(history.length);
+
+      if (history.length > 0) {
+        const highest = Math.max(
+          ...history.map((item) => item.percentage)
         );
 
-        const history = res.data;
-
-        setQuizCompleted(history.length);
-
-        if (history.length > 0) {
-          const highest = Math.max(
-            ...history.map((item) => item.score)
-          );
-
-          setBestScore(highest);
-        }
-      } catch (err) {
-        console.log(err);
+        setBestScore(Math.round(highest));
+      } else {
+        setQuizCompleted(0);
+        setBestScore(0);
       }
-    };
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
-    fetchHistory();
-  }, [navigate]);
+  fetchHistory();
 
+}, [navigate]);
   return (
     <section className="dashboard">
 
