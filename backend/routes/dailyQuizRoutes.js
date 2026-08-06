@@ -5,11 +5,13 @@ import Question from "../models/Question.js";
 const router = express.Router();
 
 
-router.get("/today", async(req,res)=>{
+router.get("/today", async (req, res) => {
 
-try{
+try {
 
-const today = new Date().toISOString().split("T")[0];
+const today = new Date(
+  Date.now() + (5.5 * 60 * 60 * 1000)
+).toISOString().split("T")[0];
 
 
 let quiz = await DailyQuiz.findOne({
@@ -32,13 +34,17 @@ quiz = await DailyQuiz.create({
 
 date: today,
 
-questions: randomQuestions.map(q=>q._id)
+questions: randomQuestions.map(q=>q._id),
+
+startTime: new Date(),
+
+endTime: new Date(Date.now() + 24 * 60 * 60 * 1000)
 
 });
 
 
 quiz = await DailyQuiz.findOne({
-date:today
+    date: today
 }).populate("questions");
 
 
@@ -49,7 +55,7 @@ res.json({
 
 success:true,
 
-date:quiz.date,
+date: today,
 
 status:"LIVE",
 
@@ -59,16 +65,17 @@ startTime:quiz.startTime,
 
 endTime:quiz.endTime
 
-
 });
 
 
 }
 catch(error){
 
+console.log(error);
+
 res.status(500).json({
 message:error.message
-})
+});
 
 }
 
