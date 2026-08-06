@@ -14,6 +14,7 @@ function Dashboard() {
   const [dailyQuiz, setDailyQuiz] = useState(null);
 
 
+
   useEffect(() => {
 
     const token = localStorage.getItem("token");
@@ -24,11 +25,13 @@ function Dashboard() {
     }
 
 
+
     const fetchHistory = async () => {
 
       try {
 
-        const user = JSON.parse(localStorage.getItem("user"));
+        if(!user?._id) return;
+
 
         const res = await axios.get(
           `${import.meta.env.VITE_API_URL}/quiz/history/${user._id}`
@@ -37,7 +40,9 @@ function Dashboard() {
 
         const history = res.data.attempts || [];
 
+
         setQuizCompleted(history.length);
+
 
 
         if(history.length > 0){
@@ -45,6 +50,7 @@ function Dashboard() {
           const highest = Math.max(
             ...history.map(item => item.percentage)
           );
+
 
           setBestScore(Math.round(highest));
 
@@ -56,13 +62,16 @@ function Dashboard() {
         }
 
 
-      } catch(err){
+      }
+      catch(error){
 
-        console.log(err);
+        console.log("History Error:",error);
 
       }
 
     };
+
+
 
 
 
@@ -70,28 +79,37 @@ function Dashboard() {
 
       try {
 
+
         const res = await axios.get(
           `${import.meta.env.VITE_API_URL}/dailyquiz/today`
         );
 
 
+        console.log("LIVE QUIZ DATA:",res.data);
+
+
         setDailyQuiz(res.data);
 
 
-      } catch(err){
+      }
+      catch(error){
 
-        console.log(err);
+        console.log("Daily Quiz Error:",error);
 
       }
 
     };
 
 
+
     fetchHistory();
     fetchDailyQuiz();
 
 
+
   }, [navigate]);
+
+
 
 
 
@@ -102,17 +120,21 @@ function Dashboard() {
 
 <div className="dashboard-header">
 
+
 <div>
 
 <h1>
 Welcome, {user?.name || "Guest"} 👋
 </h1>
 
+
 <p>
 Ready to test your knowledge today?
 </p>
 
+
 </div>
+
 
 
 
@@ -122,6 +144,7 @@ Ready to test your knowledge today?
 <button onClick={()=>navigate("/quiz")}>
 Start Quiz 🚀
 </button>
+
 
 
 <button
@@ -147,9 +170,10 @@ Logout
 
 
 
-{/* LIVE DAILY QUIZ */}
 
-{dailyQuiz && (
+
+{/* DAILY LIVE QUIZ */}
+
 
 <div className="live-quiz-card">
 
@@ -159,19 +183,29 @@ Logout
 </h2>
 
 
+
+{
+dailyQuiz ? (
+
+<>
+
+
 <h3>
-📅 {dailyQuiz.date}
+📅 Date: {dailyQuiz.date}
 </h3>
 
 
 <p>
-🟢 Status: <b>{dailyQuiz.status}</b>
+🟢 Status:
+<b> {dailyQuiz.status}</b>
 </p>
 
 
 <p>
-📝 Questions: {dailyQuiz.questions?.length}
+📝 Questions:
+{dailyQuiz.questions?.length || 0}
 </p>
+
 
 
 <p>
@@ -187,9 +221,25 @@ Logout
 </button>
 
 
+</>
+
+
+)
+:
+(
+<p>
+Loading today's quiz...
+</p>
+)
+
+}
+
+
 </div>
 
-)}
+
+
+
 
 
 
@@ -202,10 +252,12 @@ Logout
 </div>
 
 
+
 <div>
 <h2>10+</h2>
 <p>Categories</p>
 </div>
+
 
 
 <div>
@@ -214,13 +266,16 @@ Logout
 </div>
 
 
+
 <div>
 <h2>{bestScore}%</h2>
 <p>Best Score</p>
 </div>
 
 
+
 </div>
+
 
 
 
@@ -228,6 +283,7 @@ Logout
 <h2 className="title">
 Choose Category
 </h2>
+
 
 
 
@@ -241,11 +297,13 @@ Choose Category
 </div>
 
 
+
 <div className="category-card">
 <span>💻</span>
 <h3>Programming</h3>
 <p>Coding & technology</p>
 </div>
+
 
 
 <div className="category-card">
@@ -255,6 +313,7 @@ Choose Category
 </div>
 
 
+
 <div className="category-card">
 <span>⚡</span>
 <h3>Electronics</h3>
@@ -262,7 +321,9 @@ Choose Category
 </div>
 
 
+
 </div>
+
 
 
 </section>
