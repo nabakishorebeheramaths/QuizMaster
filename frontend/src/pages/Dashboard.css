@@ -197,4 +197,27 @@
 
 }
 
+}.live-quiz-card{
+
+margin:30px 0;
+padding:25px;
+border-radius:20px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+.live-quiz-card button{
+
+margin-top:15px;
+padding:12px 25px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+
 }

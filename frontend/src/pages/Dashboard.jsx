@@ -10,6 +10,7 @@ function Dashboard() {
 
   const [quizCompleted, setQuizCompleted] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [dailyQuiz, setDailyQuiz] = useState(null);
 
   useEffect(() => {
   const token = localStorage.getItem("token");
@@ -47,7 +48,22 @@ function Dashboard() {
   };
 
   fetchHistory();
+const fetchDailyQuiz = async () => {
+  try {
 
+    const res = await axios.get(
+      `${import.meta.env.VITE_API_URL}/questions`
+    );
+
+    setDailyQuiz(res.data);
+
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+
+fetchDailyQuiz();
 }, [navigate]);
   return (
     <section className="dashboard">
@@ -76,7 +92,36 @@ function Dashboard() {
         </div>
 
       </div>
+{dailyQuiz && (
 
+<div className="live-quiz-card">
+
+<h2>🔥 Today's Live Quiz</h2>
+
+<h3>
+📅 {dailyQuiz.date}
+</h3>
+
+<p>
+🟢 Status: <b>{dailyQuiz.status}</b>
+</p>
+
+<p>
+📝 Questions: {dailyQuiz.count}
+</p>
+
+<p>
+⏰ Time: 12:00 AM - 11:59 PM
+</p>
+
+<button onClick={() => navigate("/quiz")}>
+🚀 Start Live Quiz
+</button>
+
+
+</div>
+
+)}
       <div className="stats-card">
 
         <div>
