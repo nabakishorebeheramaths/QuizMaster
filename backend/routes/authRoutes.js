@@ -39,7 +39,7 @@ if (!verifiedEmail) {
     res.status(201).json({
       message: "Signup successful",
       user: {
-        id: user._id,
+        _id: user._id,
         name: user.name,
         email: user.email,
       },
@@ -176,7 +176,7 @@ router.post("/login", async (req, res) => {
       message: "Login successful",
       token,
       user: {
-        id: user._id,
+        _id: user._id,
         name: user.name,
         email: user.email,
       },
