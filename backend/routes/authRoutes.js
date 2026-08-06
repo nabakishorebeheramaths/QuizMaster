@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import otpGenerator from "otp-generator";
 import Otp from "../models/Otp.js";
-import { sendOTP } from "../utils/mailer.js";
+import sendEmail from "../utils/sendEmail.js";
 import VerifiedEmail from "../models/VerifiedEmail.js";
 
 const router = express.Router();
@@ -35,7 +35,7 @@ if (!verifiedEmail) {
       email,
       password: hashedPassword,
     });
-
+    await VerifiedEmail.deleteOne({ email });
     res.status(201).json({
       message: "Signup successful",
       user: {
@@ -79,7 +79,11 @@ router.post("/send-otp", async (req, res) => {
       expiresAt: new Date(Date.now() + 5 * 60 * 1000),
     });
 
-    await sendOTP(email, otp);
+    await sendEmail(
+  email,
+  "QuizMaster Email Verification OTP",
+  `Your QuizMaster verification OTP is ${otp}. It will expire in 5 minutes.`
+);
 
     res.status(200).json({
       message: "OTP sent successfully",
@@ -125,10 +129,11 @@ router.post("/verify-otp", async (req, res) => {
 await Otp.deleteOne({ _id: otpRecord._id });
 
 // Save verified email
-await VerifiedEmail.create({
-  email,
-  verified: true,
-});
+await VerifiedEmail.findOneAndUpdate(
+  { email },
+  { email, verified: true },
+  { upsert: true, new: true }
+);
 
 res.status(200).json({
   message: "OTP verified successfully",
