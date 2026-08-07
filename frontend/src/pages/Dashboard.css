@@ -339,3 +339,8 @@ padding:15px;
     color:#2563eb;
     text-align:right;
 }
+.my-rank{
+  border: 2px solid #ffd700;
+  transform: scale(1.02);
+  font-weight: bold;
+}
