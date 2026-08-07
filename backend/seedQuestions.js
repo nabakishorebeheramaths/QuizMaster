@@ -1,14 +1,11 @@
 import dotenv from "dotenv";
 
-dotenv.config({ path: "./.env" });
-
-console.log("ENV FILE TEST:");
-console.log(process.env.MONGO_URI);
+dotenv.config();
 
 import mongoose from "mongoose";
 import connectDB from "./config/db.js";
 import Question from "./models/Question.js";
-
+import DailyQuiz from "./models/DailyQuiz.js";
 
 const questions = [
  
@@ -1298,15 +1295,16 @@ const questions = [
 ];
 
 const seed = async () => {
+try {
 
-  try {
+await connectDB();
 
-    await connectDB();
-
-    await Question.deleteMany({});
-    console.log("🗑️ Old questions deleted");
+await Question.deleteMany({});
+console.log("🗑️ Old questions deleted");
 
 
+await DailyQuiz.deleteMany({});
+console.log("🗑️ Old DailyQuiz deleted");
     console.log("Question count in file:", questions.length);
 
 
