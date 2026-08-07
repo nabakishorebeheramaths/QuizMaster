@@ -66,7 +66,7 @@ function Dashboard() {
       try {
 
         const res = await axios.get(
-          `${import.meta.env.VITE_API_URL}/dailyquiz/today`
+          `${import.meta.env.VITE_API_URL}/daily-quiz/today`
         );
 
         console.log("DAILY QUIZ:", res.data);
