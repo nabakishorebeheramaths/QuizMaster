@@ -57,7 +57,9 @@ router.get("/today", async (req, res) => {
 
     }
 
-
+console.log("QUIZ:", quiz);
+console.log("START:", quiz.startTime);
+console.log("END:", quiz.endTime);
     res.json({
 
       success: true,
