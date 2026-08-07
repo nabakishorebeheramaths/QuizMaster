@@ -1,11 +1,14 @@
-
 import dotenv from "dotenv";
-import mongoose from "mongoose";
-import connectDB from "../config/db.js";
-import Question from "../models/Question.js";
-import DailyQuiz from "../models/DailyQuiz.js";  // 👈 add karo
 
-dotenv.config();
+dotenv.config({ path: "./.env" });
+
+console.log("ENV FILE TEST:");
+console.log(process.env.MONGO_URI);
+
+import mongoose from "mongoose";
+import connectDB from "./config/db.js";
+import Question from "./models/Question.js";
+
 
 const questions = [
  
@@ -655,6 +658,7 @@ const questions = [
  category:"ECE",
  difficulty:"Easy"
 },
+
 {
  question:"The impedance of a capacitor in AC circuit is:",
  options:[
@@ -1291,42 +1295,52 @@ const questions = [
  difficulty:"Medium"
 },
 
-{
- question:"The memory element in digital circuits is:",
- options:[
-  "Adder",
-  "Flip-flop",
-  "Multiplexer",
-  "Decoder"
- ],
- correctAnswer:1,
- category:"ECE",
- difficulty:"Easy"
-}
-];  // yaha tumhare 100 questions hain
-
-
+];
 
 const seed = async () => {
+
   try {
 
     await connectDB();
 
-    await Question.deleteMany();
+    await Question.deleteMany({});
+    console.log("🗑️ Old questions deleted");
 
 
     console.log("Question count in file:", questions.length);
 
-    await Question.insertMany(questions);
+
+   const cleanQuestions = questions.map((q)=>({
+
+    question: q.question,
+
+    options: q.options,
+
+    correctAnswer: Number(q.correctAnswer),
+
+    category: q.category || "General Knowledge",
+
+    difficulty: q.difficulty || "Medium"
+
+}));
+    await Question.insertMany(cleanQuestions);
+
 
     console.log("✅ Questions inserted successfully");
 
+
     mongoose.connection.close();
 
-  } catch (err) {
+
+  } catch(err) {
+
     console.log(err);
+
+    mongoose.connection.close();
+
   }
+
 };
 
-seed();
 
+seed();

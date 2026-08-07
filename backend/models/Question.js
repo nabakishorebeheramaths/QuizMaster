@@ -20,28 +20,17 @@ const questionSchema = new mongoose.Schema(
   },
 
   category:{
-  type:String,
-  enum:[
-    "ECE",
-    "Engineering Mathematics",
-    "Aptitude",
-    "English",
-    "Maths",
-    "Reasoning",
-    "Current Affairs",
-    "General Knowledge"
-  ],
-  required:true
-},
+    type:String,
+    default:"General Knowledge"
+  },
 
   difficulty:{
     type:String,
-    enum:["Easy","Medium","Hard"],
     default:"Medium"
   }
 },
 {
- timestamps:true
+  timestamps:true
 }
 );
 
