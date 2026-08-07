@@ -26,7 +26,7 @@ function Quiz() {
 
   const fetchQuestions = async () => {
     try {
-      const res = await axios.get(`${API_URL}/questions`);
+     const res = await axios.get(`${API_URL}/daily-quiz/today`);
       setQuestions(res.data.questions || []);
     } catch (error) {
       console.error(error);
