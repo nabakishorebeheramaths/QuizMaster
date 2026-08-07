@@ -95,32 +95,34 @@ router.get("/history/:userId", async (req, res) => {
 // Today's Leaderboard
 router.get("/leaderboard", async (req, res) => {
 
-  try {
+try {
 
-    const today = new Date().toISOString().split("T")[0];
+const today = new Date().toISOString().split("T")[0];
 
-    const leaderboard = await QuizAttempt.find({
-      date: today,
-    })
-      .sort({
-        percentage: -1,
-        score: -1,
-      })
-      .limit(50);
+const leaderboard = await QuizAttempt.find({
+  date: today,
+})
+.sort({
+  percentage: -1,
+  score: -1,
+})
+.limit(50);
 
-    res.json({
-      success: true,
-      leaderboard,
-    });
+console.log("LEADERBOARD DATA:", leaderboard);
 
-  } catch (error) {
+res.json({
+  success:true,
+  leaderboard
+});
 
-    res.status(500).json({
-      success: false,
-      message: error.message,
-    });
+} catch(error){
 
-  }
+res.status(500).json({
+success:false,
+message:error.message
+});
+
+}
 
 });
 // Get User Rank

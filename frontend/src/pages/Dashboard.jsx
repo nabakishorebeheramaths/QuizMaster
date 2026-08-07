@@ -338,7 +338,7 @@ const fetchUserRank = async () => {
 
       <div
         className={`leaderboard-row ${
-          item.user?.toString() === user?._id?.toString()
+          String(item.user) === String(user?._id)
             ? "my-rank"
             : ""
         }`}
