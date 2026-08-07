@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 
 function Timer({ timeLeft, setTimeLeft, onTimeUp }) {
+
   useEffect(() => {
+
     if (timeLeft <= 0) {
       onTimeUp();
       return;
@@ -12,6 +14,7 @@ function Timer({ timeLeft, setTimeLeft, onTimeUp }) {
     }, 1000);
 
     return () => clearTimeout(timer);
+
   }, [timeLeft, setTimeLeft, onTimeUp]);
 
   return (

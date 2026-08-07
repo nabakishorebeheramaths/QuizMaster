@@ -60,14 +60,14 @@ function Quiz() {
     try {
       const user = JSON.parse(localStorage.getItem("user"));
 
-      const res = await axios.post(`${API_URL}/quiz/submit`, {
+      await axios.post(`${API_URL}/quiz/submit`, {
         user: user._id,
         score: finalScore,
         totalQuestions: questions.length,
         answers,
       });
 
-      console.log("Quiz Saved:", res.data);
+      console.log("Quiz Saved");
     } catch (error) {
       console.error("Submit Error:", error.response?.data || error);
     }
@@ -94,9 +94,35 @@ function Quiz() {
       setTimeLeft(30);
     } else {
       await submitQuiz(updatedScore);
-
       setScore(updatedScore);
       setShowResult(true);
+    }
+  };
+
+  const handleTimeUp = async () => {
+
+    let updatedScore = score;
+
+    if (
+      selectedAnswer !== null &&
+      selectedAnswer === questions[currentQuestion].correctAnswer
+    ) {
+      updatedScore++;
+      setScore(updatedScore);
+    }
+
+    if (currentQuestion < questions.length - 1) {
+
+      setCurrentQuestion((prev) => prev + 1);
+      setSelectedAnswer(null);
+      setTimeLeft(30);
+
+    } else {
+
+      await submitQuiz(updatedScore);
+      setScore(updatedScore);
+      setShowResult(true);
+
     }
   };
 
@@ -107,6 +133,7 @@ function Quiz() {
     setTimeLeft(30);
     setShowResult(false);
     setAnswers([]);
+    fetchQuestions();
   };
 
   if (loading) {
@@ -119,20 +146,27 @@ function Quiz() {
 
   return (
     <div className="quiz-container">
+
       {showResult ? (
+
         <Result
           score={score}
           totalQuestions={questions.length}
           onRetry={retryQuiz}
         />
+
       ) : (
+
         <>
+
           <Timer
             timeLeft={timeLeft}
             setTimeLeft={setTimeLeft}
+            onTimeUp={handleTimeUp}
           />
 
           <div className="question-card">
+
             <h2>
               Question {currentQuestion + 1} / {questions.length}
             </h2>
@@ -151,9 +185,13 @@ function Quiz() {
                 ? "Finish Quiz"
                 : "Next Question"}
             </button>
+
           </div>
+
         </>
+
       )}
+
     </div>
   );
 }
