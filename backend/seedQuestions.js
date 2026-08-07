@@ -6001,7 +6001,7 @@ await connectDB();
 
 await Question.deleteMany({});
 console.log("🗑️ Old questions deleted");
-
+await DailyQuiz.deleteMany({});
 
 console.log("Question count:", questions.length);
 
