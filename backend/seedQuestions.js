@@ -5994,6 +5994,7 @@ difficulty:"Hard"
 ];
 
 const seed = async () => {
+
 try {
 
 await connectDB();
@@ -6001,22 +6002,36 @@ await connectDB();
 await Question.deleteMany({});
 console.log("🗑️ Old questions deleted");
 
+
 console.log("Question count:", questions.length);
+
+
+const cleanQuestions = questions.map((q)=>({
+
+  question: q.question,
+  options: q.options,
+  correctAnswer: Number(q.correctAnswer),
+  category: q.category || "General Knowledge",
+  difficulty: q.difficulty || "Medium"
+
+}));
+
 
 await Question.insertMany(cleanQuestions);
 
 console.log("✅ Questions inserted successfully");
 
+
 mongoose.connection.close();
 
 
-  } catch(err) {
+} catch(err){
 
-    console.log(err);
+console.log(err);
 
-    mongoose.connection.close();
+mongoose.connection.close();
 
-  }
+}
 
 };
 
