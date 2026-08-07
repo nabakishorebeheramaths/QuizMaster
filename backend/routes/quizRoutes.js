@@ -6,6 +6,10 @@ const router = express.Router();
 
 // Submit Quiz
 router.post("/submit", async (req, res) => {
+
+  console.log("🔥 /quiz/submit called");
+  console.log(req.body);
+
   try {
 
     const { user, score, totalQuestions, answers } = req.body;
@@ -17,11 +21,9 @@ router.post("/submit", async (req, res) => {
       });
     }
 
-
     const percentage = Number(
       ((score / totalQuestions) * 100).toFixed(2)
     );
-
 
     const attempt = await QuizAttempt.create({
       user,
@@ -32,16 +34,13 @@ router.post("/submit", async (req, res) => {
       answers
     });
 
-
     console.log("✅ Quiz Attempt Saved:", attempt._id);
-
 
     res.status(201).json({
       success: true,
       message: "Quiz submitted successfully",
       attempt
     });
-
 
   } catch (error) {
 
@@ -53,9 +52,8 @@ router.post("/submit", async (req, res) => {
     });
 
   }
+
 });
-
-
 
 // Get Quiz History
 router.get("/history/:userId", async (req, res) => {
