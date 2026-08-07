@@ -337,11 +337,7 @@ const fetchUserRank = async () => {
     return (
 
       <div
-        className={`leaderboard-row ${
- String(item.user?._id || item.user) === String(user?._id)
- ? "my-rank"
- : ""
-}`}
+        className="leaderboard-row my-rank"
         key={item._id}
       >
 
