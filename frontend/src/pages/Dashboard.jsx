@@ -329,29 +329,29 @@ const fetchUserRank = async () => {
 
   {leaderboard.length > 0 ? (
 
-  leaderboard.map((item, index) => {
+  leaderboard.map((item,index)=>{
 
-    console.log("LEADERBOARD ITEM:", item);
-    console.log("LOGIN USER:", user);
+    console.log("ITEM USER ID:", item.user?._id);
+    console.log("MY USER ID:", user?._id);
 
     return (
 
-     <div
-  className={`leaderboard-row ${
-    String(item.user?._id) === String(user?._id)
-      ? "my-rank"
-      : ""
-  }`}
-  key={item._id}
->
+      <div
+        key={item._id}
+        className={
+          String(item.user?._id) === String(user?._id)
+          ? "leaderboard-row my-rank"
+          : "leaderboard-row"
+        }
+      >
 
         <span className="rank">
           {index + 1}
         </span>
 
         <span className="name">
-  {item.user?.name || item.userName}
-</span>
+          {item.user?.name || item.userName}
+        </span>
 
         <span className="score">
           {item.percentage}%
@@ -367,11 +367,7 @@ const fetchUserRank = async () => {
 
   <p>No participants today.</p>
 
-
-
-  )}
-
-
+)}
 </div>
             {/* CATEGORY */}
 
