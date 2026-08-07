@@ -1,3 +1,4 @@
+console.log("🔥 DAILY QUIZ ROUTE LOADED");
 import express from "express";
 import DailyQuiz from "../models/DailyQuiz.js";
 import Question from "../models/Question.js";
@@ -22,7 +23,7 @@ router.get("/today", async (req, res) => {
       date: today
     }).populate("questions");
 
-await DailyQuiz.deleteMany({});
+
     if (!quiz) {
 
       const randomQuestions = await Question.aggregate([
