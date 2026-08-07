@@ -102,6 +102,7 @@ const today = new Date().toISOString().split("T")[0];
 const leaderboard = await QuizAttempt.find({
   date: today,
 })
+.populate("user", "name")
 .sort({
   percentage: -1,
   score: -1,

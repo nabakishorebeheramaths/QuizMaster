@@ -338,10 +338,10 @@ const fetchUserRank = async () => {
 
       <div
         className={`leaderboard-row ${
-          String(item.user?._id || item.user) === String(user?._id)
-            ? "my-rank"
-            : ""
-        }`}
+ String(item.user?._id || item.user) === String(user?._id)
+ ? "my-rank"
+ : ""
+}`}
         key={item._id}
       >
 
@@ -350,8 +350,8 @@ const fetchUserRank = async () => {
         </span>
 
         <span className="name">
-          {item.userName}
-        </span>
+  {item.user?.name || item.userName}
+</span>
 
         <span className="score">
           {item.percentage}%
