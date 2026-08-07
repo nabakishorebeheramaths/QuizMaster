@@ -331,11 +331,14 @@ const fetchUserRank = async () => {
 
     leaderboard.map((item, index) => (
 
-      <div
+     <div
   className={`leaderboard-row ${
-    item.user === user?._id ? "my-rank" : ""
+    item.user?.toString() === user?._id?.toString()
+      ? "my-rank"
+      : ""
   }`}
   key={item._id}
+
 >
 
         <span className="rank">
