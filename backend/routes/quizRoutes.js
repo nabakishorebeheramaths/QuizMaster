@@ -123,5 +123,49 @@ router.get("/leaderboard", async (req, res) => {
   }
 
 });
+// Get User Rank
+router.get("/rank/:userId", async (req, res) => {
+
+  try {
+
+    const today = new Date().toISOString().split("T")[0];
+
+    const leaderboard = await QuizAttempt.find({
+      date: today,
+    })
+    .sort({
+      percentage: -1,
+      score: -1,
+    });
+
+
+    const index = leaderboard.findIndex(
+      item => item.user.toString() === req.params.userId
+    );
+
+
+    if (index === -1) {
+      return res.json({
+        rank: null
+      });
+    }
+
+
+    res.json({
+      rank: index + 1,
+      score: leaderboard[index].percentage
+    });
+
+
+  } catch(error){
+
+    res.status(500).json({
+      success:false,
+      message:error.message
+    });
+
+  }
+
+});
 
 export default router;

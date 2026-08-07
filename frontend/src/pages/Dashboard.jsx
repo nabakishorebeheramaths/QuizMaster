@@ -13,6 +13,7 @@ function Dashboard() {
   const [bestScore, setBestScore] = useState(0);
   const [dailyQuiz, setDailyQuiz] = useState(null);
   const [leaderboard, setLeaderboard] = useState([]);
+  const [userRank, setUserRank] = useState(null);
   useEffect(() => {
 
     const token = localStorage.getItem("token");
@@ -90,10 +91,27 @@ function Dashboard() {
     console.log("Leaderboard Error:", error);
   }
 };
+const fetchUserRank = async () => {
 
+  try {
+
+    const res = await axios.get(
+      `${import.meta.env.VITE_API_URL}/quiz/rank/${user._id}`
+    );
+
+    setUserRank(res.data.rank);
+
+  } catch(error){
+
+    console.log("Rank Error:", error);
+
+  }
+
+};
     fetchHistory();
     fetchDailyQuiz();
     fetchLeaderboard();
+    fetchUserRank();
 
   }, [navigate]);
 
@@ -264,29 +282,39 @@ function Dashboard() {
 
       {/* STATS */}
 
-      <div className="stats-card">
+        <div className="stats-card">
 
-        <div>
-          <h2>1000+</h2>
-          <p>Questions</p>
-        </div>
+    <div>
+      <h2>1000+</h2>
+      <p>Questions</p>
+    </div>
 
-        <div>
-          <h2>10+</h2>
-          <p>Categories</p>
-        </div>
+    <div>
+      <h2>10+</h2>
+      <p>Categories</p>
+    </div>
 
-        <div>
-          <h2>{quizCompleted}</h2>
-          <p>Quiz Completed</p>
-        </div>
+    <div>
+      <h2>{quizCompleted}</h2>
+      <p>Quiz Completed</p>
+    </div>
 
-        <div>
-          <h2>{bestScore}%</h2>
-          <p>Best Score</p>
-        </div>
+    <div>
+      <h2>{bestScore}%</h2>
+      <p>Best Score</p>
+    </div>
 
-      </div>
+  </div>
+
+
+  {
+  userRank && (
+    <h3 className="your-rank">
+      🏆 Your Rank: #{userRank}
+    </h3>
+  )
+}
+
      {/* TODAY'S TOP PERFORMERS */}
 
 <h2 className="title">🏆 Today's Top Performers</h2>
