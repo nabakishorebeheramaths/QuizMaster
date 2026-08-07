@@ -14,6 +14,75 @@ function Dashboard() {
   const [dailyQuiz, setDailyQuiz] = useState(null);
   const [leaderboard, setLeaderboard] = useState([]);
   const [userRank, setUserRank] = useState(null);
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+useEffect(() => {
+
+  const timer = setInterval(() => {
+    setCurrentTime(new Date());
+  }, 1000);
+
+  return () => clearInterval(timer);
+
+}, []);
+
+const formatTime = (date) => {
+  return date.toLocaleTimeString("en-IN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
+  });
+};
+
+const getTimeLeft = () => {
+
+  const now = currentTime;
+
+  const start = new Date(now);
+  start.setHours(0, 0, 0, 0);
+
+  const end = new Date(now);
+  end.setHours(23, 59, 59, 999);
+
+  if (now < start) {
+
+    const diff = start - now;
+
+    const hrs = Math.floor(diff / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+    return {
+      status: "Starts in",
+      color: "#16a34a",
+      time: `${hrs}h ${mins}m`
+    };
+
+  }
+
+  if (now <= end) {
+
+    const diff = end - now;
+
+    const hrs = Math.floor(diff / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+    return {
+      status: "Ends in",
+      color: "#ef4444",
+      time: `${hrs}h ${mins}m`
+    };
+
+  }
+
+  return {
+    status: "Quiz Ended",
+    color: "#6b7280",
+    time: ""
+  };
+
+};
+
+const timerInfo = getTimeLeft();
   useEffect(() => {
 
     const token = localStorage.getItem("token");
@@ -153,134 +222,136 @@ const fetchUserRank = async () => {
         </div>
 
       </div>
+{/* LIVE QUIZ CARD */}
 
-      {/* LIVE QUIZ CARD */}
+<div className="live-quiz-card">
 
-      <div className="live-quiz-card">
+  <div className="live-header">
+    <h2>🔥 Daily Live Quiz</h2>
 
-        <div className="live-header">
+    <span className="live-badge">
+      🟢 LIVE
+    </span>
+  </div>
 
-          <h2>🔥 Daily Live Quiz</h2>
+  {
+    dailyQuiz ? (
+      <>
 
-          <span className="live-badge">
-            🟢 LIVE
-          </span>
+        <div className="quiz-info">
+
+          <div className="info-box">
+            <h4>📅 Date</h4>
+            <p>{dailyQuiz?.date || new Date().toLocaleDateString("en-IN")}</p>
+          </div>
+
+          <div className="info-box">
+            <h4>⏰ Start Time</h4>
+            <p>12:00 AM</p>
+
+            <small
+              style={{
+                color: "#16a34a",
+                fontWeight: "600",
+                display: "block",
+                marginTop: "8px"
+              }}
+            >
+              🕒 Quiz Starts Every Day
+            </small>
+          </div>
+
+          <div className="info-box">
+            <h4>🏁 End Time</h4>
+            <p>11:59 PM</p>
+
+            <small
+              style={{
+                color: "#ef4444",
+                fontWeight: "600",
+                display: "block",
+                marginTop: "8px"
+              }}
+            >
+              ⏳ {timerInfo.time} Remaining
+            </small>
+          </div>
+
+          <div className="info-box">
+            <h4>📝 Questions</h4>
+            <p>{dailyQuiz?.questions?.length || 30}</p>
+
+            <small
+              style={{
+                color: "#6b7280",
+                fontWeight: "600",
+                display: "block",
+                marginTop: "8px"
+              }}
+            >
+              All Subjects
+            </small>
+          </div>
 
         </div>
 
-        {
-          dailyQuiz ? (
+        <div className="quiz-status">
 
-            <>
+          <h3>Today's Challenge is Ready 🚀</h3>
 
-              <div className="quiz-info">
+          <p>
+            {timerInfo.status} {timerInfo.time}
+          </p>
 
-                <div className="info-box">
-                  <h4>📅 Date</h4>
-                  <p>{dailyQuiz.date}</p>
-                </div>
+          <button onClick={() => navigate("/quiz")}>
+            🚀 Start Live Quiz
+          </button>
 
-                <div className="info-box">
-                  <h4>⏰ Start Time</h4>
-                  <p>
-                    {new Date(dailyQuiz.startTime).toLocaleString(
-                      "en-IN",
-                      {
-                        timeZone: "Asia/Kolkata",
-                        hour: "2-digit",
-                        minute: "2-digit",
-                        hour12: true,
-                      }
-                    )}
-                  </p>
-                </div>
+        </div>
 
-                <div className="info-box">
-                  <h4>🏁 End Time</h4>
-                  <p>
-                    {new Date(dailyQuiz.endTime).toLocaleString(
-                      "en-IN",
-                      {
-                        timeZone: "Asia/Kolkata",
-                        hour: "2-digit",
-                        minute: "2-digit",
-                        hour12: true,
-                      }
-                    )}
-                  </p>
-                </div>
+      </>
+    ) : (
+      <>
 
-                <div className="info-box">
-                  <h4>📝 Questions</h4>
-                  <p>{dailyQuiz.questions?.length || 0}</p>
-                </div>
+        <div className="quiz-info">
 
-              </div>
+          <div className="info-box">
+            <h4>📅 Date</h4>
+            <p>{new Date().toLocaleDateString("en-IN")}</p>
+          </div>
 
-              <div className="quiz-status">
+          <div className="info-box">
+            <h4>⏰ Start</h4>
+            <p>12:00 AM</p>
+          </div>
 
-                <h3>
-                  Today's Challenge is Ready 🚀
-                </h3>
+          <div className="info-box">
+            <h4>🏁 End</h4>
+            <p>11:59 PM</p>
+          </div>
 
-                <p>
-                  Attempt today's quiz and improve your score.
-                </p>
+          <div className="info-box">
+            <h4>📝 Questions</h4>
+            <p>30</p>
+          </div>
 
-                <button
-                  onClick={() => navigate("/quiz")}
-                >
-                  🚀 Start Live Quiz
-                </button>
+        </div>
 
-              </div>
+        <div className="quiz-status">
 
-                       </>
+          <h3>Loading Today's Quiz...</h3>
 
-          ) : (
+          <p>Please wait while today's quiz is being prepared.</p>
 
-  <>
+        </div>
 
-    <div className="quiz-info">
+      </>
+    )
+  }
 
-      <div className="info-box">
-        <h4>📅 Date</h4>
-        <p>{new Date().toLocaleDateString("en-IN")}</p>
-      </div>
+</div>
 
-      <div className="info-box">
-        <h4>⏰ Start</h4>
-        <p>12:00 AM</p>
-      </div>
-
-      <div className="info-box">
-        <h4>🏁 End</h4>
-        <p>11:59 PM</p>
-      </div>
-
-      <div className="info-box">
-        <h4>📝 Questions</h4>
-        <p>30</p>
-      </div>
-
-    </div>
-
-    <div className="quiz-status">
-
-      <h3>Loading Today's Quiz...</h3>
-
-      <p>Please wait while today's quiz is being prepared.</p>
-
-    </div>
-
-  </>
-
-)
-        }
-
-      </div>
-
-      {/* STATS */}
+{/* STATS */}
 
         <div className="stats-card">
 
