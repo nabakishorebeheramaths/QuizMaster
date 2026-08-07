@@ -94,37 +94,38 @@ router.get("/history/:userId", async (req, res) => {
 });
 // Today's Leaderboard
 router.get("/leaderboard", async (req, res) => {
+  try {
+    const today = new Date().toLocaleDateString("en-CA", {
+      timeZone: "Asia/Kolkata",
+    });
 
-try {
+    console.log("TODAY:", today);
 
-const today = new Date().toISOString().split("T")[0];
+    const leaderboard = await QuizAttempt.find({
+      date: today,
+    })
+      .populate("user", "name")
+      .sort({
+        percentage: -1,
+        score: -1,
+      })
+      .limit(50);
 
-const leaderboard = await QuizAttempt.find({
-  date: today,
-})
-.populate("user", "name")
-.sort({
-  percentage: -1,
-  score: -1,
-})
-.limit(50);
+    console.log("LEADERBOARD DATA:", leaderboard);
 
-console.log("LEADERBOARD DATA:", leaderboard);
+    res.json({
+      success: true,
+      leaderboard,
+    });
 
-res.json({
-  success:true,
-  leaderboard
-});
+  } catch (error) {
+    console.log("❌ Leaderboard Error:", error.message);
 
-} catch(error){
-
-res.status(500).json({
-success:false,
-message:error.message
-});
-
-}
-
+    res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
 });
 // Get User Rank
 router.get("/rank/:userId", async (req, res) => {

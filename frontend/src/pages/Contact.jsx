@@ -89,12 +89,13 @@ function Contact() {
           <div>
             <h2 style={{ color: "#38BDF8" }}>💬 Send Message</h2>
 
-            <form style={{ marginTop: "20px" }}>
-              <input
-                type="text"
-                placeholder="Your Name"
-                style={inputStyle}
-              />
+            <form
+  style={{ marginTop: "20px" }}
+  onSubmit={(e) => {
+    e.preventDefault();
+    alert("Contact form is under development.");
+  }}
+>
 
               <input
                 type="email"
