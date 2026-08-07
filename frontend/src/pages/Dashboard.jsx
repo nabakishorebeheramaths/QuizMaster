@@ -8,7 +8,7 @@ function Dashboard() {
   const navigate = useNavigate();
 
   const user = JSON.parse(localStorage.getItem("user"));
-
+  console.log("MY LOGIN USER:", user);
   const [quizCompleted, setQuizCompleted] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [dailyQuiz, setDailyQuiz] = useState(null);
@@ -336,10 +336,14 @@ const fetchUserRank = async () => {
 
     return (
 
-      <div
-        className="leaderboard-row my-rank"
-        key={item._id}
-      >
+     <div
+  className={`leaderboard-row ${
+    String(item.user?._id) === String(user?._id)
+      ? "my-rank"
+      : ""
+  }`}
+  key={item._id}
+>
 
         <span className="rank">
           {index + 1}

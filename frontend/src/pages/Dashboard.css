@@ -344,3 +344,9 @@ padding:15px;
   transform: scale(1.02);
   font-weight: bold;
 }
+.my-rank{
+    background:#fff3cd !important;
+    border:3px solid gold !important;
+    transform:scale(1.03);
+    font-weight:bold;
+}
