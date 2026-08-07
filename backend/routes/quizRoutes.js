@@ -12,7 +12,13 @@ router.post("/submit", async (req, res) => {
 
   try {
 
-    const { user, score, totalQuestions, answers } = req.body;
+    const {
+  user,
+  userName,
+  score,
+  totalQuestions,
+  answers,
+} = req.body;
 
     if (!user || score === undefined || !totalQuestions) {
       return res.status(400).json({
@@ -26,13 +32,14 @@ router.post("/submit", async (req, res) => {
     );
 
     const attempt = await QuizAttempt.create({
-      user,
-      date: new Date().toISOString().split("T")[0],
-      score,
-      totalQuestions,
-      percentage,
-      answers
-    });
+  user,
+  userName,
+  date: new Date().toISOString().split("T")[0],
+  score,
+  totalQuestions,
+  percentage,
+  answers,
+});
 
     console.log("✅ Quiz Attempt Saved:", attempt._id);
 
@@ -85,6 +92,36 @@ router.get("/history/:userId", async (req, res) => {
   }
 
 });
+// Today's Leaderboard
+router.get("/leaderboard", async (req, res) => {
 
+  try {
+
+    const today = new Date().toISOString().split("T")[0];
+
+    const leaderboard = await QuizAttempt.find({
+      date: today,
+    })
+      .sort({
+        percentage: -1,
+        score: -1,
+      })
+      .limit(10);
+
+    res.json({
+      success: true,
+      leaderboard,
+    });
+
+  } catch (error) {
+
+    res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+
+  }
+
+});
 
 export default router;

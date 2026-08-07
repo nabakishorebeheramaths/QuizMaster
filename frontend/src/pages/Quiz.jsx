@@ -60,12 +60,13 @@ function Quiz() {
     try {
       const user = JSON.parse(localStorage.getItem("user"));
 
-      await axios.post(`${API_URL}/quiz/submit`, {
-        user: user._id,
-        score: finalScore,
-        totalQuestions: questions.length,
-        answers,
-      });
+await axios.post(`${API_URL}/quiz/submit`, {
+    user: user._id,
+    userName: user.name,
+    score: finalScore,
+    totalQuestions: questions.length,
+    answers,
+});
 
       console.log("Quiz Saved");
     } catch (error) {

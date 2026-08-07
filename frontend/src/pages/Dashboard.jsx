@@ -12,7 +12,7 @@ function Dashboard() {
   const [quizCompleted, setQuizCompleted] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [dailyQuiz, setDailyQuiz] = useState(null);
-
+  const [leaderboard, setLeaderboard] = useState([]);
   useEffect(() => {
 
     const token = localStorage.getItem("token");
@@ -79,9 +79,21 @@ function Dashboard() {
       }
 
     };
+    const fetchLeaderboard = async () => {
+  try {
+    const res = await axios.get(
+      `${import.meta.env.VITE_API_URL}/quiz/leaderboard`
+    );
+
+    setLeaderboard(res.data.leaderboard || []);
+  } catch (error) {
+    console.log("Leaderboard Error:", error);
+  }
+};
 
     fetchHistory();
     fetchDailyQuiz();
+    fetchLeaderboard();
 
   }, [navigate]);
 
@@ -275,7 +287,56 @@ function Dashboard() {
         </div>
 
       </div>
+     {/* TODAY'S TOP PERFORMERS */}
 
+<h2 className="title">🏆 Today's Top Performers</h2>
+
+<div className="leaderboard">
+
+  <div className="leaderboard-header">
+    <span>Rank</span>
+    <span>Name</span>
+    <span>Score</span>
+  </div>
+
+  {leaderboard.length > 0 ? (
+
+    leaderboard.map((item, index) => (
+
+      <div className="leaderboard-row" key={item._id}>
+
+        <span className="rank">
+          {index === 0
+            ? "🥇"
+            : index === 1
+            ? "🥈"
+            : index === 2
+            ? "🥉"
+            : index + 1}
+        </span>
+
+        <span className="name">
+          {item.userName}
+        </span>
+
+        <span className="score">
+          {item.percentage}%
+        </span>
+
+      </div>
+
+    ))
+
+  ) : (
+
+    <p style={{ textAlign: "center", padding: "20px" }}>
+      No participants today.
+    </p>
+
+  )}
+
+
+</div>
             {/* CATEGORY */}
 
       <h2 className="title">
