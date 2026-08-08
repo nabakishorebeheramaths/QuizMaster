@@ -39,7 +39,6 @@ function Footer() {
               Engineering Mathematics, Aptitude, Reasoning and Current Affairs.
             </p>
           </div>
-```jsx
 {/* Quick Links */}
 <div>
   <h3 style={{ color: "#FFD700" }}>Quick Links</h3>
