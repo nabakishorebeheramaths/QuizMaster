@@ -16,20 +16,21 @@ function Home() {
         </span>
 
         <h1>
-          Learn Faster.
-          <br />
-          <span>Play Smarter.</span>
-        </h1>
+  <span className="rainbow-text">Learn Faster.</span>{" "}
+  <span className="rainbow-text">Play Smarter.</span>
+</h1>
 
         <p>
           Improve your knowledge with interactive quizzes,
           beautiful design, real-time scores and an exciting
           learning experience.
         </p>
-
-        <div className="creator">
-          Created by <span>Nabakishore Behera</span>
-        </div>
+<div className="creator">
+  Created by{" "}
+  <span className="rainbow-text">
+    Nabakishore Behera
+  </span>
+</div>
   
   
       </div>
