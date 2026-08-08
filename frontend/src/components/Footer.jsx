@@ -39,25 +39,34 @@ function Footer() {
               Engineering Mathematics, Aptitude, Reasoning and Current Affairs.
             </p>
           </div>
+```jsx
+{/* Quick Links */}
+<div>
+  <h3 style={{ color: "#FFD700" }}>Quick Links</h3>
 
-          {/* Quick Links */}
-          <div>
-            <h3 style={{ color: "#FFD700" }}>Quick Links</h3>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "12px",
+      marginTop: "15px",
+    }}
+  >
+    <Link style={linkStyle} to="/">
+      🏠 Home
+    </Link>
 
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px",
-                marginTop: "15px",
-              }}
-            >
-              <Link style={linkStyle} to="/">🏠 Home</Link>
-              <Link style={linkStyle} to="/about">👨 About</Link>
-              <Link style={linkStyle} to="/quiz">📝 Daily Quiz</Link>
-              <Link style={linkStyle} to="/leaderboard">🏆 Leaderboard</Link>
-            </div>
-          </div>
+    <Link style={linkStyle} to="/about">
+      👨 About
+    </Link>
+
+    <Link style={linkStyle} to="/leaderboard">
+      🏆 Leaderboard
+    </Link>
+  </div>
+</div>
+```
+
 
           {/* Legal */}
           <div>
