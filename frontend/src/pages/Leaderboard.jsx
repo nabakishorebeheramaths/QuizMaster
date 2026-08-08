@@ -24,7 +24,10 @@ function Leaderboard() {
       setLoading(true);
       setError("");
 
-      const baseURL = API_URL.trim().replace(/\/+$/, "");
+      const baseURL = API_URL
+  .trim()
+  .replace(/\/api\/?$/i, "")
+  .replace(/\/+$/, "");
       const endpoint = `${baseURL}/api/quiz/leaderboard`;
 
       console.log("🏆 Leaderboard API:", endpoint);
