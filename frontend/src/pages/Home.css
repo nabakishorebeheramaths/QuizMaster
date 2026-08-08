@@ -97,18 +97,13 @@ body{
 
 .hero-left h1 span{
 
-    background:
-    linear-gradient(
-        90deg,
-        #2563eb,
-        #9333ea,
-        #ec4899
-    );
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
-
+   .gradient-text {
+  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 50%, #A855F7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 }
 
 
@@ -168,12 +163,13 @@ body{
     );
 
 
-    background-size:400%;
-
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
+   .gradient-text {
+  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 50%, #A855F7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 
 
     animation:
