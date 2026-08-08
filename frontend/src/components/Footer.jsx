@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -35,36 +36,40 @@ function Footer() {
                 marginTop: "15px",
               }}
             >
-              India's Smart Quiz Platform for GATE, Placement Preparation,
-              Engineering Mathematics, Aptitude, Reasoning and Current Affairs.
+              India's Smart Quiz Platform for{" "}
+              <strong>Class 1 to 12</strong> and major competitive
+              exams across all sectors including{" "}
+              <strong>JEE, NEET, GATE, UPSC, SSC, Banking, Railway,
+              Police, Defence, Government Exams</strong> and many
+              more.
             </p>
           </div>
-{/* Quick Links */}
-<div>
-  <h3 style={{ color: "#FFD700" }}>Quick Links</h3>
 
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      gap: "12px",
-      marginTop: "15px",
-    }}
-  >
-    <Link style={linkStyle} to="/">
-      🏠 Home
-    </Link>
+          {/* Quick Links */}
+          <div>
+            <h3 style={{ color: "#FFD700" }}>Quick Links</h3>
 
-    <Link style={linkStyle} to="/about">
-      👨 About
-    </Link>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "12px",
+                marginTop: "15px",
+              }}
+            >
+              <Link style={linkStyle} to="/">
+                🏠 Home
+              </Link>
 
-    <Link style={linkStyle} to="/leaderboard">
-      🏆 Leaderboard
-    </Link>
-  </div>
-</div>
+              <Link style={linkStyle} to="/about">
+                👨 About
+              </Link>
 
+              <Link style={linkStyle} to="/leaderboard">
+                🏆 Leaderboard
+              </Link>
+            </div>
+          </div>
 
           {/* Legal */}
           <div>
@@ -96,7 +101,13 @@ function Footer() {
           <div>
             <h3 style={{ color: "#FFD700" }}>Contact</h3>
 
-            <p style={{ color: "#CBD5E1", lineHeight: "2", marginTop: "15px" }}>
+            <p
+              style={{
+                color: "#CBD5E1",
+                lineHeight: "2",
+                marginTop: "15px",
+              }}
+            >
               📧 nabakishorebehera57@gmail.com
               <br />
               📍 Mitrapur, Balasore,
@@ -136,3 +147,4 @@ const linkStyle = {
 };
 
 export default Footer;
+
