@@ -1,4 +1,6 @@
-import { Routes, Route } from "react-router-dom";
+
+import { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -18,13 +20,32 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CourseQuiz from "./pages/CourseQuiz";
 
+/* =========================
+   SCROLL TO TOP
+   ========================= */
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <>
       {/* =========================
           NAVBAR
           ========================= */}
-      <Navbar />
+
+      <ScrollToTop />
 
       <Routes>
 
@@ -67,7 +88,6 @@ function App() {
           element={<Contact />}
         />
 
-
         {/* =========================
             PROTECTED DAILY QUIZ
             ========================= */}
@@ -80,7 +100,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
 
         {/* =========================
             RESULT
@@ -95,7 +114,6 @@ function App() {
           }
         />
 
-
         {/* =========================
             DASHBOARD
             ========================= */}
@@ -108,7 +126,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
 
         {/* =========================
             LEADERBOARD
@@ -123,7 +140,6 @@ function App() {
           }
         />
 
-
         {/* =========================
             ALL COURSES
             ========================= */}
@@ -136,7 +152,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
 
         {/* =========================
             SPECIFIC COURSE
@@ -163,3 +178,4 @@ function App() {
 }
 
 export default App;
+
