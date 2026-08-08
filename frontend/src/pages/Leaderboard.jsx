@@ -2,421 +2,310 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Leaderboard.css";
 
-
 function Leaderboard() {
-
   const [players, setPlayers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
+  // =========================================================
+  // API CONFIGURATION
+  // =========================================================
 
+  const API_URL =
+    import.meta.env.VITE_API_URL ||
+    "https://quizmaster-qsjk.onrender.com";
+
+  // =========================================================
+  // FETCH LEADERBOARD
+  // =========================================================
 
   const fetchLeaderboard = async () => {
-
     try {
-
       setLoading(true);
-
-      const response = await axios.get(
-        "http://localhost:5000/api/leaderboard"
-      );
-
-
-      if(response.data && Array.isArray(response.data)){
-        setPlayers(response.data);
-      }
-      else if(response.data.players){
-        setPlayers(response.data.players);
-      }
-      else{
-        setPlayers([]);
-      }
-
-
       setError("");
 
-    }
-    catch(err){
+      const baseURL = API_URL.trim().replace(/\/+$/, "");
 
-      console.log(err);
+      const endpoint = `${baseURL}/api/quiz/leaderboard`;
+
+      console.log("🏆 Leaderboard API:", endpoint);
+
+      const response = await axios.get(endpoint);
+
+      console.log("🏆 Leaderboard response:", response.data);
+
+      // -------------------------------------------------------
+      // SUPPORT DIFFERENT RESPONSE FORMATS
+      // -------------------------------------------------------
+
+      let leaderboardData = [];
+
+      if (Array.isArray(response.data)) {
+        leaderboardData = response.data;
+      } else if (Array.isArray(response.data?.leaderboard)) {
+        leaderboardData = response.data.leaderboard;
+      } else if (Array.isArray(response.data?.players)) {
+        leaderboardData = response.data.players;
+      } else if (Array.isArray(response.data?.data)) {
+        leaderboardData = response.data.data;
+      }
+
+      // -------------------------------------------------------
+      // NORMALIZE DATA
+      // -------------------------------------------------------
+
+      const normalizedPlayers = leaderboardData.map((player, index) => ({
+        ...player,
+
+        name:
+          player.name ||
+          player.username ||
+          player.user?.name ||
+          "Anonymous",
+
+        score:
+          player.score ??
+          player.totalScore ??
+          player.points ??
+          0,
+
+        accuracy:
+          player.accuracy ??
+          player.accuracyPercentage ??
+          0,
+
+        rank:
+          player.rank ??
+          index + 1,
+      }));
+
+      // Highest score first
+      normalizedPlayers.sort(
+        (a, b) => Number(b.score) - Number(a.score)
+      );
+
+      setPlayers(normalizedPlayers);
+    } catch (err) {
+      console.error("❌ Leaderboard error:", err);
 
       setError(
-        "Leaderboard data load nahi ho paya"
+        err?.response?.data?.message ||
+          "Leaderboard data load nahi ho paya."
       );
 
       setPlayers([]);
-
-    }
-    finally{
-
+    } finally {
       setLoading(false);
-
     }
-
   };
 
+  // =========================================================
+  // INITIAL LOAD + AUTO REFRESH
+  // =========================================================
 
-
-
-  useEffect(()=>{
-
-
+  useEffect(() => {
     fetchLeaderboard();
 
-
-    const timer = setInterval(()=>{
-
+    const timer = setInterval(() => {
       fetchLeaderboard();
+    }, 30000);
 
-    },30000);
+    return () => clearInterval(timer);
+  }, []);
 
+  // =========================================================
+  // MEDAL
+  // =========================================================
 
-
-    return ()=>clearInterval(timer);
-
-
-
-  },[]);
-
-
-
-
-
-  const topThree = players.slice(0,3);
-
-
-  const remainingPlayers = players.slice(3);
-
-
-
-
-
-  const getMedal = (index)=>{
-
-
-    if(index===0)
-      return "🥇";
-
-
-    if(index===1)
-      return "🥈";
-
-
-    if(index===2)
-      return "🥉";
-
+  const getMedal = (index) => {
+    if (index === 0) return "🥇";
+    if (index === 1) return "🥈";
+    if (index === 2) return "🥉";
 
     return "";
-
   };
 
-
-
-
+  // =========================================================
+  // UI
+  // =========================================================
 
   return (
+    <main className="leaderboard-page">
 
-<div className="leaderboard-page">
+      {/* HEADER */}
+      <section className="leaderboard-header">
 
+        <div className="leaderboard-badge">
+          🏆 QUIZMASTER LEADERBOARD
+        </div>
 
-<div className="leaderboard-header">
+        <h1>
+          Today's Top
+          <span> Players</span>
+        </h1>
 
-<h1>
-🏆 QuizMaster Leaderboard
-</h1>
+        <p>
+          Compete with other learners and see who is
+          leading today's quiz.
+        </p>
 
+        <button
+          className="refresh-btn"
+          onClick={fetchLeaderboard}
+          disabled={loading}
+        >
+          {loading ? "⏳ Loading..." : "🔄 Refresh Leaderboard"}
+        </button>
 
-<p>
-Today's Top Performers
-</p>
+      </section>
 
+      {/* LOADING */}
+      {loading && (
+        <section className="leaderboard-status">
+          <div className="leaderboard-spinner"></div>
 
-<button
-className="refresh-btn"
-onClick={fetchLeaderboard}
->
-🔄 Refresh
-</button>
+          <h3>Loading leaderboard...</h3>
 
+          <p>
+            Please wait while we fetch today's rankings.
+          </p>
+        </section>
+      )}
 
-</div>
+      {/* ERROR */}
+      {!loading && error && (
+        <section className="leaderboard-status error-state">
 
+          <div className="status-icon">
+            ⚠️
+          </div>
 
+          <h3>Unable to load leaderboard</h3>
 
+          <p>{error}</p>
 
+          <button
+            className="retry-btn"
+            onClick={fetchLeaderboard}
+          >
+            🔄 Try Again
+          </button>
 
-{
-loading &&
+        </section>
+      )}
 
-<div className="loading-card">
+      {/* EMPTY */}
+      {!loading && !error && players.length === 0 && (
+        <section className="leaderboard-status">
 
-<h2>
-Loading leaderboard...
-</h2>
+          <div className="status-icon">
+            🏆
+          </div>
 
-</div>
+          <h3>No participants today</h3>
 
+          <p>
+            Be the first player to complete today's quiz!
+          </p>
+
+        </section>
+      )}
+
+      {/* LEADERBOARD */}
+      {!loading && !error && players.length > 0 && (
+        <section className="leaderboard-container">
+
+          {/* TOP THREE */}
+          <div className="top-three">
+
+            {players.slice(0, 3).map((player, index) => (
+              <div
+                className={`top-player top-player-${index + 1}`}
+                key={player._id || player.id || index}
+              >
+
+                <div className="player-medal">
+                  {getMedal(index)}
+                </div>
+
+                <div className="player-avatar">
+                  {(player.name || "A")
+                    .charAt(0)
+                    .toUpperCase()}
+                </div>
+
+                <h2>
+                  {player.name}
+                </h2>
+
+                <div className="player-score">
+                  {player.score}
+                  <span> points</span>
+                </div>
+
+                <div className="player-rank">
+                  Rank #{index + 1}
+                </div>
+
+              </div>
+            ))}
+
+          </div>
+
+          {/* ALL PLAYERS */}
+          <div className="leaderboard-list">
+
+            <div className="leaderboard-list-header">
+              <span>Rank</span>
+              <span>Player</span>
+              <span>Score</span>
+              <span>Accuracy</span>
+            </div>
+
+            {players.map((player, index) => (
+              <div
+                className="leaderboard-row"
+                key={player._id || player.id || index}
+              >
+
+                <div className="rank-number">
+                  #{index + 1}
+                </div>
+
+                <div className="player-info">
+
+                  <div className="small-avatar">
+                    {(player.name || "A")
+                      .charAt(0)
+                      .toUpperCase()}
+                  </div>
+
+                  <div>
+                    <strong>
+                      {player.name}
+                    </strong>
+                  </div>
+
+                </div>
+
+                <div className="score-value">
+                  {player.score}
+                </div>
+
+                <div className="accuracy-value">
+                  {player.accuracy}%
+                </div>
+
+              </div>
+            ))}
+
+          </div>
+
+        </section>
+      )}
+
+    </main>
+  );
 }
-
-
-
-
-
-
-{
-error &&
-
-<div className="error-card">
-
-<h2>
-⚠️ {error}
-</h2>
-
-</div>
-
-}
-
-
-
-
-
-
-{
-!loading &&
-players.length===0 &&
-
-
-<div className="empty-card">
-
-
-<h2>
-🎯 No Participants Today
-</h2>
-
-
-<p>
-Be the first one to attempt today's quiz.
-</p>
-
-
-</div>
-
-
-}
-
-
-
-
-
-
-{
-!loading &&
-players.length>0 &&
-
-
-<>
-
-
-<div className="podium-section">
-
-
-{
-topThree.map((player,index)=>(
-
-
-<div
-className={`player-card rank-${index+1}`}
-key={player._id || index}
->
-
-
-<div className="medal">
-
-{getMedal(index)}
-
-</div>
-
-
-
-<h2>
-
-{player.name || "Unknown Player"}
-
-</h2>
-
-
-
-<h3>
-
-{player.score || 0}
-
-<span>
- points
-</span>
-
-</h3>
-
-
-
-<p>
-
-Rank #{index+1}
-
-</p>
-
-
-</div>
-
-
-))
-
-}
-
-
-
-</div>
-
-
-
-
-
-<div className="participants-section">
-
-
-<h2>
-👥 Today's Participants
-</h2>
-
-
-
-<div className="table-card">
-
-
-<table>
-
-
-<thead>
-
-<tr>
-
-<th>
-Rank
-</th>
-
-
-<th>
-Player
-</th>
-
-
-<th>
-Score
-</th>
-
-
-<th>
-Accuracy
-</th>
-
-
-</tr>
-
-
-</thead>
-
-
-
-<tbody>
-
-
-{
-players.map((player,index)=>(
-
-
-<tr key={player._id || index}>
-
-
-<td>
-
-#{index+1}
-
-</td>
-
-
-<td>
-
-<div className="player-name">
-
-{getMedal(index)}
-
-&nbsp;
-
-{player.name || "Anonymous"}
-
-</div>
-
-</td>
-
-
-
-<td>
-
-<strong>
-
-{player.score || 0}
-
-</strong>
-
-</td>
-
-
-
-
-<td>
-
-{player.accuracy || "0"}%
-
-</td>
-
-
-
-</tr>
-
-
-
-))
-
-}
-
-
-</tbody>
-
-
-</table>
-
-
-</div>
-
-
-</div>
-
-
-
-</>
-
-
-
-}
-
-
-
-</div>
-
-
-);
-
-
-}
-
 
 export default Leaderboard;
