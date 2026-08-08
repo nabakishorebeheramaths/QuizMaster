@@ -1,558 +1,842 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-
-body{
-
-    background:
+body {
+  background:
     linear-gradient(
-        135deg,
-        #eef4ff,
-        #f8f9ff,
-        #ffffff
+      135deg,
+      #eef4ff,
+      #f8f9ff,
+      #ffffff
     );
 
-    overflow-x:hidden;
-
+  overflow-x: hidden;
 }
 
 
+/* =========================================================
+   HERO
+========================================================= */
 
-.hero{
+.hero {
+  min-height: 100vh;
 
-    min-height:100vh;
+  display: flex;
 
-    display:flex;
+  justify-content: space-between;
+  align-items: center;
 
-    justify-content:space-between;
+  padding: 120px 8% 60px;
 
-    align-items:center;
-
-    padding:120px 8% 60px;
-
-    gap:60px;
-
+  gap: 60px;
 }
 
 
+/* =========================================================
+   LEFT SIDE
+========================================================= */
 
+.hero-left {
+  flex: 1;
 
-.hero-left{
-
-    flex:1;
-
-    animation:
+  animation:
     slideLeft 1s ease;
-
 }
 
 
+/* =========================================================
+   BADGE
+========================================================= */
 
+.badge {
+  display: inline-block;
 
+  padding: 10px 22px;
 
-.badge{
+  border-radius: 40px;
 
-    display:inline-block;
+  background: #e0e7ff;
 
-    padding:10px 22px;
+  color: #2563eb;
 
-    border-radius:40px;
+  font-weight: 700;
 
-    background:#e0e7ff;
-
-    color:#2563eb;
-
-    font-weight:700;
-
-    margin-bottom:25px;
-
+  margin-bottom: 25px;
 }
 
 
+/* =========================================================
+   MAIN HEADING
+========================================================= */
 
+.hero-left h1 {
+  font-size: 64px;
 
+  line-height: 1.1;
 
-.hero-left h1{
+  color: #111827;
 
-    font-size:64px;
+  margin-bottom: 20px;
 
-    line-height:1.1;
-
-    color:#111827;
-
-    margin-bottom:20px;
-
+  font-weight: 800;
 }
 
 
+/* =========================================================
+   PREMIUM RAINBOW TEXT
+   ONLY LETTERS — NOT BACKGROUND
+========================================================= */
 
-
-
-.hero-left h1 span{
-
-   .gradient-text {
-  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 50%, #A855F7 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-}
-
-
-
-
-
-.hero-left p{
-
-    font-size:20px;
-
-    color:#64748b;
-
-    line-height:1.8;
-
-    max-width:600px;
-
-}
-
-
-
-
-
-
-.creator{
-
-    margin-top:45px;
-
-    font-size:22px;
-
-    font-weight:600;
-
-    color:#334155;
-
-}
-
-
-
-
-
-.creator span{
-
-
-    font-weight:800;
-
-
-    background:
-
+.hero-left h1 span {
+  background:
     linear-gradient(
-        90deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet
+      90deg,
+      #ff0080,
+      #ff8a00,
+      #ffe600,
+      #00e676,
+      #00c8ff,
+      #6366f1,
+      #a855f7,
+      #ff0080
     );
 
+  background-size: 400% auto;
 
-   .gradient-text {
-  background: linear-gradient(135deg, #38BDF8 0%, #6366F1 50%, #A855F7 100%);
   background-clip: text;
   -webkit-background-clip: text;
+
   color: transparent;
   -webkit-text-fill-color: transparent;
-}
 
-
-    animation:
+  animation:
     rainbow 6s linear infinite;
-
-
 }
 
 
+/* =========================================================
+   DESCRIPTION
+========================================================= */
 
+.hero-left p {
+  font-size: 20px;
 
+  color: #64748b;
 
-@keyframes rainbow{
+  line-height: 1.8;
 
-
-    0%{
-
-        background-position:0%;
-
-    }
-
-
-    100%{
-
-        background-position:400%;
-
-    }
-
-
+  max-width: 600px;
 }
 
 
+/* =========================================================
+   CREATOR
+========================================================= */
+
+.creator {
+  margin-top: 45px;
+
+  font-size: 22px;
+
+  font-weight: 600;
+
+  color: #334155;
+}
 
 
+/* =========================================================
+   CREATOR NAME
+   PREMIUM RAINBOW LETTERS ONLY
+========================================================= */
+
+.creator span {
+  display: inline-block;
+
+  font-weight: 800;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff0080,
+      #ff8a00,
+      #ffe600,
+      #00e676,
+      #00c8ff,
+      #6366f1,
+      #a855f7,
+      #ff0080
+    );
+
+  background-size: 400% auto;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation:
+    rainbow 6s linear infinite;
+}
 
 
-.hero-right{
+/* =========================================================
+   RAINBOW ANIMATION
+========================================================= */
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 400% center;
+  }
+}
 
 
-    flex:1;
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
 
-    display:flex;
+.hero-right {
+  flex: 1;
 
-    justify-content:center;
+  display: flex;
 
+  justify-content: center;
 
-    animation:
-
+  animation:
     slideRight 1s ease;
-
-
 }
 
 
+/* =========================================================
+   CARD
+========================================================= */
 
+.card {
+  width: 380px;
 
+  padding: 45px 35px;
 
+  border-radius: 28px;
 
+  background:
+    rgba(255, 255, 255, 0.75);
 
-.card{
+  backdrop-filter: blur(18px);
 
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.12);
 
-    width:380px;
+  text-align: center;
 
-
-    padding:45px 35px;
-
-
-    border-radius:28px;
-
-
-    background:
-
-    rgba(255,255,255,0.75);
-
-
-
-    backdrop-filter:
-
-    blur(18px);
-
-
-
-    box-shadow:
-
-    0 25px 60px rgba(0,0,0,0.12);
-
-
-
-    text-align:center;
-
-
-
-    transition:.35s;
-
-
+  transition: 0.35s;
 }
 
-
-
-
-
-.card:hover{
-
-
-    transform:
-
+.card:hover {
+  transform:
     translateY(-12px);
 
-
-    box-shadow:
-
-    0 35px 80px rgba(37,99,235,.25);
-
-
+  box-shadow:
+    0 35px 80px rgba(37, 99, 235, 0.25);
 }
 
 
+/* =========================================================
+   EMOJI
+========================================================= */
 
+.emoji {
+  width: 120px;
 
+  height: 120px;
 
+  margin: auto;
 
+  border-radius: 50%;
 
-.emoji{
+  display: flex;
 
+  align-items: center;
 
-    width:120px;
+  justify-content: center;
 
+  font-size: 65px;
 
-    height:120px;
-
-
-    margin:auto;
-
-
-
-    border-radius:50%;
-
-
-
-    display:flex;
-
-
-    align-items:center;
-
-
-    justify-content:center;
-
-
-
-    font-size:65px;
-
-
-
-    background:
-
-
+  background:
     linear-gradient(
+      135deg,
+      #dbeafe,
+      #ede9fe
+    );
+}
 
-        135deg,
 
-        #dbeafe,
+/* =========================================================
+   CARD TITLE
+========================================================= */
 
-        #ede9fe
+.card h2 {
+  margin-top: 25px;
 
+  color: #111827;
+
+  font-size: 32px;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.card p {
+  margin-top: 15px;
+
+  color: #64748b;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   INFO
+========================================================= */
+
+.info {
+  display: flex;
+
+  justify-content: space-around;
+
+  margin-top: 35px;
+}
+
+.info h3 {
+  color: #2563eb;
+
+  font-size: 32px;
+}
+
+.info small {
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   LEFT ANIMATION
+========================================================= */
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+}
+
+
+/* =========================================================
+   RIGHT ANIMATION
+========================================================= */
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(60px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding-top: 110px;
+
+    gap: 40px;
+  }
+
+
+  .hero-left h1 {
+    font-size: 42px;
+  }
+
+
+  .hero-left p {
+    font-size: 17px;
+
+    margin: auto;
+  }
+
+
+  .card {
+    width: 100%;
+
+    max-width: 360px;
+  }
+
+
+  .creator {
+    font-size: 18px;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background:
+    linear-gradient(
+      135deg,
+      #eef4ff,
+      #f8f9ff,
+      #ffffff
     );
 
-
+  overflow-x: hidden;
 }
 
 
+/* =========================================================
+   HERO
+========================================================= */
 
+.hero {
+  min-height: 100vh;
 
+  display: flex;
 
-.card h2{
+  justify-content: space-between;
+  align-items: center;
 
+  padding: 120px 8% 60px;
 
-    margin-top:25px;
-
-
-    color:#111827;
-
-
-    font-size:32px;
-
-
+  gap: 60px;
 }
 
 
+/* =========================================================
+   LEFT SIDE
+========================================================= */
 
+.hero-left {
+  flex: 1;
 
-
-.card p{
-
-
-    margin-top:15px;
-
-
-    color:#64748b;
-
-
-    line-height:1.6;
-
-
+  animation:
+    slideLeft 1s ease;
 }
 
 
+/* =========================================================
+   BADGE
+========================================================= */
 
+.badge {
+  display: inline-block;
 
+  padding: 10px 22px;
 
+  border-radius: 40px;
 
-.info{
+  background: #e0e7ff;
 
+  color: #2563eb;
 
-    display:flex;
+  font-weight: 700;
 
-
-    justify-content:space-around;
-
-
-    margin-top:35px;
-
-
+  margin-bottom: 25px;
 }
 
 
+/* =========================================================
+   MAIN HEADING
+========================================================= */
 
+.hero-left h1 {
+  font-size: 64px;
 
+  line-height: 1.1;
 
+  color: #111827;
 
-.info h3{
+  margin-bottom: 20px;
 
-
-    color:#2563eb;
-
-
-    font-size:32px;
-
-
+  font-weight: 800;
 }
 
 
+/* =========================================================
+   PREMIUM RAINBOW TEXT
+   ONLY LETTERS — NOT BACKGROUND
+========================================================= */
 
+.hero-left h1 span {
+  background:
+    linear-gradient(
+      90deg,
+      #ff0080,
+      #ff8a00,
+      #ffe600,
+      #00e676,
+      #00c8ff,
+      #6366f1,
+      #a855f7,
+      #ff0080
+    );
 
+  background-size: 400% auto;
 
+  background-clip: text;
+  -webkit-background-clip: text;
 
-.info small{
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 
-
-    color:#64748b;
-
-
-    font-size:15px;
-
-
+  animation:
+    rainbow 6s linear infinite;
 }
 
 
+/* =========================================================
+   DESCRIPTION
+========================================================= */
 
+.hero-left p {
+  font-size: 20px;
 
+  color: #64748b;
 
+  line-height: 1.8;
 
-@keyframes slideLeft{
-
-
-    from{
-
-        opacity:0;
-
-        transform:translateX(-60px);
-
-    }
-
-
-    to{
-
-        opacity:1;
-
-        transform:translateX(0);
-
-    }
-
-
+  max-width: 600px;
 }
 
 
+/* =========================================================
+   CREATOR
+========================================================= */
 
+.creator {
+  margin-top: 45px;
 
+  font-size: 22px;
 
+  font-weight: 600;
 
-@keyframes slideRight{
-
-
-    from{
-
-        opacity:0;
-
-        transform:translateX(60px);
-
-    }
-
-
-    to{
-
-        opacity:1;
-
-        transform:translateX(0);
-
-    }
-
-
+  color: #334155;
 }
 
 
+/* =========================================================
+   CREATOR NAME
+   PREMIUM RAINBOW LETTERS ONLY
+========================================================= */
+
+.creator span {
+  display: inline-block;
+
+  font-weight: 800;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff0080,
+      #ff8a00,
+      #ffe600,
+      #00e676,
+      #00c8ff,
+      #6366f1,
+      #a855f7,
+      #ff0080
+    );
+
+  background-size: 400% auto;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation:
+    rainbow 6s linear infinite;
+}
 
 
+/* =========================================================
+   RAINBOW ANIMATION
+========================================================= */
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 400% center;
+  }
+}
 
 
-@media(max-width:900px){
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.hero-right {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+
+  animation:
+    slideRight 1s ease;
+}
 
 
-    .hero{
+/* =========================================================
+   CARD
+========================================================= */
+
+.card {
+  width: 380px;
+
+  padding: 45px 35px;
+
+  border-radius: 28px;
+
+  background:
+    rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.12);
+
+  text-align: center;
+
+  transition: 0.35s;
+}
+
+.card:hover {
+  transform:
+    translateY(-12px);
+
+  box-shadow:
+    0 35px 80px rgba(37, 99, 235, 0.25);
+}
 
 
-        flex-direction:column;
+/* =========================================================
+   EMOJI
+========================================================= */
 
-        text-align:center;
+.emoji {
+  width: 120px;
 
-        padding-top:110px;
+  height: 120px;
 
+  margin: auto;
 
-    }
+  border-radius: 50%;
 
+  display: flex;
 
+  align-items: center;
 
+  justify-content: center;
 
-    .hero-left h1{
+  font-size: 65px;
 
-
-        font-size:42px;
-
-
-    }
-
-
-
-
-
-    .hero-left p{
-
-
-        font-size:17px;
-
-        margin:auto;
+  background:
+    linear-gradient(
+      135deg,
+      #dbeafe,
+      #ede9fe
+    );
+}
 
 
-    }
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.card h2 {
+  margin-top: 25px;
+
+  color: #111827;
+
+  font-size: 32px;
+}
 
 
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.card p {
+  margin-top: 15px;
+
+  color: #64748b;
+
+  line-height: 1.6;
+}
 
 
+/* =========================================================
+   INFO
+========================================================= */
 
-    .card{
+.info {
+  display: flex;
+
+  justify-content: space-around;
+
+  margin-top: 35px;
+}
+
+.info h3 {
+  color: #2563eb;
+
+  font-size: 32px;
+}
+
+.info small {
+  color: #64748b;
+
+  font-size: 15px;
+}
 
 
-        width:100%;
+/* =========================================================
+   LEFT ANIMATION
+========================================================= */
 
-        max-width:360px;
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+}
 
 
-    }
+/* =========================================================
+   RIGHT ANIMATION
+========================================================= */
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(60px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+}
 
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding-top: 110px;
+
+    gap: 40px;
+  }
 
 
-
-    .creator{
-
-
-        font-size:18px;
+  .hero-left h1 {
+    font-size: 42px;
+  }
 
 
-    }
+  .hero-left p {
+    font-size: 17px;
+
+    margin: auto;
+  }
 
 
+  .card {
+    width: 100%;
+
+    max-width: 360px;
+  }
+
+
+  .creator {
+    font-size: 18px;
+  }
 }
