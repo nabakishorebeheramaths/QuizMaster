@@ -14,6 +14,7 @@ router.post("/", async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
+    // Required fields
     if (!name || !email || !message) {
       return res.status(400).json({
         success: false,
@@ -25,6 +26,7 @@ router.post("/", async (req, res) => {
     const cleanEmail = String(email).trim();
     const cleanMessage = String(message).trim();
 
+    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(cleanEmail)) {
@@ -55,6 +57,7 @@ router.post("/", async (req, res) => {
       });
     }
 
+    // Create Brevo email
     const sendSmtpEmail = new brevo.SendSmtpEmail();
 
     sendSmtpEmail.subject =
@@ -128,11 +131,13 @@ router.post("/", async (req, res) => {
       </div>
     `;
 
+    // Verified sender
     sendSmtpEmail.sender = {
       name: "QuizMaster",
       email: process.env.SMTP_FROM,
     };
 
+    // Receiver
     sendSmtpEmail.to = [
       {
         email: process.env.CONTACT_RECEIVER,
@@ -140,11 +145,13 @@ router.post("/", async (req, res) => {
       },
     ];
 
+    // Reply directly to visitor
     sendSmtpEmail.replyTo = {
       email: cleanEmail,
       name: cleanName,
     };
 
+    // Send through Brevo API
     const result = await apiInstance.sendTransacEmail(
       sendSmtpEmail
     );
@@ -160,7 +167,10 @@ router.post("/", async (req, res) => {
   } catch (error) {
     console.error(
       "❌ Brevo Contact Error:",
-      error?.response?.body || error?.message || error
+      error?.response?.body ||
+        error?.body ||
+        error?.message ||
+        error
     );
 
     return res.status(500).json({
@@ -171,6 +181,7 @@ router.post("/", async (req, res) => {
   }
 });
 
+// Escape HTML to prevent injected HTML in emails
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
