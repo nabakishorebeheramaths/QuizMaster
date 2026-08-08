@@ -37,7 +37,6 @@ function Contact() {
       [name]: value,
     }));
 
-    // Remove previous alert while typing
     if (status.message) {
       setStatus({
         type: "",
@@ -102,7 +101,6 @@ function Contact() {
         type: "error",
         message: validationError,
       });
-
       return;
     }
 
@@ -120,13 +118,25 @@ function Contact() {
         message: formData.message.trim(),
       };
 
-      // Remove trailing slash from API URL
-      const baseURL = API_URL.replace(/\/+$/, "");
+      // =====================================================
+      // NORMALIZE API URL
+      // =====================================================
+
+      let baseURL = API_URL.trim().replace(/\/+$/, "");
+
+      // Prevent /api/api/contact
+      if (baseURL.endsWith("/api")) {
+        baseURL = baseURL.slice(0, -4);
+      }
 
       const endpoint = `${baseURL}/api/contact`;
 
       console.log("📩 Contact API URL:", endpoint);
       console.log("📦 Contact payload:", cleanData);
+
+      // =====================================================
+      // SEND REQUEST
+      // =====================================================
 
       const response = await fetch(endpoint, {
         method: "POST",
@@ -139,7 +149,10 @@ function Contact() {
         body: JSON.stringify(cleanData),
       });
 
-      console.log("📡 Contact response status:", response.status);
+      console.log(
+        "📡 Contact response status:",
+        response.status
+      );
 
       // =====================================================
       // READ RESPONSE
@@ -189,7 +202,6 @@ function Contact() {
           "Message sent successfully. We will get back to you soon.",
       });
 
-      // Clear form
       setFormData({
         name: "",
         email: "",
@@ -198,16 +210,11 @@ function Contact() {
     } catch (error) {
       console.error("❌ Contact form error:", error);
 
-      let errorMessage =
-        "Unable to send your message right now. Please try again later.";
-
-      if (error?.message) {
-        errorMessage = error.message;
-      }
-
       setStatus({
         type: "error",
-        message: errorMessage,
+        message:
+          error?.message ||
+          "Unable to send your message right now. Please try again later.",
       });
     } finally {
       setLoading(false);
@@ -221,7 +228,9 @@ function Contact() {
   return (
     <main className="contact-page">
 
-      {/* Background Effects */}
+      {/* =====================================================
+          BACKGROUND
+      ===================================================== */}
 
       <div className="contact-bg-orb contact-orb-one"></div>
 
@@ -229,23 +238,37 @@ function Contact() {
 
       <div className="contact-grid-bg"></div>
 
+      {/* =====================================================
+          MAIN CONTACT WRAPPER
+      ===================================================== */}
+
       <section className="contact-wrapper">
 
-        {/* =================================================
+        {/* ===================================================
             LEFT SIDE
-        ================================================= */}
+        =================================================== */}
 
         <div className="contact-left">
 
+          {/* Badge */}
+
           <div className="contact-badge">
             <span className="badge-dot"></span>
+
             We'd Love To Hear From You
           </div>
 
+          {/* Title */}
+
           <h1 className="contact-title">
             Let's Build Something
-            <span>Amazing Together.</span>
+
+            <span>
+              Amazing Together.
+            </span>
           </h1>
+
+          {/* Description */}
 
           <p className="contact-description">
             Have a question, feedback, suggestion, or just want
@@ -253,7 +276,9 @@ function Contact() {
             you.
           </p>
 
-          {/* Stats */}
+          {/* =================================================
+              MINI STATS
+          ================================================= */}
 
           <div className="contact-mini-stats">
 
@@ -274,9 +299,13 @@ function Contact() {
 
           </div>
 
-          {/* Contact Cards */}
+          {/* =================================================
+              CONTACT INFO
+          ================================================= */}
 
           <div className="contact-info-list">
+
+            {/* Email */}
 
             <div className="contact-info-card">
 
@@ -287,7 +316,9 @@ function Contact() {
               <div>
                 <span>EMAIL US</span>
 
-                <h3>Contact Support</h3>
+                <h3>
+                  Contact Support
+                </h3>
 
                 <p>
                   Send us your questions or feedback
@@ -295,6 +326,8 @@ function Contact() {
               </div>
 
             </div>
+
+            {/* Idea */}
 
             <div className="contact-info-card">
 
@@ -305,7 +338,9 @@ function Contact() {
               <div>
                 <span>HAVE AN IDEA?</span>
 
-                <h3>Share Your Ideas</h3>
+                <h3>
+                  Share Your Ideas
+                </h3>
 
                 <p>
                   Help us make QuizMaster better
@@ -313,6 +348,8 @@ function Contact() {
               </div>
 
             </div>
+
+            {/* Support */}
 
             <div className="contact-info-card">
 
@@ -323,7 +360,9 @@ function Contact() {
               <div>
                 <span>QUICK SUPPORT</span>
 
-                <h3>We're Here To Help</h3>
+                <h3>
+                  We're Here To Help
+                </h3>
 
                 <p>
                   Your feedback matters to us
@@ -336,21 +375,28 @@ function Contact() {
 
           {/* Back Home */}
 
-          <Link to="/" className="back-home-link">
+          <Link
+            to="/"
+            className="back-home-link"
+          >
             ← Back to QuizMaster
           </Link>
 
         </div>
 
-        {/* =================================================
+        {/* ===================================================
             RIGHT SIDE
-        ================================================= */}
+        =================================================== */}
 
         <div className="contact-right">
 
+          {/* =================================================
+              FORM CARD
+          ================================================= */}
+
           <div className="contact-form-card">
 
-            {/* Header */}
+            {/* Form Header */}
 
             <div className="form-header">
 
@@ -359,24 +405,29 @@ function Contact() {
               </div>
 
               <div>
+                <span>
+                  GET IN TOUCH
+                </span>
 
-                <span>GET IN TOUCH</span>
-
-                <h2>Send us a message</h2>
-
+                <h2>
+                  Send us a message
+                </h2>
               </div>
 
             </div>
+
+            {/* Header Description */}
 
             <p className="form-header-text">
               Fill out the form below and we'll get back to
               you as soon as possible.
             </p>
 
-            {/* Status Alert */}
+            {/* =================================================
+                STATUS ALERT
+            ================================================= */}
 
             {status.message && (
-
               <div
                 className={`contact-alert ${
                   status.type === "success"
@@ -392,13 +443,16 @@ function Contact() {
                     : "!"}
                 </span>
 
-                <span>{status.message}</span>
+                <span>
+                  {status.message}
+                </span>
 
               </div>
-
             )}
 
-            {/* Form */}
+            {/* =================================================
+                CONTACT FORM
+            ================================================= */}
 
             <form
               className="premium-contact-form"
@@ -406,7 +460,9 @@ function Contact() {
               noValidate
             >
 
-              {/* Name */}
+              {/* =================================================
+                  NAME
+              ================================================= */}
 
               <div className="form-field">
 
@@ -436,7 +492,9 @@ function Contact() {
 
               </div>
 
-              {/* Email */}
+              {/* =================================================
+                  EMAIL
+              ================================================= */}
 
               <div className="form-field">
 
@@ -466,7 +524,9 @@ function Contact() {
 
               </div>
 
-              {/* Message */}
+              {/* =================================================
+                  MESSAGE
+              ================================================= */}
 
               <div className="form-field">
 
@@ -503,7 +563,9 @@ function Contact() {
 
               </div>
 
-              {/* Submit */}
+              {/* =================================================
+                  SUBMIT BUTTON
+              ================================================= */}
 
               <button
                 type="submit"
@@ -514,11 +576,13 @@ function Contact() {
                 {loading ? (
                   <>
                     <span className="loading-spinner"></span>
+
                     Sending Message...
                   </>
                 ) : (
                   <>
                     Send Message
+
                     <span className="send-arrow">
                       →
                     </span>
@@ -527,11 +591,15 @@ function Contact() {
 
               </button>
 
-              {/* Security */}
+              {/* =================================================
+                  SECURITY NOTE
+              ================================================= */}
 
               <div className="form-security-note">
 
-                <span>🔒</span>
+                <span>
+                  🔒
+                </span>
 
                 <p>
                   Your information is secure and will only
@@ -544,17 +612,23 @@ function Contact() {
 
           </div>
 
-          {/* Quote */}
+          {/* =================================================
+              QUOTE
+          ================================================= */}
 
           <div className="contact-quote">
 
-            <span>“</span>
+            <span>
+              “
+            </span>
 
             <p>
               Learn faster. Play smarter.
             </p>
 
-            <span>”</span>
+            <span>
+              ”
+            </span>
 
           </div>
 
@@ -562,7 +636,9 @@ function Contact() {
 
       </section>
 
-      {/* Footer */}
+      {/* =====================================================
+          FOOTER
+      ===================================================== */}
 
       <footer className="contact-footer">
 
@@ -581,4 +657,3 @@ function Contact() {
 }
 
 export default Contact;
-
