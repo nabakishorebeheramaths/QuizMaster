@@ -1,33 +1,73 @@
 import dns from "dns";
-import authRoutes from "./routes/authRoutes.js";
+
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 dns.setDefaultResultOrder("ipv4first");
-import questionRoute from "./routes/question.js";
+
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import connectDB from "./config/db.js";
+
+import authRoutes from "./routes/authRoutes.js";
+import questionRoute from "./routes/question.js";
 import quizRoutes from "./routes/quizRoutes.js";
 import dailyQuizRoutes from "./routes/dailyQuizRoutes.js";
-dotenv.config();
+import contactRoutes from "./routes/contactRoutes.js";
 
-console.log("EMAIL_USER:", process.env.EMAIL_USER);
-console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
+import connectDB from "./config/db.js";
+
+dotenv.config();
 
 const app = express();
 
-console.log("URI:", process.env.MONGO_URI);
+/*
+========================================
+DATABASE
+========================================
+*/
+
 connectDB();
 
+/*
+========================================
+MIDDLEWARE
+========================================
+*/
+
 app.use(cors());
+
 app.use(express.json());
+
+/*
+========================================
+API ROUTES
+========================================
+*/
+
 app.use("/api/auth", authRoutes);
+
 app.use("/api/quiz", quizRoutes);
+
 app.use("/api/questions", questionRoute);
+
 app.use("/api/daily-quiz", dailyQuizRoutes);
+
+app.use("/api/contact", contactRoutes);
+
+/*
+========================================
+HEALTH CHECK
+========================================
+*/
+
 app.get("/", (req, res) => {
   res.send("🚀 Daily Quiz Backend is Running...");
 });
+
+/*
+========================================
+SERVER
+========================================
+*/
 
 const PORT = process.env.PORT || 5000;
 
