@@ -1,83 +1,77 @@
 import express from "express";
 import Question from "../models/Question.js";
-import DailyQuiz from "../models/DailyQuiz.js";
 
 const router = express.Router();
 
+// =====================================================
+// GET COURSE / SUBJECT QUESTIONS
+// =====================================================
 
-// Get Today's Quiz
 router.get("/", async (req, res) => {
-
   try {
+    const {
+      courseId,
+      subjectId,
+      quizType,
+    } = req.query;
 
-    const today = new Date().toISOString().split("T")[0];
+    // =================================================
+    // SUBJECT QUIZ
+    // =================================================
 
+    if (quizType === "subject") {
+      if (!courseId || !subjectId) {
+        return res.status(400).json({
+          success: false,
+          message:
+            "courseId and subjectId are required",
+        });
+      }
 
-    // Check today's quiz already exists
-    let dailyQuiz = await DailyQuiz.findOne({
-      date: today
-    }).populate("questions");
-
-
-    // If not exists create new quiz
-    if (!dailyQuiz) {
-
-
-      const randomQuestions = await Question.aggregate([
+      const questions = await Question.aggregate([
         {
-          $sample:{
-            size:30
-          }
-        }
+          $match: {
+            courseId: courseId,
+            subjectId: subjectId,
+          },
+        },
+        {
+          $sample: {
+            size: 30,
+          },
+        },
       ]);
 
-
-      dailyQuiz = await DailyQuiz.create({
-
-        date: today,
-
-        questions: randomQuestions.map(
-          (q)=>q._id
-        )
-
+      return res.status(200).json({
+        success: true,
+        courseId,
+        subjectId,
+        quizType: "subject",
+        count: questions.length,
+        questions,
       });
-
-
-      dailyQuiz = await DailyQuiz.findOne({
-        date: today
-      }).populate("questions");
-
     }
 
+    // =================================================
+    // INVALID REQUEST
+    // =================================================
 
-    res.status(200).json({
-
-      success:true,
-
-      date: dailyQuiz.date,
-
-      status:"LIVE",
-
-      count: dailyQuiz.questions.length,
-
-      questions: dailyQuiz.questions
-
+    return res.status(400).json({
+      success: false,
+      message:
+        "Invalid request. Use quizType=subject.",
     });
+  } catch (error) {
+    console.error(
+      "❌ Subject Question Error:",
+      error.message
+    );
 
-
-  } catch(error){
-
-    res.status(500).json({
-
-      success:false,
-
-      message:error.message
-
+    return res.status(500).json({
+      success: false,
+      message: error.message,
     });
-
   }
-
 });
-
 
 export default router;
