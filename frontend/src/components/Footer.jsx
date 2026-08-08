@@ -64,7 +64,6 @@ function Footer() {
     </Link>
   </div>
 </div>
-```
 
 
           {/* Legal */}
