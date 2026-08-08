@@ -492,21 +492,21 @@ function CourseQuiz() {
         >
           ← All Courses
         </button>
+<div className="course-information">
+  <h2>Welcome, Nabakishore Behera! 🎓</h2>
 
-        <div className="course-information">
-          <h2>Course Not Found</h2>
+  <p>
+    All the best for your career! 🚀
+    Keep learning, keep practicing and keep improving with QuizMaster.
+  </p>
 
-          <p>
-            Sorry, the requested course does not exist in QuizMaster.
-          </p>
-
-          <button
-            className="primary-button"
-            onClick={() => navigate("/course")}
-          >
-            Browse All Courses
-          </button>
-        </div>
+  <button
+    className="primary-button"
+    onClick={() => navigate("/course")}
+  >
+    Browse All Courses →
+  </button>
+</div>
       </div>
     );
   }
@@ -602,7 +602,7 @@ function CourseQuiz() {
                 <div className="subject-icon">
                   {subject.icon}
                 </div>
-
+ 
                 <h3>{subject.name}</h3>
 
                 <p>{subject.description}</p>
