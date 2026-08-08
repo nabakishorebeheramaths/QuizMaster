@@ -2,6 +2,9 @@ import { Routes, Route } from "react-router-dom";
 
 import ProtectedRoute from "./components/ProtectedRoute";
 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -15,22 +18,34 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CourseQuiz from "./pages/CourseQuiz";
 
-import Footer from "./components/Footer";
-
 function App() {
   return (
     <>
+      {/* =========================
+          NAVBAR
+          ========================= */}
+      <Navbar />
+
       <Routes>
 
         {/* =========================
             PUBLIC ROUTES
-        ========================= */}
+            ========================= */}
 
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/login"
+          element={<Login />}
+        />
 
-        <Route path="/signup" element={<Signup />} />
+        <Route
+          path="/signup"
+          element={<Signup />}
+        />
 
         <Route
           path="/privacy-policy"
@@ -55,7 +70,7 @@ function App() {
 
         {/* =========================
             PROTECTED DAILY QUIZ
-        ========================= */}
+            ========================= */}
 
         <Route
           path="/quiz"
@@ -69,7 +84,7 @@ function App() {
 
         {/* =========================
             RESULT
-        ========================= */}
+            ========================= */}
 
         <Route
           path="/result"
@@ -83,7 +98,7 @@ function App() {
 
         {/* =========================
             DASHBOARD
-        ========================= */}
+            ========================= */}
 
         <Route
           path="/dashboard"
@@ -97,7 +112,7 @@ function App() {
 
         {/* =========================
             LEADERBOARD
-        ========================= */}
+            ========================= */}
 
         <Route
           path="/leaderboard"
@@ -111,10 +126,7 @@ function App() {
 
         {/* =========================
             ALL COURSES
-        =========================
-            Example:
-            /course
-        ========================= */}
+            ========================= */}
 
         <Route
           path="/course"
@@ -128,14 +140,7 @@ function App() {
 
         {/* =========================
             SPECIFIC COURSE
-        =========================
-            Examples:
-            /course/jee
-            /course/neet
-            /course/btech
-            /course/class-10
-            /course/bsc-nursing
-        ========================= */}
+            ========================= */}
 
         <Route
           path="/course/:courseId"
@@ -148,7 +153,10 @@ function App() {
 
       </Routes>
 
-      {/* Footer appears on all pages */}
+      {/* =========================
+          FOOTER
+          ========================= */}
+
       <Footer />
     </>
   );
