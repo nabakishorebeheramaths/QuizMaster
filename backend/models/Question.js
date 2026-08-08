@@ -30,15 +30,27 @@ const questionSchema = new mongoose.Schema(
     },
 
     // ==========================================
-    // COURSE / SUBJECT
+    // COURSE INFORMATION
     // ==========================================
 
     courseId: {
       type: String,
       default: null,
+      index: true,
+    },
+
+    courseName: {
+      type: String,
+      default: null,
     },
 
     subjectId: {
+      type: String,
+      default: null,
+      index: true,
+    },
+
+    subject: {
       type: String,
       default: null,
     },
