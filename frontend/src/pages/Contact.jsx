@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Contact.css";
@@ -10,14 +11,23 @@ function Contact() {
   });
 
   const [loading, setLoading] = useState(false);
+
   const [status, setStatus] = useState({
     type: "",
     message: "",
   });
 
+  // =========================================================
+  // API CONFIGURATION
+  // =========================================================
+
   const API_URL =
     import.meta.env.VITE_API_URL ||
     "https://quizmaster-qsjk.onrender.com";
+
+  // =========================================================
+  // INPUT CHANGE
+  // =========================================================
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,6 +37,7 @@ function Contact() {
       [name]: value,
     }));
 
+    // Remove previous alert while typing
     if (status.message) {
       setStatus({
         type: "",
@@ -34,6 +45,10 @@ function Contact() {
       });
     }
   };
+
+  // =========================================================
+  // FORM VALIDATION
+  // =========================================================
 
   const validateForm = () => {
     const name = formData.name.trim();
@@ -73,6 +88,10 @@ function Contact() {
     return null;
   };
 
+  // =========================================================
+  // SUBMIT CONTACT FORM
+  // =========================================================
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -83,6 +102,7 @@ function Contact() {
         type: "error",
         message: validationError,
       });
+
       return;
     }
 
@@ -94,32 +114,73 @@ function Contact() {
     });
 
     try {
-      const response = await fetch(`${API_URL}/api/contact`, {
+      const cleanData = {
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        message: formData.message.trim(),
+      };
+
+      // Remove trailing slash from API URL
+      const baseURL = API_URL.replace(/\/+$/, "");
+
+      const endpoint = `${baseURL}/api/contact`;
+
+      console.log("📩 Contact API URL:", endpoint);
+      console.log("📦 Contact payload:", cleanData);
+
+      const response = await fetch(endpoint, {
         method: "POST",
+
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify({
-          name: formData.name.trim(),
-          email: formData.email.trim(),
-          message: formData.message.trim(),
-        }),
+
+        body: JSON.stringify(cleanData),
       });
+
+      console.log("📡 Contact response status:", response.status);
+
+      // =====================================================
+      // READ RESPONSE
+      // =====================================================
 
       let data = {};
 
-      try {
+      const contentType =
+        response.headers.get("content-type") || "";
+
+      if (contentType.includes("application/json")) {
         data = await response.json();
-      } catch {
-        data = {};
+      } else {
+        const text = await response.text();
+
+        console.error(
+          "❌ Server returned non-JSON response:",
+          text
+        );
+
+        data = {
+          message: text,
+        };
       }
+
+      console.log("📨 Contact response:", data);
+
+      // =====================================================
+      // HANDLE ERROR
+      // =====================================================
 
       if (!response.ok) {
         throw new Error(
           data?.message ||
-            "Unable to send your message right now."
+            `Unable to send your message. Server returned ${response.status}.`
         );
       }
+
+      // =====================================================
+      // SUCCESS
+      // =====================================================
 
       setStatus({
         type: "success",
@@ -128,6 +189,7 @@ function Contact() {
           "Message sent successfully. We will get back to you soon.",
       });
 
+      // Clear form
       setFormData({
         name: "",
         email: "",
@@ -136,28 +198,42 @@ function Contact() {
     } catch (error) {
       console.error("❌ Contact form error:", error);
 
+      let errorMessage =
+        "Unable to send your message right now. Please try again later.";
+
+      if (error?.message) {
+        errorMessage = error.message;
+      }
+
       setStatus({
         type: "error",
-        message:
-          error?.message ||
-          "Something went wrong. Please try again later.",
+        message: errorMessage,
       });
     } finally {
       setLoading(false);
     }
   };
 
+  // =========================================================
+  // UI
+  // =========================================================
+
   return (
     <main className="contact-page">
 
       {/* Background Effects */}
+
       <div className="contact-bg-orb contact-orb-one"></div>
+
       <div className="contact-bg-orb contact-orb-two"></div>
+
       <div className="contact-grid-bg"></div>
 
       <section className="contact-wrapper">
 
-        {/* ================= LEFT SIDE ================= */}
+        {/* =================================================
+            LEFT SIDE
+        ================================================= */}
 
         <div className="contact-left">
 
@@ -168,7 +244,7 @@ function Contact() {
 
           <h1 className="contact-title">
             Let's Build Something
-            <span> Amazing Together.</span>
+            <span>Amazing Together.</span>
           </h1>
 
           <p className="contact-description">
@@ -177,7 +253,7 @@ function Contact() {
             you.
           </p>
 
-          {/* Trust Stats */}
+          {/* Stats */}
 
           <div className="contact-mini-stats">
 
@@ -203,45 +279,57 @@ function Contact() {
           <div className="contact-info-list">
 
             <div className="contact-info-card">
+
               <div className="contact-info-icon email-icon">
                 ✉
               </div>
 
               <div>
                 <span>EMAIL US</span>
+
                 <h3>Contact Support</h3>
+
                 <p>
                   Send us your questions or feedback
                 </p>
               </div>
+
             </div>
 
             <div className="contact-info-card">
+
               <div className="contact-info-icon idea-icon">
                 ✦
               </div>
 
               <div>
                 <span>HAVE AN IDEA?</span>
+
                 <h3>Share Your Ideas</h3>
+
                 <p>
                   Help us make QuizMaster better
                 </p>
               </div>
+
             </div>
 
             <div className="contact-info-card">
+
               <div className="contact-info-icon support-icon">
                 ⚡
               </div>
 
               <div>
                 <span>QUICK SUPPORT</span>
+
                 <h3>We're Here To Help</h3>
+
                 <p>
                   Your feedback matters to us
                 </p>
               </div>
+
             </div>
 
           </div>
@@ -254,13 +342,15 @@ function Contact() {
 
         </div>
 
-        {/* ================= RIGHT SIDE ================= */}
+        {/* =================================================
+            RIGHT SIDE
+        ================================================= */}
 
         <div className="contact-right">
 
           <div className="contact-form-card">
 
-            {/* Card Header */}
+            {/* Header */}
 
             <div className="form-header">
 
@@ -269,8 +359,11 @@ function Contact() {
               </div>
 
               <div>
+
                 <span>GET IN TOUCH</span>
+
                 <h2>Send us a message</h2>
+
               </div>
 
             </div>
@@ -280,16 +373,19 @@ function Contact() {
               you as soon as possible.
             </p>
 
-            {/* Status */}
+            {/* Status Alert */}
 
             {status.message && (
+
               <div
                 className={`contact-alert ${
                   status.type === "success"
                     ? "alert-success"
                     : "alert-error"
                 }`}
+                role="alert"
               >
+
                 <span className="alert-icon">
                   {status.type === "success"
                     ? "✓"
@@ -297,7 +393,9 @@ function Contact() {
                 </span>
 
                 <span>{status.message}</span>
+
               </div>
+
             )}
 
             {/* Form */}
@@ -305,6 +403,7 @@ function Contact() {
             <form
               className="premium-contact-form"
               onSubmit={handleSubmit}
+              noValidate
             >
 
               {/* Name */}
@@ -330,7 +429,7 @@ function Contact() {
                     onChange={handleChange}
                     disabled={loading}
                     autoComplete="name"
-                    maxLength="100"
+                    maxLength={100}
                   />
 
                 </div>
@@ -360,7 +459,7 @@ function Contact() {
                     onChange={handleChange}
                     disabled={loading}
                     autoComplete="email"
-                    maxLength="150"
+                    maxLength={150}
                   />
 
                 </div>
@@ -396,8 +495,8 @@ function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     disabled={loading}
-                    rows="6"
-                    maxLength="2000"
+                    rows={6}
+                    maxLength={2000}
                   />
 
                 </div>
@@ -428,28 +527,35 @@ function Contact() {
 
               </button>
 
-              {/* Privacy Note */}
+              {/* Security */}
 
               <div className="form-security-note">
+
                 <span>🔒</span>
+
                 <p>
                   Your information is secure and will only
                   be used to respond to your message.
                 </p>
+
               </div>
 
             </form>
 
           </div>
 
-          {/* Bottom Quote */}
+          {/* Quote */}
 
           <div className="contact-quote">
+
             <span>“</span>
+
             <p>
               Learn faster. Play smarter.
             </p>
+
             <span>”</span>
+
           </div>
 
         </div>
@@ -459,8 +565,15 @@ function Contact() {
       {/* Footer */}
 
       <footer className="contact-footer">
-        <span>© {new Date().getFullYear()} QuizMaster</span>
-        <span>Made for learners who want to grow 🚀</span>
+
+        <span>
+          © {new Date().getFullYear()} QuizMaster
+        </span>
+
+        <span>
+          Made for learners who want to grow 🚀
+        </span>
+
       </footer>
 
     </main>
