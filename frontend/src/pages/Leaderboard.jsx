@@ -1,4 +1,3 @@
-
 import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import "./Leaderboard.css";
@@ -36,73 +35,94 @@ function Leaderboard() {
 
       console.log("🏆 Leaderboard response:", response.data);
 
-      // -------------------------------------------------------
-      // SUPPORT DIFFERENT RESPONSE FORMATS
-      // -------------------------------------------------------
+      // =====================================================
+      // GET LEADERBOARD ARRAY
+      // Backend response:
+      // {
+      //   success: true,
+      //   leaderboard: [...]
+      // }
+      // =====================================================
 
       let leaderboardData = [];
 
-      if (Array.isArray(response.data)) {
-        leaderboardData = response.data;
-      } else if (Array.isArray(response.data?.leaderboard)) {
+      if (Array.isArray(response.data?.leaderboard)) {
         leaderboardData = response.data.leaderboard;
+      } else if (Array.isArray(response.data)) {
+        leaderboardData = response.data;
       } else if (Array.isArray(response.data?.players)) {
         leaderboardData = response.data.players;
       } else if (Array.isArray(response.data?.data)) {
         leaderboardData = response.data.data;
       }
 
-      // -------------------------------------------------------
-      // NORMALIZE DATA
-      // -------------------------------------------------------
+      // =====================================================
+      // NORMALIZE BACKEND DATA
+      // =====================================================
 
-      const normalizedPlayers = leaderboardData.map((player, index) => {
-        const score = Number(
-          player?.score ??
-            player?.totalScore ??
-            player?.points ??
-            player?.totalPoints ??
-            0
-        );
+      const normalizedPlayers = leaderboardData.map(
+        (player, index) => {
+          const score = Number(
+            player?.score ??
+              player?.totalScore ??
+              player?.points ??
+              player?.totalPoints ??
+              0
+          );
 
-        const accuracy = Number(
-          player?.accuracy ??
-            player?.accuracyPercentage ??
-            player?.accuracyPercent ??
-            0
-        );
+          const percentage = Number(
+            player?.percentage ??
+              player?.accuracy ??
+              player?.accuracyPercentage ??
+              player?.accuracyPercent ??
+              0
+          );
 
-        return {
-          ...player,
+          const totalQuestions = Number(
+            player?.totalQuestions ?? 0
+          );
 
-          name:
-            player?.name ||
-            player?.username ||
-            player?.user?.name ||
-            player?.user?.username ||
-            "Anonymous",
+          return {
+            ...player,
 
-          score: Number.isFinite(score) ? score : 0,
+            // Backend gives userName and user.name
+            name:
+              player?.userName ||
+              player?.user?.name ||
+              player?.name ||
+              player?.username ||
+              player?.user?.username ||
+              "Anonymous",
 
-          accuracy: Number.isFinite(accuracy)
-            ? Math.round(accuracy * 100) / 100
-            : 0,
+            // Score
+            score: Number.isFinite(score) ? score : 0,
 
-          originalRank: player?.rank ?? index + 1,
-        };
-      });
+            // Backend gives percentage
+            accuracy: Number.isFinite(percentage)
+              ? Math.round(percentage * 100) / 100
+              : 0,
 
-      // -------------------------------------------------------
-      // SORT BY HIGHEST SCORE
-      // -------------------------------------------------------
+            // Total questions
+            totalQuestions: Number.isFinite(totalQuestions)
+              ? totalQuestions
+              : 0,
 
-      normalizedPlayers.sort(
-        (a, b) => Number(b.score) - Number(a.score)
+            rank: index + 1,
+          };
+        }
       );
 
-      // -------------------------------------------------------
-      // ASSIGN FINAL RANK
-      // -------------------------------------------------------
+      // =====================================================
+      // SORT — HIGHEST SCORE FIRST
+      // =====================================================
+
+      normalizedPlayers.sort(
+        (a, b) => b.score - a.score
+      );
+
+      // =====================================================
+      // FINAL RANK
+      // =====================================================
 
       const rankedPlayers = normalizedPlayers.map(
         (player, index) => ({
@@ -111,9 +131,17 @@ function Leaderboard() {
         })
       );
 
+      console.log(
+        "🏆 Final leaderboard:",
+        rankedPlayers
+      );
+
       setPlayers(rankedPlayers);
     } catch (err) {
-      console.error("❌ Leaderboard error:", err);
+      console.error(
+        "❌ Leaderboard error:",
+        err
+      );
 
       if (err?.response) {
         console.error(
@@ -150,7 +178,9 @@ function Leaderboard() {
       fetchLeaderboard();
     }, 30000);
 
-    return () => clearInterval(timer);
+    return () => {
+      clearInterval(timer);
+    };
   }, [fetchLeaderboard]);
 
   // =========================================================
@@ -166,7 +196,7 @@ function Leaderboard() {
   };
 
   // =========================================================
-  // RENDER
+  // UI
   // =========================================================
 
   return (
@@ -325,7 +355,10 @@ function Leaderboard() {
 
                     <div className="player-score">
                       {player.score}
-                      <span> points</span>
+                      <span>
+                        {" "}
+                        points
+                      </span>
                     </div>
 
                     <div className="player-rank">
