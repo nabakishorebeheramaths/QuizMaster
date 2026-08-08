@@ -77,8 +77,8 @@ body {
 }
 
 /* =========================================================
-PREMIUM RAINBOW TEXT
-ONLY LETTERS
+   PREMIUM RAINBOW TEXT
+   ONLY LETTERS
 ========================================================= */
 
 .rainbow-text {
@@ -110,6 +110,8 @@ ONLY LETTERS
 /* ================= INLINE RAINBOW ================= */
 
 .rainbow-inline {
+  display: inline-block;
+
   background: linear-gradient(
     90deg,
     #ff0080,
@@ -154,14 +156,6 @@ ONLY LETTERS
 
   font-size: 22px;
 
-  font-weight: 600;
-
-  color: #334155;
-}
-
-/* ================= CREATOR NAME ================= */
-
-.creator .rainbow-text {
   font-weight: 800;
 }
 

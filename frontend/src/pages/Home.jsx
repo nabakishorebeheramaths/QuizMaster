@@ -22,18 +22,19 @@ function Home() {
         </h1>
 
         <p>
-          Quiz for everyone — from <strong>Class 1 to 12</strong> and
-          competitive exams across all major sectors like{" "}
+          Quiz for everyone — from{" "}
+          <strong className="rainbow-inline">
+            Class 1 to 12
+          </strong>{" "}
+          and competitive exams across all major sectors like{" "}
           <strong className="rainbow-inline">
             JEE, NEET, GATE
           </strong>{" "}
           and many more.
         </p>
 
-        <p>
-          Improve your knowledge with interactive quizzes,
-          beautiful design, real-time scores and an exciting
-          learning experience.
+        <p className="creator rainbow-text">
+          Created by Nabakishore Behera
         </p>
 
       </div>
@@ -79,4 +80,3 @@ function Home() {
 }
 
 export default Home;
-
