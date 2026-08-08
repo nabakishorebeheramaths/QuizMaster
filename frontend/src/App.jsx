@@ -47,6 +47,8 @@ function App() {
 
       <ScrollToTop />
 
+      <Navbar />
+
       <Routes>
 
         {/* =========================
@@ -178,4 +180,3 @@ function App() {
 }
 
 export default App;
-
