@@ -1,194 +1,471 @@
-import express from "express";
-import * as brevo from "@getbrevo/brevo";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Contact.css";
 
-const router = express.Router();
+function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-const apiInstance = new brevo.TransactionalEmailsApi();
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState({
+    type: "",
+    message: "",
+  });
 
-apiInstance.setApiKey(
-  brevo.TransactionalEmailsApiApiKeys.apiKey,
-  process.env.BREVO_API_KEY
-);
+  const API_URL =
+    import.meta.env.VITE_API_URL ||
+    "https://quizmaster-qsjk.onrender.com";
 
-router.post("/", async (req, res) => {
-  try {
-    const { name, email, message } = req.body;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-    // Required fields
-    if (!name || !email || !message) {
-      return res.status(400).json({
-        success: false,
-        message: "Name, email and message are required.",
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    if (status.message) {
+      setStatus({
+        type: "",
+        message: "",
       });
     }
+  };
 
-    const cleanName = String(name).trim();
-    const cleanEmail = String(email).trim();
-    const cleanMessage = String(message).trim();
+  const validateForm = () => {
+    const name = formData.name.trim();
+    const email = formData.email.trim();
+    const message = formData.message.trim();
 
-    // Email validation
+    if (!name) {
+      return "Please enter your name.";
+    }
+
+    if (name.length < 2) {
+      return "Name must contain at least 2 characters.";
+    }
+
+    if (!email) {
+      return "Please enter your email address.";
+    }
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!emailRegex.test(cleanEmail)) {
-      return res.status(400).json({
-        success: false,
-        message: "Please enter a valid email address.",
-      });
+    if (!emailRegex.test(email)) {
+      return "Please enter a valid email address.";
     }
 
-    if (cleanName.length < 2) {
-      return res.status(400).json({
-        success: false,
-        message: "Please enter a valid name.",
-      });
+    if (!message) {
+      return "Please enter your message.";
     }
 
-    if (cleanMessage.length < 5) {
-      return res.status(400).json({
-        success: false,
-        message: "Message is too short.",
-      });
+    if (message.length < 5) {
+      return "Message must contain at least 5 characters.";
     }
 
-    if (cleanMessage.length > 2000) {
-      return res.status(400).json({
-        success: false,
-        message: "Message is too long.",
-      });
+    if (message.length > 2000) {
+      return "Message cannot exceed 2000 characters.";
     }
 
-    // Create Brevo email
-    const sendSmtpEmail = new brevo.SendSmtpEmail();
+    return null;
+  };
 
-    sendSmtpEmail.subject =
-      `📩 New QuizMaster Contact Message from ${cleanName}`;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    sendSmtpEmail.htmlContent = `
-      <div style="
-        font-family:Arial,sans-serif;
-        background:#f4f7fb;
-        padding:30px;
-      ">
+    const validationError = validateForm();
 
-        <div style="
-          max-width:650px;
-          margin:auto;
-          background:#ffffff;
-          border-radius:16px;
-          overflow:hidden;
-          box-shadow:0 8px 30px rgba(0,0,0,.08);
-        ">
+    if (validationError) {
+      setStatus({
+        type: "error",
+        message: validationError,
+      });
+      return;
+    }
 
-          <div style="
-            background:linear-gradient(135deg,#172554,#2563EB);
-            padding:28px;
-            color:white;
-          ">
-            <h1 style="margin:0;">
-              📩 New Contact Message
-            </h1>
+    setLoading(true);
 
-            <p style="margin:8px 0 0;opacity:.85;">
-              QuizMaster – India's Smart Quiz Platform
-            </p>
+    setStatus({
+      type: "",
+      message: "",
+    });
+
+    try {
+      const response = await fetch(`${API_URL}/api/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          message: formData.message.trim(),
+        }),
+      });
+
+      let data = {};
+
+      try {
+        data = await response.json();
+      } catch {
+        data = {};
+      }
+
+      if (!response.ok) {
+        throw new Error(
+          data?.message ||
+            "Unable to send your message right now."
+        );
+      }
+
+      setStatus({
+        type: "success",
+        message:
+          data?.message ||
+          "Message sent successfully. We will get back to you soon.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("❌ Contact form error:", error);
+
+      setStatus({
+        type: "error",
+        message:
+          error?.message ||
+          "Something went wrong. Please try again later.",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <main className="contact-page">
+
+      {/* Background Effects */}
+      <div className="contact-bg-orb contact-orb-one"></div>
+      <div className="contact-bg-orb contact-orb-two"></div>
+      <div className="contact-grid-bg"></div>
+
+      <section className="contact-wrapper">
+
+        {/* ================= LEFT SIDE ================= */}
+
+        <div className="contact-left">
+
+          <div className="contact-badge">
+            <span className="badge-dot"></span>
+            We'd Love To Hear From You
           </div>
 
-          <div style="padding:30px;">
+          <h1 className="contact-title">
+            Let's Build Something
+            <span> Amazing Together.</span>
+          </h1>
 
-            <h3>👤 Name</h3>
-            <p>${escapeHtml(cleanName)}</p>
+          <p className="contact-description">
+            Have a question, feedback, suggestion, or just want
+            to say hello? Our team is always ready to hear from
+            you.
+          </p>
 
-            <h3>📧 Email</h3>
-            <p>${escapeHtml(cleanEmail)}</p>
+          {/* Trust Stats */}
 
-            <h3>💬 Message</h3>
+          <div className="contact-mini-stats">
 
-            <div style="
-              background:#f8fafc;
-              padding:18px;
-              border-radius:10px;
-              line-height:1.7;
-              white-space:pre-wrap;
-            ">
-              ${escapeHtml(cleanMessage)}
+            <div className="mini-stat">
+              <strong>24/7</strong>
+              <span>Available</span>
             </div>
 
-            <hr style="
-              margin:25px 0;
-              border:none;
-              border-top:1px solid #e2e8f0;
-            ">
+            <div className="mini-stat">
+              <strong>Fast</strong>
+              <span>Response</span>
+            </div>
 
-            <p style="
-              color:#94a3b8;
-              font-size:12px;
-            ">
-              Sent from QuizMaster Contact Form.
-            </p>
+            <div className="mini-stat">
+              <strong>100%</strong>
+              <span>Student Focused</span>
+            </div>
 
           </div>
+
+          {/* Contact Cards */}
+
+          <div className="contact-info-list">
+
+            <div className="contact-info-card">
+              <div className="contact-info-icon email-icon">
+                ✉
+              </div>
+
+              <div>
+                <span>EMAIL US</span>
+                <h3>Contact Support</h3>
+                <p>
+                  Send us your questions or feedback
+                </p>
+              </div>
+            </div>
+
+            <div className="contact-info-card">
+              <div className="contact-info-icon idea-icon">
+                ✦
+              </div>
+
+              <div>
+                <span>HAVE AN IDEA?</span>
+                <h3>Share Your Ideas</h3>
+                <p>
+                  Help us make QuizMaster better
+                </p>
+              </div>
+            </div>
+
+            <div className="contact-info-card">
+              <div className="contact-info-icon support-icon">
+                ⚡
+              </div>
+
+              <div>
+                <span>QUICK SUPPORT</span>
+                <h3>We're Here To Help</h3>
+                <p>
+                  Your feedback matters to us
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Back Home */}
+
+          <Link to="/" className="back-home-link">
+            ← Back to QuizMaster
+          </Link>
+
         </div>
-      </div>
-    `;
 
-    // Verified sender
-    sendSmtpEmail.sender = {
-      name: "QuizMaster",
-      email: process.env.SMTP_FROM,
-    };
+        {/* ================= RIGHT SIDE ================= */}
 
-    // Receiver
-    sendSmtpEmail.to = [
-      {
-        email: process.env.CONTACT_RECEIVER,
-        name: "QuizMaster Admin",
-      },
-    ];
+        <div className="contact-right">
 
-    // Reply directly to visitor
-    sendSmtpEmail.replyTo = {
-      email: cleanEmail,
-      name: cleanName,
-    };
+          <div className="contact-form-card">
 
-    // Send through Brevo API
-    const result = await apiInstance.sendTransacEmail(
-      sendSmtpEmail
-    );
+            {/* Card Header */}
 
-    console.log("✅ Brevo email sent:", result);
+            <div className="form-header">
 
-    return res.status(200).json({
-      success: true,
-      message:
-        "Message sent successfully. We will get back to you soon.",
-    });
+              <div className="form-header-icon">
+                💬
+              </div>
 
-  } catch (error) {
-    console.error(
-      "❌ Brevo Contact Error:",
-      error?.response?.body ||
-        error?.body ||
-        error?.message ||
-        error
-    );
+              <div>
+                <span>GET IN TOUCH</span>
+                <h2>Send us a message</h2>
+              </div>
 
-    return res.status(500).json({
-      success: false,
-      message:
-        "Unable to send message right now. Please try again later.",
-    });
-  }
-});
+            </div>
 
-// Escape HTML to prevent injected HTML in emails
-function escapeHtml(value) {
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+            <p className="form-header-text">
+              Fill out the form below and we'll get back to
+              you as soon as possible.
+            </p>
+
+            {/* Status */}
+
+            {status.message && (
+              <div
+                className={`contact-alert ${
+                  status.type === "success"
+                    ? "alert-success"
+                    : "alert-error"
+                }`}
+              >
+                <span className="alert-icon">
+                  {status.type === "success"
+                    ? "✓"
+                    : "!"}
+                </span>
+
+                <span>{status.message}</span>
+              </div>
+            )}
+
+            {/* Form */}
+
+            <form
+              className="premium-contact-form"
+              onSubmit={handleSubmit}
+            >
+
+              {/* Name */}
+
+              <div className="form-field">
+
+                <label htmlFor="contact-name">
+                  Your Name
+                </label>
+
+                <div className="input-wrapper">
+
+                  <span className="input-icon">
+                    👤
+                  </span>
+
+                  <input
+                    id="contact-name"
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    disabled={loading}
+                    autoComplete="name"
+                    maxLength="100"
+                  />
+
+                </div>
+
+              </div>
+
+              {/* Email */}
+
+              <div className="form-field">
+
+                <label htmlFor="contact-email">
+                  Email Address
+                </label>
+
+                <div className="input-wrapper">
+
+                  <span className="input-icon">
+                    @
+                  </span>
+
+                  <input
+                    id="contact-email"
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    value={formData.email}
+                    onChange={handleChange}
+                    disabled={loading}
+                    autoComplete="email"
+                    maxLength="150"
+                  />
+
+                </div>
+
+              </div>
+
+              {/* Message */}
+
+              <div className="form-field">
+
+                <div className="label-row">
+
+                  <label htmlFor="contact-message">
+                    Your Message
+                  </label>
+
+                  <span className="character-count">
+                    {formData.message.length}/2000
+                  </span>
+
+                </div>
+
+                <div className="textarea-wrapper">
+
+                  <span className="textarea-icon">
+                    ✎
+                  </span>
+
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    placeholder="Tell us how we can help you..."
+                    value={formData.message}
+                    onChange={handleChange}
+                    disabled={loading}
+                    rows="6"
+                    maxLength="2000"
+                  />
+
+                </div>
+
+              </div>
+
+              {/* Submit */}
+
+              <button
+                type="submit"
+                className="premium-submit-button"
+                disabled={loading}
+              >
+
+                {loading ? (
+                  <>
+                    <span className="loading-spinner"></span>
+                    Sending Message...
+                  </>
+                ) : (
+                  <>
+                    Send Message
+                    <span className="send-arrow">
+                      →
+                    </span>
+                  </>
+                )}
+
+              </button>
+
+              {/* Privacy Note */}
+
+              <div className="form-security-note">
+                <span>🔒</span>
+                <p>
+                  Your information is secure and will only
+                  be used to respond to your message.
+                </p>
+              </div>
+
+            </form>
+
+          </div>
+
+          {/* Bottom Quote */}
+
+          <div className="contact-quote">
+            <span>“</span>
+            <p>
+              Learn faster. Play smarter.
+            </p>
+            <span>”</span>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Footer */}
+
+      <footer className="contact-footer">
+        <span>© {new Date().getFullYear()} QuizMaster</span>
+        <span>Made for learners who want to grow 🚀</span>
+      </footer>
+
+    </main>
+  );
 }
 
-export default router;
+export default Contact;
+
