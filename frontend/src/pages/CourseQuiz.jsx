@@ -1004,7 +1004,7 @@ function getSubjects(courseId) {
           "DSA concepts",
       },
       {
-        id: "networking",
+        id: "computer-networks",
         name: "Computer Networks",
         icon: "🌐",
         description:
@@ -1018,7 +1018,7 @@ function getSubjects(courseId) {
           "Quantitative & logical aptitude",
       },
       {
-        id: "ece",
+        id: "ece-core",
         name: "ECE Core",
         icon: "📻",
         description:
