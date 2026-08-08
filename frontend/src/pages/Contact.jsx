@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Contact.css";
@@ -260,10 +259,10 @@ function Contact() {
 
           {/* Title */}
 
-          <h1 className="contact-title">
+          <h1 className="contact-title rainbow-text">
             Let's Build Something
 
-            <span>
+            <span className="rainbow-text">
               Amazing Together.
             </span>
           </h1>
@@ -316,7 +315,7 @@ function Contact() {
               <div>
                 <span>EMAIL US</span>
 
-                <h3>
+                <h3 className="rainbow-text">
                   Contact Support
                 </h3>
 
@@ -338,7 +337,7 @@ function Contact() {
               <div>
                 <span>HAVE AN IDEA?</span>
 
-                <h3>
+                <h3 className="rainbow-text">
                   Share Your Ideas
                 </h3>
 
@@ -360,7 +359,7 @@ function Contact() {
               <div>
                 <span>QUICK SUPPORT</span>
 
-                <h3>
+                <h3 className="rainbow-text">
                   We're Here To Help
                 </h3>
 
@@ -409,7 +408,7 @@ function Contact() {
                   GET IN TOUCH
                 </span>
 
-                <h2>
+                <h2 className="rainbow-text">
                   Send us a message
                 </h2>
               </div>
