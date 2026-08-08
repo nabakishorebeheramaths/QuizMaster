@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
 
 /* =========================================================
@@ -18,7 +19,7 @@ LIGHT / COLORFUL / MODERN SAAS DESIGN
   overflow: hidden;
 
   font-family: "DM Sans", sans-serif;
-  color: #0f172a;
+  color: #111111;
 
   background:
     radial-gradient(
@@ -37,6 +38,26 @@ LIGHT / COLORFUL / MODERN SAAS DESIGN
       transparent 30%
     ),
     #f8fafc;
+}
+
+/* =========================================================
+NORMAL TEXT — THICK + DARK BLACK
+RAINBOW HEADERS ARE NOT AFFECTED
+========================================================= */
+
+.contact-description,
+.mini-stat span,
+.contact-info-card span,
+.contact-info-card p,
+.form-header-text,
+.form-field label,
+.character-count,
+.form-security-note p,
+.contact-quote p,
+.contact-footer,
+.back-home-link {
+  color: #111111;
+  font-weight: 700;
 }
 
 /* =========================================================
@@ -183,7 +204,7 @@ BADGE
 
   background: rgba(255, 255, 255, 0.82);
 
-  color: #2563eb;
+  color: #111111;
 
   font-size: 11px;
   font-weight: 800;
@@ -329,13 +350,13 @@ DESCRIPTION
 
   margin: 0;
 
-  color: #64748b;
+  color: #111111;
 
   font-size: 16px;
 
   line-height: 1.85;
 
-  font-weight: 500;
+  font-weight: 700;
 
   animation: contactReveal 0.75s 0.12s ease both;
 }
@@ -385,7 +406,7 @@ STATS
 }
 
 .mini-stat span {
-  color: #94a3b8;
+  color: #111111;
 
   font-size: 10px;
 
@@ -582,7 +603,7 @@ ICONS
 
   margin-bottom: 4px;
 
-  color: #94a3b8;
+  color: #111111;
 
   font-size: 9px;
 
@@ -606,11 +627,13 @@ ICONS
 .contact-info-card p {
   margin: 0;
 
-  color: #64748b;
+  color: #111111;
 
   font-size: 11px;
 
   line-height: 1.5;
+
+  font-weight: 700;
 }
 
 /* =========================================================
@@ -626,7 +649,7 @@ BACK HOME
 
   margin-top: 26px;
 
-  color: #2563eb;
+  color: #111111;
 
   text-decoration: none;
 
@@ -663,7 +686,7 @@ BACK HOME
 }
 
 .back-home-link:hover {
-  color: #4f46e5;
+  color: #111111;
 
   transform: translateX(-4px);
 }
@@ -833,7 +856,7 @@ FORM HEADER
 
   margin-bottom: 5px;
 
-  color: #2563eb;
+  color: #111111;
 
   font-size: 9px;
 
@@ -863,13 +886,13 @@ FORM HEADER
 
   margin: 18px 0 27px;
 
-  color: #64748b;
+  color: #111111;
 
   font-size: 13px;
 
   line-height: 1.75;
 
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* =========================================================
@@ -917,8 +940,7 @@ ALERT
       #ecfdf5
     );
 
-  box-shadow:
-    0 8px 25px rgba(22, 163, 74, 0.06);
+  font-weight: 800;
 }
 
 .alert-error {
@@ -933,6 +955,8 @@ ALERT
       #fff7f7,
       #fef2f2
     );
+
+  font-weight: 800;
 }
 
 .alert-icon {
@@ -958,13 +982,11 @@ ALERT
 @keyframes alertIn {
   from {
     opacity: 0;
-
     transform: translateY(-7px);
   }
 
   to {
     opacity: 1;
-
     transform: translateY(0);
   }
 }
@@ -994,7 +1016,7 @@ FORM
 }
 
 .form-field label {
-  color: #334155;
+  color: #111111;
 
   font-size: 12px;
 
@@ -1012,11 +1034,11 @@ FORM
 }
 
 .character-count {
-  color: #94a3b8;
+  color: #111111;
 
   font-size: 10px;
 
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* =========================================================
@@ -1036,7 +1058,7 @@ INPUTS
 
   z-index: 3;
 
-  color: #94a3b8;
+  color: #111111;
 
   font-size: 16px;
 
@@ -1058,14 +1080,14 @@ INPUTS
 }
 
 /* =========================================================
-USER INPUT BOXES — THICK DARK BLACK BORDER
+USER INPUT BOXES
+THICK DARK BLACK BORDER
 ========================================================= */
 
 .input-wrapper input,
 .textarea-wrapper textarea {
   width: 100%;
 
-  /* ONLY CHANGE: thick dark black border */
   border: 2px solid #111111;
 
   outline: none;
@@ -1079,13 +1101,13 @@ USER INPUT BOXES — THICK DARK BLACK BORDER
       #f8fafc
     );
 
-  color: #0f172a;
+  color: #111111;
 
   font-family: "DM Sans", sans-serif;
 
   font-size: 14px;
 
-  font-weight: 500;
+  font-weight: 700;
 
   box-shadow:
     inset 0 1px 2px rgba(15, 23, 42, 0.025);
@@ -1117,14 +1139,14 @@ USER INPUT BOXES — THICK DARK BLACK BORDER
 
 .input-wrapper input::placeholder,
 .textarea-wrapper textarea::placeholder {
-  color: #a8b3c2;
+  color: #111111;
 
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .input-wrapper:focus-within .input-icon,
 .textarea-wrapper:focus-within .textarea-icon {
-  color: #2563eb;
+  color: #111111;
 }
 
 .input-wrapper:focus-within .input-icon {
@@ -1317,6 +1339,8 @@ SECURITY
 
 .form-security-note span {
   font-size: 10px;
+  color: #111111;
+  font-weight: 800;
 }
 
 .form-security-note p {
@@ -1324,13 +1348,15 @@ SECURITY
 
   margin: 0;
 
-  color: #64748b;
+  color: #111111;
 
   font-size: 10px;
 
   line-height: 1.6;
 
   text-align: center;
+
+  font-weight: 700;
 }
 
 /* =========================================================
@@ -1348,7 +1374,7 @@ QUOTE
 
   margin-top: 21px;
 
-  color: #64748b;
+  color: #111111;
 }
 
 .contact-quote span {
@@ -1364,7 +1390,7 @@ QUOTE
 .contact-quote p {
   margin: 0;
 
-  color: #64748b;
+  color: #111111;
 
   font-size: 11px;
 
@@ -1399,11 +1425,11 @@ FOOTER
   border-top:
     1px solid rgba(148, 163, 184, 0.18);
 
-  color: #64748b;
+  color: #111111;
 
   font-size: 10px;
 
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* =========================================================
@@ -1427,13 +1453,11 @@ REVEAL
 @keyframes contactReveal {
   from {
     opacity: 0;
-
     transform: translateY(20px);
   }
 
   to {
     opacity: 1;
-
     transform: translateY(0);
   }
 }
