@@ -1,9 +1,9 @@
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
-
   const navigate = useNavigate();
 
   return (
@@ -15,26 +15,28 @@ function Home() {
           🚀 India's Smart Quiz Platform
         </span>
 
-        <h1>
-  <span className="rainbow-text">Learn Faster.</span>{" "}
-  <span className="rainbow-text">Play Smarter.</span>
-</h1>
+        <h1 className="rainbow-text">
+          Learn Faster.{" "}
+          <br />
+          Play Smarter.
+        </h1>
+
+        <p>
+          Quiz for everyone — from <strong>Class 1 to 12</strong> and
+          competitive exams across all major sectors like{" "}
+          <strong className="rainbow-inline">
+            JEE, NEET, GATE
+          </strong>{" "}
+          and many more.
+        </p>
 
         <p>
           Improve your knowledge with interactive quizzes,
           beautiful design, real-time scores and an exciting
           learning experience.
         </p>
-<div className="creator">
-  Created by{" "}
-  <span className="rainbow-text">
-    Nabakishore Behera
-  </span>
-</div>
-  
-  
-      </div>
 
+      </div>
 
       <div className="hero-right">
 
@@ -44,25 +46,25 @@ function Home() {
             🧠
           </div>
 
-          <h2>
+          <h2 className="rainbow-text">
             Quiz Master
           </h2>
 
           <p>
-            Challenge yourself with hundreds of exciting quizzes.
+            Challenge yourself with hundreds of exciting quizzes
+            designed for school students, college students and
+            competitive exam aspirants.
           </p>
-
 
           <div className="info">
 
             <div>
-              <h3>1000+</h3>
+              <h3 className="rainbow-text">1000+</h3>
               <small>Questions</small>
             </div>
 
-
             <div>
-              <h3>10+</h3>
+              <h3 className="rainbow-text">10+</h3>
               <small>Categories</small>
             </div>
 
@@ -72,9 +74,9 @@ function Home() {
 
       </div>
 
-
     </section>
   );
 }
 
 export default Home;
+

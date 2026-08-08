@@ -493,7 +493,7 @@ function CourseQuiz() {
           ← All Courses
         </button>
 <div className="course-information">
-  <h2>Welcome, Nabakishore Behera! 🎓</h2>
+  <h2>Welcome All, My self Nabakishore Behera! 🎓</h2>
 
   <p>
     All the best for your career! 🚀

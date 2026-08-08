@@ -21,7 +21,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /* ================= HERO ================= */
 
 .hero {
@@ -37,7 +36,6 @@ body {
   gap: 60px;
 }
 
-
 /* ================= LEFT ================= */
 
 .hero-left {
@@ -45,7 +43,6 @@ body {
 
   animation: slideLeft 1s ease;
 }
-
 
 /* ================= BADGE ================= */
 
@@ -65,7 +62,6 @@ body {
   margin-bottom: 25px;
 }
 
-
 /* ================= MAIN HEADING ================= */
 
 .hero-left h1 {
@@ -80,10 +76,9 @@ body {
   font-weight: 800;
 }
 
-
 /* =========================================================
-   PREMIUM RAINBOW TEXT
-   ONLY LETTERS
+PREMIUM RAINBOW TEXT
+ONLY LETTERS
 ========================================================= */
 
 .rainbow-text {
@@ -112,6 +107,33 @@ body {
   animation: rainbowMove 5s linear infinite;
 }
 
+/* ================= INLINE RAINBOW ================= */
+
+.rainbow-inline {
+  background: linear-gradient(
+    90deg,
+    #ff0080,
+    #ff4d00,
+    #ffd000,
+    #00d084,
+    #00bfff,
+    #4169e1,
+    #8a2be2,
+    #ff0080
+  );
+
+  background-size: 400% 100%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: rainbowMove 5s linear infinite;
+
+  font-weight: 700;
+}
 
 /* ================= DESCRIPTION ================= */
 
@@ -125,7 +147,6 @@ body {
   max-width: 600px;
 }
 
-
 /* ================= CREATOR ================= */
 
 .creator {
@@ -138,13 +159,11 @@ body {
   color: #334155;
 }
 
-
 /* ================= CREATOR NAME ================= */
 
 .creator .rainbow-text {
   font-weight: 800;
 }
-
 
 /* ================= RAINBOW ANIMATION ================= */
 
@@ -158,7 +177,6 @@ body {
   }
 }
 
-
 /* ================= RIGHT ================= */
 
 .hero-right {
@@ -170,7 +188,6 @@ body {
 
   animation: slideRight 1s ease;
 }
-
 
 /* ================= CARD ================= */
 
@@ -200,7 +217,6 @@ body {
     0 35px 80px rgba(37, 99, 235, 0.25);
 }
 
-
 /* ================= EMOJI ================= */
 
 .emoji {
@@ -227,7 +243,6 @@ body {
   );
 }
 
-
 /* ================= CARD TITLE ================= */
 
 .card h2 {
@@ -238,7 +253,6 @@ body {
   font-size: 32px;
 }
 
-
 /* ================= CARD DESCRIPTION ================= */
 
 .card p {
@@ -248,7 +262,6 @@ body {
 
   line-height: 1.6;
 }
-
 
 /* ================= INFO ================= */
 
@@ -272,45 +285,37 @@ body {
   font-size: 15px;
 }
 
-
 /* ================= LEFT ANIMATION ================= */
 
 @keyframes slideLeft {
   from {
     opacity: 0;
-
     transform: translateX(-60px);
   }
 
   to {
     opacity: 1;
-
     transform: translateX(0);
   }
 }
-
 
 /* ================= RIGHT ANIMATION ================= */
 
 @keyframes slideRight {
   from {
     opacity: 0;
-
     transform: translateX(60px);
   }
 
   to {
     opacity: 1;
-
     transform: translateX(0);
   }
 }
 
-
 /* ================= MOBILE ================= */
 
 @media (max-width: 900px) {
-
   .hero {
     flex-direction: column;
 
