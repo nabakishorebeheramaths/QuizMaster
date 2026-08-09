@@ -1,0 +1,272 @@
+[
+  {
+    "question": "What is the SI unit of force?",
+    "options": ["Joule", "Newton", "Watt", "Pascal"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The dimensional formula of velocity is:",
+    "options": ["[M L T⁻¹]", "[L T⁻¹]", "[M L T⁻²]", "[L T⁻²]"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A body moving with constant velocity has:",
+    "options": ["Constant acceleration", "Zero acceleration", "Increasing acceleration", "Variable acceleration"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The acceleration due to gravity near the Earth's surface is approximately:",
+    "options": ["5.8 m/s²", "9.8 m/s²", "12.8 m/s²", "15.8 m/s²"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The work done by a force perpendicular to displacement is:",
+    "options": ["Maximum", "Minimum", "Zero", "Infinite"],
+    "correctAnswer": 2,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which quantity is conserved in an isolated system during a collision?",
+    "options": ["Momentum", "Velocity", "Acceleration", "Force"],
+    "correctAnswer": 0,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The kinetic energy of a body is proportional to:",
+    "options": ["v", "v²", "1/v", "√v"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The SI unit of electric charge is:",
+    "options": ["Volt", "Ampere", "Coulomb", "Ohm"],
+    "correctAnswer": 2,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Ohm's law is represented by:",
+    "options": ["V = IR", "P = VI", "Q = It", "F = ma"],
+    "correctAnswer": 0,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The resistance of a conductor depends on its:",
+    "options": ["Length and area", "Color only", "Mass only", "Temperature only"],
+    "correctAnswer": 0,
+    "category": "Physics",
+    "courseId": "jee",
+    "subjectId": "physics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The atomic number of an element represents the number of:",
+    "options": ["Neutrons", "Protons", "Nucleons", "Electrons and neutrons"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which particle has a negative charge?",
+    "options": ["Proton", "Neutron", "Electron", "Positron"],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Avogadro's number is approximately:",
+    "options": ["6.022 × 10²³", "9.8 × 10²³", "3.14 × 10²³", "1.602 × 10¹⁹"],
+    "correctAnswer": 0,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The pH of a neutral solution at 25°C is:",
+    "options": ["0", "5", "7", "14"],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which gas is evolved when an acid reacts with a metal?",
+    "options": ["Oxygen", "Hydrogen", "Nitrogen", "Carbon dioxide"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a strong acid?",
+    "options": ["CH₃COOH", "HCl", "H₂CO₃", "HCOOH"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The hybridization of carbon in methane is:",
+    "options": ["sp", "sp²", "sp³", "dsp²"],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which element has the highest electronegativity?",
+    "options": ["Oxygen", "Nitrogen", "Fluorine", "Chlorine"],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The process of conversion of a solid directly into gas is called:",
+    "options": ["Evaporation", "Condensation", "Sublimation", "Fusion"],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "jee",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If the roots of x² - 5x + 6 = 0 are α and β, then α + β is:",
+    "options": ["2", "5", "6", "-5"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "jee",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The value of sin²θ + cos²θ is:",
+    "options": ["0", "1", "2", "sin θ"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "jee",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The derivative of x² with respect to x is:",
+    "options": ["x", "2x", "x²", "2"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "jee",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The integral of 2x dx is:",
+    "options": ["x² + C", "2x² + C", "x + C", "2 + C"],
+    "correctAnswer": 0,
+    "category": "Mathematics",
+    "courseId": "jee",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The determinant of the identity matrix of order 2 is:",
+    "options": ["0", "1", "2", "-1"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "jee",
+    "subjectId": "mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The probability of getting a head when a fair coin is tossed once is:",
+    "options": ["0", "1/4", "1/2", "1"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "jee",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The distance between the points (0,0) and (3,4) is:",
+    "options": ["3", "4", "5", "7"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "jee",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If log₁₀ 100 = x, then x equals:",
+    "options": ["1", "2", "10", "100"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "jee",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The sum of the first n natural numbers is:",
+    "options": ["n²", "n(n+1)/2", "n(n-1)/2", "2n"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "jee",
+    "subjectId": "mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A train travels 120 km in 2 hours. Its average speed is:",
+    "options": ["40 km/h", "50 km/h", "60 km/h", "80 km/h"],
+    "correctAnswer": 2,
+    "category": "Aptitude",
+    "courseId": "jee",
+    "subjectId": "aptitude",
+    "difficulty": "easy"
+  }
+]

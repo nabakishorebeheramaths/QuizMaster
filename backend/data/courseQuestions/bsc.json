@@ -1,0 +1,287 @@
+[
+  {
+    "question": "Which branch of science deals with the study of matter and its properties?",
+    "options": ["Physics", "Chemistry", "Biology", "Geology"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "bsc",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the smallest unit of an element that retains its chemical properties?",
+    "options": ["Molecule", "Atom", "Ion", "Compound"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "bsc",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which particle has a negative electric charge?",
+    "options": ["Proton", "Neutron", "Electron", "Nucleus"],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "bsc",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the chemical formula of water?",
+    "options": ["CO2", "H2O", "O2", "H2SO4"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "bsc",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "bsc",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A solution with a pH less than 7 is:",
+    "options": ["Neutral", "Acidic", "Basic", "Salty"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "bsc",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which element has the chemical symbol Na?",
+    "options": ["Nitrogen", "Sodium", "Neon", "Nickel"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "bsc",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of bond involves sharing of electrons between atoms?",
+    "options": ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "bsc",
+    "subjectId": "chemistry",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which law states that mass is neither created nor destroyed during a chemical reaction?",
+    "options": [
+      "Boyle's law",
+      "Law of conservation of mass",
+      "Charles's law",
+      "Avogadro's law"
+    ],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "bsc",
+    "subjectId": "chemistry",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which gas is released during photosynthesis?",
+    "options": ["Carbon dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+    "correctAnswer": 2,
+    "category": "Biology",
+    "courseId": "bsc",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the basic structural and functional unit of life?",
+    "options": ["Tissue", "Organ", "Cell", "Organism"],
+    "correctAnswer": 2,
+    "category": "Biology",
+    "courseId": "bsc",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organelle is known as the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondria", "Golgi apparatus"],
+    "correctAnswer": 2,
+    "category": "Biology",
+    "courseId": "bsc",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which molecule carries genetic information in most living organisms?",
+    "options": ["RNA", "DNA", "ATP", "Protein"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "bsc",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which pigment is mainly responsible for photosynthesis in plants?",
+    "options": ["Hemoglobin", "Chlorophyll", "Melanin", "Carotene"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "bsc",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of cell division produces two genetically similar daughter cells?",
+    "options": ["Meiosis", "Mitosis", "Fertilization", "Mutation"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "bsc",
+    "subjectId": "biology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which blood cells are primarily responsible for fighting infections?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "bsc",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ is primarily responsible for filtering blood and producing urine?",
+    "options": ["Liver", "Kidney", "Heart", "Lung"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "bsc",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which scientist is widely known for proposing the theory of evolution by natural selection?",
+    "options": [
+      "Gregor Mendel",
+      "Charles Darwin",
+      "Louis Pasteur",
+      "Robert Hooke"
+    ],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "bsc",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which branch of science deals with the study of matter, energy, motion and forces?",
+    "options": ["Physics", "Biology", "Botany", "Ecology"],
+    "correctAnswer": 0,
+    "category": "Physics",
+    "courseId": "bsc",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the SI unit of force?",
+    "options": ["Joule", "Newton", "Watt", "Pascal"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "bsc",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the SI unit of electric current?",
+    "options": ["Volt", "Ohm", "Ampere", "Watt"],
+    "correctAnswer": 2,
+    "category": "Physics",
+    "courseId": "bsc",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which quantity is measured in joules?",
+    "options": ["Force", "Energy", "Current", "Pressure"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "bsc",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "According to Newton's first law, an object will remain at rest or in uniform motion unless:",
+    "options": [
+      "Its mass changes",
+      "An external force acts on it",
+      "Its temperature changes",
+      "Its volume changes"
+    ],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "bsc",
+    "subjectId": "physics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which phenomenon explains the bending of light when it passes from one medium to another?",
+    "options": ["Reflection", "Refraction", "Diffraction", "Interference"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "bsc",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which device is used to measure electric current?",
+    "options": ["Voltmeter", "Ammeter", "Barometer", "Thermometer"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "bsc",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the approximate acceleration due to gravity near Earth's surface?",
+    "options": ["4.9 m/s²", "9.8 m/s²", "19.6 m/s²", "98 m/s²"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "bsc",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which mathematical function represents the ratio of the opposite side to the hypotenuse in a right triangle?",
+    "options": ["Cosine", "Sine", "Tangent", "Secant"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "bsc",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the derivative of x² with respect to x?",
+    "options": ["x", "2x", "x²", "2"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "bsc",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the value of log₁₀(100)?",
+    "options": ["1", "2", "10", "100"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "bsc",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a fair coin is tossed once, what is the probability of getting a head?",
+    "options": ["0", "1/4", "1/2", "1"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "bsc",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  }
+]

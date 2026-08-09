@@ -1,0 +1,464 @@
+[
+  {
+    "question": "What does AI stand for?",
+    "options": [
+      "Artificial Intelligence",
+      "Automated Information",
+      "Advanced Internet",
+      "Artificial Integration"
+    ],
+    "correctAnswer": 0,
+    "category": "AI Fundamentals",
+    "courseId": "artificial-intelligence",
+    "subjectId": "ai-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a major goal of Artificial Intelligence?",
+    "options": [
+      "To make machines perform tasks requiring human-like intelligence",
+      "To increase computer size",
+      "To replace computer networks",
+      "To reduce storage capacity"
+    ],
+    "correctAnswer": 0,
+    "category": "AI Fundamentals",
+    "courseId": "artificial-intelligence",
+    "subjectId": "ai-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which field of AI enables computers to learn from data?",
+    "options": [
+      "Machine Learning",
+      "Computer Graphics",
+      "Operating Systems",
+      "Database Management"
+    ],
+    "correctAnswer": 0,
+    "category": "AI Fundamentals",
+    "courseId": "artificial-intelligence",
+    "subjectId": "ai-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which AI technique is commonly used for understanding human language?",
+    "options": [
+      "Natural Language Processing",
+      "Image Compression",
+      "File Management",
+      "Operating System Scheduling"
+    ],
+    "correctAnswer": 0,
+    "category": "AI Fundamentals",
+    "courseId": "artificial-intelligence",
+    "subjectId": "ai-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which technology is commonly used for recognizing objects in images?",
+    "options": [
+      "Computer Vision",
+      "Database Indexing",
+      "Web Hosting",
+      "Text Formatting"
+    ],
+    "correctAnswer": 0,
+    "category": "AI Fundamentals",
+    "courseId": "artificial-intelligence",
+    "subjectId": "ai-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an AI model?",
+    "options": [
+      "A system trained to make predictions or decisions from data",
+      "A physical computer cabinet",
+      "A network cable",
+      "A type of operating system"
+    ],
+    "correctAnswer": 0,
+    "category": "AI Fundamentals",
+    "courseId": "artificial-intelligence",
+    "subjectId": "ai-fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which type of machine learning uses labeled training data?",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Random learning"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of machine learning works with unlabeled data?",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Transfer learning only"
+    ],
+    "correctAnswer": 1,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which learning approach uses rewards and penalties?",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Batch learning"
+    ],
+    "correctAnswer": 2,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which algorithm is commonly used for classification?",
+    "options": [
+      "Decision Tree",
+      "Linear Search",
+      "Binary Encoding",
+      "Merge Sort"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is overfitting in machine learning?",
+    "options": [
+      "When a model performs very well on training data but poorly on unseen data",
+      "When a model has no training data",
+      "When a computer runs out of memory",
+      "When data is completely removed"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is underfitting?",
+    "options": [
+      "When a model is too simple to capture important patterns in data",
+      "When a model memorizes all training examples",
+      "When data is duplicated",
+      "When a model has too many features"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a feature in machine learning?",
+    "options": [
+      "An input variable used by a model",
+      "The final prediction only",
+      "A computer processor",
+      "A programming language"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of splitting data into training and testing sets?",
+    "options": [
+      "To evaluate how well a model generalizes to unseen data",
+      "To increase file size",
+      "To remove all features",
+      "To make training impossible"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which metric is commonly used to evaluate classification accuracy?",
+    "options": [
+      "Accuracy",
+      "File size",
+      "CPU speed",
+      "Memory address"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a neural network inspired by?",
+    "options": [
+      "The structure and functioning of biological neural systems",
+      "Computer hard drives",
+      "Internet protocols",
+      "Database tables"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is deep learning?",
+    "options": [
+      "A branch of machine learning using neural networks with multiple layers",
+      "A type of database",
+      "A computer networking protocol",
+      "A programming language"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the basic computational unit of a neural network commonly called?",
+    "options": [
+      "Neuron",
+      "Router",
+      "Compiler",
+      "Database"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which layer receives input data in a neural network?",
+    "options": [
+      "Input layer",
+      "Output layer",
+      "Hidden layer",
+      "Pooling layer"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of neural network is especially effective for image processing?",
+    "options": [
+      "Convolutional Neural Network",
+      "Recurrent Neural Network",
+      "Decision Tree",
+      "Linear Regression"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which neural network architecture is commonly associated with sequential data?",
+    "options": [
+      "Recurrent Neural Network",
+      "Convolutional Neural Network",
+      "Decision Tree",
+      "K-Means"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is an activation function used for in a neural network?",
+    "options": [
+      "Introducing non-linearity into the network",
+      "Storing files",
+      "Connecting computers to the internet",
+      "Compressing images"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which activation function outputs values between 0 and 1?",
+    "options": [
+      "Sigmoid",
+      "ReLU",
+      "Tanh",
+      "Softplus"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does ReLU stand for?",
+    "options": [
+      "Rectified Linear Unit",
+      "Recursive Learning Unit",
+      "Random Linear Utility",
+      "Reduced Learning Utility"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python library is widely used for numerical computation in AI?",
+    "options": [
+      "NumPy",
+      "Flask",
+      "Django",
+      "Requests"
+    ],
+    "correctAnswer": 0,
+    "category": "Python",
+    "courseId": "artificial-intelligence",
+    "subjectId": "python",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python library is commonly used for data manipulation and analysis?",
+    "options": [
+      "Pandas",
+      "Tkinter",
+      "Socket",
+      "OS"
+    ],
+    "correctAnswer": 0,
+    "category": "Python",
+    "courseId": "artificial-intelligence",
+    "subjectId": "python",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python library is widely used for machine learning?",
+    "options": [
+      "Scikit-learn",
+      "BeautifulSoup",
+      "Pygame",
+      "Turtle"
+    ],
+    "correctAnswer": 0,
+    "category": "Python",
+    "courseId": "artificial-intelligence",
+    "subjectId": "python",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python library is commonly used for creating plots and visualizations?",
+    "options": [
+      "Matplotlib",
+      "Requests",
+      "Flask",
+      "PyTest"
+    ],
+    "correctAnswer": 0,
+    "category": "Python",
+    "courseId": "artificial-intelligence",
+    "subjectId": "python",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python data structure stores key-value pairs?",
+    "options": [
+      "Dictionary",
+      "List",
+      "Tuple",
+      "Set"
+    ],
+    "correctAnswer": 0,
+    "category": "Python",
+    "courseId": "artificial-intelligence",
+    "subjectId": "python",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python keyword is used to define a function?",
+    "options": [
+      "def",
+      "function",
+      "func",
+      "define"
+    ],
+    "correctAnswer": 0,
+    "category": "Python",
+    "courseId": "artificial-intelligence",
+    "subjectId": "python",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which algorithm is commonly used to group similar data points without labeled data?",
+    "options": [
+      "K-Means Clustering",
+      "Linear Regression",
+      "Decision Tree",
+      "Logistic Regression"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the main purpose of a loss function in machine learning?",
+    "options": [
+      "To measure the difference between predictions and actual values",
+      "To increase network speed",
+      "To store training data",
+      "To create computer graphics"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which optimization algorithm is widely used to train neural networks?",
+    "options": [
+      "Gradient Descent",
+      "Binary Search",
+      "Bubble Sort",
+      "Depth First Search"
+    ],
+    "correctAnswer": 0,
+    "category": "Deep Learning",
+    "courseId": "artificial-intelligence",
+    "subjectId": "deep-learning",
+    "difficulty": "medium"
+  }
+]

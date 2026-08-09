@@ -1,0 +1,326 @@
+[
+  {
+    "question": "Which is the largest organ of the human body?",
+    "options": ["Liver", "Skin", "Heart", "Lung"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many bones are present in an adult human body?",
+    "options": ["196", "206", "216", "226"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which bone is known as the collar bone?",
+    "options": ["Scapula", "Clavicle", "Humerus", "Sternum"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is the longest bone in the human body?",
+    "options": ["Tibia", "Femur", "Humerus", "Fibula"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ pumps blood throughout the body?",
+    "options": ["Liver", "Heart", "Kidney", "Lung"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many chambers are present in the human heart?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": 2,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which chamber of the heart pumps oxygenated blood into the systemic circulation?",
+    "options": [
+      "Right atrium",
+      "Right ventricle",
+      "Left atrium",
+      "Left ventricle"
+    ],
+    "correctAnswer": 3,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
+    "options": [
+      "Pulmonary artery",
+      "Pulmonary vein",
+      "Aorta",
+      "Superior vena cava"
+    ],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which part of the brain is mainly responsible for balance and coordination?",
+    "options": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which structure connects the two cerebral hemispheres?",
+    "options": [
+      "Corpus callosum",
+      "Medulla oblongata",
+      "Pons",
+      "Spinal cord"
+    ],
+    "correctAnswer": 0,
+    "category": "Anatomy",
+    "courseId": "mbbs",
+    "subjectId": "anatomy",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the normal resting heart rate of an adult generally considered to be?",
+    "options": [
+      "20–40 beats/minute",
+      "60–100 beats/minute",
+      "120–160 beats/minute",
+      "180–220 beats/minute"
+    ],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "mbbs",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which hormone lowers blood glucose level?",
+    "options": ["Glucagon", "Insulin", "Cortisol", "Adrenaline"],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "mbbs",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which hormone is secreted by the thyroid gland?",
+    "options": [
+      "Insulin",
+      "Thyroxine",
+      "Adrenaline",
+      "Growth hormone"
+    ],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "mbbs",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which part of the nephron is primarily responsible for filtration of blood?",
+    "options": [
+      "Loop of Henle",
+      "Glomerulus",
+      "Collecting duct",
+      "Distal tubule"
+    ],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "mbbs",
+    "subjectId": "physiology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which respiratory structure is the main site of gas exchange?",
+    "options": ["Trachea", "Bronchi", "Alveoli", "Larynx"],
+    "correctAnswer": 2,
+    "category": "Physiology",
+    "courseId": "mbbs",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which component of blood is primarily responsible for oxygen transport?",
+    "options": ["Platelets", "Hemoglobin", "Plasma", "White blood cells"],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "mbbs",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which blood cells are mainly involved in immune defense?",
+    "options": [
+      "Red blood cells",
+      "White blood cells",
+      "Platelets",
+      "Erythrocytes"
+    ],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "mbbs",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary function of platelets?",
+    "options": [
+      "Oxygen transport",
+      "Blood clotting",
+      "Hormone production",
+      "Digestion"
+    ],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "mbbs",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ is primarily responsible for detoxification and metabolism of many substances?",
+    "options": ["Heart", "Liver", "Spleen", "Pancreas"],
+    "correctAnswer": 1,
+    "category": "Biochemistry",
+    "courseId": "mbbs",
+    "subjectId": "biochemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main energy currency of the cell?",
+    "options": ["DNA", "ATP", "RNA", "Glucose"],
+    "correctAnswer": 1,
+    "category": "Biochemistry",
+    "courseId": "mbbs",
+    "subjectId": "biochemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which molecule carries genetic information in most living organisms?",
+    "options": ["ATP", "DNA", "Glucose", "Cholesterol"],
+    "correctAnswer": 1,
+    "category": "Biochemistry",
+    "courseId": "mbbs",
+    "subjectId": "biochemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which vitamin is essential for normal blood clotting?",
+    "options": ["Vitamin A", "Vitamin C", "Vitamin K", "Vitamin D"],
+    "correctAnswer": 2,
+    "category": "Biochemistry",
+    "courseId": "mbbs",
+    "subjectId": "biochemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which vitamin deficiency causes scurvy?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin K"],
+    "correctAnswer": 2,
+    "category": "Biochemistry",
+    "courseId": "mbbs",
+    "subjectId": "biochemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which vitamin is commonly associated with calcium absorption and bone health?",
+    "options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+    "correctAnswer": 2,
+    "category": "Biochemistry",
+    "courseId": "mbbs",
+    "subjectId": "biochemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ produces insulin?",
+    "options": ["Liver", "Pancreas", "Kidney", "Spleen"],
+    "correctAnswer": 1,
+    "category": "Biochemistry",
+    "courseId": "mbbs",
+    "subjectId": "biochemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the normal approximate pH of arterial blood?",
+    "options": ["5.5", "6.5", "7.4", "8.5"],
+    "correctAnswer": 2,
+    "category": "Biochemistry",
+    "courseId": "mbbs",
+    "subjectId": "biochemistry",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the study of disease processes called?",
+    "options": ["Physiology", "Pathology", "Anatomy", "Pharmacology"],
+    "correctAnswer": 1,
+    "category": "Pathology",
+    "courseId": "mbbs",
+    "subjectId": "pathology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of anemia is commonly caused by iron deficiency?",
+    "options": [
+      "Microcytic hypochromic anemia",
+      "Macrocytic anemia",
+      "Hemolytic anemia",
+      "Aplastic anemia"
+    ],
+    "correctAnswer": 0,
+    "category": "Pathology",
+    "courseId": "mbbs",
+    "subjectId": "pathology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which condition is characterized by persistently elevated blood glucose levels?",
+    "options": ["Diabetes mellitus", "Anemia", "Jaundice", "Asthma"],
+    "correctAnswer": 0,
+    "category": "Pathology",
+    "courseId": "mbbs",
+    "subjectId": "pathology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of white blood cell is primarily involved in antibody production?",
+    "options": ["Neutrophils", "B lymphocytes", "Eosinophils", "Platelets"],
+    "correctAnswer": 1,
+    "category": "Pathology",
+    "courseId": "mbbs",
+    "subjectId": "pathology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which disease is characterized by inflammation of the liver?",
+    "options": ["Hepatitis", "Nephritis", "Arthritis", "Dermatitis"],
+    "correctAnswer": 0,
+    "category": "Pathology",
+    "courseId": "mbbs",
+    "subjectId": "pathology",
+    "difficulty": "easy"
+  }
+]

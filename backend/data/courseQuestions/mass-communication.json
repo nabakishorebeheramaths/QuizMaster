@@ -1,0 +1,436 @@
+[
+  {
+    "question": "What is mass communication?",
+    "options": [
+      "Communication with one person only",
+      "Communication with a large audience through mass media",
+      "Private communication between friends",
+      "Communication without any medium"
+    ],
+    "correctAnswer": 1,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a form of mass media?",
+    "options": [
+      "Newspaper",
+      "Personal diary",
+      "Private letter",
+      "Personal conversation"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which medium is primarily associated with broadcasting audio programmes?",
+    "options": [
+      "Radio",
+      "Newspaper",
+      "Poster",
+      "Magazine"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Television is primarily considered which type of medium?",
+    "options": [
+      "Audio-visual medium",
+      "Print medium",
+      "Only audio medium",
+      "Interpersonal medium"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which medium uses printed words and images to reach audiences?",
+    "options": [
+      "Radio",
+      "Print media",
+      "Telephone",
+      "Podcast"
+    ],
+    "correctAnswer": 1,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is an example of print media?",
+    "options": [
+      "Newspaper",
+      "Television",
+      "Radio",
+      "Podcast"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main purpose of mass communication?",
+    "options": [
+      "To reach and inform a large audience",
+      "To communicate only with family",
+      "To avoid public information",
+      "To communicate privately"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which medium combines sound and moving images?",
+    "options": [
+      "Newspaper",
+      "Television",
+      "Poster",
+      "Magazine"
+    ],
+    "correctAnswer": 1,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Internet is an example of which type of communication platform?",
+    "options": [
+      "Digital media",
+      "Traditional print only",
+      "Postal communication",
+      "Face-to-face communication"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which medium is commonly used for real-time audio broadcasting?",
+    "options": [
+      "Radio",
+      "Newspaper",
+      "Book",
+      "Magazine"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does journalism primarily involve?",
+    "options": [
+      "Collecting and presenting news and information",
+      "Selling household products",
+      "Designing buildings",
+      "Manufacturing machines"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is news?",
+    "options": [
+      "Information about events of public interest",
+      "A private diary",
+      "A fictional poem only",
+      "A personal shopping list"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which quality is essential for good news reporting?",
+    "options": [
+      "Accuracy",
+      "Rumour",
+      "Exaggeration",
+      "Bias"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a headline?",
+    "options": [
+      "The main title of a news story",
+      "The name of the newspaper owner",
+      "The final paragraph of a story",
+      "A journalist's signature"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the inverted pyramid style in journalism?",
+    "options": [
+      "Important information is presented first",
+      "Important information is always presented last",
+      "Stories are written alphabetically",
+      "Stories contain only opinions"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which question is generally included among the basic elements of news?",
+    "options": [
+      "Who?",
+      "Which colour?",
+      "Which brand?",
+      "Which design?"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the role of an editor?",
+    "options": [
+      "To review and prepare content for publication",
+      "To manufacture cameras",
+      "To operate railway trains",
+      "To design computer processors"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is advertising?",
+    "options": [
+      "Paid communication used to promote a product, service or idea",
+      "Private communication between two people",
+      "A government examination",
+      "A type of news report"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "advertising",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary objective of advertising?",
+    "options": [
+      "To promote products, services or ideas",
+      "To hide information",
+      "To conduct scientific experiments",
+      "To prepare examination papers"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "advertising",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a target audience?",
+    "options": [
+      "The specific group an advertisement aims to reach",
+      "The advertising agency's employees",
+      "The printer of a newspaper",
+      "The television technician"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "advertising",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a slogan in advertising?",
+    "options": [
+      "A memorable phrase associated with a brand or campaign",
+      "A legal document",
+      "A newspaper article",
+      "A television script"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "advertising",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following can be used as an advertising medium?",
+    "options": [
+      "Television",
+      "Personal diary",
+      "Private notebook",
+      "Personal password"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "advertising",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is public relations?",
+    "options": [
+      "Managing communication and relationships between an organization and its publics",
+      "Selling products only through shops",
+      "Printing books",
+      "Writing computer programs"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is feedback in communication?",
+    "options": [
+      "The response of the receiver to a message",
+      "The sender's address",
+      "The communication channel only",
+      "The physical device used"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is the receiver in the communication process?",
+    "options": [
+      "The person or group that receives the message",
+      "The person who creates the message",
+      "The communication channel",
+      "The advertising agency"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is encoding in communication?",
+    "options": [
+      "Converting an idea into a communicable message",
+      "Receiving a message",
+      "Ignoring feedback",
+      "Destroying information"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is decoding?",
+    "options": [
+      "Interpreting the received message",
+      "Creating an advertisement",
+      "Sending a newspaper",
+      "Selecting a camera"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following can be a barrier to communication?",
+    "options": [
+      "Language differences",
+      "Clear information",
+      "Proper feedback",
+      "Good listening"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is digital journalism?",
+    "options": [
+      "Journalism produced and distributed through digital platforms",
+      "Journalism published only on paper",
+      "Private letter writing",
+      "Face-to-face communication"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which platform is commonly used for sharing video-based mass communication content?",
+    "options": [
+      "YouTube",
+      "Calculator",
+      "File manager",
+      "Notepad"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Social media has changed mass communication mainly by enabling:",
+    "options": [
+      "Rapid and interactive communication",
+      "Only one-way communication",
+      "Communication without audiences",
+      "Only printed communication"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Communication",
+    "courseId": "mass-communication",
+    "subjectId": "mass-media",
+    "difficulty": "medium"
+  }
+]

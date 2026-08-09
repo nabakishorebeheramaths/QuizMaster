@@ -1,0 +1,422 @@
+[
+  {
+    "question": "What is the primary function of management?",
+    "options": [
+      "Planning, organizing, staffing, directing and controlling",
+      "Only selling products",
+      "Only maintaining accounts",
+      "Only recruiting employees"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bba",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is known as the Father of Scientific Management?",
+    "options": [
+      "Henri Fayol",
+      "F.W. Taylor",
+      "Peter Drucker",
+      "Elton Mayo"
+    ],
+    "correctAnswer": 1,
+    "category": "Management",
+    "courseId": "bba",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which function of management involves setting objectives?",
+    "options": [
+      "Planning",
+      "Controlling",
+      "Staffing",
+      "Directing"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bba",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The principle of unity of command was proposed by:",
+    "options": [
+      "F.W. Taylor",
+      "Henri Fayol",
+      "Elton Mayo",
+      "Max Weber"
+    ],
+    "correctAnswer": 1,
+    "category": "Management",
+    "courseId": "bba",
+    "subjectId": "management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does delegation of authority mean?",
+    "options": [
+      "Assigning authority and responsibility to subordinates",
+      "Removing all employees",
+      "Increasing product prices",
+      "Closing a department"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bba",
+    "subjectId": "management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which level of management is mainly responsible for strategic decisions?",
+    "options": [
+      "Top management",
+      "Middle management",
+      "Supervisory management",
+      "Operational staff"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bba",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is organizational structure?",
+    "options": [
+      "The framework defining roles, authority and relationships",
+      "A company's advertising plan",
+      "A company's financial statement",
+      "A production machine"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bba",
+    "subjectId": "management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which management function measures actual performance against planned performance?",
+    "options": [
+      "Planning",
+      "Organizing",
+      "Controlling",
+      "Staffing"
+    ],
+    "correctAnswer": 2,
+    "category": "Management",
+    "courseId": "bba",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Marketing primarily focuses on:",
+    "options": [
+      "Identifying and satisfying customer needs",
+      "Only producing goods",
+      "Only hiring employees",
+      "Only maintaining records"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bba",
+    "subjectId": "marketing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The traditional marketing mix consists of:",
+    "options": [
+      "4 Ps",
+      "3 Ps",
+      "5 Cs",
+      "7 As"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bba",
+    "subjectId": "marketing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is NOT one of the traditional 4 Ps of marketing?",
+    "options": [
+      "Product",
+      "Price",
+      "Promotion",
+      "People"
+    ],
+    "correctAnswer": 3,
+    "category": "Marketing",
+    "courseId": "bba",
+    "subjectId": "marketing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Market segmentation means:",
+    "options": [
+      "Dividing a market into groups of customers with similar needs",
+      "Increasing production",
+      "Reducing employee salaries",
+      "Closing markets"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bba",
+    "subjectId": "marketing",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is branding?",
+    "options": [
+      "Creating a distinctive identity for a product or company",
+      "Reducing product quality",
+      "Increasing employee numbers",
+      "Preparing tax returns"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bba",
+    "subjectId": "marketing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which marketing activity communicates product information to customers?",
+    "options": [
+      "Promotion",
+      "Accounting",
+      "Recruitment",
+      "Auditing"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bba",
+    "subjectId": "marketing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is consumer behaviour?",
+    "options": [
+      "Study of how consumers select, buy and use products",
+      "Study of company taxation",
+      "Study of employee attendance",
+      "Study of production machinery"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bba",
+    "subjectId": "marketing",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is market research?",
+    "options": [
+      "Systematic collection and analysis of market information",
+      "Preparation of salary sheets",
+      "Manufacturing products",
+      "Recruiting employees"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bba",
+    "subjectId": "marketing",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Finance is mainly concerned with:",
+    "options": [
+      "Management of money and financial resources",
+      "Only employee training",
+      "Only product packaging",
+      "Only advertising"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bba",
+    "subjectId": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is working capital?",
+    "options": [
+      "Current assets minus current liabilities",
+      "Fixed assets plus liabilities",
+      "Total sales minus purchases",
+      "Revenue minus tax only"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bba",
+    "subjectId": "finance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which financial statement shows the financial position of a business?",
+    "options": [
+      "Balance Sheet",
+      "Income Statement",
+      "Cash Book",
+      "Sales Journal"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bba",
+    "subjectId": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is profit?",
+    "options": [
+      "Revenue minus expenses",
+      "Expenses minus revenue",
+      "Assets minus sales",
+      "Liabilities plus expenses"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bba",
+    "subjectId": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main objective of financial management?",
+    "options": [
+      "Maximizing shareholder wealth",
+      "Increasing employee workload",
+      "Reducing customer satisfaction",
+      "Eliminating all expenses"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bba",
+    "subjectId": "finance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is capital budgeting?",
+    "options": [
+      "Planning and evaluating long-term investments",
+      "Preparing employee schedules",
+      "Setting product prices only",
+      "Recording daily sales"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bba",
+    "subjectId": "finance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a source of long-term finance?",
+    "options": [
+      "Equity shares",
+      "Trade credit",
+      "Outstanding wages",
+      "Short-term overdraft"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bba",
+    "subjectId": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Business economics mainly applies economic principles to:",
+    "options": [
+      "Business decision-making",
+      "Weather forecasting",
+      "Medical diagnosis",
+      "Historical research"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Economics",
+    "courseId": "bba",
+    "subjectId": "business-economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "According to the law of demand, other things remaining constant, when price increases:",
+    "options": [
+      "Quantity demanded generally decreases",
+      "Quantity demanded increases",
+      "Demand always remains constant",
+      "Supply decreases automatically"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Economics",
+    "courseId": "bba",
+    "subjectId": "business-economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Elasticity of demand measures:",
+    "options": [
+      "Responsiveness of quantity demanded to changes in relevant factors",
+      "Total production cost",
+      "Total profit",
+      "Number of employees"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Economics",
+    "courseId": "bba",
+    "subjectId": "business-economics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "GDP stands for:",
+    "options": [
+      "Gross Domestic Product",
+      "General Domestic Production",
+      "Gross Development Product",
+      "Government Domestic Product"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Economics",
+    "courseId": "bba",
+    "subjectId": "business-economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is opportunity cost?",
+    "options": [
+      "Value of the next best alternative forgone",
+      "Total production cost",
+      "Cost of advertising",
+      "Cost of raw materials only"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Economics",
+    "courseId": "bba",
+    "subjectId": "business-economics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A market with only one seller is called:",
+    "options": [
+      "Perfect competition",
+      "Monopoly",
+      "Oligopoly",
+      "Monopolistic competition"
+    ],
+    "correctAnswer": 1,
+    "category": "Business Economics",
+    "courseId": "bba",
+    "subjectId": "business-economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Inflation refers to:",
+    "options": [
+      "A sustained general increase in the price level",
+      "A decrease in all prices",
+      "A fall in production only",
+      "An increase in employment only"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Economics",
+    "courseId": "bba",
+    "subjectId": "business-economics",
+    "difficulty": "easy"
+  }
+]

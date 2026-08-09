@@ -1,0 +1,316 @@
+[
+  {
+    "question": "Which language is primarily used to structure the content of a web page?",
+    "options": ["HTML", "CSS", "Python", "SQL"],
+    "correctAnswer": 0,
+    "category": "Web Technology",
+    "courseId": "bsc-it",
+    "subjectId": "web",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Transfer Machine Language",
+      "Hyperlink Text Management Language",
+      "Home Tool Markup Language"
+    ],
+    "correctAnswer": 0,
+    "category": "Web Technology",
+    "courseId": "bsc-it",
+    "subjectId": "web",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which technology is mainly used to style HTML elements?",
+    "options": ["JavaScript", "CSS", "SQL", "PHP"],
+    "correctAnswer": 1,
+    "category": "Web Technology",
+    "courseId": "bsc-it",
+    "subjectId": "web",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": ["<link>", "<a>", "<href>", "<url>"],
+    "correctAnswer": 1,
+    "category": "Web Technology",
+    "courseId": "bsc-it",
+    "subjectId": "web",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which language is commonly used to add interactivity to web pages?",
+    "options": ["HTML", "CSS", "JavaScript", "SQL"],
+    "correctAnswer": 2,
+    "category": "Web Technology",
+    "courseId": "bsc-it",
+    "subjectId": "web",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which protocol is commonly used to transfer web pages over the internet?",
+    "options": ["HTTP", "FTP", "SMTP", "POP3"],
+    "correctAnswer": 0,
+    "category": "Web Technology",
+    "courseId": "bsc-it",
+    "subjectId": "web",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which language is widely used for client-side scripting?",
+    "options": ["JavaScript", "SQL", "C", "Assembly"],
+    "correctAnswer": 0,
+    "category": "Web Technology",
+    "courseId": "bsc-it",
+    "subjectId": "web",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which HTML element is used to display an image?",
+    "options": ["<image>", "<img>", "<picture>", "<src>"],
+    "correctAnswer": 1,
+    "category": "Web Technology",
+    "courseId": "bsc-it",
+    "subjectId": "web",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which programming language is known for its simplicity and readability?",
+    "options": ["Python", "Assembly", "Machine Code", "Fortran"],
+    "correctAnswer": 0,
+    "category": "Programming",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which symbol is used to start a single-line comment in Python?",
+    "options": ["//", "#", "/*", "--"],
+    "correctAnswer": 1,
+    "category": "Programming",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data type is used to store True or False values in Python?",
+    "options": ["int", "str", "bool", "float"],
+    "correctAnswer": 2,
+    "category": "Programming",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which loop is commonly used when the number of iterations is known?",
+    "options": ["for loop", "while loop", "do-while loop", "switch"],
+    "correctAnswer": 0,
+    "category": "Programming",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure follows the LIFO principle?",
+    "options": ["Queue", "Stack", "Array", "Graph"],
+    "correctAnswer": 1,
+    "category": "Programming",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure follows the FIFO principle?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "correctAnswer": 1,
+    "category": "Programming",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main purpose of a function in programming?",
+    "options": [
+      "To store hardware",
+      "To group reusable instructions",
+      "To create a database",
+      "To connect a monitor"
+    ],
+    "correctAnswer": 1,
+    "category": "Programming",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does DBMS stand for?",
+    "options": [
+      "Database Management System",
+      "Data Backup Management Service",
+      "Database Machine System",
+      "Digital Base Management System"
+    ],
+    "correctAnswer": 0,
+    "category": "Database",
+    "courseId": "bsc-it",
+    "subjectId": "database",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which language is primarily used to interact with relational databases?",
+    "options": ["HTML", "SQL", "CSS", "XML"],
+    "correctAnswer": 1,
+    "category": "Database",
+    "courseId": "bsc-it",
+    "subjectId": "database",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which SQL command is used to retrieve data from a table?",
+    "options": ["INSERT", "SELECT", "DELETE", "UPDATE"],
+    "correctAnswer": 1,
+    "category": "Database",
+    "courseId": "bsc-it",
+    "subjectId": "database",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which SQL command is used to add new records to a table?",
+    "options": ["INSERT", "SELECT", "UPDATE", "ALTER"],
+    "correctAnswer": 0,
+    "category": "Database",
+    "courseId": "bsc-it",
+    "subjectId": "database",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which key uniquely identifies each record in a relational table?",
+    "options": ["Foreign key", "Primary key", "Candidate key", "Composite key"],
+    "correctAnswer": 1,
+    "category": "Database",
+    "courseId": "bsc-it",
+    "subjectId": "database",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is normalization mainly used for in databases?",
+    "options": [
+      "Increasing screen resolution",
+      "Reducing data redundancy",
+      "Increasing internet speed",
+      "Encrypting passwords"
+    ],
+    "correctAnswer": 1,
+    "category": "Database",
+    "courseId": "bsc-it",
+    "subjectId": "database",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which database model organizes data into tables?",
+    "options": [
+      "Hierarchical model",
+      "Relational model",
+      "Network model",
+      "Object-only model"
+    ],
+    "correctAnswer": 1,
+    "category": "Database",
+    "courseId": "bsc-it",
+    "subjectId": "database",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does LAN stand for?",
+    "options": [
+      "Local Area Network",
+      "Large Access Network",
+      "Logical Area Node",
+      "Long Area Network"
+    ],
+    "correctAnswer": 0,
+    "category": "Networking",
+    "courseId": "bsc-it",
+    "subjectId": "networking",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which device forwards data packets between different networks?",
+    "options": ["Switch", "Router", "Hub", "Repeater"],
+    "correctAnswer": 1,
+    "category": "Networking",
+    "courseId": "bsc-it",
+    "subjectId": "networking",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which protocol is responsible for assigning IP addresses automatically?",
+    "options": ["HTTP", "FTP", "DHCP", "SMTP"],
+    "correctAnswer": 2,
+    "category": "Networking",
+    "courseId": "bsc-it",
+    "subjectId": "networking",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which protocol is commonly used to securely access a remote server?",
+    "options": ["HTTP", "SSH", "FTP", "SMTP"],
+    "correctAnswer": 1,
+    "category": "Networking",
+    "courseId": "bsc-it",
+    "subjectId": "networking",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many bits are present in an IPv4 address?",
+    "options": ["16", "32", "64", "128"],
+    "correctAnswer": 1,
+    "category": "Networking",
+    "courseId": "bsc-it",
+    "subjectId": "networking",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which layer of the OSI model is responsible for routing?",
+    "options": [
+      "Physical layer",
+      "Data Link layer",
+      "Network layer",
+      "Application layer"
+    ],
+    "correctAnswer": 2,
+    "category": "Networking",
+    "courseId": "bsc-it",
+    "subjectId": "networking",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which component is known as the brain of a computer?",
+    "options": ["RAM", "CPU", "Hard disk", "Monitor"],
+    "correctAnswer": 1,
+    "category": "IT Fundamentals",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which memory is volatile and loses its data when power is turned off?",
+    "options": ["ROM", "RAM", "SSD", "Hard disk"],
+    "correctAnswer": 1,
+    "category": "IT Fundamentals",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which operating system is open-source and widely used on servers?",
+    "options": ["Linux", "Windows only", "MS-DOS", "iOS"],
+    "correctAnswer": 0,
+    "category": "IT Fundamentals",
+    "courseId": "bsc-it",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  }
+]

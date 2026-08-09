@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What is the basic structural and functional unit of life?",
+    "options": ["Tissue", "Cell", "Organ", "Organ system"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organelle is known as the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondria", "Golgi apparatus"],
+    "correctAnswer": 2,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "DNA is mainly located in which part of a eukaryotic cell?",
+    "options": ["Cytoplasm", "Nucleus", "Ribosome", "Cell wall"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which molecule carries genetic information in most organisms?",
+    "options": ["Protein", "DNA", "Lipid", "Glucose"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which blood cells are primarily responsible for carrying oxygen?",
+    "options": ["White blood cells", "Platelets", "Red blood cells", "Lymphocytes"],
+    "correctAnswer": 2,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which hormone regulates blood glucose level?",
+    "options": ["Thyroxine", "Insulin", "Adrenaline", "Estrogen"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The functional unit of the kidney is:",
+    "options": ["Neuron", "Nephron", "Alveolus", "Villus"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which part of the human brain controls balance and coordination?",
+    "options": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Photosynthesis mainly occurs in which organelle?",
+    "options": ["Mitochondria", "Chloroplast", "Nucleus", "Lysosome"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which enzyme begins protein digestion in the stomach?",
+    "options": ["Amylase", "Pepsin", "Lipase", "Trypsin"],
+    "correctAnswer": 1,
+    "category": "Biology",
+    "courseId": "neet",
+    "subjectId": "biology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the SI unit of force?",
+    "options": ["Joule", "Newton", "Watt", "Pascal"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The acceleration due to gravity near Earth's surface is approximately:",
+    "options": ["4.9 m/s²", "9.8 m/s²", "19.6 m/s²", "98 m/s²"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which physical quantity is measured in joules?",
+    "options": ["Force", "Energy", "Power", "Pressure"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What happens to the resistance of a metallic conductor when its temperature increases?",
+    "options": [
+      "It decreases",
+      "It increases",
+      "It remains constant",
+      "It becomes zero"
+    ],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which device converts electrical energy into mechanical energy?",
+    "options": ["Generator", "Motor", "Transformer", "Battery"],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The speed of light in vacuum is approximately:",
+    "options": [
+      "3 × 10^6 m/s",
+      "3 × 10^7 m/s",
+      "3 × 10^8 m/s",
+      "3 × 10^9 m/s"
+    ],
+    "correctAnswer": 2,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which law states that current is directly proportional to voltage at constant temperature?",
+    "options": [
+      "Newton's law",
+      "Ohm's law",
+      "Faraday's law",
+      "Hooke's law"
+    ],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the dimensional formula of velocity?",
+    "options": [
+      "[LT^-1]",
+      "[LT^-2]",
+      "[MLT^-1]",
+      "[MLT^-2]"
+    ],
+    "correctAnswer": 0,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which type of lens is used to correct myopia?",
+    "options": [
+      "Convex lens",
+      "Concave lens",
+      "Cylindrical lens",
+      "Plane lens"
+    ],
+    "correctAnswer": 1,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The unit of electric charge is:",
+    "options": ["Ampere", "Volt", "Coulomb", "Ohm"],
+    "correctAnswer": 2,
+    "category": "Physics",
+    "courseId": "neet",
+    "subjectId": "physics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the atomic number of carbon?",
+    "options": ["4", "6", "8", "12"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The pH of a neutral solution at 25°C is:",
+    "options": ["0", "5", "7", "14"],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which element has the chemical symbol Na?",
+    "options": ["Nitrogen", "Sodium", "Neon", "Nickel"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which bond is formed by sharing electrons between atoms?",
+    "options": ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Avogadro's number is approximately:",
+    "options": [
+      "6.022 × 10^20",
+      "6.022 × 10^22",
+      "6.022 × 10^23",
+      "6.022 × 10^24"
+    ],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which gas is released when an acid reacts with a carbonate?",
+    "options": ["Oxygen", "Hydrogen", "Carbon dioxide", "Nitrogen"],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a strong acid?",
+    "options": ["HCl", "CH3COOH", "H2CO3", "NH4OH"],
+    "correctAnswer": 0,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which element is the most electronegative?",
+    "options": ["Oxygen", "Chlorine", "Fluorine", "Nitrogen"],
+    "correctAnswer": 2,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is an alkali metal?",
+    "options": ["Calcium", "Sodium", "Aluminium", "Magnesium"],
+    "correctAnswer": 1,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organic compound is commonly known as methane?",
+    "options": ["CH4", "C2H6", "C2H4", "C2H2"],
+    "correctAnswer": 0,
+    "category": "Chemistry",
+    "courseId": "neet",
+    "subjectId": "chemistry",
+    "difficulty": "easy"
+  }
+]  

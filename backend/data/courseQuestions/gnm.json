@@ -1,0 +1,281 @@
+[
+  {
+    "question": "The basic unit of the human body is:",
+    "options": ["Tissue", "Cell", "Organ", "System"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ pumps blood throughout the body?",
+    "options": ["Lungs", "Kidney", "Heart", "Liver"],
+    "correctAnswer": 2,
+    "category": "Anatomy",
+    "courseId": "gnm",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The normal adult body temperature is approximately:",
+    "options": ["35°C", "37°C", "39°C", "41°C"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which blood cells are mainly responsible for fighting infections?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma cells"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "gnm",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ is primarily responsible for filtering blood and producing urine?",
+    "options": ["Liver", "Heart", "Kidney", "Lungs"],
+    "correctAnswer": 2,
+    "category": "Anatomy",
+    "courseId": "gnm",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The functional unit of the kidney is called:",
+    "options": ["Neuron", "Nephron", "Alveolus", "Villus"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "gnm",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which part of the respiratory system is the main site of gas exchange?",
+    "options": ["Trachea", "Bronchi", "Alveoli", "Larynx"],
+    "correctAnswer": 2,
+    "category": "Anatomy",
+    "courseId": "gnm",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which chamber of the heart pumps oxygenated blood to the body?",
+    "options": ["Right atrium", "Right ventricle", "Left atrium", "Left ventricle"],
+    "correctAnswer": 3,
+    "category": "Anatomy",
+    "courseId": "gnm",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which vitamin is essential for normal blood clotting?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin K"],
+    "correctAnswer": 3,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A normal adult pulse rate is generally:",
+    "options": ["20–40 beats/min", "60–100 beats/min", "120–160 beats/min", "180–200 beats/min"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which instrument is commonly used to measure blood pressure?",
+    "options": ["Thermometer", "Sphygmomanometer", "Stethoscope", "Pulse oximeter"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The process of destroying all forms of microorganisms, including spores, is called:",
+    "options": ["Disinfection", "Sterilization", "Cleaning", "Sanitation"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The most effective way to prevent the spread of infection in healthcare settings is:",
+    "options": ["Wearing shoes", "Hand hygiene", "Taking vitamins", "Drinking water"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which position is commonly used to help a patient with breathing difficulty?",
+    "options": ["Fowler's position", "Lithotomy position", "Prone position", "Trendelenburg position"],
+    "correctAnswer": 0,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which route of medication administration involves injection into a muscle?",
+    "options": ["Intravenous", "Intramuscular", "Subcutaneous", "Oral"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which route of drug administration delivers medicine directly into a vein?",
+    "options": ["Intramuscular", "Subcutaneous", "Intravenous", "Oral"],
+    "correctAnswer": 2,
+    "category": "Nursing Foundation",
+    "courseId": "gnm",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Paracetamol is commonly used to reduce:",
+    "options": ["Blood sugar", "Fever and pain", "Blood pressure only", "Cholesterol"],
+    "correctAnswer": 1,
+    "category": "Pharmacology",
+    "courseId": "gnm",
+    "subjectId": "pharmacology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Antibiotics are primarily used to treat:",
+    "options": ["Bacterial infections", "All viral infections", "Fractures", "Hypertension"],
+    "correctAnswer": 0,
+    "category": "Pharmacology",
+    "courseId": "gnm",
+    "subjectId": "pharmacology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which drug is commonly used as an antacid?",
+    "options": ["Omeprazole", "Insulin", "Heparin", "Paracetamol"],
+    "correctAnswer": 0,
+    "category": "Pharmacology",
+    "courseId": "gnm",
+    "subjectId": "pharmacology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Insulin is mainly used in the management of:",
+    "options": ["Asthma", "Diabetes mellitus", "Tuberculosis", "Anemia"],
+    "correctAnswer": 1,
+    "category": "Pharmacology",
+    "courseId": "gnm",
+    "subjectId": "pharmacology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which disease is caused by Mycobacterium tuberculosis?",
+    "options": ["Malaria", "Tuberculosis", "Typhoid", "Cholera"],
+    "correctAnswer": 1,
+    "category": "Community Health",
+    "courseId": "gnm",
+    "subjectId": "community-health",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Malaria is transmitted mainly by:",
+    "options": ["Housefly", "Female Anopheles mosquito", "Cockroach", "Aedes mosquito"],
+    "correctAnswer": 1,
+    "category": "Community Health",
+    "courseId": "gnm",
+    "subjectId": "community-health",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which disease is commonly transmitted through contaminated water?",
+    "options": ["Cholera", "Rabies", "Tetanus", "Measles"],
+    "correctAnswer": 0,
+    "category": "Community Health",
+    "courseId": "gnm",
+    "subjectId": "community-health",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The primary purpose of vaccination is to:",
+    "options": ["Treat fractures", "Prevent infectious diseases", "Increase blood pressure", "Improve digestion"],
+    "correctAnswer": 1,
+    "category": "Community Health",
+    "courseId": "gnm",
+    "subjectId": "community-health",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which vitamin deficiency causes night blindness?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "correctAnswer": 0,
+    "category": "Community Health",
+    "courseId": "gnm",
+    "subjectId": "community-health",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which disease is associated with vitamin C deficiency?",
+    "options": ["Rickets", "Scurvy", "Beriberi", "Night blindness"],
+    "correctAnswer": 1,
+    "category": "Community Health",
+    "courseId": "gnm",
+    "subjectId": "community-health",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which nutrient is mainly responsible for body growth and tissue repair?",
+    "options": ["Carbohydrates", "Proteins", "Fats", "Water"],
+    "correctAnswer": 1,
+    "category": "Community Health",
+    "courseId": "gnm",
+    "subjectId": "community-health",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The first milk produced after childbirth is called:",
+    "options": ["Plasma", "Colostrum", "Serum", "Lactose"],
+    "correctAnswer": 1,
+    "category": "Community Health",
+    "courseId": "gnm",
+    "subjectId": "community-health",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which blood group is commonly known as the universal donor for red blood cells?",
+    "options": ["AB positive", "A positive", "O negative", "B negative"],
+    "correctAnswer": 2,
+    "category": "Anatomy",
+    "courseId": "gnm",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which component of blood is mainly responsible for clotting?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+    "correctAnswer": 2,
+    "category": "Anatomy",
+    "courseId": "gnm",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which hormone helps regulate blood glucose levels?",
+    "options": ["Insulin", "Adrenaline", "Thyroxine", "Estrogen"],
+    "correctAnswer": 0,
+    "category": "Anatomy",
+    "courseId": "gnm",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  }
+]

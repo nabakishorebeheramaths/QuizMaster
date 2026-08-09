@@ -1,0 +1,451 @@
+
+[
+  {
+    "question": "Which organization conducts recruitment examinations for Indian Railways?",
+    "options": [
+      "UPSC",
+      "Railway Recruitment Board",
+      "SSC",
+      "IBPS"
+    ],
+    "correctAnswer": 1,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the full form of RRB?",
+    "options": [
+      "Railway Recruitment Board",
+      "Railway Regional Board",
+      "Railway Reservation Board",
+      "Railway Regulation Board"
+    ],
+    "correctAnswer": 0,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is the largest railway network in Asia?",
+    "options": [
+      "Indian Railways",
+      "Chinese Railways",
+      "Japanese Railways",
+      "Russian Railways"
+    ],
+    "correctAnswer": 0,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The headquarters of Indian Railways is located in:",
+    "options": [
+      "Mumbai",
+      "New Delhi",
+      "Kolkata",
+      "Chennai"
+    ],
+    "correctAnswer": 1,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which gauge is most widely used on Indian Railways?",
+    "options": [
+      "Broad gauge",
+      "Meter gauge",
+      "Narrow gauge",
+      "Standard gauge"
+    ],
+    "correctAnswer": 0,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The width of Indian broad gauge is:",
+    "options": [
+      "1000 mm",
+      "1435 mm",
+      "1676 mm",
+      "762 mm"
+    ],
+    "correctAnswer": 2,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which was the first passenger railway line in India?",
+    "options": [
+      "Mumbai to Thane",
+      "Delhi to Agra",
+      "Kolkata to Howrah",
+      "Chennai to Bengaluru"
+    ],
+    "correctAnswer": 0,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Indian Railways is primarily under which ministry?",
+    "options": [
+      "Ministry of Transport",
+      "Ministry of Railways",
+      "Ministry of Home Affairs",
+      "Ministry of Industries"
+    ],
+    "correctAnswer": 1,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does IRCTC stand for?",
+    "options": [
+      "Indian Railway Catering and Tourism Corporation",
+      "Indian Railway Cargo and Travel Corporation",
+      "Indian Rail Catering and Transport Company",
+      "Indian Railway Central Tourism Corporation"
+    ],
+    "correctAnswer": 0,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which train is known as India's first semi-high-speed train?",
+    "options": [
+      "Vande Bharat Express",
+      "Rajdhani Express",
+      "Shatabdi Express",
+      "Duronto Express"
+    ],
+    "correctAnswer": 0,
+    "category": "General Awareness",
+    "courseId": "railway",
+    "subjectId": "general-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If a train travels 120 km in 2 hours, its average speed is:",
+    "options": [
+      "40 km/h",
+      "50 km/h",
+      "60 km/h",
+      "80 km/h"
+    ],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A train travels at 72 km/h. What is its speed in metres per second?",
+    "options": [
+      "15 m/s",
+      "20 m/s",
+      "25 m/s",
+      "30 m/s"
+    ],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A train 200 metres long passes a pole in 10 seconds. Its speed is:",
+    "options": [
+      "10 m/s",
+      "15 m/s",
+      "20 m/s",
+      "25 m/s"
+    ],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is 25% of 240?",
+    "options": [
+      "40",
+      "50",
+      "60",
+      "80"
+    ],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If the ratio of two numbers is 3:5 and their sum is 64, the smaller number is:",
+    "options": [
+      "20",
+      "24",
+      "30",
+      "40"
+    ],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The average of 10, 20, 30, 40 and 50 is:",
+    "options": [
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A man buys an item for ₹500 and sells it for ₹600. His profit percentage is:",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 5 workers complete a job in 12 days, how many days will 10 workers take, assuming equal efficiency?",
+    "options": [
+      "4 days",
+      "5 days",
+      "6 days",
+      "8 days"
+    ],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A train moving at 54 km/h covers how much distance in 20 seconds?",
+    "options": [
+      "200 m",
+      "250 m",
+      "300 m",
+      "350 m"
+    ],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the square root of 144?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "14"
+    ],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "railway",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which gas is essential for human respiration?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "correctAnswer": 1,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the chemical formula of water?",
+    "options": [
+      "CO2",
+      "O2",
+      "H2O",
+      "NaCl"
+    ],
+    "correctAnswer": 2,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ pumps blood throughout the human body?",
+    "options": [
+      "Lungs",
+      "Brain",
+      "Heart",
+      "Kidney"
+    ],
+    "correctAnswer": 2,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The SI unit of electric current is:",
+    "options": [
+      "Volt",
+      "Ohm",
+      "Ampere",
+      "Watt"
+    ],
+    "correctAnswer": 2,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Mercury"
+    ],
+    "correctAnswer": 1,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which vitamin is mainly produced in the skin in response to sunlight?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B12",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "correctAnswer": 3,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which metal is liquid at room temperature?",
+    "options": [
+      "Iron",
+      "Mercury",
+      "Copper",
+      "Aluminium"
+    ],
+    "correctAnswer": 1,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the boiling point of water at standard atmospheric pressure?",
+    "options": [
+      "50°C",
+      "75°C",
+      "100°C",
+      "120°C"
+    ],
+    "correctAnswer": 2,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which part of a plant performs most photosynthesis?",
+    "options": [
+      "Root",
+      "Stem",
+      "Leaf",
+      "Flower"
+    ],
+    "correctAnswer": 2,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which force keeps planets in orbit around the Sun?",
+    "options": [
+      "Magnetic force",
+      "Frictional force",
+      "Gravitational force",
+      "Nuclear force"
+    ],
+    "correctAnswer": 2,
+    "category": "General Science",
+    "courseId": "railway",
+    "subjectId": "general-science",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Find the next number in the series: 2, 4, 8, 16, ?",
+    "options": [
+      "20",
+      "24",
+      "32",
+      "36"
+    ],
+    "correctAnswer": 2,
+    "category": "Reasoning",
+    "courseId": "railway",
+    "subjectId": "reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If CAT is coded as DBU, how is DOG coded using the same pattern?",
+    "options": [
+      "EPH",
+      "EOG",
+      "DPH",
+      "FPH"
+    ],
+    "correctAnswer": 0,
+    "category": "Reasoning",
+    "courseId": "railway",
+    "subjectId": "reasoning",
+    "difficulty": "medium"
+  }
+]

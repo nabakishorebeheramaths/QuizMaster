@@ -1,0 +1,436 @@
+[
+  {
+    "question": "What is the primary purpose of a company secretary?",
+    "options": [
+      "Managing company compliance and corporate governance",
+      "Preparing only financial statements",
+      "Managing factory production",
+      "Handling only employee recruitment"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Act primarily governs companies in India?",
+    "options": [
+      "Companies Act, 2013",
+      "Indian Contract Act, 1872",
+      "Income Tax Act, 1961",
+      "Sale of Goods Act, 1930"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company incorporated under the Companies Act is considered a:",
+    "options": [
+      "Separate legal entity",
+      "Natural person",
+      "Government department",
+      "Partnership only"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which document contains the fundamental conditions upon which a company is incorporated?",
+    "options": [
+      "Memorandum of Association",
+      "Balance Sheet",
+      "Cash Flow Statement",
+      "Audit Report"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The Articles of Association primarily contain:",
+    "options": [
+      "Rules and regulations for internal management",
+      "Income tax rates",
+      "Employee salary details",
+      "Government budget information"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does AGM stand for?",
+    "options": [
+      "Annual General Meeting",
+      "Annual Government Meeting",
+      "Authorized General Management",
+      "Annual Governance Manual"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is generally responsible for maintaining statutory records and ensuring corporate compliance?",
+    "options": [
+      "Company Secretary",
+      "Sales Manager",
+      "Production Manager",
+      "Security Officer"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The board of directors is primarily responsible for:",
+    "options": [
+      "Managing and overseeing the affairs of the company",
+      "Conducting only sales activities",
+      "Preparing school examinations",
+      "Managing government elections"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which authority regulates the securities market in India?",
+    "options": [
+      "SEBI",
+      "RBI",
+      "IRDAI",
+      "NITI Aayog"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the full form of MCA in the corporate context?",
+    "options": [
+      "Ministry of Corporate Affairs",
+      "Ministry of Commercial Administration",
+      "Management Council of Accounts",
+      "Ministry of Company Auditing"
+    ],
+    "correctAnswer": 0,
+    "category": "Company Law",
+    "courseId": "cs",
+    "subjectId": "company-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Corporate governance mainly deals with:",
+    "options": [
+      "Direction, control and accountability of companies",
+      "Only product advertising",
+      "Only employee attendance",
+      "Only manufacturing processes"
+    ],
+    "correctAnswer": 0,
+    "category": "Corporate Governance",
+    "courseId": "cs",
+    "subjectId": "corporate-governance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which principle is important for good corporate governance?",
+    "options": [
+      "Transparency",
+      "Secrecy in all decisions",
+      "Avoiding accountability",
+      "Ignoring stakeholders"
+    ],
+    "correctAnswer": 0,
+    "category": "Corporate Governance",
+    "courseId": "cs",
+    "subjectId": "corporate-governance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Accountability in corporate governance means:",
+    "options": [
+      "Being responsible for decisions and actions",
+      "Avoiding responsibility",
+      "Keeping all records hidden",
+      "Ignoring shareholders"
+    ],
+    "correctAnswer": 0,
+    "category": "Corporate Governance",
+    "courseId": "cs",
+    "subjectId": "corporate-governance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which stakeholder group generally provides capital by purchasing shares?",
+    "options": [
+      "Shareholders",
+      "Customers",
+      "Suppliers",
+      "Employees only"
+    ],
+    "correctAnswer": 0,
+    "category": "Corporate Governance",
+    "courseId": "cs",
+    "subjectId": "corporate-governance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Independent directors are primarily intended to:",
+    "options": [
+      "Provide independent judgment and oversight",
+      "Manage daily sales",
+      "Replace all employees",
+      "Prepare invoices"
+    ],
+    "correctAnswer": 0,
+    "category": "Corporate Governance",
+    "courseId": "cs",
+    "subjectId": "corporate-governance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "An audit committee primarily assists the board in matters related to:",
+    "options": [
+      "Financial reporting and audit oversight",
+      "Product packaging",
+      "Employee transportation",
+      "Office decoration"
+    ],
+    "correctAnswer": 0,
+    "category": "Corporate Governance",
+    "courseId": "cs",
+    "subjectId": "corporate-governance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does stakeholder theory emphasize?",
+    "options": [
+      "Considering the interests of various stakeholders",
+      "Considering only managers",
+      "Considering only competitors",
+      "Ignoring society"
+    ],
+    "correctAnswer": 0,
+    "category": "Corporate Governance",
+    "courseId": "cs",
+    "subjectId": "corporate-governance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Corporate social responsibility is commonly abbreviated as:",
+    "options": [
+      "CSR",
+      "CGR",
+      "CRS",
+      "SCR"
+    ],
+    "correctAnswer": 0,
+    "category": "Corporate Governance",
+    "courseId": "cs",
+    "subjectId": "corporate-governance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following improves corporate transparency?",
+    "options": [
+      "Timely and accurate disclosure",
+      "Hiding financial information",
+      "Avoiding audits",
+      "Ignoring regulations"
+    ],
+    "correctAnswer": 0,
+    "category": "Corporate Governance",
+    "courseId": "cs",
+    "subjectId": "corporate-governance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Business law primarily regulates:",
+    "options": [
+      "Legal relationships in business activities",
+      "Weather conditions",
+      "Sports competitions",
+      "School examinations"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "cs",
+    "subjectId": "business-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Act governs contracts in India?",
+    "options": [
+      "Indian Contract Act, 1872",
+      "Companies Act, 2013",
+      "Companies Rules only",
+      "Income Tax Act, 1961"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "cs",
+    "subjectId": "business-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "An agreement enforceable by law is called a:",
+    "options": [
+      "Contract",
+      "Proposal",
+      "Invitation",
+      "Notice"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "cs",
+    "subjectId": "business-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is an essential element of a valid contract?",
+    "options": [
+      "Free consent",
+      "Illegal object",
+      "Uncertain terms",
+      "Absence of parties"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "cs",
+    "subjectId": "business-law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The Sale of Goods Act in India was enacted in:",
+    "options": [
+      "1930",
+      "1872",
+      "1956",
+      "2013"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "cs",
+    "subjectId": "business-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of contract involves an exchange of promises?",
+    "options": [
+      "Bilateral contract",
+      "Unilateral contract",
+      "Void agreement",
+      "Illegal agreement"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "cs",
+    "subjectId": "business-law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A contract entered into without free consent may become:",
+    "options": [
+      "Voidable",
+      "Always valid",
+      "Automatically criminal",
+      "A partnership"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "cs",
+    "subjectId": "business-law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary purpose of business compliance?",
+    "options": [
+      "To ensure adherence to applicable laws and regulations",
+      "To avoid maintaining records",
+      "To reduce transparency",
+      "To eliminate audits"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "cs",
+    "subjectId": "business-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company secretary plays an important role in:",
+    "options": [
+      "Corporate compliance and governance",
+      "Only product manufacturing",
+      "Only advertising",
+      "Only inventory handling"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "cs",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Planning is considered a:",
+    "options": [
+      "Basic function of management",
+      "Financial statement",
+      "Legal contract",
+      "Tax document"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "cs",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which management function involves comparing actual performance with planned performance?",
+    "options": [
+      "Controlling",
+      "Staffing",
+      "Directing",
+      "Recruitment"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "cs",
+    "subjectId": "management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Delegation of authority means:",
+    "options": [
+      "Assigning authority and responsibility to subordinates",
+      "Removing all responsibility",
+      "Avoiding decision-making",
+      "Closing the organization"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "cs",
+    "subjectId": "management",
+    "difficulty": "medium"
+  }
+]

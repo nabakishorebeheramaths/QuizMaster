@@ -1,0 +1,327 @@
+[
+  {
+    "question": "Which data structure follows the Last In, First Out (LIFO) principle?",
+    "options": ["Queue", "Stack", "Array", "Linked List"],
+    "correctAnswer": 1,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure follows the First In, First Out (FIFO) principle?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "correctAnswer": 1,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which programming paradigm focuses on objects and classes?",
+    "options": [
+      "Procedural programming",
+      "Object-oriented programming",
+      "Functional programming",
+      "Assembly programming"
+    ],
+    "correctAnswer": 1,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which keyword is commonly used to create a class in Java?",
+    "options": ["object", "class", "struct", "define"],
+    "correctAnswer": 1,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which concept allows a class to acquire properties and methods of another class?",
+    "options": ["Encapsulation", "Inheritance", "Abstraction", "Compilation"],
+    "correctAnswer": 1,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which OOP concept allows the same method name to have different implementations?",
+    "options": ["Inheritance", "Polymorphism", "Encapsulation", "Aggregation"],
+    "correctAnswer": 1,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is not a fundamental OOP concept?",
+    "options": ["Inheritance", "Polymorphism", "Encapsulation", "Compilation"],
+    "correctAnswer": 3,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which language is widely used for object-oriented programming?",
+    "options": ["Java", "HTML", "SQL", "CSS"],
+    "correctAnswer": 0,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is recursion?",
+    "options": [
+      "A function calling itself",
+      "A variable declaration",
+      "A database query",
+      "A type of compiler"
+    ],
+    "correctAnswer": 0,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which algorithm is commonly used to find the shortest path in a weighted graph with non-negative edge weights?",
+    "options": ["Dijkstra's algorithm", "Binary search", "Bubble sort", "DFS only"],
+    "correctAnswer": 0,
+    "category": "Advanced Programming",
+    "courseId": "mca",
+    "subjectId": "advanced-programming",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does DBMS stand for?",
+    "options": [
+      "Database Management System",
+      "Data Backup Management Service",
+      "Digital Base Management System",
+      "Database Monitoring Service"
+    ],
+    "correctAnswer": 0,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which language is primarily used to interact with relational databases?",
+    "options": ["HTML", "SQL", "CSS", "XML"],
+    "correctAnswer": 1,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a primary key?",
+    "options": [
+      "A field that uniquely identifies each record",
+      "A field containing duplicate values",
+      "A temporary database file",
+      "A database password"
+    ],
+    "correctAnswer": 0,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which SQL command is used to retrieve data from a table?",
+    "options": ["INSERT", "SELECT", "UPDATE", "DELETE"],
+    "correctAnswer": 1,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which SQL command is used to add a new record to a table?",
+    "options": ["INSERT", "SELECT", "ALTER", "DROP"],
+    "correctAnswer": 0,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which SQL command is used to modify existing records?",
+    "options": ["UPDATE", "INSERT", "CREATE", "SELECT"],
+    "correctAnswer": 0,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is normalization in DBMS?",
+    "options": [
+      "Organizing data to reduce redundancy",
+      "Deleting the entire database",
+      "Encrypting all database records",
+      "Creating duplicate tables"
+    ],
+    "correctAnswer": 0,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which normal form removes repeating groups and ensures atomic values?",
+    "options": ["1NF", "2NF", "3NF", "BCNF"],
+    "correctAnswer": 0,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a foreign key?",
+    "options": [
+      "A field that references a key in another table",
+      "A password for a database",
+      "A temporary key",
+      "A duplicate primary key in the same table"
+    ],
+    "correctAnswer": 0,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which property of a transaction ensures that all operations are completed or none are?",
+    "options": ["Atomicity", "Consistency", "Isolation", "Durability"],
+    "correctAnswer": 0,
+    "category": "DBMS",
+    "courseId": "mca",
+    "subjectId": "dbms",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does SDLC stand for?",
+    "options": [
+      "Software Development Life Cycle",
+      "System Data Logic Control",
+      "Software Design Level Code",
+      "System Development Language Cycle"
+    ],
+    "correctAnswer": 0,
+    "category": "Software Engineering",
+    "courseId": "mca",
+    "subjectId": "software-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which SDLC model follows a sequential development approach?",
+    "options": ["Waterfall", "Agile", "Spiral", "Prototype"],
+    "correctAnswer": 0,
+    "category": "Software Engineering",
+    "courseId": "mca",
+    "subjectId": "software-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is software testing?",
+    "options": [
+      "The process of finding defects in software",
+      "The process of writing advertisements",
+      "The process of buying software",
+      "The process of designing hardware"
+    ],
+    "correctAnswer": 0,
+    "category": "Software Engineering",
+    "courseId": "mca",
+    "subjectId": "software-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which testing checks individual modules or components?",
+    "options": ["Unit testing", "System testing", "Acceptance testing", "Integration testing"],
+    "correctAnswer": 0,
+    "category": "Software Engineering",
+    "courseId": "mca",
+    "subjectId": "software-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is Agile methodology mainly known for?",
+    "options": [
+      "Iterative and incremental development",
+      "Only sequential development",
+      "Avoiding customer feedback",
+      "No software testing"
+    ],
+    "correctAnswer": 0,
+    "category": "Software Engineering",
+    "courseId": "mca",
+    "subjectId": "software-engineering",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a computer network?",
+    "options": [
+      "A collection of interconnected computers and devices",
+      "A single computer",
+      "A programming language",
+      "A database table"
+    ],
+    "correctAnswer": 0,
+    "category": "Computer Networks",
+    "courseId": "mca",
+    "subjectId": "networking",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which protocol is used to transfer web pages over the Internet?",
+    "options": ["HTTP", "FTP", "SMTP", "POP3"],
+    "correctAnswer": 0,
+    "category": "Computer Networks",
+    "courseId": "mca",
+    "subjectId": "networking",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which device forwards packets between different networks?",
+    "options": ["Switch", "Router", "Hub", "Repeater"],
+    "correctAnswer": 1,
+    "category": "Computer Networks",
+    "courseId": "mca",
+    "subjectId": "networking",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which layer of the OSI model is responsible for routing?",
+    "options": [
+      "Physical layer",
+      "Data Link layer",
+      "Network layer",
+      "Application layer"
+    ],
+    "correctAnswer": 2,
+    "category": "Computer Networks",
+    "courseId": "mca",
+    "subjectId": "networking",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which protocol automatically assigns IP addresses to devices on a network?",
+    "options": ["DNS", "DHCP", "HTTP", "FTP"],
+    "correctAnswer": 1,
+    "category": "Computer Networks",
+    "courseId": "mca",
+    "subjectId": "networking",
+    "difficulty": "medium"
+  }
+]

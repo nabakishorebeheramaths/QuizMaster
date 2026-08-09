@@ -1,0 +1,327 @@
+
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Text Machine Language",
+      "Hyperlink Text Management Language",
+      "Home Tool Markup Language"
+    ],
+    "correctAnswer": 0,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": ["<link>", "<a>", "<href>", "<url>"],
+    "correctAnswer": 1,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which HTML tag is used to display an image?",
+    "options": ["<image>", "<img>", "<picture>", "<src>"],
+    "correctAnswer": 1,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which HTML element is used for the largest heading?",
+    "options": ["<h6>", "<heading>", "<h1>", "<head>"],
+    "correctAnswer": 2,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which CSS property is used to change text color?",
+    "options": ["font-color", "text-color", "color", "foreground"],
+    "correctAnswer": 2,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which CSS property is used to change the background color?",
+    "options": ["background-color", "bg-color", "color-background", "background"],
+    "correctAnswer": 0,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which CSS layout system is commonly used for one-dimensional layouts?",
+    "options": ["Float", "Flexbox", "Table", "Frames"],
+    "correctAnswer": 1,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which CSS property controls the space inside an element's border?",
+    "options": ["margin", "padding", "spacing", "border-spacing"],
+    "correctAnswer": 1,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": [
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Creative Style System",
+      "Colorful Style Sheets"
+    ],
+    "correctAnswer": 1,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which CSS property is used to make text bold?",
+    "options": ["font-weight", "text-bold", "font-style", "weight"],
+    "correctAnswer": 0,
+    "category": "HTML & CSS",
+    "courseId": "web-development",
+    "subjectId": "html-css",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which keyword is used to declare a block-scoped variable in JavaScript?",
+    "options": ["var", "let", "define", "variable"],
+    "correctAnswer": 1,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which keyword is used to declare a constant in JavaScript?",
+    "options": ["constant", "let", "const", "fixed"],
+    "correctAnswer": 2,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which symbol is used for strict equality in JavaScript?",
+    "options": ["=", "==", "===", "!="],
+    "correctAnswer": 2,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which method converts a JSON string into a JavaScript object?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.convert()",
+      "JSON.object()"
+    ],
+    "correctAnswer": 0,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which method converts a JavaScript object into a JSON string?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.convert()",
+      "JSON.toStringObject()"
+    ],
+    "correctAnswer": 1,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which function is used to execute code after a specified delay?",
+    "options": ["setTimeout()", "delay()", "wait()", "setDelay()"],
+    "correctAnswer": 0,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which JavaScript method adds an element to the end of an array?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "correctAnswer": 0,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which JavaScript method removes the last element from an array?",
+    "options": ["push()", "pop()", "shift()", "slice()"],
+    "correctAnswer": 1,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the result of typeof null in JavaScript?",
+    "options": ["null", "object", "undefined", "boolean"],
+    "correctAnswer": 1,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which operator is used for the logical AND operation in JavaScript?",
+    "options": ["||", "&&", "!", "&"],
+    "correctAnswer": 1,
+    "category": "JavaScript",
+    "courseId": "web-development",
+    "subjectId": "javascript",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is React primarily used for?",
+    "options": [
+      "Database management",
+      "Building user interfaces",
+      "Operating systems",
+      "Network configuration"
+    ],
+    "correctAnswer": 1,
+    "category": "React",
+    "courseId": "web-development",
+    "subjectId": "react",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which library is React?",
+    "options": [
+      "JavaScript UI library",
+      "Database library",
+      "Operating system",
+      "CSS framework only"
+    ],
+    "correctAnswer": 0,
+    "category": "React",
+    "courseId": "web-development",
+    "subjectId": "react",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which hook is used to manage state in a React functional component?",
+    "options": ["useEffect", "useState", "useContext", "useRef"],
+    "correctAnswer": 1,
+    "category": "React",
+    "courseId": "web-development",
+    "subjectId": "react",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which React hook is commonly used for side effects?",
+    "options": ["useState", "useEffect", "useMemo", "useReducer"],
+    "correctAnswer": 1,
+    "category": "React",
+    "courseId": "web-development",
+    "subjectId": "react",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is JSX?",
+    "options": [
+      "A database",
+      "A syntax extension for JavaScript",
+      "A CSS framework",
+      "A server"
+    ],
+    "correctAnswer": 1,
+    "category": "React",
+    "courseId": "web-development",
+    "subjectId": "react",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of a React key when rendering lists?",
+    "options": [
+      "To style elements",
+      "To uniquely identify list elements",
+      "To encrypt data",
+      "To create CSS classes"
+    ],
+    "correctAnswer": 1,
+    "category": "React",
+    "courseId": "web-development",
+    "subjectId": "react",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which HTTP method is commonly used to retrieve data from a server?",
+    "options": ["POST", "GET", "DELETE", "PATCH"],
+    "correctAnswer": 1,
+    "category": "Backend Development",
+    "courseId": "web-development",
+    "subjectId": "backend",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which HTTP status code indicates that a request was successful?",
+    "options": ["200", "404", "500", "301"],
+    "correctAnswer": 0,
+    "category": "Backend Development",
+    "courseId": "web-development",
+    "subjectId": "backend",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does API stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Application Process Integration",
+      "Advanced Programming Internet",
+      "Automated Program Interface"
+    ],
+    "correctAnswer": 0,
+    "category": "Backend Development",
+    "courseId": "web-development",
+    "subjectId": "backend",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which technology is commonly used to create a Node.js backend?",
+    "options": ["Express.js", "Bootstrap", "Tailwind CSS", "React"],
+    "correctAnswer": 0,
+    "category": "Backend Development",
+    "courseId": "web-development",
+    "subjectId": "backend",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which HTTP status code means 'Not Found'?",
+    "options": ["200", "201", "404", "500"],
+    "correctAnswer": 2,
+    "category": "Backend Development",
+    "courseId": "web-development",
+    "subjectId": "backend",
+    "difficulty": "easy"
+  }
+]

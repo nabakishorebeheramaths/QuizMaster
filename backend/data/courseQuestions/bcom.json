@@ -1,0 +1,382 @@
+[
+  {
+    "question": "What is the basic accounting equation?",
+    "options": [
+      "Assets = Liabilities + Capital",
+      "Assets = Capital - Liabilities",
+      "Capital = Assets + Liabilities",
+      "Liabilities = Assets + Capital"
+    ],
+    "correctAnswer": 0,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an asset?",
+    "options": ["Capital", "Loan", "Cash", "Creditors"],
+    "correctAnswer": 2,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which account records transactions related to individuals or organizations?",
+    "options": [
+      "Real Account",
+      "Personal Account",
+      "Nominal Account",
+      "Expense Account"
+    ],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which account deals with expenses and incomes?",
+    "options": [
+      "Personal Account",
+      "Real Account",
+      "Nominal Account",
+      "Capital Account"
+    ],
+    "correctAnswer": 2,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which book is known as the book of original entry?",
+    "options": ["Ledger", "Journal", "Trial Balance", "Balance Sheet"],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main purpose of a trial balance?",
+    "options": [
+      "To calculate profit only",
+      "To check arithmetical accuracy of ledger accounts",
+      "To record transactions",
+      "To calculate sales"
+    ],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Depreciation refers to:",
+    "options": [
+      "Increase in asset value",
+      "Decrease in the value of an asset",
+      "Increase in capital",
+      "Increase in sales"
+    ],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which financial statement shows the financial position of a business?",
+    "options": [
+      "Trading Account",
+      "Profit and Loss Account",
+      "Balance Sheet",
+      "Cash Book"
+    ],
+    "correctAnswer": 2,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a current liability?",
+    "options": ["Land", "Building", "Creditors", "Machinery"],
+    "correctAnswer": 2,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Gross profit is calculated as:",
+    "options": [
+      "Sales - Cost of Goods Sold",
+      "Sales - Expenses",
+      "Assets - Liabilities",
+      "Capital - Drawings"
+    ],
+    "correctAnswer": 0,
+    "category": "Accounting",
+    "courseId": "bcom",
+    "subjectId": "accounting",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is microeconomics primarily concerned with?",
+    "options": [
+      "Entire economy",
+      "Individual consumers and firms",
+      "National income",
+      "International trade only"
+    ],
+    "correctAnswer": 1,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the law of demand state?",
+    "options": [
+      "Demand rises when price rises",
+      "Demand falls when price rises, other things remaining constant",
+      "Demand is always constant",
+      "Supply falls when price falls"
+    ],
+    "correctAnswer": 1,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is elasticity of demand?",
+    "options": [
+      "Change in supply due to income",
+      "Responsiveness of demand to a change in a factor",
+      "Total production of a firm",
+      "Change in national income"
+    ],
+    "correctAnswer": 1,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "GDP stands for:",
+    "options": [
+      "Gross Domestic Product",
+      "General Domestic Production",
+      "Gross Development Product",
+      "Government Domestic Product"
+    ],
+    "correctAnswer": 0,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Inflation means:",
+    "options": [
+      "Fall in general price level",
+      "Rise in general price level",
+      "Fall in production only",
+      "Increase in unemployment only"
+    ],
+    "correctAnswer": 1,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which institution is responsible for monetary policy in India?",
+    "options": [
+      "SEBI",
+      "RBI",
+      "NITI Aayog",
+      "NABARD"
+    ],
+    "correctAnswer": 1,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is opportunity cost?",
+    "options": [
+      "Total cost of production",
+      "Cost of raw materials",
+      "Value of the next best alternative forgone",
+      "Fixed cost of a business"
+    ],
+    "correctAnswer": 2,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which market structure has only one seller?",
+    "options": ["Perfect competition", "Monopoly", "Oligopoly", "Monopolistic competition"],
+    "correctAnswer": 1,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is fiscal policy mainly concerned with?",
+    "options": [
+      "Government taxation and expenditure",
+      "Bank lending only",
+      "Stock market prices",
+      "Foreign exchange only"
+    ],
+    "correctAnswer": 0,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a direct tax?",
+    "options": ["GST", "Customs duty", "Income tax", "Excise duty"],
+    "correctAnswer": 2,
+    "category": "Economics",
+    "courseId": "bcom",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Business law primarily deals with:",
+    "options": [
+      "Rules governing business activities",
+      "Only criminal activities",
+      "Only family disputes",
+      "Only political activities"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "bcom",
+    "subjectId": "business-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A contract is an agreement that is:",
+    "options": [
+      "Not enforceable by law",
+      "Enforceable by law",
+      "Always written",
+      "Always oral"
+    ],
+    "correctAnswer": 1,
+    "category": "Business Law",
+    "courseId": "bcom",
+    "subjectId": "business-law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an essential element of a valid contract?",
+    "options": [
+      "Free consent",
+      "Illegal object",
+      "Uncertain terms",
+      "No consideration"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "bcom",
+    "subjectId": "business-law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A minor's agreement is generally:",
+    "options": [
+      "Valid",
+      "Void",
+      "Always enforceable",
+      "Illegal"
+    ],
+    "correctAnswer": 1,
+    "category": "Business Law",
+    "courseId": "bcom",
+    "subjectId": "business-law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which document contains the fundamental conditions of a company?",
+    "options": [
+      "Memorandum of Association",
+      "Invoice",
+      "Balance Sheet",
+      "Cash Book"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "bcom",
+    "subjectId": "business-law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Business studies mainly focuses on:",
+    "options": [
+      "Business activities and management",
+      "Only mathematics",
+      "Only physics",
+      "Only political science"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Studies",
+    "courseId": "bcom",
+    "subjectId": "business-studies",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which function involves setting objectives and deciding how to achieve them?",
+    "options": ["Planning", "Staffing", "Controlling", "Directing"],
+    "correctAnswer": 0,
+    "category": "Business Studies",
+    "courseId": "bcom",
+    "subjectId": "business-studies",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which management function involves recruiting and selecting employees?",
+    "options": ["Planning", "Staffing", "Controlling", "Organizing"],
+    "correctAnswer": 1,
+    "category": "Business Studies",
+    "courseId": "bcom",
+    "subjectId": "business-studies",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Marketing begins with identifying:",
+    "options": [
+      "Customer needs and wants",
+      "Employee salaries",
+      "Office expenses",
+      "Tax liabilities"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Studies",
+    "courseId": "bcom",
+    "subjectId": "business-studies",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is one of the traditional 4Ps of marketing?",
+    "options": ["People", "Product", "Performance", "Planning"],
+    "correctAnswer": 1,
+    "category": "Business Studies",
+    "courseId": "bcom",
+    "subjectId": "business-studies",
+    "difficulty": "easy"
+  }
+]

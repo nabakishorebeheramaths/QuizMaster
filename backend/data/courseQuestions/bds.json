@@ -1,0 +1,316 @@
+[
+  {
+    "question": "Which part of the tooth is normally visible above the gum line?",
+    "options": ["Root", "Crown", "Pulp", "Cementum"],
+    "correctAnswer": 1,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which tissue forms the outermost layer of the crown of a tooth?",
+    "options": ["Dentin", "Cementum", "Enamel", "Pulp"],
+    "correctAnswer": 2,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the hardest tissue in the human body?",
+    "options": ["Dentin", "Enamel", "Bone", "Cementum"],
+    "correctAnswer": 1,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which tissue lies beneath the enamel of a tooth?",
+    "options": ["Dentin", "Cementum", "Pulp", "Periodontal ligament"],
+    "correctAnswer": 0,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which part of the tooth contains blood vessels and nerves?",
+    "options": ["Enamel", "Dentin", "Pulp", "Cementum"],
+    "correctAnswer": 2,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main function of the periodontal ligament?",
+    "options": [
+      "Produces enamel",
+      "Attaches the tooth to the alveolar bone",
+      "Produces saliva",
+      "Forms dentin"
+    ],
+    "correctAnswer": 1,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which structure surrounds and supports the roots of teeth?",
+    "options": ["Alveolar bone", "Enamel", "Pulp", "Tongue"],
+    "correctAnswer": 0,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which muscle is primarily responsible for protrusion of the tongue?",
+    "options": [
+      "Genioglossus",
+      "Masseter",
+      "Temporalis",
+      "Buccinator"
+    ],
+    "correctAnswer": 0,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which cranial nerve provides general sensory innervation to most of the oral cavity?",
+    "options": [
+      "Facial nerve",
+      "Trigeminal nerve",
+      "Vagus nerve",
+      "Hypoglossal nerve"
+    ],
+    "correctAnswer": 1,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which muscle is the principal muscle of mastication?",
+    "options": ["Masseter", "Orbicularis oris", "Buccinator", "Platysma"],
+    "correctAnswer": 0,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many permanent teeth are normally present in an adult human?",
+    "options": ["20", "28", "32", "36"],
+    "correctAnswer": 2,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many primary teeth are normally present in children?",
+    "options": ["16", "20", "24", "28"],
+    "correctAnswer": 1,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which teeth are primarily used for cutting food?",
+    "options": ["Molars", "Premolars", "Incisors", "Canines"],
+    "correctAnswer": 2,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which teeth are mainly adapted for tearing food?",
+    "options": ["Incisors", "Canines", "Molars", "Premolars"],
+    "correctAnswer": 1,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which teeth are mainly responsible for grinding food?",
+    "options": ["Incisors", "Canines", "Molars", "Central incisors"],
+    "correctAnswer": 2,
+    "category": "Dental Anatomy",
+    "courseId": "bds",
+    "subjectId": "dental-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the normal color of healthy gingiva?",
+    "options": [
+      "Bluish black",
+      "Coral pink",
+      "Bright red",
+      "Yellow"
+    ],
+    "correctAnswer": 1,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which structure separates the oral cavity from the nasal cavity?",
+    "options": ["Hard and soft palate", "Tongue", "Mandible", "Lips"],
+    "correctAnswer": 0,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which gland is the largest of the three major salivary glands?",
+    "options": ["Sublingual", "Submandibular", "Parotid", "Minor salivary gland"],
+    "correctAnswer": 2,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which salivary gland produces predominantly serous secretion?",
+    "options": ["Parotid gland", "Sublingual gland", "Submandibular gland", "Labial gland"],
+    "correctAnswer": 0,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which salivary gland is located beneath the tongue?",
+    "options": ["Parotid", "Sublingual", "Submandibular", "Buccal"],
+    "correctAnswer": 1,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of joint is the temporomandibular joint?",
+    "options": [
+      "Fibrous joint",
+      "Synovial joint",
+      "Cartilaginous joint",
+      "Fixed joint"
+    ],
+    "correctAnswer": 1,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which bone forms the lower jaw?",
+    "options": ["Maxilla", "Mandible", "Zygomatic bone", "Temporal bone"],
+    "correctAnswer": 1,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which bone forms the upper jaw?",
+    "options": ["Mandible", "Maxilla", "Frontal bone", "Nasal bone"],
+    "correctAnswer": 1,
+    "category": "Oral Anatomy",
+    "courseId": "bds",
+    "subjectId": "oral-anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the functional unit of the nervous system?",
+    "options": ["Neuron", "Nephron", "Osteon", "Alveolus"],
+    "correctAnswer": 0,
+    "category": "Physiology",
+    "courseId": "bds",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which blood cells are primarily responsible for oxygen transport?",
+    "options": ["Platelets", "White blood cells", "Red blood cells", "Lymphocytes"],
+    "correctAnswer": 2,
+    "category": "Physiology",
+    "courseId": "bds",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ pumps blood throughout the body?",
+    "options": ["Liver", "Heart", "Kidney", "Lung"],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "bds",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which hormone regulates blood glucose levels?",
+    "options": ["Insulin", "Thyroxine", "Adrenaline", "Melatonin"],
+    "correctAnswer": 0,
+    "category": "Physiology",
+    "courseId": "bds",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which vitamin is important for calcium absorption and bone health?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "correctAnswer": 3,
+    "category": "Biochemistry",
+    "courseId": "bds",
+    "subjectId": "biochemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which mineral is the major inorganic component of teeth and bones?",
+    "options": ["Iron", "Calcium", "Sodium", "Potassium"],
+    "correctAnswer": 1,
+    "category": "Biochemistry",
+    "courseId": "bds",
+    "subjectId": "biochemistry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which enzyme begins the digestion of carbohydrates in the mouth?",
+    "options": [
+      "Pepsin",
+      "Salivary amylase",
+      "Trypsin",
+      "Lipase"
+    ],
+    "correctAnswer": 1,
+    "category": "Biochemistry",
+    "courseId": "bds",
+    "subjectId": "biochemistry",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which acid is mainly responsible for dental enamel demineralization during dental caries?",
+    "options": [
+      "Hydrochloric acid",
+      "Lactic acid",
+      "Sulfuric acid",
+      "Nitric acid"
+    ],
+    "correctAnswer": 1,
+    "category": "Biochemistry",
+    "courseId": "bds",
+    "subjectId": "biochemistry",
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,436 @@
+[
+  {
+    "question": "What is Data Science primarily concerned with?",
+    "options": [
+      "Designing computer hardware",
+      "Extracting useful insights from data",
+      "Creating operating systems",
+      "Building physical networks"
+    ],
+    "correctAnswer": 1,
+    "category": "Data Analysis",
+    "courseId": "data-science",
+    "subjectId": "data-analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which programming language is widely used in Data Science?",
+    "options": [
+      "Python",
+      "HTML",
+      "CSS",
+      "SQL only"
+    ],
+    "correctAnswer": 0,
+    "category": "Python",
+    "courseId": "data-science",
+    "subjectId": "python",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python library is commonly used for numerical computing?",
+    "options": [
+      "NumPy",
+      "Django",
+      "Flask",
+      "BeautifulSoup"
+    ],
+    "correctAnswer": 0,
+    "category": "Python",
+    "courseId": "data-science",
+    "subjectId": "python",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python library is widely used for data manipulation and analysis?",
+    "options": [
+      "Pandas",
+      "TensorFlow",
+      "OpenCV",
+      "Pygame"
+    ],
+    "correctAnswer": 0,
+    "category": "Data Analysis",
+    "courseId": "data-science",
+    "subjectId": "data-analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which library is commonly used for creating visualizations in Python?",
+    "options": [
+      "Matplotlib",
+      "Requests",
+      "OS",
+      "Random"
+    ],
+    "correctAnswer": 0,
+    "category": "Data Analysis",
+    "courseId": "data-science",
+    "subjectId": "data-analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a dataset?",
+    "options": [
+      "A collection of related data",
+      "A computer processor",
+      "A programming language",
+      "A network protocol"
+    ],
+    "correctAnswer": 0,
+    "category": "Data Analysis",
+    "courseId": "data-science",
+    "subjectId": "data-analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is data cleaning?",
+    "options": [
+      "Deleting all data",
+      "Removing or correcting inaccurate and inconsistent data",
+      "Encrypting a database",
+      "Increasing storage capacity"
+    ],
+    "correctAnswer": 1,
+    "category": "Data Analysis",
+    "courseId": "data-science",
+    "subjectId": "data-analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which measure represents the arithmetic average of a dataset?",
+    "options": [
+      "Median",
+      "Mode",
+      "Mean",
+      "Range"
+    ],
+    "correctAnswer": 2,
+    "category": "Statistics",
+    "courseId": "data-science",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the median of 2, 4, 6, 8, 10?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correctAnswer": 1,
+    "category": "Statistics",
+    "courseId": "data-science",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the mode of the dataset 2, 3, 3, 4, 5?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "category": "Statistics",
+    "courseId": "data-science",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does standard deviation measure?",
+    "options": [
+      "Central value only",
+      "Spread or dispersion of data",
+      "Number of rows",
+      "Number of columns"
+    ],
+    "correctAnswer": 1,
+    "category": "Statistics",
+    "courseId": "data-science",
+    "subjectId": "statistics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is probability?",
+    "options": [
+      "A measure of how likely an event is to occur",
+      "The average of all values",
+      "The largest value in a dataset",
+      "The number of variables"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "data-science",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the probability of getting heads when a fair coin is tossed once?",
+    "options": [
+      "0",
+      "0.25",
+      "0.5",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "category": "Statistics",
+    "courseId": "data-science",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does correlation measure?",
+    "options": [
+      "The relationship between variables",
+      "The number of records",
+      "The size of a database",
+      "The data type of a variable"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "data-science",
+    "subjectId": "statistics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A correlation coefficient close to +1 indicates:",
+    "options": [
+      "Strong positive relationship",
+      "Strong negative relationship",
+      "No relationship",
+      "Random data"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "data-science",
+    "subjectId": "statistics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is supervised learning?",
+    "options": [
+      "Learning from labeled data",
+      "Learning without any data",
+      "Learning only from images",
+      "Learning without a target variable"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is unsupervised learning?",
+    "options": [
+      "Learning from labeled data",
+      "Finding patterns in unlabeled data",
+      "Learning only from text",
+      "Using manually written rules"
+    ],
+    "correctAnswer": 1,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which algorithm is commonly used for classification?",
+    "options": [
+      "Logistic Regression",
+      "Linear Search",
+      "Binary Search",
+      "Bubble Sort"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which algorithm is commonly used for predicting continuous numerical values?",
+    "options": [
+      "Linear Regression",
+      "K-Means",
+      "Decision Tree Classifier",
+      "Naive Bayes"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is clustering?",
+    "options": [
+      "Grouping similar data points",
+      "Deleting duplicate data",
+      "Encrypting data",
+      "Sorting files alphabetically"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which algorithm is commonly used for clustering?",
+    "options": [
+      "K-Means",
+      "Linear Regression",
+      "Logistic Regression",
+      "Naive Bayes"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is overfitting in machine learning?",
+    "options": [
+      "A model performs well on training data but poorly on unseen data",
+      "A model cannot learn anything",
+      "A dataset has no features",
+      "A model has too little data"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of splitting data into training and testing sets?",
+    "options": [
+      "To evaluate model performance on unseen data",
+      "To increase the number of features",
+      "To delete missing values",
+      "To reduce storage requirements"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which metric is commonly used to evaluate classification accuracy?",
+    "options": [
+      "Accuracy",
+      "Mean",
+      "Variance",
+      "Standard deviation"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python library is commonly used for machine learning?",
+    "options": [
+      "Scikit-learn",
+      "BeautifulSoup",
+      "Tkinter",
+      "Pygame"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a feature in a machine learning dataset?",
+    "options": [
+      "An input variable used by a model",
+      "The final prediction only",
+      "A programming error",
+      "A database password"
+    ],
+    "correctAnswer": 0,
+    "category": "Machine Learning",
+    "courseId": "data-science",
+    "subjectId": "machine-learning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is data visualization?",
+    "options": [
+      "Representing data graphically",
+      "Encrypting data",
+      "Deleting data",
+      "Compressing files"
+    ],
+    "correctAnswer": 0,
+    "category": "Data Analysis",
+    "courseId": "data-science",
+    "subjectId": "data-analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which chart is generally useful for showing trends over time?",
+    "options": [
+      "Line chart",
+      "Pie chart",
+      "Scatter-free table",
+      "Histogram only"
+    ],
+    "correctAnswer": 0,
+    "category": "Data Analysis",
+    "courseId": "data-science",
+    "subjectId": "data-analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which chart is commonly used to compare categories?",
+    "options": [
+      "Bar chart",
+      "Line chart only",
+      "Histogram only",
+      "Box plot only"
+    ],
+    "correctAnswer": 0,
+    "category": "Data Analysis",
+    "courseId": "data-science",
+    "subjectId": "data-analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does SQL commonly allow data scientists to do?",
+    "options": [
+      "Query and manipulate data in databases",
+      "Design computer processors",
+      "Create physical circuits",
+      "Replace operating systems"
+    ],
+    "correctAnswer": 0,
+    "category": "Data Analysis",
+    "courseId": "data-science",
+    "subjectId": "data-analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an outlier?",
+    "options": [
+      "A value that is unusually different from other observations",
+      "The average value",
+      "The most frequent value",
+      "A duplicate column"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "data-science",
+    "subjectId": "statistics",
+    "difficulty": "medium"
+  }
+]

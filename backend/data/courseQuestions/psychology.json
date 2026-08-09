@@ -1,0 +1,436 @@
+[
+  {
+    "question": "Psychology is the scientific study of:",
+    "options": [
+      "Human behavior and mental processes",
+      "Only the human brain",
+      "Only emotions",
+      "Only social behavior"
+    ],
+    "correctAnswer": 0,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is widely regarded as the father of modern psychology?",
+    "options": [
+      "Sigmund Freud",
+      "Wilhelm Wundt",
+      "B.F. Skinner",
+      "Jean Piaget"
+    ],
+    "correctAnswer": 1,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The first psychological laboratory was established by Wilhelm Wundt in:",
+    "options": [
+      "1879",
+      "1889",
+      "1899",
+      "1909"
+    ],
+    "correctAnswer": 0,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which school of psychology emphasized observable behavior?",
+    "options": [
+      "Psychoanalysis",
+      "Behaviorism",
+      "Humanism",
+      "Gestalt psychology"
+    ],
+    "correctAnswer": 1,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who developed the theory of psychoanalysis?",
+    "options": [
+      "Sigmund Freud",
+      "Carl Rogers",
+      "Ivan Pavlov",
+      "Abraham Maslow"
+    ],
+    "correctAnswer": 0,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The process of acquiring knowledge or skills through experience is called:",
+    "options": [
+      "Learning",
+      "Motivation",
+      "Perception",
+      "Emotion"
+    ],
+    "correctAnswer": 0,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which part of the brain is primarily associated with memory formation?",
+    "options": [
+      "Hippocampus",
+      "Medulla",
+      "Cerebellum",
+      "Brainstem"
+    ],
+    "correctAnswer": 0,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Memory that holds information for a very short period is called:",
+    "options": [
+      "Long-term memory",
+      "Short-term memory",
+      "Procedural memory",
+      "Semantic memory"
+    ],
+    "correctAnswer": 1,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The ability to focus on a particular stimulus is known as:",
+    "options": [
+      "Attention",
+      "Imagination",
+      "Motivation",
+      "Intelligence"
+    ],
+    "correctAnswer": 0,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The interpretation of sensory information is called:",
+    "options": [
+      "Sensation",
+      "Perception",
+      "Memory",
+      "Learning"
+    ],
+    "correctAnswer": 1,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "According to Maslow, which need is at the bottom of the hierarchy?",
+    "options": [
+      "Esteem needs",
+      "Safety needs",
+      "Physiological needs",
+      "Self-actualization"
+    ],
+    "correctAnswer": 2,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Self-actualization refers to:",
+    "options": [
+      "Avoiding social contact",
+      "Realizing one's full potential",
+      "Meeting basic physical needs",
+      "Suppressing emotions"
+    ],
+    "correctAnswer": 1,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which psychologist developed the theory of classical conditioning?",
+    "options": [
+      "Ivan Pavlov",
+      "B.F. Skinner",
+      "Albert Bandura",
+      "Carl Rogers"
+    ],
+    "correctAnswer": 0,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Operant conditioning is most strongly associated with:",
+    "options": [
+      "B.F. Skinner",
+      "Sigmund Freud",
+      "Wilhelm Wundt",
+      "Carl Jung"
+    ],
+    "correctAnswer": 0,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A behavior followed by a reward is likely to:",
+    "options": [
+      "Decrease",
+      "Disappear",
+      "Increase",
+      "Remain unchanged"
+    ],
+    "correctAnswer": 2,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an example of observational learning?",
+    "options": [
+      "Learning by watching another person",
+      "Learning only through punishment",
+      "Learning through sleep",
+      "Learning without any experience"
+    ],
+    "correctAnswer": 0,
+    "category": "Basic Psychology",
+    "courseId": "psychology",
+    "subjectId": "basic-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Albert Bandura is best known for his theory of:",
+    "options": [
+      "Social learning",
+      "Psychoanalysis",
+      "Classical conditioning",
+      "Cognitive dissonance"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Psychology",
+    "courseId": "psychology",
+    "subjectId": "social-psychology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Social psychology primarily studies:",
+    "options": [
+      "How people think and behave in social situations",
+      "Only brain anatomy",
+      "Only childhood development",
+      "Only mental disorders"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Psychology",
+    "courseId": "psychology",
+    "subjectId": "social-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The influence of other people on an individual's behavior is called:",
+    "options": [
+      "Social influence",
+      "Self-actualization",
+      "Sensation",
+      "Conditioning"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Psychology",
+    "courseId": "psychology",
+    "subjectId": "social-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Changing one's behavior to match a group is known as:",
+    "options": [
+      "Conformity",
+      "Isolation",
+      "Projection",
+      "Reinforcement"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Psychology",
+    "courseId": "psychology",
+    "subjectId": "social-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The tendency to attribute another person's behavior to their personality rather than the situation is called:",
+    "options": [
+      "Fundamental attribution error",
+      "Self-serving bias",
+      "Groupthink",
+      "Social facilitation"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Psychology",
+    "courseId": "psychology",
+    "subjectId": "social-psychology",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Prejudice refers to:",
+    "options": [
+      "A preconceived attitude toward a group",
+      "A scientific experiment",
+      "A learning process",
+      "A memory technique"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Psychology",
+    "courseId": "psychology",
+    "subjectId": "social-psychology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Developmental psychology studies:",
+    "options": [
+      "Changes in people across the lifespan",
+      "Only adult behavior",
+      "Only brain chemistry",
+      "Only social groups"
+    ],
+    "correctAnswer": 0,
+    "category": "Developmental Psychology",
+    "courseId": "psychology",
+    "subjectId": "developmental",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Jean Piaget is best known for his theory of:",
+    "options": [
+      "Cognitive development",
+      "Classical conditioning",
+      "Social learning",
+      "Psychoanalysis"
+    ],
+    "correctAnswer": 0,
+    "category": "Developmental Psychology",
+    "courseId": "psychology",
+    "subjectId": "developmental",
+    "difficulty": "easy"
+  },
+  {
+    "question": "According to Piaget, the first stage of cognitive development is:",
+    "options": [
+      "Preoperational stage",
+      "Sensorimotor stage",
+      "Concrete operational stage",
+      "Formal operational stage"
+    ],
+    "correctAnswer": 1,
+    "category": "Developmental Psychology",
+    "courseId": "psychology",
+    "subjectId": "developmental",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The ability to understand that objects continue to exist even when unseen is called:",
+    "options": [
+      "Object permanence",
+      "Conservation",
+      "Egocentrism",
+      "Attachment"
+    ],
+    "correctAnswer": 0,
+    "category": "Developmental Psychology",
+    "courseId": "psychology",
+    "subjectId": "developmental",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Research methods in psychology are primarily used to:",
+    "options": [
+      "Collect and analyze evidence systematically",
+      "Prove every theory correct",
+      "Avoid observation",
+      "Replace experiments completely"
+    ],
+    "correctAnswer": 0,
+    "category": "Research Methods",
+    "courseId": "psychology",
+    "subjectId": "research",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A hypothesis is:",
+    "options": [
+      "A testable prediction",
+      "A final proven fact",
+      "A random opinion",
+      "A research error"
+    ],
+    "correctAnswer": 0,
+    "category": "Research Methods",
+    "courseId": "psychology",
+    "subjectId": "research",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In an experiment, the variable that is deliberately changed by the researcher is called the:",
+    "options": [
+      "Dependent variable",
+      "Independent variable",
+      "Control variable",
+      "Confounding variable"
+    ],
+    "correctAnswer": 1,
+    "category": "Research Methods",
+    "courseId": "psychology",
+    "subjectId": "research",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The variable measured by a researcher in an experiment is called the:",
+    "options": [
+      "Independent variable",
+      "Dependent variable",
+      "Control variable",
+      "Random variable"
+    ],
+    "correctAnswer": 1,
+    "category": "Research Methods",
+    "courseId": "psychology",
+    "subjectId": "research",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A correlation between two variables means that:",
+    "options": [
+      "One variable definitely causes the other",
+      "The variables are related in some way",
+      "The variables are always identical",
+      "There is no relationship between them"
+    ],
+    "correctAnswer": 1,
+    "category": "Research Methods",
+    "courseId": "psychology",
+    "subjectId": "research",
+    "difficulty": "medium"
+  }
+]

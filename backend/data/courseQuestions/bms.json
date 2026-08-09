@@ -1,0 +1,436 @@
+[
+  {
+    "question": "What does BMS stand for?",
+    "options": [
+      "Bachelor of Management Studies",
+      "Business Management System",
+      "Bachelor of Marketing Science",
+      "Business and Management Science"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is considered a basic function of management?",
+    "options": [
+      "Planning",
+      "Sleeping",
+      "Trading",
+      "Advertising only"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is widely known as the father of scientific management?",
+    "options": [
+      "Henri Fayol",
+      "F.W. Taylor",
+      "Peter Drucker",
+      "Elton Mayo"
+    ],
+    "correctAnswer": 1,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which management function involves setting organizational objectives?",
+    "options": [
+      "Planning",
+      "Controlling",
+      "Staffing",
+      "Directing"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The process of arranging resources and activities to achieve organizational goals is called:",
+    "options": [
+      "Organizing",
+      "Marketing",
+      "Accounting",
+      "Auditing"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which function ensures that organizational activities are proceeding according to plan?",
+    "options": [
+      "Controlling",
+      "Recruitment",
+      "Production",
+      "Promotion"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Delegation of authority means:",
+    "options": [
+      "Giving authority to subordinates to perform assigned tasks",
+      "Removing all employees",
+      "Increasing product prices",
+      "Closing a department"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which leadership style involves employees participating in decision-making?",
+    "options": [
+      "Autocratic",
+      "Democratic",
+      "Laissez-faire only",
+      "Bureaucratic"
+    ],
+    "correctAnswer": 1,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary objective of financial management?",
+    "options": [
+      "Maximizing shareholder wealth",
+      "Increasing employee holidays",
+      "Reducing all production",
+      "Eliminating marketing"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bms",
+    "subjectId": "finance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which financial statement shows the assets and liabilities of a business?",
+    "options": [
+      "Balance Sheet",
+      "Income Statement",
+      "Cash Book",
+      "Sales Register"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bms",
+    "subjectId": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Profit is generally calculated as:",
+    "options": [
+      "Revenue - Cost",
+      "Cost - Revenue",
+      "Assets - Sales",
+      "Capital - Revenue"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bms",
+    "subjectId": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a current asset?",
+    "options": [
+      "Cash",
+      "Land",
+      "Building",
+      "Machinery"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bms",
+    "subjectId": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The cost of borrowing money is commonly represented by:",
+    "options": [
+      "Interest",
+      "Dividend",
+      "Salary",
+      "Rent"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bms",
+    "subjectId": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which market deals mainly with long-term financial securities?",
+    "options": [
+      "Capital Market",
+      "Money Market",
+      "Local Market",
+      "Retail Market"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bms",
+    "subjectId": "finance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A dividend is generally paid to:",
+    "options": [
+      "Shareholders",
+      "Customers",
+      "Suppliers",
+      "Competitors"
+    ],
+    "correctAnswer": 0,
+    "category": "Finance",
+    "courseId": "bms",
+    "subjectId": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is marketing primarily concerned with?",
+    "options": [
+      "Creating and delivering value to customers",
+      "Only manufacturing products",
+      "Only hiring employees",
+      "Only maintaining accounts"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bms",
+    "subjectId": "marketing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The traditional marketing mix is commonly represented by:",
+    "options": [
+      "4 Ps",
+      "2 Ps",
+      "6 Cs",
+      "10 Ms"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bms",
+    "subjectId": "marketing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is NOT one of the traditional 4 Ps of marketing?",
+    "options": [
+      "Product",
+      "Price",
+      "Place",
+      "People"
+    ],
+    "correctAnswer": 3,
+    "category": "Marketing",
+    "courseId": "bms",
+    "subjectId": "marketing",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Market segmentation means:",
+    "options": [
+      "Dividing a market into groups of customers with similar needs",
+      "Closing a market",
+      "Increasing production only",
+      "Reducing product quality"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bms",
+    "subjectId": "marketing",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which activity is an example of sales promotion?",
+    "options": [
+      "Discount offer",
+      "Factory maintenance",
+      "Employee training",
+      "Financial auditing"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bms",
+    "subjectId": "marketing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Branding helps a company primarily by:",
+    "options": [
+      "Creating a distinct identity for its products",
+      "Eliminating customers",
+      "Reducing all production",
+      "Avoiding communication"
+    ],
+    "correctAnswer": 0,
+    "category": "Marketing",
+    "courseId": "bms",
+    "subjectId": "marketing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Human Resource Management primarily deals with:",
+    "options": [
+      "Managing people in an organization",
+      "Managing machines only",
+      "Managing buildings",
+      "Managing raw materials only"
+    ],
+    "correctAnswer": 0,
+    "category": "Human Resources",
+    "courseId": "bms",
+    "subjectId": "human-resources",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The process of finding and attracting potential employees is called:",
+    "options": [
+      "Recruitment",
+      "Production",
+      "Budgeting",
+      "Auditing"
+    ],
+    "correctAnswer": 0,
+    "category": "Human Resources",
+    "courseId": "bms",
+    "subjectId": "human-resources",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Selection refers to:",
+    "options": [
+      "Choosing the most suitable candidate for a job",
+      "Advertising a product",
+      "Setting product prices",
+      "Preparing financial statements"
+    ],
+    "correctAnswer": 0,
+    "category": "Human Resources",
+    "courseId": "bms",
+    "subjectId": "human-resources",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Training is provided to employees mainly to:",
+    "options": [
+      "Improve their knowledge and skills",
+      "Reduce their working ability",
+      "Eliminate teamwork",
+      "Increase product prices"
+    ],
+    "correctAnswer": 0,
+    "category": "Human Resources",
+    "courseId": "bms",
+    "subjectId": "human-resources",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Performance appraisal is used to:",
+    "options": [
+      "Evaluate employee performance",
+      "Calculate product cost only",
+      "Design advertisements",
+      "Purchase machinery"
+    ],
+    "correctAnswer": 0,
+    "category": "Human Resources",
+    "courseId": "bms",
+    "subjectId": "human-resources",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Employee motivation can be improved through:",
+    "options": [
+      "Recognition and rewards",
+      "Ignoring employees",
+      "Removing communication",
+      "Reducing all responsibilities"
+    ],
+    "correctAnswer": 0,
+    "category": "Human Resources",
+    "courseId": "bms",
+    "subjectId": "human-resources",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an example of a non-financial reward?",
+    "options": [
+      "Recognition",
+      "Salary",
+      "Bonus",
+      "Commission"
+    ],
+    "correctAnswer": 0,
+    "category": "Human Resources",
+    "courseId": "bms",
+    "subjectId": "human-resources",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is organizational culture?",
+    "options": [
+      "Shared values, beliefs and practices within an organization",
+      "Only the company's profit",
+      "Only employee salaries",
+      "Only the office building design"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Decision-making in management involves:",
+    "options": [
+      "Selecting the best alternative from available options",
+      "Avoiding all alternatives",
+      "Ignoring information",
+      "Stopping organizational activities"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Teamwork is important in an organization because it:",
+    "options": [
+      "Combines skills and efforts toward common goals",
+      "Eliminates communication",
+      "Prevents cooperation",
+      "Reduces productivity"
+    ],
+    "correctAnswer": 0,
+    "category": "Management",
+    "courseId": "bms",
+    "subjectId": "management",
+    "difficulty": "easy"
+  }
+]

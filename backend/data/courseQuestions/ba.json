@@ -1,0 +1,357 @@
+[
+  {
+    "question": "Who is known as the Father of Indian History?",
+    "options": ["Herodotus", "Megasthenes", "Kalhana", "Banabhatta"],
+    "correctAnswer": 0,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Indus Valley Civilization is also known as:",
+    "options": [
+      "Vedic Civilization",
+      "Harappan Civilization",
+      "Mauryan Civilization",
+      "Gupta Civilization"
+    ],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who founded the Maurya Empire?",
+    "options": ["Ashoka", "Chandragupta Maurya", "Bindusara", "Kanishka"],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who wrote the Arthashastra?",
+    "options": ["Kalidasa", "Kautilya", "Banabhatta", "Tulsidas"],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The Battle of Plassey was fought in:",
+    "options": ["1757", "1764", "1857", "1748"],
+    "correctAnswer": 0,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who was the first Governor-General of Bengal?",
+    "options": [
+      "Lord Curzon",
+      "Warren Hastings",
+      "Lord Wellesley",
+      "Lord Dalhousie"
+    ],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The Indian National Congress was founded in:",
+    "options": ["1885", "1905", "1919", "1942"],
+    "correctAnswer": 0,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who was the first President of the Indian National Congress?",
+    "options": [
+      "Dadabhai Naoroji",
+      "W.C. Bonnerjee",
+      "A.O. Hume",
+      "Surendranath Banerjee"
+    ],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The Quit India Movement was launched in:",
+    "options": ["1930", "1935", "1942", "1947"],
+    "correctAnswer": 2,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who gave the slogan 'Do or Die' during the Quit India Movement?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Sardar Patel"
+    ],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "ba",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Constitution of India came into force on:",
+    "options": [
+      "15 August 1947",
+      "26 November 1949",
+      "26 January 1950",
+      "2 October 1950"
+    ],
+    "correctAnswer": 2,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is the constitutional head of India?",
+    "options": ["Prime Minister", "President", "Chief Justice", "Speaker"],
+    "correctAnswer": 1,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Indian Parliament consists of:",
+    "options": [
+      "Lok Sabha only",
+      "Rajya Sabha only",
+      "President and two Houses",
+      "Prime Minister and Lok Sabha"
+    ],
+    "correctAnswer": 2,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which Fundamental Right is known as the Right to Equality?",
+    "options": [
+      "Articles 12–35",
+      "Articles 14–18",
+      "Articles 19–22",
+      "Articles 25–28"
+    ],
+    "correctAnswer": 1,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Who appoints the Prime Minister of India?",
+    "options": ["Chief Justice", "President", "Lok Sabha Speaker", "Vice-President"],
+    "correctAnswer": 1,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Rajya Sabha is also known as:",
+    "options": [
+      "House of People",
+      "Council of States",
+      "Federal Assembly",
+      "Upper Parliament"
+    ],
+    "correctAnswer": 1,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the minimum age to become a member of the Lok Sabha?",
+    "options": ["18 years", "21 years", "25 years", "30 years"],
+    "correctAnswer": 2,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is the Supreme Commander of the Armed Forces of India?",
+    "options": ["Prime Minister", "Defence Minister", "President", "Army Chief"],
+    "correctAnswer": 2,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which institution is the highest judicial authority in India?",
+    "options": [
+      "High Court",
+      "Supreme Court",
+      "District Court",
+      "Parliament"
+    ],
+    "correctAnswer": 1,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Democracy literally means:",
+    "options": [
+      "Rule by one person",
+      "Rule by the people",
+      "Rule by the army",
+      "Rule by judges"
+    ],
+    "correctAnswer": 1,
+    "category": "Political Science",
+    "courseId": "ba",
+    "subjectId": "political-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is considered the father of sociology?",
+    "options": [
+      "Karl Marx",
+      "Max Weber",
+      "Auguste Comte",
+      "Emile Durkheim"
+    ],
+    "correctAnswer": 2,
+    "category": "Sociology",
+    "courseId": "ba",
+    "subjectId": "sociology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Sociology is primarily the scientific study of:",
+    "options": [
+      "Individual biology",
+      "Society and social relationships",
+      "Economic markets",
+      "Political parties"
+    ],
+    "correctAnswer": 1,
+    "category": "Sociology",
+    "courseId": "ba",
+    "subjectId": "sociology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who wrote 'The Division of Labour in Society'?",
+    "options": [
+      "Karl Marx",
+      "Max Weber",
+      "Emile Durkheim",
+      "Auguste Comte"
+    ],
+    "correctAnswer": 2,
+    "category": "Sociology",
+    "courseId": "ba",
+    "subjectId": "sociology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "According to Karl Marx, society is strongly influenced by:",
+    "options": [
+      "Climate",
+      "Class conflict",
+      "Religion alone",
+      "Language"
+    ],
+    "correctAnswer": 1,
+    "category": "Sociology",
+    "courseId": "ba",
+    "subjectId": "sociology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A group of people who share a common culture and social relationships is called:",
+    "options": ["Society", "Economy", "Government", "Institution"],
+    "correctAnswer": 0,
+    "category": "Sociology",
+    "courseId": "ba",
+    "subjectId": "sociology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an example of a social institution?",
+    "options": ["Family", "Mountain", "River", "Forest"],
+    "correctAnswer": 0,
+    "category": "Sociology",
+    "courseId": "ba",
+    "subjectId": "sociology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who wrote the novel 'Pride and Prejudice'?",
+    "options": [
+      "Jane Austen",
+      "Charles Dickens",
+      "George Eliot",
+      "Virginia Woolf"
+    ],
+    "correctAnswer": 0,
+    "category": "English",
+    "courseId": "ba",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who wrote 'Hamlet'?",
+    "options": [
+      "William Shakespeare",
+      "John Milton",
+      "William Wordsworth",
+      "Samuel Johnson"
+    ],
+    "correctAnswer": 0,
+    "category": "English",
+    "courseId": "ba",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is known as the poet of nature in English literature?",
+    "options": [
+      "John Keats",
+      "William Wordsworth",
+      "T.S. Eliot",
+      "Robert Frost"
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "ba",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which literary genre is written primarily for performance on stage?",
+    "options": ["Drama", "Essay", "Novel", "Biography"],
+    "correctAnswer": 0,
+    "category": "English",
+    "courseId": "ba",
+    "subjectId": "english",
+    "difficulty": "easy"
+  }
+]

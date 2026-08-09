@@ -1,0 +1,297 @@
+[
+  {
+    "question": "What is the capital of India?",
+    "options": ["Mumbai", "New Delhi", "Kolkata", "Chennai"],
+    "correctAnswer": 1,
+    "category": "General Knowledge",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is known as the Father of the Indian Constitution?",
+    "options": [
+      "Mahatma Gandhi",
+      "Dr. B. R. Ambedkar",
+      "Jawaharlal Nehru",
+      "Sardar Patel"
+    ],
+    "correctAnswer": 1,
+    "category": "General Knowledge",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is the largest planet in the Solar System?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correctAnswer": 2,
+    "category": "General Science",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+    "correctAnswer": 1,
+    "category": "General Science",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the SI unit of force?",
+    "options": ["Joule", "Newton", "Watt", "Pascal"],
+    "correctAnswer": 1,
+    "category": "General Science",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ pumps blood throughout the human body?",
+    "options": ["Lungs", "Brain", "Heart", "Kidney"],
+    "correctAnswer": 2,
+    "category": "General Science",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which vitamin is mainly produced in the skin in response to sunlight?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "correctAnswer": 3,
+    "category": "General Science",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the boiling point of water at standard atmospheric pressure?",
+    "options": ["0°C", "50°C", "100°C", "212°C"],
+    "correctAnswer": 2,
+    "category": "General Science",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Mercury", "Jupiter"],
+    "correctAnswer": 1,
+    "category": "General Science",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which blood cells help fight infections?",
+    "options": [
+      "Red blood cells",
+      "White blood cells",
+      "Platelets",
+      "Plasma cells"
+    ],
+    "correctAnswer": 1,
+    "category": "General Science",
+    "courseId": "nda",
+    "subjectId": "general-science",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 20% of a number is 40, what is the number?",
+    "options": ["100", "150", "200", "250"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the value of 15 × 8?",
+    "options": ["100", "110", "120", "130"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the square root of 144?",
+    "options": ["10", "11", "12", "14"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a train travels 120 km in 2 hours, what is its average speed?",
+    "options": ["40 km/h", "50 km/h", "60 km/h", "80 km/h"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the value of 2³ + 3²?",
+    "options": ["15", "17", "18", "19"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The sum of the angles of a triangle is:",
+    "options": ["90°", "180°", "270°", "360°"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If x + 7 = 15, what is x?",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the area of a rectangle with length 12 cm and breadth 5 cm?",
+    "options": ["50 cm²", "60 cm²", "70 cm²", "80 cm²"],
+    "correctAnswer": 1,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which number is a prime number?",
+    "options": ["21", "27", "29", "33"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the value of sin 90°?",
+    "options": ["0", "1/2", "1", "√3/2"],
+    "correctAnswer": 2,
+    "category": "Mathematics",
+    "courseId": "nda",
+    "subjectId": "mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Choose the synonym of 'Brave'.",
+    "options": ["Cowardly", "Courageous", "Weak", "Lazy"],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "nda",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the antonym of 'Ancient'.",
+    "options": ["Old", "Historic", "Modern", "Traditional"],
+    "correctAnswer": 2,
+    "category": "English",
+    "courseId": "nda",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Definately", "Definitely", "Definetly", "Definatly"],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "nda",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: He ___ to school every day.",
+    "options": ["go", "goes", "going", "gone"],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "nda",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the plural form of 'Child'?",
+    "options": ["Childs", "Childes", "Children", "Childrens"],
+    "correctAnswer": 2,
+    "category": "English",
+    "courseId": "nda",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the correct passive voice: 'The soldier opened the door.'",
+    "options": [
+      "The door opened the soldier.",
+      "The door was opened by the soldier.",
+      "The soldier was opened by the door.",
+      "The door is opened by the soldier."
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "nda",
+    "subjectId": "english",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which word is an adverb?",
+    "options": ["Quick", "Quickly", "Quickness", "Quicken"],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "nda",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the correct meaning of the idiom 'Break the ice'.",
+    "options": [
+      "To break something",
+      "To start a friendly conversation",
+      "To become angry",
+      "To stop working"
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "nda",
+    "subjectId": "english",
+    "difficulty": "medium"
+  },
+  {
+    "question": "India's national defence academy is located in:",
+    "options": ["Dehradun", "Khadakwasla", "New Delhi", "Chennai"],
+    "correctAnswer": 1,
+    "category": "General Knowledge",
+    "courseId": "nda",
+    "subjectId": "current-affairs",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Indian Armed Forces consist of:",
+    "options": [
+      "Army, Navy and Air Force",
+      "Army and Police only",
+      "Navy and Coast Guard only",
+      "Air Force and Police only"
+    ],
+    "correctAnswer": 0,
+    "category": "General Knowledge",
+    "courseId": "nda",
+    "subjectId": "current-affairs",
+    "difficulty": "easy"
+  }
+]

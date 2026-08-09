@@ -1,0 +1,302 @@
+
+[
+  {
+    "question": "What is 25% of 400?",
+    "options": ["50", "75", "100", "125"],
+    "correctAnswer": 2,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 15 men can complete a work in 20 days, how many days will 10 men take?",
+    "options": ["25 days", "30 days", "35 days", "40 days"],
+    "correctAnswer": 1,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The average of 20, 30, 40, 50 and 60 is:",
+    "options": ["35", "40", "45", "50"],
+    "correctAnswer": 1,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A train travels 240 km in 4 hours. What is its average speed?",
+    "options": ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
+    "correctAnswer": 1,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If the cost price of an article is ₹500 and selling price is ₹600, the profit is:",
+    "options": ["₹50", "₹75", "₹100", "₹120"],
+    "correctAnswer": 2,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The simple interest on ₹2,000 at 5% per annum for 2 years is:",
+    "options": ["₹100", "₹150", "₹200", "₹250"],
+    "correctAnswer": 2,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The ratio 24:36 in its simplest form is:",
+    "options": ["2:3", "3:4", "4:5", "5:6"],
+    "correctAnswer": 0,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the square of 15?",
+    "options": ["125", "200", "225", "250"],
+    "correctAnswer": 2,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A number is increased from 200 to 250. What is the percentage increase?",
+    "options": ["20%", "25%", "30%", "35%"],
+    "correctAnswer": 1,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If 3x = 27, then x is:",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": 3,
+    "category": "Quantitative Aptitude",
+    "courseId": "ssc",
+    "subjectId": "quantitative-aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the next number: 2, 4, 8, 16, ?",
+    "options": ["24", "28", "32", "36"],
+    "correctAnswer": 2,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the odd one out:",
+    "options": ["Apple", "Mango", "Banana", "Carrot"],
+    "correctAnswer": 3,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If CAT is coded as DBU, how is DOG coded?",
+    "options": ["EPH", "EOG", "DPH", "FPH"],
+    "correctAnswer": 0,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A is the brother of B. B is the sister of C. How is A related to C?",
+    "options": ["Father", "Brother", "Uncle", "Cousin"],
+    "correctAnswer": 1,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which number should replace the question mark: 3, 6, 12, 24, ?",
+    "options": ["36", "42", "48", "54"],
+    "correctAnswer": 2,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If NORTH is coded as SOUTH, then EAST is coded as:",
+    "options": ["WEST", "NORTH", "SOUTH", "EAST"],
+    "correctAnswer": 0,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete the analogy: Book : Reading :: Food : ?",
+    "options": ["Cooking", "Eating", "Buying", "Selling"],
+    "correctAnswer": 1,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which word does not belong to the group?",
+    "options": ["Square", "Triangle", "Circle", "Cube"],
+    "correctAnswer": 3,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all roses are flowers and some flowers are red, which statement is definitely true?",
+    "options": [
+      "All roses are red",
+      "Some roses are red",
+      "All roses are flowers",
+      "No roses are flowers"
+    ],
+    "correctAnswer": 2,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock shows 3:00. What is the angle between the hour and minute hands?",
+    "options": ["60°", "90°", "120°", "180°"],
+    "correctAnswer": 1,
+    "category": "Reasoning",
+    "courseId": "ssc",
+    "subjectId": "reasoning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Choose the correctly spelt word:",
+    "options": ["Accomodation", "Accommodation", "Acommodation", "Accommadation"],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "ssc",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the synonym of 'Rapid':",
+    "options": ["Slow", "Quick", "Weak", "Late"],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "ssc",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the antonym of 'Ancient':",
+    "options": ["Old", "Historic", "Modern", "Traditional"],
+    "correctAnswer": 2,
+    "category": "English",
+    "courseId": "ssc",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fill in the blank: She ___ to school every day.",
+    "options": ["go", "goes", "going", "gone"],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "ssc",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Identify the noun in the sentence: 'The boy is playing cricket.'",
+    "options": ["The", "boy", "is", "playing"],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "ssc",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the correct passive voice: 'The teacher teaches English.'",
+    "options": [
+      "English is taught by the teacher.",
+      "English was taught by the teacher.",
+      "English has taught the teacher.",
+      "English teaches the teacher."
+    ],
+    "correctAnswer": 0,
+    "category": "English",
+    "courseId": "ssc",
+    "subjectId": "english",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the meaning of the idiom 'Break the ice'?",
+    "options": [
+      "To break something",
+      "To start a friendly conversation",
+      "To become angry",
+      "To stop working"
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "ssc",
+    "subjectId": "english",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Choose the correct article: He is ___ honest man.",
+    "options": ["a", "an", "the", "no article"],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "ssc",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Earth", "Venus", "Mars", "Jupiter"],
+    "correctAnswer": 2,
+    "category": "General Awareness",
+    "courseId": "ssc",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is known as the Father of the Indian Constitution?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Dr. B. R. Ambedkar",
+      "Sardar Patel"
+    ],
+    "correctAnswer": 2,
+    "category": "General Awareness",
+    "courseId": "ssc",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is the largest state in India by area?",
+    "options": ["Madhya Pradesh", "Rajasthan", "Maharashtra", "Uttar Pradesh"],
+    "correctAnswer": 1,
+    "category": "General Awareness",
+    "courseId": "ssc",
+    "subjectId": "general-awareness",
+    "difficulty": "easy"
+  }
+]

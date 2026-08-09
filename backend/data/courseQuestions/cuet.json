@@ -1,0 +1,422 @@
+[
+  {
+    "question": "Which organization conducts the Common University Entrance Test (CUET-UG) in India?",
+    "options": [
+      "UGC",
+      "NTA",
+      "CBSE",
+      "AICTE"
+    ],
+    "correctAnswer": 1,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does CUET stand for?",
+    "options": [
+      "Central University Entrance Test",
+      "Common University Entrance Test",
+      "College University Eligibility Test",
+      "Common Undergraduate Education Test"
+    ],
+    "correctAnswer": 1,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which skill is mainly tested through logical reasoning questions?",
+    "options": [
+      "Physical strength",
+      "Logical thinking",
+      "Drawing ability",
+      "Typing speed"
+    ],
+    "correctAnswer": 1,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 20% of a number is 40, what is the number?",
+    "options": [
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "correctAnswer": 2,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Find the next number: 2, 4, 8, 16, ?",
+    "options": [
+      "20",
+      "24",
+      "32",
+      "36"
+    ],
+    "correctAnswer": 2,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A train travels 120 km in 2 hours. What is its average speed?",
+    "options": [
+      "40 km/h",
+      "50 km/h",
+      "60 km/h",
+      "80 km/h"
+    ],
+    "correctAnswer": 2,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which number is a prime number?",
+    "options": [
+      "21",
+      "29",
+      "35",
+      "39"
+    ],
+    "correctAnswer": 1,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A is taller than B and B is taller than C, who is the shortest?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "Cannot be determined"
+    ],
+    "correctAnswer": 2,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is the odd one out?",
+    "options": [
+      "Apple",
+      "Mango",
+      "Banana",
+      "Carrot"
+    ],
+    "correctAnswer": 3,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the capital of India?",
+    "options": [
+      "Mumbai",
+      "Kolkata",
+      "New Delhi",
+      "Chennai"
+    ],
+    "correctAnswer": 2,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is the largest planet in the Solar System?",
+    "options": [
+      "Earth",
+      "Saturn",
+      "Jupiter",
+      "Mars"
+    ],
+    "correctAnswer": 2,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which fundamental right is related to equality before law?",
+    "options": [
+      "Right to Freedom",
+      "Right to Equality",
+      "Right to Religion",
+      "Cultural Rights"
+    ],
+    "correctAnswer": 1,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Who is known as the Father of the Indian Constitution?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "B. R. Ambedkar",
+      "Sardar Patel"
+    ],
+    "correctAnswer": 2,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which river is known as the longest river in India?",
+    "options": [
+      "Yamuna",
+      "Ganga",
+      "Godavari",
+      "Narmada"
+    ],
+    "correctAnswer": 1,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which continent is the largest by area?",
+    "options": [
+      "Africa",
+      "Europe",
+      "Asia",
+      "North America"
+    ],
+    "correctAnswer": 2,
+    "category": "General Test",
+    "courseId": "cuet",
+    "subjectId": "general-test",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the word closest in meaning to 'Abundant'.",
+    "options": [
+      "Scarce",
+      "Plentiful",
+      "Empty",
+      "Weak"
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "cuet",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the opposite of 'Ancient'.",
+    "options": [
+      "Old",
+      "Historic",
+      "Modern",
+      "Traditional"
+    ],
+    "correctAnswer": 2,
+    "category": "English",
+    "courseId": "cuet",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": [
+      "Accomodation",
+      "Accommodation",
+      "Acommodation",
+      "Accommadation"
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "cuet",
+    "subjectId": "english",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fill in the blank: She ___ to college every day.",
+    "options": [
+      "go",
+      "goes",
+      "going",
+      "gone"
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "cuet",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the correct passive voice: 'They completed the work.'",
+    "options": [
+      "The work completed them.",
+      "The work was completed by them.",
+      "The work is completed by them.",
+      "The work has completed them."
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "cuet",
+    "subjectId": "english",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which word is a synonym of 'Rapid'?",
+    "options": [
+      "Slow",
+      "Quick",
+      "Late",
+      "Weak"
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "cuet",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a noun?",
+    "options": [
+      "Beautiful",
+      "Quickly",
+      "Honesty",
+      "Run"
+    ],
+    "correctAnswer": 2,
+    "category": "English",
+    "courseId": "cuet",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the plural form of 'Analysis'?",
+    "options": [
+      "Analysises",
+      "Analysis",
+      "Analyses",
+      "Analyzis"
+    ],
+    "correctAnswer": 2,
+    "category": "English",
+    "courseId": "cuet",
+    "subjectId": "english",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which word best completes the sentence: 'He is good ___ mathematics.'",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "for"
+    ],
+    "correctAnswer": 1,
+    "category": "English",
+    "courseId": "cuet",
+    "subjectId": "english",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an example of a renewable source of energy?",
+    "options": [
+      "Coal",
+      "Petroleum",
+      "Solar energy",
+      "Natural gas"
+    ],
+    "correctAnswer": 2,
+    "category": "Domain Subjects",
+    "courseId": "cuet",
+    "subjectId": "domain",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organelle is known as the powerhouse of the cell?",
+    "options": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondria",
+      "Golgi apparatus"
+    ],
+    "correctAnswer": 2,
+    "category": "Domain Subjects",
+    "courseId": "cuet",
+    "subjectId": "domain",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the chemical symbol for sodium?",
+    "options": [
+      "So",
+      "Na",
+      "S",
+      "Sd"
+    ],
+    "correctAnswer": 1,
+    "category": "Domain Subjects",
+    "courseId": "cuet",
+    "subjectId": "domain",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which branch of science deals with the study of matter and energy?",
+    "options": [
+      "Biology",
+      "Physics",
+      "Geology",
+      "Ecology"
+    ],
+    "correctAnswer": 1,
+    "category": "Domain Subjects",
+    "courseId": "cuet",
+    "subjectId": "domain",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which economic concept refers to the limited nature of resources?",
+    "options": [
+      "Demand",
+      "Scarcity",
+      "Utility",
+      "Production"
+    ],
+    "correctAnswer": 1,
+    "category": "Domain Subjects",
+    "courseId": "cuet",
+    "subjectId": "domain",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which document contains the fundamental principles and rules of a country?",
+    "options": [
+      "Budget",
+      "Constitution",
+      "Manifesto",
+      "Census"
+    ],
+    "correctAnswer": 1,
+    "category": "Domain Subjects",
+    "courseId": "cuet",
+    "subjectId": "domain",
+    "difficulty": "easy"
+  }
+]

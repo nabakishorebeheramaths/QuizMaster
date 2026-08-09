@@ -1,0 +1,353 @@
+
+[
+  {
+    "question": "Who founded the Maurya Empire?",
+    "options": ["Ashoka", "Chandragupta Maurya", "Bindusara", "Harshavardhana"],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "upsc",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Battle of Plassey was fought in which year?",
+    "options": ["1757", "1764", "1857", "1748"],
+    "correctAnswer": 0,
+    "category": "History",
+    "courseId": "upsc",
+    "subjectId": "history",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Who was the first Governor-General of independent India?",
+    "options": [
+      "Lord Mountbatten",
+      "C. Rajagopalachari",
+      "Warren Hastings",
+      "Lord Curzon"
+    ],
+    "correctAnswer": 0,
+    "category": "History",
+    "courseId": "upsc",
+    "subjectId": "history",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The Quit India Movement was launched in:",
+    "options": ["1930", "1942", "1947", "1920"],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "upsc",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who gave the slogan 'Do or Die' during the Indian freedom struggle?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Bhagat Singh",
+      "Mahatma Gandhi",
+      "Bal Gangadhar Tilak"
+    ],
+    "correctAnswer": 2,
+    "category": "History",
+    "courseId": "upsc",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Indus Valley Civilization is also known as:",
+    "options": [
+      "Vedic Civilization",
+      "Harappan Civilization",
+      "Mauryan Civilization",
+      "Gupta Civilization"
+    ],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "upsc",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who was the founder of the Mughal Empire in India?",
+    "options": ["Akbar", "Babur", "Humayun", "Aurangzeb"],
+    "correctAnswer": 1,
+    "category": "History",
+    "courseId": "upsc",
+    "subjectId": "history",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Permanent Settlement was introduced by:",
+    "options": [
+      "Lord Cornwallis",
+      "Lord Wellesley",
+      "Lord Dalhousie",
+      "Lord Curzon"
+    ],
+    "correctAnswer": 0,
+    "category": "History",
+    "courseId": "upsc",
+    "subjectId": "history",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which latitude passes through the southernmost part of India?",
+    "options": ["8°4'N", "23°30'N", "0°", "37°6'N"],
+    "correctAnswer": 0,
+    "category": "Geography",
+    "courseId": "upsc",
+    "subjectId": "geography",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which is the longest river in India?",
+    "options": ["Yamuna", "Ganga", "Godavari", "Narmada"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "courseId": "upsc",
+    "subjectId": "geography",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Western Ghats are also known as:",
+    "options": [
+      "Sahyadri",
+      "Aravalli",
+      "Shivalik",
+      "Nilgiri"
+    ],
+    "correctAnswer": 0,
+    "category": "Geography",
+    "courseId": "upsc",
+    "subjectId": "geography",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which soil is most suitable for cotton cultivation?",
+    "options": [
+      "Alluvial soil",
+      "Black soil",
+      "Laterite soil",
+      "Red soil"
+    ],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "courseId": "upsc",
+    "subjectId": "geography",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is the largest ocean in the world?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean"
+    ],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "courseId": "upsc",
+    "subjectId": "geography",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Tropic of Cancer passes through how many Indian states?",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "courseId": "upsc",
+    "subjectId": "geography",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which Indian state has the longest coastline?",
+    "options": [
+      "Maharashtra",
+      "Tamil Nadu",
+      "Gujarat",
+      "Andhra Pradesh"
+    ],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "courseId": "upsc",
+    "subjectId": "geography",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Constitution of India was adopted on:",
+    "options": [
+      "15 August 1947",
+      "26 November 1949",
+      "26 January 1950",
+      "2 October 1949"
+    ],
+    "correctAnswer": 1,
+    "category": "Indian Polity",
+    "courseId": "upsc",
+    "subjectId": "polity",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is the constitutional head of the Union Executive in India?",
+    "options": ["Prime Minister", "President", "Chief Justice", "Vice-President"],
+    "correctAnswer": 1,
+    "category": "Indian Polity",
+    "courseId": "upsc",
+    "subjectId": "polity",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fundamental Rights are included in which part of the Indian Constitution?",
+    "options": ["Part I", "Part II", "Part III", "Part IV"],
+    "correctAnswer": 2,
+    "category": "Indian Polity",
+    "courseId": "upsc",
+    "subjectId": "polity",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Directive Principles of State Policy are contained in:",
+    "options": ["Part II", "Part III", "Part IV", "Part V"],
+    "correctAnswer": 2,
+    "category": "Indian Polity",
+    "courseId": "upsc",
+    "subjectId": "polity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Who appoints the Prime Minister of India?",
+    "options": [
+      "Chief Justice of India",
+      "President of India",
+      "Lok Sabha Speaker",
+      "Vice-President"
+    ],
+    "correctAnswer": 1,
+    "category": "Indian Polity",
+    "courseId": "upsc",
+    "subjectId": "polity",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Rajya Sabha is also known as:",
+    "options": [
+      "House of the People",
+      "Council of States",
+      "Federal Assembly",
+      "National Council"
+    ],
+    "correctAnswer": 1,
+    "category": "Indian Polity",
+    "courseId": "upsc",
+    "subjectId": "polity",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Article deals with equality before law?",
+    "options": ["Article 12", "Article 14", "Article 19", "Article 21"],
+    "correctAnswer": 1,
+    "category": "Indian Polity",
+    "courseId": "upsc",
+    "subjectId": "polity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The Supreme Court of India is established under which Article?",
+    "options": ["Article 124", "Article 148", "Article 280", "Article 324"],
+    "correctAnswer": 0,
+    "category": "Indian Polity",
+    "courseId": "upsc",
+    "subjectId": "polity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The Union Public Service Commission is mentioned under which Article?",
+    "options": ["Article 280", "Article 315", "Article 324", "Article 368"],
+    "correctAnswer": 1,
+    "category": "Indian Polity",
+    "courseId": "upsc",
+    "subjectId": "polity",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which organization publishes the Human Development Report?",
+    "options": [
+      "World Bank",
+      "United Nations Development Programme",
+      "IMF",
+      "WHO"
+    ],
+    "correctAnswer": 1,
+    "category": "Current Affairs",
+    "courseId": "upsc",
+    "subjectId": "current-affairs",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The headquarters of the United Nations is located in:",
+    "options": ["Geneva", "Paris", "New York", "London"],
+    "correctAnswer": 2,
+    "category": "Current Affairs",
+    "courseId": "upsc",
+    "subjectId": "current-affairs",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which institution is responsible for maintaining monetary policy in India?",
+    "options": [
+      "SEBI",
+      "Reserve Bank of India",
+      "NITI Aayog",
+      "Finance Commission"
+    ],
+    "correctAnswer": 1,
+    "category": "Current Affairs",
+    "courseId": "upsc",
+    "subjectId": "current-affairs",
+    "difficulty": "medium"
+  },
+  {
+    "question": "G20 is primarily a forum for cooperation on:",
+    "options": [
+      "Sports",
+      "Global economic and financial issues",
+      "Military operations",
+      "Space exploration"
+    ],
+    "correctAnswer": 1,
+    "category": "Current Affairs",
+    "courseId": "upsc",
+    "subjectId": "current-affairs",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Indian mission successfully demonstrated a soft landing near the Moon's south polar region in 2023?",
+    "options": [
+      "Chandrayaan-1",
+      "Chandrayaan-2",
+      "Chandrayaan-3",
+      "Mangalyaan"
+    ],
+    "correctAnswer": 2,
+    "category": "Current Affairs",
+    "courseId": "upsc",
+    "subjectId": "current-affairs",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which international organization is primarily concerned with global public health?",
+    "options": [
+      "WHO",
+      "WTO",
+      "UNESCO",
+      "FAO"
+    ],
+    "correctAnswer": 0,
+    "category": "Current Affairs",
+    "courseId": "upsc",
+    "subjectId": "current-affairs",
+    "difficulty": "easy"
+  }
+]

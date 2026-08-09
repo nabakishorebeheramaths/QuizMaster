@@ -1,0 +1,436 @@
+[
+  {
+    "question": "What is animation?",
+    "options": [
+      "A technique of creating the illusion of movement",
+      "A method of printing documents",
+      "A type of database",
+      "A programming language"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which principle of animation refers to preparing the audience for an upcoming action?",
+    "options": [
+      "Anticipation",
+      "Squash and Stretch",
+      "Timing",
+      "Appeal"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which animation principle gives an object a sense of weight and flexibility?",
+    "options": [
+      "Appeal",
+      "Squash and Stretch",
+      "Staging",
+      "Solid Drawing"
+    ],
+    "correctAnswer": 1,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does FPS stand for in animation?",
+    "options": [
+      "Frames Per Second",
+      "Frames Per Scene",
+      "File Processing System",
+      "Frame Position Scale"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a keyframe?",
+    "options": [
+      "A frame that defines an important point in an animation",
+      "A sound effect",
+      "A type of image format",
+      "A video compression method"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which technique creates animation by drawing each frame individually?",
+    "options": [
+      "Stop motion",
+      "Frame-by-frame animation",
+      "Motion capture",
+      "Rendering"
+    ],
+    "correctAnswer": 1,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is onion skinning used for?",
+    "options": [
+      "Viewing previous and next frames while animating",
+      "Adding sound to animation",
+      "Compressing animation files",
+      "Creating 3D models"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which principle deals with the speed and spacing of an action?",
+    "options": [
+      "Timing",
+      "Appeal",
+      "Staging",
+      "Follow Through"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is squash and stretch mainly used to communicate?",
+    "options": [
+      "Weight and flexibility",
+      "Color information",
+      "Audio quality",
+      "Camera resolution"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which animation technique uses physical objects photographed one frame at a time?",
+    "options": [
+      "Vector animation",
+      "Stop-motion animation",
+      "Motion graphics",
+      "Rotoscoping"
+    ],
+    "correctAnswer": 1,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is rotoscoping?",
+    "options": [
+      "Tracing over live-action footage frame by frame",
+      "Creating audio effects",
+      "Designing a logo",
+      "Compressing video"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a storyboard?",
+    "options": [
+      "A visual plan of scenes and shots",
+      "A sound recording",
+      "A 3D rendering engine",
+      "A file compression format"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which stage generally comes before animation production?",
+    "options": [
+      "Pre-production",
+      "Rendering",
+      "Exporting",
+      "Compression"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a character rig?",
+    "options": [
+      "A digital skeleton used to control a character",
+      "A background image",
+      "A sound effect",
+      "A rendering format"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is tweening in animation?",
+    "options": [
+      "Creating intermediate frames between keyframes",
+      "Recording dialogue",
+      "Drawing backgrounds",
+      "Editing audio"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which type of animation creates movement using mathematical paths and vector objects?",
+    "options": [
+      "Vector animation",
+      "Stop motion",
+      "Clay animation",
+      "Traditional painting"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is anticipation used for in character animation?",
+    "options": [
+      "To prepare the viewer for an action",
+      "To increase file size",
+      "To change image resolution",
+      "To remove frames"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which principle describes the continuation of movement after the main action stops?",
+    "options": [
+      "Follow Through",
+      "Staging",
+      "Appeal",
+      "Solid Drawing"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is staging in animation?",
+    "options": [
+      "Presenting an idea clearly to the audience",
+      "Rendering a final image",
+      "Adding background music",
+      "Saving an animation file"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which type of animation is created using three-dimensional models?",
+    "options": [
+      "3D animation",
+      "2D animation",
+      "Traditional animation",
+      "Cut-out animation"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is rendering in 3D animation?",
+    "options": [
+      "Generating the final visual output from a scene",
+      "Writing the story",
+      "Recording dialogue",
+      "Drawing a storyboard"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which principle makes an animated character visually interesting and engaging?",
+    "options": [
+      "Appeal",
+      "Timing",
+      "Spacing",
+      "Rendering"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is motion capture?",
+    "options": [
+      "Recording real human movement for use in digital animation",
+      "Drawing every frame manually",
+      "Creating a storyboard",
+      "Editing background music"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which software is widely used for professional 3D animation and modeling?",
+    "options": [
+      "Blender",
+      "Notepad",
+      "Calculator",
+      "Microsoft Word"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a timeline used for in animation software?",
+    "options": [
+      "Managing frames and animation timing",
+      "Creating passwords",
+      "Connecting to the internet",
+      "Formatting a hard drive"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of easing in animation?",
+    "options": [
+      "To make movement appear more natural",
+      "To increase image resolution",
+      "To remove colors",
+      "To reduce audio volume"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which animation principle involves drawing characters with a sense of three-dimensional form?",
+    "options": [
+      "Solid Drawing",
+      "Anticipation",
+      "Appeal",
+      "Timing"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is an animation loop?",
+    "options": [
+      "An animation sequence that repeats continuously",
+      "A single still image",
+      "A type of microphone",
+      "A video compression technique"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which format is commonly used for short animated images on the web?",
+    "options": [
+      "GIF",
+      "TXT",
+      "DOCX",
+      "CSV"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main purpose of a character turnaround sheet?",
+    "options": [
+      "To show a character from different views",
+      "To record character dialogue",
+      "To create background music",
+      "To compress animation"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which process converts a 3D scene into a sequence of images or video frames?",
+    "options": [
+      "Rendering",
+      "Storyboarding",
+      "Rigging",
+      "Modeling"
+    ],
+    "correctAnswer": 0,
+    "category": "Animation",
+    "courseId": "animation",
+    "subjectId": "animation",
+    "difficulty": "medium"
+  }
+]

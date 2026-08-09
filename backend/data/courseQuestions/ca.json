@@ -1,0 +1,408 @@
+[
+  {
+    "question": "Which financial statement shows the financial position of a company?",
+    "options": [
+      "Income Statement",
+      "Balance Sheet",
+      "Cash Flow Statement",
+      "Trial Balance"
+    ],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the basic accounting equation?",
+    "options": [
+      "Assets = Liabilities + Capital",
+      "Assets = Capital - Liabilities",
+      "Capital = Assets + Liabilities",
+      "Liabilities = Assets + Capital"
+    ],
+    "correctAnswer": 0,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which account is debited when goods are purchased for cash?",
+    "options": [
+      "Cash Account",
+      "Purchases Account",
+      "Sales Account",
+      "Capital Account"
+    ],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Depreciation is generally charged on:",
+    "options": [
+      "Current assets",
+      "Fixed assets",
+      "Current liabilities",
+      "Capital"
+    ],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which method charges equal depreciation every year?",
+    "options": [
+      "Written Down Value Method",
+      "Straight Line Method",
+      "Units of Production Method",
+      "Revaluation Method"
+    ],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A trial balance is prepared mainly to check:",
+    "options": [
+      "Profitability",
+      "Financial position",
+      "Arithmetical accuracy of ledger accounts",
+      "Cash balance"
+    ],
+    "correctAnswer": 2,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which concept assumes that a business will continue for the foreseeable future?",
+    "options": [
+      "Matching Concept",
+      "Going Concern Concept",
+      "Prudence Concept",
+      "Consistency Concept"
+    ],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Revenue expenditure is incurred mainly for:",
+    "options": [
+      "Acquiring fixed assets",
+      "Day-to-day operations of business",
+      "Increasing share capital",
+      "Purchasing land"
+    ],
+    "correctAnswer": 1,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which account normally has a debit balance?",
+    "options": [
+      "Capital Account",
+      "Sales Account",
+      "Rent Expense Account",
+      "Creditors Account"
+    ],
+    "correctAnswer": 2,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The matching concept requires expenses to be matched with:",
+    "options": [
+      "Assets",
+      "Liabilities",
+      "Related revenues",
+      "Capital"
+    ],
+    "correctAnswer": 2,
+    "category": "Accounting",
+    "courseId": "ca",
+    "subjectId": "accounting",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which law primarily governs contracts in India?",
+    "options": [
+      "Companies Act, 2013",
+      "Indian Contract Act, 1872",
+      "Sale of Goods Act, 1930",
+      "Income-tax Act, 1961"
+    ],
+    "correctAnswer": 1,
+    "category": "Business Law",
+    "courseId": "ca",
+    "subjectId": "law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A valid contract requires:",
+    "options": [
+      "Lawful consideration",
+      "Only written agreement",
+      "Only oral agreement",
+      "Government approval in every case"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "ca",
+    "subjectId": "law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "An agreement enforceable by law is called:",
+    "options": [
+      "Promise",
+      "Contract",
+      "Proposal",
+      "Offer"
+    ],
+    "correctAnswer": 1,
+    "category": "Business Law",
+    "courseId": "ca",
+    "subjectId": "law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The person who makes an offer is called:",
+    "options": [
+      "Offeree",
+      "Offeror",
+      "Promisee",
+      "Agent"
+    ],
+    "correctAnswer": 1,
+    "category": "Business Law",
+    "courseId": "ca",
+    "subjectId": "law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an essential element of a valid contract?",
+    "options": [
+      "Free consent",
+      "Illegal object",
+      "Uncertain terms",
+      "No consideration in every case"
+    ],
+    "correctAnswer": 0,
+    "category": "Business Law",
+    "courseId": "ca",
+    "subjectId": "law",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The Sale of Goods Act in India was enacted in:",
+    "options": [
+      "1872",
+      "1930",
+      "1956",
+      "2013"
+    ],
+    "correctAnswer": 1,
+    "category": "Business Law",
+    "courseId": "ca",
+    "subjectId": "law",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is GDP?",
+    "options": [
+      "Gross Domestic Product",
+      "General Development Price",
+      "Gross Development Plan",
+      "Government Domestic Production"
+    ],
+    "correctAnswer": 0,
+    "category": "Economics",
+    "courseId": "ca",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "According to the law of demand, other things remaining constant, demand generally:",
+    "options": [
+      "Increases when price increases",
+      "Decreases when price increases",
+      "Never changes",
+      "Always becomes zero"
+    ],
+    "correctAnswer": 1,
+    "category": "Economics",
+    "courseId": "ca",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Inflation refers to:",
+    "options": [
+      "Fall in general price level",
+      "Rise in general price level",
+      "Fall in production only",
+      "Increase in unemployment only"
+    ],
+    "correctAnswer": 1,
+    "category": "Economics",
+    "courseId": "ca",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which institution is responsible for monetary policy in India?",
+    "options": [
+      "SEBI",
+      "RBI",
+      "NITI Aayog",
+      "NABARD"
+    ],
+    "correctAnswer": 1,
+    "category": "Economics",
+    "courseId": "ca",
+    "subjectId": "economics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fiscal policy is mainly concerned with:",
+    "options": [
+      "Government revenue and expenditure",
+      "Bank employee recruitment",
+      "Stock exchange operations",
+      "Foreign tourism"
+    ],
+    "correctAnswer": 0,
+    "category": "Economics",
+    "courseId": "ca",
+    "subjectId": "economics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Income tax is classified as:",
+    "options": [
+      "Direct tax",
+      "Indirect tax",
+      "Sales tax",
+      "Customs duty"
+    ],
+    "correctAnswer": 0,
+    "category": "Taxation",
+    "courseId": "ca",
+    "subjectId": "taxation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "GST stands for:",
+    "options": [
+      "Goods and Services Tax",
+      "General Sales Tax",
+      "Government Service Tax",
+      "Goods Supply Tariff"
+    ],
+    "correctAnswer": 0,
+    "category": "Taxation",
+    "courseId": "ca",
+    "subjectId": "taxation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "GST is primarily a tax on:",
+    "options": [
+      "Income",
+      "Supply of goods and services",
+      "Wealth",
+      "Agricultural land"
+    ],
+    "correctAnswer": 1,
+    "category": "Taxation",
+    "courseId": "ca",
+    "subjectId": "taxation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which body administers GST in India?",
+    "options": [
+      "GST Council and tax authorities",
+      "RBI alone",
+      "SEBI alone",
+      "Election Commission"
+    ],
+    "correctAnswer": 0,
+    "category": "Taxation",
+    "courseId": "ca",
+    "subjectId": "taxation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "TDS stands for:",
+    "options": [
+      "Tax Deducted at Source",
+      "Total Deduction System",
+      "Tax Distribution Scheme",
+      "Tax Deposit Service"
+    ],
+    "correctAnswer": 0,
+    "category": "Taxation",
+    "courseId": "ca",
+    "subjectId": "taxation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which tax is generally imposed on the import of goods into India?",
+    "options": [
+      "Income Tax",
+      "Customs Duty",
+      "Professional Tax",
+      "Property Tax"
+    ],
+    "correctAnswer": 1,
+    "category": "Taxation",
+    "courseId": "ca",
+    "subjectId": "taxation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "PAN stands for:",
+    "options": [
+      "Permanent Account Number",
+      "Personal Assessment Number",
+      "Public Account Number",
+      "Permanent Assessment Note"
+    ],
+    "correctAnswer": 0,
+    "category": "Taxation",
+    "courseId": "ca",
+    "subjectId": "taxation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which authority issues PAN in India?",
+    "options": [
+      "Income Tax Department",
+      "Reserve Bank of India",
+      "SEBI",
+      "Ministry of Corporate Affairs"
+    ],
+    "correctAnswer": 0,
+    "category": "Taxation",
+    "courseId": "ca",
+    "subjectId": "taxation",
+    "difficulty": "medium"
+  }
+]

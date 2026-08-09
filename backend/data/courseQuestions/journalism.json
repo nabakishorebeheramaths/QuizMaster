@@ -1,0 +1,436 @@
+[
+  {
+    "question": "What is journalism primarily concerned with?",
+    "options": [
+      "Collecting and presenting information to the public",
+      "Selling products",
+      "Manufacturing newspapers",
+      "Writing fiction only"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is responsible for gathering information and reporting news?",
+    "options": [
+      "Reporter",
+      "Accountant",
+      "Designer",
+      "Publisher"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an important quality of a good journalist?",
+    "options": [
+      "Accuracy",
+      "Bias",
+      "Carelessness",
+      "Secrecy"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The first paragraph of a news story is commonly called the:",
+    "options": [
+      "Headline",
+      "Lead",
+      "Caption",
+      "Byline"
+    ],
+    "correctAnswer": 1,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A headline is mainly used to:",
+    "options": [
+      "Summarize and attract attention to a news story",
+      "Replace the entire article",
+      "Provide advertisements",
+      "List references"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The term 'byline' in journalism refers to:",
+    "options": [
+      "The name of the journalist who wrote the story",
+      "The newspaper's address",
+      "The date of publication",
+      "The headline"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The inverted pyramid style of news writing places the most important information:",
+    "options": [
+      "At the beginning",
+      "In the middle",
+      "At the end",
+      "In the headline only"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is considered a primary source?",
+    "options": [
+      "An eyewitness",
+      "A textbook summary",
+      "A random blog",
+      "An encyclopedia"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Fact-checking is done mainly to:",
+    "options": [
+      "Verify the accuracy of information",
+      "Increase the length of an article",
+      "Create advertisements",
+      "Add fictional details"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does investigative journalism generally involve?",
+    "options": [
+      "In-depth investigation of important issues",
+      "Writing entertainment stories only",
+      "Publishing advertisements",
+      "Reporting sports scores only"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A journalist should generally distinguish between facts and:",
+    "options": [
+      "Opinions",
+      "Dates",
+      "Names",
+      "Evidence"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which principle requires journalists to avoid deliberately misleading the audience?",
+    "options": [
+      "Accuracy",
+      "Entertainment",
+      "Promotion",
+      "Sensationalism"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A news story should ideally answer the basic questions of:",
+    "options": [
+      "Who, What, When, Where, Why and How",
+      "Only Who and What",
+      "Only When and Where",
+      "Only Why and How"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a news angle?",
+    "options": [
+      "The particular aspect or perspective emphasized in a story",
+      "The size of a newspaper",
+      "The location of a printing press",
+      "The font used in an article"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is an editorial?",
+    "options": [
+      "An article expressing the publication's opinion",
+      "A police report",
+      "A weather forecast",
+      "A classified advertisement"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A feature story generally differs from a hard news story because it:",
+    "options": [
+      "Allows more depth, description and human interest",
+      "Contains no information",
+      "Must always be fictional",
+      "Only reports stock prices"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a press conference?",
+    "options": [
+      "An event where journalists receive information and ask questions",
+      "A newspaper printing process",
+      "A private meeting between editors",
+      "A television advertisement"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A source who provides information without being publicly identified is commonly called:",
+    "options": [
+      "Anonymous source",
+      "Public editor",
+      "Publisher",
+      "Copy editor"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is plagiarism in journalism?",
+    "options": [
+      "Using someone else's work or ideas without proper attribution",
+      "Checking facts carefully",
+      "Interviewing a source",
+      "Writing an original story"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The process of obtaining information by asking questions directly to a person is called:",
+    "options": [
+      "Interview",
+      "Editing",
+      "Broadcasting",
+      "Publishing"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is photojournalism?",
+    "options": [
+      "Using photographs to communicate news and stories",
+      "Writing movie scripts",
+      "Designing advertisements only",
+      "Editing novels"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Media",
+    "courseId": "journalism",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which medium primarily uses sound to deliver news and information?",
+    "options": [
+      "Radio",
+      "Newspaper",
+      "Magazine",
+      "Poster"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Media",
+    "courseId": "journalism",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Television journalism combines:",
+    "options": [
+      "Audio and visual communication",
+      "Text only",
+      "Audio only",
+      "Images without sound"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Media",
+    "courseId": "journalism",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is digital journalism?",
+    "options": [
+      "Journalism produced and distributed through digital platforms",
+      "Journalism printed only on paper",
+      "Journalism without sources",
+      "Private diary writing"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Media",
+    "courseId": "journalism",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which platform is commonly associated with online journalism?",
+    "options": [
+      "News website",
+      "Typewriter",
+      "Printing machine",
+      "Notice board only"
+    ],
+    "correctAnswer": 0,
+    "category": "Mass Media",
+    "courseId": "journalism",
+    "subjectId": "mass-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is media ethics?",
+    "options": [
+      "Principles that guide responsible media conduct",
+      "Rules for newspaper pricing",
+      "Methods of printing newspapers",
+      "Techniques for increasing advertisements"
+    ],
+    "correctAnswer": 0,
+    "category": "Communication",
+    "courseId": "journalism",
+    "subjectId": "communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following can be a conflict of interest for a journalist?",
+    "options": [
+      "Reporting on an organization in which the journalist has a personal financial interest",
+      "Checking multiple sources",
+      "Interviewing witnesses",
+      "Correcting an error"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Sensationalism in journalism generally refers to:",
+    "options": [
+      "Exaggerating or presenting information dramatically to attract attention",
+      "Carefully verifying facts",
+      "Using neutral language",
+      "Protecting confidential sources"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a correction in journalism?",
+    "options": [
+      "A published acknowledgment and fixing of an error",
+      "A new advertisement",
+      "A fictional story",
+      "A headline design"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main purpose of a journalist's source?",
+    "options": [
+      "To provide information or evidence for a story",
+      "To design the newspaper",
+      "To sell subscriptions",
+      "To choose the headline font"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A journalist's responsibility toward the public primarily includes:",
+    "options": [
+      "Providing accurate and responsible information",
+      "Promoting rumors",
+      "Hiding important facts",
+      "Creating false stories"
+    ],
+    "correctAnswer": 0,
+    "category": "Journalism",
+    "courseId": "journalism",
+    "subjectId": "journalism",
+    "difficulty": "easy"
+  }
+]

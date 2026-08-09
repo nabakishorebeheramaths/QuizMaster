@@ -1,0 +1,422 @@
+[
+  {
+    "question": "What is the basic economic problem?",
+    "options": [
+      "Unlimited wants and limited resources",
+      "Unlimited resources and limited wants",
+      "Equal distribution of income",
+      "Increase in population"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is opportunity cost?",
+    "options": [
+      "The value of the next best alternative forgone",
+      "The total money spent on a product",
+      "The profit earned by a firm",
+      "The market price of a product"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "According to the law of demand, other things remaining constant, when price rises:",
+    "options": [
+      "Quantity demanded generally falls",
+      "Quantity demanded rises",
+      "Supply falls",
+      "Demand becomes zero"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A demand curve generally slopes:",
+    "options": [
+      "Downward from left to right",
+      "Upward from left to right",
+      "Vertically upward only",
+      "Horizontally only"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What happens to demand for a normal good when consumer income increases, ceteris paribus?",
+    "options": [
+      "Demand generally increases",
+      "Demand always decreases",
+      "Demand becomes perfectly inelastic",
+      "Demand becomes zero"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Price elasticity of demand measures the responsiveness of:",
+    "options": [
+      "Quantity demanded to a change in price",
+      "Price to a change in income",
+      "Supply to a change in technology",
+      "Income to a change in population"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If the price elasticity of demand is greater than 1, demand is:",
+    "options": [
+      "Elastic",
+      "Inelastic",
+      "Unitary",
+      "Perfectly inelastic"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which market structure has only one seller?",
+    "options": [
+      "Monopoly",
+      "Perfect competition",
+      "Monopolistic competition",
+      "Oligopoly"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In perfect competition, a firm is generally considered a:",
+    "options": [
+      "Price taker",
+      "Price maker",
+      "Monopoly seller",
+      "Government regulator"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Marginal cost is the change in:",
+    "options": [
+      "Total cost resulting from producing one additional unit",
+      "Fixed cost resulting from producing one unit",
+      "Total revenue from a price change",
+      "Average revenue from a tax"
+    ],
+    "correctAnswer": 0,
+    "category": "Microeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "microeconomics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "GDP stands for:",
+    "options": [
+      "Gross Domestic Product",
+      "General Domestic Production",
+      "Gross Development Product",
+      "Government Domestic Price"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "GDP measures the market value of:",
+    "options": [
+      "Final goods and services produced within a country during a period",
+      "Only imported goods",
+      "Only intermediate goods",
+      "Only government expenditure"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Inflation refers to:",
+    "options": [
+      "A sustained increase in the general price level",
+      "A decrease in employment only",
+      "A fall in production only",
+      "An increase in exports only"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which institution is primarily responsible for monetary policy in India?",
+    "options": [
+      "Reserve Bank of India",
+      "NITI Aayog",
+      "Ministry of Commerce",
+      "SEBI"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Fiscal policy primarily involves government decisions regarding:",
+    "options": [
+      "Taxation and government expenditure",
+      "Bank passwords",
+      "Stock exchange timings",
+      "Weather forecasting"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an expansionary fiscal policy measure?",
+    "options": [
+      "Increasing government expenditure",
+      "Reducing government expenditure",
+      "Increasing taxes only",
+      "Reducing money supply"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Unemployment occurs when:",
+    "options": [
+      "People willing and able to work cannot find jobs",
+      "Everyone has a job",
+      "Prices are falling",
+      "Exports increase"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a recession?",
+    "options": [
+      "A significant decline in economic activity",
+      "A period of rapid inflation only",
+      "A permanent increase in exports",
+      "A rise in population"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The balance of payments records:",
+    "options": [
+      "Economic transactions between residents of a country and the rest of the world",
+      "Only domestic tax collections",
+      "Only government expenditure",
+      "Only household consumption"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is economic growth?",
+    "options": [
+      "An increase in the productive capacity or real output of an economy over time",
+      "A fall in national income",
+      "A decrease in employment",
+      "A reduction in trade"
+    ],
+    "correctAnswer": 0,
+    "category": "Macroeconomics",
+    "courseId": "ba-economics",
+    "subjectId": "macroeconomics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the arithmetic mean?",
+    "options": [
+      "Sum of observations divided by number of observations",
+      "Largest observation minus smallest observation",
+      "Middle observation only",
+      "Most frequent observation"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "ba-economics",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which measure of central tendency is the middle value of an ordered dataset?",
+    "options": [
+      "Mean",
+      "Median",
+      "Mode",
+      "Range"
+    ],
+    "correctAnswer": 1,
+    "category": "Statistics",
+    "courseId": "ba-economics",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which measure represents the most frequently occurring value?",
+    "options": [
+      "Mean",
+      "Median",
+      "Mode",
+      "Variance"
+    ],
+    "correctAnswer": 2,
+    "category": "Statistics",
+    "courseId": "ba-economics",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The range of a dataset is calculated as:",
+    "options": [
+      "Maximum value minus minimum value",
+      "Mean minus median",
+      "Median plus mode",
+      "Sum divided by frequency"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "ba-economics",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Standard deviation measures:",
+    "options": [
+      "Dispersion of observations around the mean",
+      "Only the largest value",
+      "Only the smallest value",
+      "The number of observations"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "ba-economics",
+    "subjectId": "statistics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does correlation measure?",
+    "options": [
+      "The degree and direction of association between variables",
+      "The total number of observations",
+      "The average price only",
+      "The government budget"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "ba-economics",
+    "subjectId": "statistics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The correlation coefficient generally lies between:",
+    "options": [
+      "-1 and +1",
+      "0 and 100",
+      "-100 and 100",
+      "1 and 10"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "ba-economics",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a sample in statistics?",
+    "options": [
+      "A subset selected from a population",
+      "The entire population",
+      "Only the largest observation",
+      "A mathematical equation"
+    ],
+    "correctAnswer": 0,
+    "category": "Statistics",
+    "courseId": "ba-economics",
+    "subjectId": "statistics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Economic development is broader than economic growth because it includes:",
+    "options": [
+      "Improvements in living standards and human well-being",
+      "Only an increase in GDP",
+      "Only an increase in exports",
+      "Only population growth"
+    ],
+    "correctAnswer": 0,
+    "category": "Development Economics",
+    "courseId": "ba-economics",
+    "subjectId": "development",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which indicator is commonly used to measure human development?",
+    "options": [
+      "Human Development Index",
+      "Wholesale Price Index only",
+      "Stock Market Index only",
+      "Exchange Rate Index"
+    ],
+    "correctAnswer": 0,
+    "category": "Development Economics",
+    "courseId": "ba-economics",
+    "subjectId": "development",
+    "difficulty": "easy"
+  }
+]

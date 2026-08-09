@@ -1,5 +1,5 @@
 import express from "express";
-import Question from "../models/Question.js";
+import { loadCourseQuestions } from "../utils/questionLoader.js";
 
 const router = express.Router();
 
@@ -15,55 +15,52 @@ router.get("/", async (req, res) => {
       quizType,
     } = req.query;
 
-    // =================================================
-    // SUBJECT QUIZ
-    // =================================================
-
     if (quizType === "subject") {
       if (!courseId || !subjectId) {
         return res.status(400).json({
           success: false,
-          message:
-            "courseId and subjectId are required",
+          message: "courseId and subjectId are required",
         });
       }
 
-      const questions = await Question.aggregate([
-        {
-          $match: {
-            courseId: courseId,
-            subjectId: subjectId,
-          },
-        },
-        {
-          $sample: {
-            size: 30,
-          },
-        },
-      ]);
+      // Directly load course JSON
+      const courseQuestions =
+        loadCourseQuestions(courseId);
+
+      // Subject questions
+      const questions = courseQuestions.filter(
+        (question) =>
+          question.subjectId === subjectId
+      );
+
+      // Randomize
+      const shuffled = [...questions].sort(
+        () => Math.random() - 0.5
+      );
+
+      // Maximum 30
+      const selectedQuestions =
+        shuffled.slice(0, 30);
 
       return res.status(200).json({
         success: true,
         courseId,
         subjectId,
         quizType: "subject",
-        count: questions.length,
-        questions,
+        count: selectedQuestions.length,
+        questions: selectedQuestions,
       });
     }
-
-    // =================================================
-    // INVALID REQUEST
-    // =================================================
 
     return res.status(400).json({
       success: false,
       message:
         "Invalid request. Use quizType=subject.",
     });
+
   } catch (error) {
     console.error(
-      "❌ Subject Question Error:",
+      "❌ Course JSON Question Error:",
       error.message
     );
 

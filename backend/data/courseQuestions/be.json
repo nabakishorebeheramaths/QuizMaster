@@ -1,0 +1,281 @@
+[
+  {
+    "question": "Which branch of engineering deals primarily with the design and construction of machines?",
+    "options": ["Mechanical Engineering", "Civil Engineering", "Chemical Engineering", "Textile Engineering"],
+    "correctAnswer": 0,
+    "category": "Engineering",
+    "courseId": "be",
+    "subjectId": "engineering-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the SI unit of force?",
+    "options": ["Joule", "Newton", "Watt", "Pascal"],
+    "correctAnswer": 1,
+    "category": "Engineering",
+    "courseId": "be",
+    "subjectId": "engineering-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The derivative of x² with respect to x is:",
+    "options": ["x", "2x", "x²", "2"],
+    "correctAnswer": 1,
+    "category": "Engineering Mathematics",
+    "courseId": "be",
+    "subjectId": "engineering-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The integral of 1/x dx is:",
+    "options": ["x²/2 + C", "ln|x| + C", "1/x² + C", "x + C"],
+    "correctAnswer": 1,
+    "category": "Engineering Mathematics",
+    "courseId": "be",
+    "subjectId": "engineering-mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A matrix having equal number of rows and columns is called:",
+    "options": ["Row matrix", "Column matrix", "Square matrix", "Null matrix"],
+    "correctAnswer": 2,
+    "category": "Engineering Mathematics",
+    "courseId": "be",
+    "subjectId": "engineering-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the determinant of a 2 × 2 identity matrix?",
+    "options": ["0", "1", "2", "-1"],
+    "correctAnswer": 1,
+    "category": "Engineering Mathematics",
+    "courseId": "be",
+    "subjectId": "engineering-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which law states that the sum of currents entering a junction equals the sum leaving it?",
+    "options": ["Ohm's Law", "Kirchhoff's Current Law", "Faraday's Law", "Lenz's Law"],
+    "correctAnswer": 1,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Ohm's law is expressed as:",
+    "options": ["V = IR", "P = VI", "Q = CV", "F = ma"],
+    "correctAnswer": 0,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The SI unit of electrical resistance is:",
+    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+    "correctAnswer": 2,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A semiconductor diode normally allows current to flow primarily in:",
+    "options": ["Both directions equally", "One direction", "No direction", "Only reverse direction"],
+    "correctAnswer": 1,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which semiconductor material is widely used for making electronic devices?",
+    "options": ["Copper", "Silicon", "Aluminium", "Iron"],
+    "correctAnswer": 1,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A transistor can be used as:",
+    "options": ["Only a resistor", "Only a capacitor", "An amplifier and switch", "Only an inductor"],
+    "correctAnswer": 2,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which component stores electrical energy in an electric field?",
+    "options": ["Resistor", "Capacitor", "Inductor", "Diode"],
+    "correctAnswer": 1,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which component stores energy in a magnetic field?",
+    "options": ["Capacitor", "Resistor", "Inductor", "Diode"],
+    "correctAnswer": 2,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which device is commonly used to convert AC into DC?",
+    "options": ["Rectifier", "Oscillator", "Amplifier", "Transformer"],
+    "correctAnswer": 0,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which programming language is known for its simplicity and portability?",
+    "options": ["C", "HTML", "SQL", "XML"],
+    "correctAnswer": 0,
+    "category": "Programming",
+    "courseId": "be",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which symbol is commonly used to terminate a statement in C?",
+    "options": [".", ",", ";", ":"],
+    "correctAnswer": 2,
+    "category": "Programming",
+    "courseId": "be",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data type is used to store a single character in C?",
+    "options": ["int", "char", "float", "double"],
+    "correctAnswer": 1,
+    "category": "Programming",
+    "courseId": "be",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which loop is guaranteed to execute at least once in C?",
+    "options": ["for loop", "while loop", "do-while loop", "nested loop"],
+    "correctAnswer": 2,
+    "category": "Programming",
+    "courseId": "be",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which operator is used to obtain the address of a variable in C?",
+    "options": ["*", "&", "%", "#"],
+    "correctAnswer": 1,
+    "category": "Programming",
+    "courseId": "be",
+    "subjectId": "programming",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does CPU stand for?",
+    "options": ["Central Processing Unit", "Computer Processing Utility", "Central Program Unit", "Computer Programming Unit"],
+    "correctAnswer": 0,
+    "category": "Programming",
+    "courseId": "be",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an operating system?",
+    "options": ["Linux", "Python", "Oracle", "HTML"],
+    "correctAnswer": 0,
+    "category": "Programming",
+    "courseId": "be",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main purpose of an algorithm?",
+    "options": ["To store electricity", "To solve a problem systematically", "To increase voltage", "To design hardware only"],
+    "correctAnswer": 1,
+    "category": "Programming",
+    "courseId": "be",
+    "subjectId": "programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the percentage equivalent of 1/4?",
+    "options": ["10%", "20%", "25%", "50%"],
+    "correctAnswer": 2,
+    "category": "Aptitude",
+    "courseId": "be",
+    "subjectId": "aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a number is increased from 100 to 120, the percentage increase is:",
+    "options": ["10%", "15%", "20%", "25%"],
+    "correctAnswer": 2,
+    "category": "Aptitude",
+    "courseId": "be",
+    "subjectId": "aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A train travels 120 km in 2 hours. What is its average speed?",
+    "options": ["40 km/h", "50 km/h", "60 km/h", "80 km/h"],
+    "correctAnswer": 2,
+    "category": "Aptitude",
+    "courseId": "be",
+    "subjectId": "aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 5 workers complete a task in 10 days, assuming equal efficiency, how many worker-days are required?",
+    "options": ["15", "25", "50", "100"],
+    "correctAnswer": 2,
+    "category": "Aptitude",
+    "courseId": "be",
+    "subjectId": "aptitude",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Find the next number: 2, 4, 8, 16, ?",
+    "options": ["20", "24", "30", "32"],
+    "correctAnswer": 3,
+    "category": "Aptitude",
+    "courseId": "be",
+    "subjectId": "aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If the cost price of an item is ₹500 and it is sold for ₹600, the profit percentage is:",
+    "options": ["10%", "15%", "20%", "25%"],
+    "correctAnswer": 2,
+    "category": "Aptitude",
+    "courseId": "be",
+    "subjectId": "aptitude",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which engineering discipline primarily deals with the design and analysis of electrical circuits and systems?",
+    "options": ["Electrical Engineering", "Civil Engineering", "Mining Engineering", "Architecture"],
+    "correctAnswer": 0,
+    "category": "Engineering",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which instrument is used to measure electric current?",
+    "options": ["Voltmeter", "Ammeter", "Ohmmeter", "Wattmeter"],
+    "correctAnswer": 1,
+    "category": "Electronics",
+    "courseId": "be",
+    "subjectId": "electronics",
+    "difficulty": "easy"
+  }
+]

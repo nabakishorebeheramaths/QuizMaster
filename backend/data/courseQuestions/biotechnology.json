@@ -1,0 +1,361 @@
+[
+  {
+    "question": "Biotechnology is primarily concerned with the use of living organisms or their components to:",
+    "options": [
+      "Produce useful products and processes",
+      "Study only rocks",
+      "Measure atmospheric pressure",
+      "Design mechanical machines"
+    ],
+    "correctAnswer": 0,
+    "category": "Biotechnology",
+    "courseId": "biotechnology",
+    "subjectId": "cell-biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The basic structural and functional unit of life is:",
+    "options": ["Tissue", "Cell", "Organ", "Organism"],
+    "correctAnswer": 1,
+    "category": "Cell Biology",
+    "courseId": "biotechnology",
+    "subjectId": "cell-biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organelle is known as the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondrion", "Golgi apparatus"],
+    "correctAnswer": 2,
+    "category": "Cell Biology",
+    "courseId": "biotechnology",
+    "subjectId": "cell-biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organelle is mainly responsible for protein synthesis?",
+    "options": ["Ribosome", "Lysosome", "Vacuole", "Centrosome"],
+    "correctAnswer": 0,
+    "category": "Cell Biology",
+    "courseId": "biotechnology",
+    "subjectId": "cell-biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The plasma membrane is primarily composed of:",
+    "options": [
+      "Cellulose and starch",
+      "Lipids and proteins",
+      "DNA and RNA",
+      "Only carbohydrates"
+    ],
+    "correctAnswer": 1,
+    "category": "Cell Biology",
+    "courseId": "biotechnology",
+    "subjectId": "cell-biology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which molecule carries genetic information in most living organisms?",
+    "options": ["ATP", "DNA", "Glucose", "Protein"],
+    "correctAnswer": 1,
+    "category": "Cell Biology",
+    "courseId": "biotechnology",
+    "subjectId": "cell-biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which process produces two genetically identical daughter cells?",
+    "options": ["Meiosis", "Mitosis", "Fertilization", "Mutation"],
+    "correctAnswer": 1,
+    "category": "Cell Biology",
+    "courseId": "biotechnology",
+    "subjectId": "cell-biology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which phase of the cell cycle involves DNA replication?",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "correctAnswer": 1,
+    "category": "Cell Biology",
+    "courseId": "biotechnology",
+    "subjectId": "cell-biology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The study of heredity and variation is called:",
+    "options": ["Ecology", "Genetics", "Anatomy", "Taxonomy"],
+    "correctAnswer": 1,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The functional unit of heredity is called a:",
+    "options": ["Chromosome", "Gene", "Ribosome", "Protein"],
+    "correctAnswer": 1,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Who is widely known as the father of genetics?",
+    "options": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Louis Pasteur",
+      "Watson"
+    ],
+    "correctAnswer": 1,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "DNA stands for:",
+    "options": [
+      "Deoxyribonucleic Acid",
+      "Dinitrogen Acid",
+      "Deoxyribosomal Acid",
+      "Dynamic Nucleic Acid"
+    ],
+    "correctAnswer": 0,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which nitrogenous base is present in DNA but not RNA?",
+    "options": ["Uracil", "Thymine", "Adenine", "Guanine"],
+    "correctAnswer": 1,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In DNA, adenine pairs with:",
+    "options": ["Guanine", "Cytosine", "Thymine", "Uracil"],
+    "correctAnswer": 2,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The process by which DNA makes an identical copy of itself is called:",
+    "options": ["Translation", "Transcription", "Replication", "Mutation"],
+    "correctAnswer": 2,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The process of formation of RNA from a DNA template is called:",
+    "options": ["Replication", "Transcription", "Translation", "Recombination"],
+    "correctAnswer": 1,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The process of protein synthesis using mRNA is called:",
+    "options": ["Replication", "Translation", "Transcription", "Mutation"],
+    "correctAnswer": 1,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which enzyme is commonly used to cut DNA at specific recognition sites?",
+    "options": [
+      "DNA ligase",
+      "Restriction endonuclease",
+      "RNA polymerase",
+      "Amylase"
+    ],
+    "correctAnswer": 1,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which enzyme joins DNA fragments together?",
+    "options": [
+      "DNA ligase",
+      "Restriction enzyme",
+      "Helicase",
+      "Protease"
+    ],
+    "correctAnswer": 0,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "PCR is primarily used to:",
+    "options": [
+      "Amplify DNA",
+      "Destroy proteins",
+      "Separate cells",
+      "Produce ATP"
+    ],
+    "correctAnswer": 0,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which enzyme is commonly used in PCR?",
+    "options": [
+      "Taq DNA polymerase",
+      "DNA ligase",
+      "Pepsin",
+      "Lipase"
+    ],
+    "correctAnswer": 0,
+    "category": "Genetics",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A plasmid is commonly used in biotechnology as a:",
+    "options": [
+      "Vector for gene transfer",
+      "Protein source",
+      "Cell membrane",
+      "Digestive enzyme"
+    ],
+    "correctAnswer": 0,
+    "category": "Genetic Engineering",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which bacterium is commonly used in genetic engineering because of its plasmids?",
+    "options": [
+      "Escherichia coli",
+      "Plasmodium",
+      "Paramecium",
+      "Amoeba"
+    ],
+    "correctAnswer": 0,
+    "category": "Genetic Engineering",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which microorganism is used to produce human insulin through recombinant DNA technology?",
+    "options": [
+      "Escherichia coli",
+      "Plasmodium",
+      "Rhizobium only",
+      "Amoeba"
+    ],
+    "correctAnswer": 0,
+    "category": "Genetic Engineering",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The production of genetically identical organisms from a single parent is called:",
+    "options": ["Hybridization", "Cloning", "Mutation", "Fermentation"],
+    "correctAnswer": 1,
+    "category": "Biotechnology",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which technique separates DNA fragments according to their size?",
+    "options": [
+      "Gel electrophoresis",
+      "PCR",
+      "ELISA",
+      "Chromatography"
+    ],
+    "correctAnswer": 0,
+    "category": "Biotechnology",
+    "courseId": "biotechnology",
+    "subjectId": "genetics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which microorganism is commonly used in fermentation for the production of alcohol?",
+    "options": ["Yeast", "Virus", "Amoeba", "Plasmodium"],
+    "correctAnswer": 0,
+    "category": "Microbiology",
+    "courseId": "biotechnology",
+    "subjectId": "microbiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which microorganism is commonly used in the production of antibiotics such as penicillin?",
+    "options": [
+      "Penicillium",
+      "Plasmodium",
+      "Amoeba",
+      "Paramecium"
+    ],
+    "correctAnswer": 0,
+    "category": "Microbiology",
+    "courseId": "biotechnology",
+    "subjectId": "microbiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Bacteria that can survive and grow in the absence of oxygen are called:",
+    "options": [
+      "Aerobic bacteria",
+      "Anaerobic bacteria",
+      "Photosynthetic bacteria",
+      "Halophilic bacteria"
+    ],
+    "correctAnswer": 1,
+    "category": "Microbiology",
+    "courseId": "biotechnology",
+    "subjectId": "microbiology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which instrument is commonly used to observe microorganisms?",
+    "options": [
+      "Microscope",
+      "Thermometer",
+      "Barometer",
+      "Voltmeter"
+    ],
+    "correctAnswer": 0,
+    "category": "Microbiology",
+    "courseId": "biotechnology",
+    "subjectId": "microbiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which process uses microorganisms to convert organic substances into useful products?",
+    "options": [
+      "Fermentation",
+      "Photosynthesis",
+      "Transpiration",
+      "Filtration"
+    ],
+    "correctAnswer": 0,
+    "category": "Microbiology",
+    "courseId": "biotechnology",
+    "subjectId": "microbiology",
+    "difficulty": "easy"
+  }
+]

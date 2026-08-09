@@ -1,0 +1,436 @@
+[
+  {
+    "question": "What does CIA stand for in cybersecurity?",
+    "options": [
+      "Confidentiality, Integrity, Availability",
+      "Control, Information, Access",
+      "Cybersecurity, Internet, Authentication",
+      "Confidentiality, Information, Authorization"
+    ],
+    "correctAnswer": 0,
+    "category": "Network Security",
+    "courseId": "cyber-security",
+    "subjectId": "network-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which device is commonly used to filter network traffic?",
+    "options": [
+      "Firewall",
+      "Monitor",
+      "Keyboard",
+      "Printer"
+    ],
+    "correctAnswer": 0,
+    "category": "Network Security",
+    "courseId": "cyber-security",
+    "subjectId": "network-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary purpose of a firewall?",
+    "options": [
+      "To increase computer speed",
+      "To monitor and control network traffic",
+      "To create documents",
+      "To store passwords"
+    ],
+    "correctAnswer": 1,
+    "category": "Network Security",
+    "courseId": "cyber-security",
+    "subjectId": "network-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which protocol is commonly used for secure web communication?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "HTTPS",
+      "SMTP"
+    ],
+    "correctAnswer": 2,
+    "category": "Network Security",
+    "courseId": "cyber-security",
+    "subjectId": "network-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does VPN stand for?",
+    "options": [
+      "Virtual Private Network",
+      "Verified Public Network",
+      "Virtual Protected Node",
+      "Visual Private Network"
+    ],
+    "correctAnswer": 0,
+    "category": "Network Security",
+    "courseId": "cyber-security",
+    "subjectId": "network-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which attack attempts to make a service unavailable by overwhelming it with traffic?",
+    "options": [
+      "Phishing",
+      "DDoS",
+      "Spoofing",
+      "Brute force"
+    ],
+    "correctAnswer": 1,
+    "category": "Network Security",
+    "courseId": "cyber-security",
+    "subjectId": "network-security",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is an IP address primarily used for?",
+    "options": [
+      "Identifying a device on a network",
+      "Encrypting files",
+      "Creating passwords",
+      "Scanning documents"
+    ],
+    "correctAnswer": 0,
+    "category": "Network Security",
+    "courseId": "cyber-security",
+    "subjectId": "network-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which network device forwards packets between different networks?",
+    "options": [
+      "Router",
+      "Keyboard",
+      "Printer",
+      "Scanner"
+    ],
+    "correctAnswer": 0,
+    "category": "Network Security",
+    "courseId": "cyber-security",
+    "subjectId": "network-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is encryption?",
+    "options": [
+      "Deleting information permanently",
+      "Converting readable data into an encoded form",
+      "Increasing internet speed",
+      "Creating a network connection"
+    ],
+    "correctAnswer": 1,
+    "category": "Cryptography",
+    "courseId": "cyber-security",
+    "subjectId": "cryptography",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which cryptographic technique uses the same key for encryption and decryption?",
+    "options": [
+      "Asymmetric encryption",
+      "Symmetric encryption",
+      "Hashing",
+      "Digital signature"
+    ],
+    "correctAnswer": 1,
+    "category": "Cryptography",
+    "courseId": "cyber-security",
+    "subjectId": "cryptography",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which cryptographic technique uses a public key and a private key?",
+    "options": [
+      "Symmetric encryption",
+      "Asymmetric encryption",
+      "Hashing",
+      "Encoding"
+    ],
+    "correctAnswer": 1,
+    "category": "Cryptography",
+    "courseId": "cyber-security",
+    "subjectId": "cryptography",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a cryptographic hash function?",
+    "options": [
+      "SHA-256",
+      "HTTP",
+      "FTP",
+      "DNS"
+    ],
+    "correctAnswer": 0,
+    "category": "Cryptography",
+    "courseId": "cyber-security",
+    "subjectId": "cryptography",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main characteristic of a cryptographic hash?",
+    "options": [
+      "It can always be reversed",
+      "It produces a fixed-length output from input data",
+      "It requires no computation",
+      "It increases file size"
+    ],
+    "correctAnswer": 1,
+    "category": "Cryptography",
+    "courseId": "cyber-security",
+    "subjectId": "cryptography",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a digital signature mainly used for?",
+    "options": [
+      "Increasing network bandwidth",
+      "Authenticating the sender and verifying data integrity",
+      "Deleting malware",
+      "Compressing files"
+    ],
+    "correctAnswer": 1,
+    "category": "Cryptography",
+    "courseId": "cyber-security",
+    "subjectId": "cryptography",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which algorithm is widely known as a symmetric encryption algorithm?",
+    "options": [
+      "AES",
+      "RSA",
+      "SHA-256",
+      "MD5"
+    ],
+    "correctAnswer": 0,
+    "category": "Cryptography",
+    "courseId": "cyber-security",
+    "subjectId": "cryptography",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is phishing?",
+    "options": [
+      "A method of physically protecting computers",
+      "A fraudulent attempt to obtain sensitive information",
+      "A method of encrypting data",
+      "A type of backup system"
+    ],
+    "correctAnswer": 1,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is malware?",
+    "options": [
+      "Malicious software",
+      "Network hardware",
+      "A secure password",
+      "A backup device"
+    ],
+    "correctAnswer": 0,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of malware can replicate itself and spread across networks?",
+    "options": [
+      "Worm",
+      "Trojan",
+      "Spyware",
+      "Adware"
+    ],
+    "correctAnswer": 0,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which malware typically disguises itself as legitimate software?",
+    "options": [
+      "Worm",
+      "Trojan horse",
+      "Firewall",
+      "Rootkit"
+    ],
+    "correctAnswer": 1,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is ransomware?",
+    "options": [
+      "Software that improves performance",
+      "Malware that can encrypt or lock data and demand payment",
+      "A network monitoring tool",
+      "A password manager"
+    ],
+    "correctAnswer": 1,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the principle of least privilege?",
+    "options": [
+      "Giving every user administrator access",
+      "Giving users only the access necessary to perform their tasks",
+      "Removing all security controls",
+      "Using the same password everywhere"
+    ],
+    "correctAnswer": 1,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is multi-factor authentication?",
+    "options": [
+      "Using multiple usernames",
+      "Using two or more different authentication factors",
+      "Using multiple computers",
+      "Changing a password every day"
+    ],
+    "correctAnswer": 1,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is the strongest password?",
+    "options": [
+      "password123",
+      "12345678",
+      "John2005",
+      "T9#vL2!qP7@x"
+    ],
+    "correctAnswer": 3,
+    "category": "Cyber Awareness",
+    "courseId": "cyber-security",
+    "subjectId": "cyber-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Why should users avoid using the same password on multiple websites?",
+    "options": [
+      "It makes websites slower",
+      "A compromised password could expose multiple accounts",
+      "It increases screen brightness",
+      "It prevents software updates"
+    ],
+    "correctAnswer": 1,
+    "category": "Cyber Awareness",
+    "courseId": "cyber-security",
+    "subjectId": "cyber-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What should you do with a suspicious email attachment?",
+    "options": [
+      "Open it immediately",
+      "Forward it to everyone",
+      "Avoid opening it and verify the sender",
+      "Download it to another computer"
+    ],
+    "correctAnswer": 2,
+    "category": "Cyber Awareness",
+    "courseId": "cyber-security",
+    "subjectId": "cyber-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is social engineering?",
+    "options": [
+      "Designing social media websites",
+      "Manipulating people to reveal confidential information",
+      "Building computer networks",
+      "Encrypting databases"
+    ],
+    "correctAnswer": 1,
+    "category": "Cyber Awareness",
+    "courseId": "cyber-security",
+    "subjectId": "cyber-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which practice helps protect an account from unauthorized access?",
+    "options": [
+      "Sharing passwords",
+      "Using multi-factor authentication",
+      "Disabling security updates",
+      "Using simple passwords"
+    ],
+    "correctAnswer": 1,
+    "category": "Cyber Awareness",
+    "courseId": "cyber-security",
+    "subjectId": "cyber-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Why are software security updates important?",
+    "options": [
+      "They can fix known vulnerabilities",
+      "They always increase file size",
+      "They remove all user accounts",
+      "They disable the internet"
+    ],
+    "correctAnswer": 0,
+    "category": "Cyber Awareness",
+    "courseId": "cyber-security",
+    "subjectId": "cyber-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a vulnerability in cybersecurity?",
+    "options": [
+      "A weakness that can potentially be exploited",
+      "A type of antivirus",
+      "A secure encryption key",
+      "A backup file"
+    ],
+    "correctAnswer": 0,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is penetration testing?",
+    "options": [
+      "Testing a computer's battery",
+      "Authorized security testing to identify vulnerabilities",
+      "Installing games on a computer",
+      "Testing internet speed"
+    ],
+    "correctAnswer": 1,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which security principle ensures that information is accessible when needed by authorized users?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Authentication"
+    ],
+    "correctAnswer": 2,
+    "category": "Security Fundamentals",
+    "courseId": "cyber-security",
+    "subjectId": "ethical-security",
+    "difficulty": "medium"
+  }
+]

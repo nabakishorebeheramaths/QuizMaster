@@ -1,0 +1,436 @@
+[
+  {
+    "question": "What is fashion design?",
+    "options": [
+      "The art of creating clothing and accessories",
+      "The study of computer networks",
+      "The process of manufacturing machines",
+      "The study of economics"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which factor is important when designing clothing?",
+    "options": [
+      "Fabric and functionality",
+      "Computer processor speed",
+      "Database size",
+      "Internet bandwidth"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a fashion trend?",
+    "options": [
+      "A popular style followed during a particular period",
+      "A type of sewing machine",
+      "A textile manufacturing process",
+      "A clothing measurement"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is haute couture?",
+    "options": [
+      "High-fashion custom-made clothing",
+      "Mass-produced clothing",
+      "Sports equipment",
+      "Industrial uniforms"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is prêt-à-porter?",
+    "options": [
+      "Ready-to-wear clothing",
+      "Handmade jewelry only",
+      "Traditional embroidery",
+      "Fabric dyeing"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a natural fiber?",
+    "options": [
+      "Cotton",
+      "Nylon",
+      "Polyester",
+      "Acrylic"
+    ],
+    "correctAnswer": 0,
+    "category": "Textile",
+    "courseId": "fashion-design",
+    "subjectId": "textile",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which fiber is obtained from the flax plant?",
+    "options": [
+      "Linen",
+      "Silk",
+      "Wool",
+      "Nylon"
+    ],
+    "correctAnswer": 0,
+    "category": "Textile",
+    "courseId": "fashion-design",
+    "subjectId": "textile",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Silk is primarily obtained from:",
+    "options": [
+      "Silkworms",
+      "Sheep",
+      "Cotton plants",
+      "Flax plants"
+    ],
+    "correctAnswer": 0,
+    "category": "Textile",
+    "courseId": "fashion-design",
+    "subjectId": "textile",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Wool is mainly obtained from:",
+    "options": [
+      "Sheep",
+      "Silkworms",
+      "Flax plants",
+      "Cotton plants"
+    ],
+    "correctAnswer": 0,
+    "category": "Textile",
+    "courseId": "fashion-design",
+    "subjectId": "textile",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a synthetic fiber?",
+    "options": [
+      "Nylon",
+      "Cotton",
+      "Wool",
+      "Silk"
+    ],
+    "correctAnswer": 0,
+    "category": "Textile",
+    "courseId": "fashion-design",
+    "subjectId": "textile",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is weaving?",
+    "options": [
+      "Interlacing two sets of yarns to form fabric",
+      "Cutting fabric into shapes",
+      "Adding buttons to clothes",
+      "Drawing fashion illustrations"
+    ],
+    "correctAnswer": 0,
+    "category": "Textile",
+    "courseId": "fashion-design",
+    "subjectId": "textile",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is knitting?",
+    "options": [
+      "Creating fabric by interlocking loops of yarn",
+      "Printing designs on paper",
+      "Cutting leather",
+      "Measuring a garment"
+    ],
+    "correctAnswer": 0,
+    "category": "Textile",
+    "courseId": "fashion-design",
+    "subjectId": "textile",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main purpose of a fashion sketch?",
+    "options": [
+      "To visually communicate a clothing design",
+      "To calculate fabric cost only",
+      "To manufacture yarn",
+      "To measure body temperature"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a mood board in fashion design?",
+    "options": [
+      "A visual collection representing the theme and inspiration of a design",
+      "A sewing machine component",
+      "A type of fabric",
+      "A clothing measurement chart"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which element refers to the surface quality of a fabric?",
+    "options": [
+      "Texture",
+      "Balance",
+      "Proportion",
+      "Silhouette"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does color harmony mean in fashion design?",
+    "options": [
+      "Using colors that work well together",
+      "Using only black and white",
+      "Using one fabric type",
+      "Using oversized clothing"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is proportion in fashion design?",
+    "options": [
+      "The relationship between different parts of a design",
+      "The price of clothing",
+      "The weight of fabric",
+      "The brand name of clothing"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is balance in design?",
+    "options": [
+      "The visual distribution of elements in a design",
+      "The number of buttons on a shirt",
+      "The thickness of fabric",
+      "The length of a sewing thread"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a silhouette in fashion?",
+    "options": [
+      "The overall outline or shape of a garment",
+      "The fabric composition",
+      "The garment price",
+      "The sewing technique"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which tool is commonly used for taking body measurements?",
+    "options": [
+      "Measuring tape",
+      "Compass",
+      "Ruler only",
+      "Calculator"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a fashion pattern?",
+    "options": [
+      "A template used to cut fabric pieces",
+      "A clothing advertisement",
+      "A type of textile fiber",
+      "A fashion magazine"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is draping in fashion design?",
+    "options": [
+      "Arranging fabric directly on a dress form",
+      "Printing fabric",
+      "Washing garments",
+      "Selling clothes"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which stitch is commonly used to join fabric pieces temporarily?",
+    "options": [
+      "Basting stitch",
+      "Chain stitch",
+      "Decorative stitch",
+      "Blanket stitch"
+    ],
+    "correctAnswer": 0,
+    "category": "Design",
+    "courseId": "fashion-design",
+    "subjectId": "design",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is fashion forecasting?",
+    "options": [
+      "Predicting future fashion trends",
+      "Calculating garment measurements",
+      "Manufacturing textiles",
+      "Repairing sewing machines"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a fashion collection?",
+    "options": [
+      "A group of garments designed around a common concept or theme",
+      "A collection of sewing machines",
+      "A set of textile fibers",
+      "A list of clothing stores"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is sustainable fashion?",
+    "options": [
+      "Fashion that aims to reduce environmental and social impact",
+      "Fashion made only from expensive materials",
+      "Fashion designed only for celebrities",
+      "Fashion that changes every week"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which practice can help reduce textile waste?",
+    "options": [
+      "Recycling and upcycling garments",
+      "Throwing away unused fabric",
+      "Increasing disposable clothing",
+      "Using more packaging"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is upcycling in fashion?",
+    "options": [
+      "Transforming old materials into products of higher or renewed value",
+      "Destroying unused clothing",
+      "Buying only new garments",
+      "Increasing fabric waste"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a fashion show?",
+    "options": [
+      "An event where designers present garments to an audience",
+      "A textile manufacturing process",
+      "A sewing examination",
+      "A fabric testing laboratory"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organization is known for its international fashion weeks?",
+    "options": [
+      "Fashion industry organizations and event organizers",
+      "World Health Organization",
+      "International Monetary Fund",
+      "World Trade Center only"
+    ],
+    "correctAnswer": 0,
+    "category": "Fashion",
+    "courseId": "fashion-design",
+    "subjectId": "fashion",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Why is fabric selection important in fashion design?",
+    "options": [
+      "It affects comfort, appearance, durability and garment performance",
+      "It only determines the brand name",
+      "It determines internet speed",
+      "It controls computer memory"
+    ],
+    "correctAnswer": 0,
+    "category": "Textile",
+    "courseId": "fashion-design",
+    "subjectId": "textile",
+    "difficulty": "medium"
+  }
+]

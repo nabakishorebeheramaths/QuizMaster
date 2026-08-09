@@ -1,0 +1,382 @@
+[
+  {
+    "question": "What is the primary purpose of research methodology?",
+    "options": [
+      "To provide a systematic approach to research",
+      "To avoid data collection",
+      "To eliminate experimentation",
+      "To replace analysis"
+    ],
+    "correctAnswer": 0,
+    "category": "Research",
+    "courseId": "mtech",
+    "subjectId": "research",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of research is primarily concerned with developing new theories and knowledge?",
+    "options": [
+      "Basic research",
+      "Applied research",
+      "Market research",
+      "Survey research"
+    ],
+    "correctAnswer": 0,
+    "category": "Research",
+    "courseId": "mtech",
+    "subjectId": "research",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a hypothesis?",
+    "options": [
+      "A testable statement or prediction",
+      "A final research report",
+      "A database",
+      "A programming language"
+    ],
+    "correctAnswer": 0,
+    "category": "Research",
+    "courseId": "mtech",
+    "subjectId": "research",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which method involves collecting information directly from respondents?",
+    "options": [
+      "Primary data collection",
+      "Secondary data collection",
+      "Data encryption",
+      "Data compression"
+    ],
+    "correctAnswer": 0,
+    "category": "Research",
+    "courseId": "mtech",
+    "subjectId": "research",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a literature review?",
+    "options": [
+      "A review of existing research and publications",
+      "A software testing method",
+      "A mathematical calculation",
+      "A database operation"
+    ],
+    "correctAnswer": 0,
+    "category": "Research",
+    "courseId": "mtech",
+    "subjectId": "research",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which statistical measure represents the arithmetic average of a dataset?",
+    "options": ["Median", "Mode", "Mean", "Range"],
+    "correctAnswer": 2,
+    "category": "Advanced Mathematics",
+    "courseId": "mtech",
+    "subjectId": "advanced-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the standard deviation measure?",
+    "options": [
+      "Central tendency only",
+      "Dispersion of data",
+      "Number of observations",
+      "Maximum value only"
+    ],
+    "correctAnswer": 1,
+    "category": "Advanced Mathematics",
+    "courseId": "mtech",
+    "subjectId": "advanced-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the derivative of x² with respect to x?",
+    "options": ["x", "2x", "x²", "2"],
+    "correctAnswer": 1,
+    "category": "Advanced Mathematics",
+    "courseId": "mtech",
+    "subjectId": "advanced-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the integral of 2x with respect to x?",
+    "options": ["x² + C", "2x² + C", "x + C", "2 + C"],
+    "correctAnswer": 0,
+    "category": "Advanced Mathematics",
+    "courseId": "mtech",
+    "subjectId": "advanced-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which matrix has equal numbers of rows and columns?",
+    "options": [
+      "Rectangular matrix",
+      "Square matrix",
+      "Row matrix",
+      "Column matrix"
+    ],
+    "correctAnswer": 1,
+    "category": "Advanced Mathematics",
+    "courseId": "mtech",
+    "subjectId": "advanced-mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the determinant of a 2 × 2 identity matrix?",
+    "options": ["0", "1", "2", "-1"],
+    "correctAnswer": 1,
+    "category": "Advanced Mathematics",
+    "courseId": "mtech",
+    "subjectId": "advanced-mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which mathematical technique is commonly used to find the maximum or minimum of a function?",
+    "options": [
+      "Differentiation",
+      "Integration only",
+      "Matrix multiplication",
+      "Factorization only"
+    ],
+    "correctAnswer": 0,
+    "category": "Advanced Mathematics",
+    "courseId": "mtech",
+    "subjectId": "advanced-mathematics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the main objective of advanced engineering?",
+    "options": [
+      "Application of advanced scientific and mathematical principles",
+      "Only memorizing formulas",
+      "Avoiding experimentation",
+      "Eliminating technology"
+    ],
+    "correctAnswer": 0,
+    "category": "Advanced Engineering",
+    "courseId": "mtech",
+    "subjectId": "advanced-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which process converts a physical system into a mathematical representation?",
+    "options": [
+      "Mathematical modeling",
+      "Encryption",
+      "Compilation",
+      "Normalization"
+    ],
+    "correctAnswer": 0,
+    "category": "Advanced Engineering",
+    "courseId": "mtech",
+    "subjectId": "advanced-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is simulation mainly used for in engineering?",
+    "options": [
+      "Studying system behavior under different conditions",
+      "Deleting experimental data",
+      "Replacing all mathematical models",
+      "Creating passwords"
+    ],
+    "correctAnswer": 0,
+    "category": "Advanced Engineering",
+    "courseId": "mtech",
+    "subjectId": "advanced-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which tool is commonly used for numerical computing and engineering simulations?",
+    "options": ["MATLAB", "HTML", "CSS", "Photoshop"],
+    "correctAnswer": 0,
+    "category": "Advanced Engineering",
+    "courseId": "mtech",
+    "subjectId": "advanced-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does CAD stand for?",
+    "options": [
+      "Computer-Aided Design",
+      "Computer Analysis Database",
+      "Central Automated Design",
+      "Computer Application Development"
+    ],
+    "correctAnswer": 0,
+    "category": "Advanced Engineering",
+    "courseId": "mtech",
+    "subjectId": "advanced-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which analysis is commonly used to determine stresses and deformations in structures?",
+    "options": [
+      "Finite Element Analysis",
+      "Database Analysis",
+      "Network Analysis",
+      "Text Analysis"
+    ],
+    "correctAnswer": 0,
+    "category": "Advanced Engineering",
+    "courseId": "mtech",
+    "subjectId": "advanced-engineering",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does FEA stand for?",
+    "options": [
+      "Finite Element Analysis",
+      "Fast Engineering Algorithm",
+      "Finite Electrical Application",
+      "Functional Engineering Analysis"
+    ],
+    "correctAnswer": 0,
+    "category": "Advanced Engineering",
+    "courseId": "mtech",
+    "subjectId": "advanced-engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which parameter represents the resistance of a material to deformation?",
+    "options": [
+      "Elastic modulus",
+      "Density",
+      "Temperature",
+      "Volume"
+    ],
+    "correctAnswer": 0,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the SI unit of electrical resistance?",
+    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+    "correctAnswer": 2,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which semiconductor device is commonly used as an electronic switch?",
+    "options": ["Transformer", "Transistor", "Resistor", "Capacitor"],
+    "correctAnswer": 1,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary function of a capacitor?",
+    "options": [
+      "Store electrical energy",
+      "Generate mechanical energy",
+      "Measure temperature",
+      "Amplify light"
+    ],
+    "correctAnswer": 0,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which device converts electrical energy into mechanical energy?",
+    "options": [
+      "Electric motor",
+      "Transformer",
+      "Rectifier",
+      "Capacitor"
+    ],
+    "correctAnswer": 0,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of a transformer?",
+    "options": [
+      "Change AC voltage levels",
+      "Convert AC directly to mechanical energy",
+      "Store digital data",
+      "Measure resistance only"
+    ],
+    "correctAnswer": 0,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which logic gate produces HIGH output only when all inputs are HIGH?",
+    "options": ["OR", "NOT", "AND", "XOR"],
+    "correctAnswer": 2,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which communication system uses electromagnetic waves to transmit information without physical cables?",
+    "options": [
+      "Wireless communication",
+      "Wired communication",
+      "Mechanical transmission",
+      "Hydraulic transmission"
+    ],
+    "correctAnswer": 0,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is signal-to-noise ratio commonly used to indicate?",
+    "options": [
+      "Signal quality relative to noise",
+      "Battery capacity",
+      "Processor speed",
+      "Memory size"
+    ],
+    "correctAnswer": 0,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which technique is commonly used to reduce the effect of noise in digital communication?",
+    "options": [
+      "Error-control coding",
+      "Increasing random noise",
+      "Removing the receiver",
+      "Reducing bandwidth to zero"
+    ],
+    "correctAnswer": 0,
+    "category": "Technical Subjects",
+    "courseId": "mtech",
+    "subjectId": "technical",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which stage is generally performed before publishing research findings?",
+    "options": [
+      "Peer review",
+      "Data deletion",
+      "Password creation",
+      "Hardware assembly"
+    ],
+    "correctAnswer": 0,
+    "category": "Research",
+    "courseId": "mtech",
+    "subjectId": "research",
+    "difficulty": "easy"
+  }
+]

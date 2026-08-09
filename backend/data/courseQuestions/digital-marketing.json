@@ -1,0 +1,422 @@
+[
+  {
+    "question": "What does SEO stand for?",
+    "options": [
+      "Search Engine Optimization",
+      "Social Engagement Optimization",
+      "Search Engine Operation",
+      "Social Engine Organization"
+    ],
+    "correctAnswer": 0,
+    "category": "SEO",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary goal of SEO?",
+    "options": [
+      "Increase website visibility in search engines",
+      "Create offline advertisements",
+      "Reduce internet speed",
+      "Design computer hardware"
+    ],
+    "correctAnswer": 0,
+    "category": "SEO",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a search engine?",
+    "options": [
+      "Google",
+      "Photoshop",
+      "Excel",
+      "PowerPoint"
+    ],
+    "correctAnswer": 0,
+    "category": "SEO",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a keyword in digital marketing?",
+    "options": [
+      "A word or phrase users search for",
+      "A computer password",
+      "A programming language",
+      "A website domain only"
+    ],
+    "correctAnswer": 0,
+    "category": "SEO",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which HTML element is commonly used for the main page title?",
+    "options": [
+      "<h1>",
+      "<p>",
+      "<img>",
+      "<table>"
+    ],
+    "correctAnswer": 0,
+    "category": "SEO",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a backlink?",
+    "options": [
+      "A link from another website to your website",
+      "A broken image",
+      "A website password",
+      "A social media account"
+    ],
+    "correctAnswer": 0,
+    "category": "SEO",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of a meta description?",
+    "options": [
+      "To summarize a webpage for search users",
+      "To store passwords",
+      "To create videos",
+      "To increase computer memory"
+    ],
+    "correctAnswer": 0,
+    "category": "SEO",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which practice is considered black-hat SEO?",
+    "options": [
+      "Keyword stuffing",
+      "Creating useful content",
+      "Improving page speed",
+      "Writing descriptive titles"
+    ],
+    "correctAnswer": 0,
+    "category": "SEO",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does SEM generally refer to?",
+    "options": [
+      "Search Engine Marketing",
+      "Social Email Management",
+      "Search Email Management",
+      "System Engine Marketing"
+    ],
+    "correctAnswer": 0,
+    "category": "SEO",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which metric measures the percentage of users who leave after viewing one page?",
+    "options": [
+      "Bounce rate",
+      "Conversion rate",
+      "Click-through rate",
+      "Engagement rate"
+    ],
+    "correctAnswer": 0,
+    "category": "Analytics",
+    "courseId": "digital-marketing",
+    "subjectId": "analytics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does CTR stand for?",
+    "options": [
+      "Click-Through Rate",
+      "Customer Traffic Ratio",
+      "Content Tracking Rate",
+      "Click Target Result"
+    ],
+    "correctAnswer": 0,
+    "category": "Analytics",
+    "courseId": "digital-marketing",
+    "subjectId": "analytics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How is CTR calculated?",
+    "options": [
+      "Clicks divided by impressions × 100",
+      "Impressions divided by clicks × 100",
+      "Sales divided by visitors × 100",
+      "Visitors divided by sales × 100"
+    ],
+    "correctAnswer": 0,
+    "category": "Analytics",
+    "courseId": "digital-marketing",
+    "subjectId": "analytics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a conversion in digital marketing?",
+    "options": [
+      "A desired action completed by a user",
+      "A website loading error",
+      "A social media post",
+      "A search engine result"
+    ],
+    "correctAnswer": 0,
+    "category": "Analytics",
+    "courseId": "digital-marketing",
+    "subjectId": "analytics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which tool is widely used for website analytics?",
+    "options": [
+      "Google Analytics",
+      "Microsoft Paint",
+      "Notepad",
+      "Calculator"
+    ],
+    "correctAnswer": 0,
+    "category": "Analytics",
+    "courseId": "digital-marketing",
+    "subjectId": "analytics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does ROI stand for?",
+    "options": [
+      "Return on Investment",
+      "Rate of Internet",
+      "Revenue on Interaction",
+      "Return of Information"
+    ],
+    "correctAnswer": 0,
+    "category": "Analytics",
+    "courseId": "digital-marketing",
+    "subjectId": "analytics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is social media marketing?",
+    "options": [
+      "Promoting products or services through social platforms",
+      "Selling computer hardware only",
+      "Creating operating systems",
+      "Managing databases"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Media",
+    "courseId": "digital-marketing",
+    "subjectId": "social-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which platform is primarily known as a professional networking platform?",
+    "options": [
+      "LinkedIn",
+      "Instagram",
+      "Pinterest",
+      "TikTok"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Media",
+    "courseId": "digital-marketing",
+    "subjectId": "social-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is engagement on social media?",
+    "options": [
+      "Interactions such as likes, comments and shares",
+      "Website hosting",
+      "Email encryption",
+      "Domain registration"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Media",
+    "courseId": "digital-marketing",
+    "subjectId": "social-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a hashtag used for?",
+    "options": [
+      "Categorizing and discovering content",
+      "Encrypting passwords",
+      "Creating databases",
+      "Hosting websites"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Media",
+    "courseId": "digital-marketing",
+    "subjectId": "social-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is influencer marketing?",
+    "options": [
+      "Promoting products through influential individuals",
+      "Optimizing computer hardware",
+      "Creating search engines",
+      "Developing operating systems"
+    ],
+    "correctAnswer": 0,
+    "category": "Social Media",
+    "courseId": "digital-marketing",
+    "subjectId": "social-media",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is content marketing?",
+    "options": [
+      "Creating valuable content to attract and retain an audience",
+      "Selling only physical products",
+      "Repairing computers",
+      "Managing network cables"
+    ],
+    "correctAnswer": 0,
+    "category": "Content Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "content",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is an example of content marketing?",
+    "options": [
+      "Writing an informative blog",
+      "Replacing a computer battery",
+      "Installing an operating system",
+      "Manufacturing a processor"
+    ],
+    "correctAnswer": 0,
+    "category": "Content Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "content",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a blog?",
+    "options": [
+      "A regularly updated website or webpage containing written content",
+      "A computer virus",
+      "A search engine",
+      "A payment gateway"
+    ],
+    "correctAnswer": 0,
+    "category": "Content Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "content",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a call-to-action (CTA)?",
+    "options": [
+      "A prompt encouraging users to take an action",
+      "A website error",
+      "A type of search engine",
+      "A programming framework"
+    ],
+    "correctAnswer": 0,
+    "category": "Content Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "content",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which is an example of a CTA?",
+    "options": [
+      "Buy Now",
+      "Website Header",
+      "Image File",
+      "Database Table"
+    ],
+    "correctAnswer": 0,
+    "category": "Content Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "content",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is email marketing?",
+    "options": [
+      "Using email to communicate promotional or informational messages",
+      "Creating computer networks",
+      "Designing mobile hardware",
+      "Building search engines"
+    ],
+    "correctAnswer": 0,
+    "category": "Content Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "content",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a target audience?",
+    "options": [
+      "The specific group of people a marketing campaign aims to reach",
+      "A search engine algorithm",
+      "A website server",
+      "A programming language"
+    ],
+    "correctAnswer": 0,
+    "category": "Digital Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "analytics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is PPC advertising?",
+    "options": [
+      "Pay-Per-Click advertising",
+      "Page-Per-Content advertising",
+      "Post-Per-Click communication",
+      "Payment-Per-Customer advertising"
+    ],
+    "correctAnswer": 0,
+    "category": "Digital Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In PPC advertising, when does an advertiser generally pay?",
+    "options": [
+      "When someone clicks the advertisement",
+      "When someone views a website offline",
+      "When a computer starts",
+      "When a domain is registered"
+    ],
+    "correctAnswer": 0,
+    "category": "Digital Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "seo",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a landing page?",
+    "options": [
+      "A webpage designed for a specific marketing campaign or goal",
+      "A computer desktop",
+      "A search engine database",
+      "A social media password"
+    ],
+    "correctAnswer": 0,
+    "category": "Digital Marketing",
+    "courseId": "digital-marketing",
+    "subjectId": "content",
+    "difficulty": "medium"
+  }
+]

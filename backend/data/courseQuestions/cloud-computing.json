@@ -1,0 +1,422 @@
+[
+  {
+    "question": "What does cloud computing primarily provide?",
+    "options": [
+      "On-demand computing resources over the internet",
+      "Only physical computers",
+      "Offline storage only",
+      "Printed documents"
+    ],
+    "correctAnswer": 0,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a major characteristic of cloud computing?",
+    "options": [
+      "On-demand self-service",
+      "No internet connectivity",
+      "Only local storage",
+      "Manual hardware installation"
+    ],
+    "correctAnswer": 0,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which cloud service model provides virtual machines, storage and networking?",
+    "options": [
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "DaaS"
+    ],
+    "correctAnswer": 2,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which service model provides a platform for application development?",
+    "options": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "NaaS"
+    ],
+    "correctAnswer": 1,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which cloud service model provides ready-to-use software applications?",
+    "options": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "HaaS"
+    ],
+    "correctAnswer": 2,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which deployment model is dedicated to a single organization?",
+    "options": [
+      "Public cloud",
+      "Private cloud",
+      "Hybrid cloud",
+      "Community cloud"
+    ],
+    "correctAnswer": 1,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A combination of public and private cloud is called:",
+    "options": [
+      "Distributed cloud",
+      "Hybrid cloud",
+      "Local cloud",
+      "Personal cloud"
+    ],
+    "correctAnswer": 1,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is cloud scalability?",
+    "options": [
+      "Ability to increase or decrease resources according to demand",
+      "Ability to remove all servers",
+      "Ability to work without software",
+      "Ability to print data"
+    ],
+    "correctAnswer": 0,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which technology is fundamental to creating virtual machines?",
+    "options": [
+      "Virtualization",
+      "Encryption",
+      "Compression",
+      "Defragmentation"
+    ],
+    "correctAnswer": 0,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does elasticity in cloud computing mean?",
+    "options": [
+      "Automatic adjustment of resources based on workload",
+      "Permanent increase in hardware",
+      "Removal of internet access",
+      "Manual data entry"
+    ],
+    "correctAnswer": 0,
+    "category": "Cloud Fundamentals",
+    "courseId": "cloud-computing",
+    "subjectId": "cloud-fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does AWS stand for?",
+    "options": [
+      "Amazon Web Services",
+      "Advanced Web System",
+      "Amazon Wireless Service",
+      "Application Web Software"
+    ],
+    "correctAnswer": 0,
+    "category": "AWS",
+    "courseId": "cloud-computing",
+    "subjectId": "aws",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which AWS service provides virtual servers?",
+    "options": [
+      "Amazon S3",
+      "Amazon EC2",
+      "Amazon RDS",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": 1,
+    "category": "AWS",
+    "courseId": "cloud-computing",
+    "subjectId": "aws",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which AWS service is primarily used for object storage?",
+    "options": [
+      "Amazon EC2",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "category": "AWS",
+    "courseId": "cloud-computing",
+    "subjectId": "aws",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is Amazon RDS mainly used for?",
+    "options": [
+      "Managed relational databases",
+      "Object storage",
+      "DNS management",
+      "Virtual networking only"
+    ],
+    "correctAnswer": 0,
+    "category": "AWS",
+    "courseId": "cloud-computing",
+    "subjectId": "aws",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which AWS service is used for serverless computing?",
+    "options": [
+      "AWS Lambda",
+      "Amazon S3",
+      "Amazon EBS",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 0,
+    "category": "AWS",
+    "courseId": "cloud-computing",
+    "subjectId": "aws",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which AWS service provides DNS functionality?",
+    "options": [
+      "Amazon Route 53",
+      "Amazon EC2",
+      "Amazon S3",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 0,
+    "category": "AWS",
+    "courseId": "cloud-computing",
+    "subjectId": "aws",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which AWS service is used to create an isolated virtual network?",
+    "options": [
+      "Amazon VPC",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 0,
+    "category": "AWS",
+    "courseId": "cloud-computing",
+    "subjectId": "aws",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Amazon CloudFront is primarily used for:",
+    "options": [
+      "Content delivery",
+      "Database management",
+      "Email creation",
+      "Virtual machine installation"
+    ],
+    "correctAnswer": 0,
+    "category": "AWS",
+    "courseId": "cloud-computing",
+    "subjectId": "aws",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which AWS service provides monitoring and metrics for AWS resources?",
+    "options": [
+      "Amazon CloudWatch",
+      "Amazon S3",
+      "Amazon Route 53",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 0,
+    "category": "AWS",
+    "courseId": "cloud-computing",
+    "subjectId": "aws",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is Azure?",
+    "options": [
+      "Microsoft's cloud computing platform",
+      "Amazon's database system",
+      "A Linux distribution",
+      "A programming language"
+    ],
+    "correctAnswer": 0,
+    "category": "Azure",
+    "courseId": "cloud-computing",
+    "subjectId": "azure",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which company provides Microsoft Azure?",
+    "options": [
+      "Google",
+      "Amazon",
+      "Microsoft",
+      "IBM"
+    ],
+    "correctAnswer": 2,
+    "category": "Azure",
+    "courseId": "cloud-computing",
+    "subjectId": "azure",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Azure service provides virtual machines?",
+    "options": [
+      "Azure Virtual Machines",
+      "Azure Blob Storage",
+      "Azure DNS",
+      "Azure DevOps"
+    ],
+    "correctAnswer": 0,
+    "category": "Azure",
+    "courseId": "cloud-computing",
+    "subjectId": "azure",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Azure service is designed for object storage?",
+    "options": [
+      "Azure Blob Storage",
+      "Azure Virtual Machines",
+      "Azure Functions",
+      "Azure Monitor"
+    ],
+    "correctAnswer": 0,
+    "category": "Azure",
+    "courseId": "cloud-computing",
+    "subjectId": "azure",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Azure Functions is primarily used for:",
+    "options": [
+      "Serverless computing",
+      "Physical server management",
+      "Desktop publishing",
+      "Hardware manufacturing"
+    ],
+    "correctAnswer": 0,
+    "category": "Azure",
+    "courseId": "cloud-computing",
+    "subjectId": "azure",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is DevOps mainly intended to improve?",
+    "options": [
+      "Collaboration between development and operations",
+      "Only hardware performance",
+      "Graphic design",
+      "Manual accounting"
+    ],
+    "correctAnswer": 0,
+    "category": "DevOps",
+    "courseId": "cloud-computing",
+    "subjectId": "devops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does CI stand for in DevOps?",
+    "options": [
+      "Continuous Integration",
+      "Cloud Installation",
+      "Computer Integration",
+      "Central Infrastructure"
+    ],
+    "correctAnswer": 0,
+    "category": "DevOps",
+    "courseId": "cloud-computing",
+    "subjectId": "devops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does CD commonly stand for in DevOps?",
+    "options": [
+      "Continuous Delivery",
+      "Computer Deployment",
+      "Cloud Database",
+      "Central Development"
+    ],
+    "correctAnswer": 0,
+    "category": "DevOps",
+    "courseId": "cloud-computing",
+    "subjectId": "devops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which tool is commonly used for containerization?",
+    "options": [
+      "Docker",
+      "Excel",
+      "Photoshop",
+      "PowerPoint"
+    ],
+    "correctAnswer": 0,
+    "category": "DevOps",
+    "courseId": "cloud-computing",
+    "subjectId": "devops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which platform is widely used for container orchestration?",
+    "options": [
+      "Kubernetes",
+      "Git",
+      "HTML",
+      "MySQL"
+    ],
+    "correctAnswer": 0,
+    "category": "DevOps",
+    "courseId": "cloud-computing",
+    "subjectId": "devops",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is Infrastructure as Code (IaC)?",
+    "options": [
+      "Managing infrastructure through machine-readable configuration files",
+      "Writing only mobile applications",
+      "Designing computer hardware",
+      "Creating paper documentation"
+    ],
+    "correctAnswer": 0,
+    "category": "DevOps",
+    "courseId": "cloud-computing",
+    "subjectId": "devops",
+    "difficulty": "medium"
+  }
+]

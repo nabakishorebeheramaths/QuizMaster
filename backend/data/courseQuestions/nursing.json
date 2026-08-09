@@ -1,0 +1,286 @@
+[
+  {
+    "question": "What is the normal resting pulse rate for an adult?",
+    "options": ["20–40 beats/min", "60–100 beats/min", "120–140 beats/min", "150–180 beats/min"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which instrument is commonly used to measure blood pressure?",
+    "options": ["Thermometer", "Sphygmomanometer", "Stethoscope", "Otoscope"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which position is commonly used for a patient during a physical examination?",
+    "options": ["Supine", "Prone", "Trendelenburg", "Lithotomy"],
+    "correctAnswer": 0,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the normal body temperature of a healthy adult approximately?",
+    "options": ["30°C", "37°C", "40°C", "45°C"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which method is most effective for preventing the spread of infection in healthcare settings?",
+    "options": ["Hand hygiene", "Wearing perfume", "Opening windows", "Drinking water"],
+    "correctAnswer": 0,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a component of the vital signs?",
+    "options": ["Height", "Weight", "Respiratory rate", "Blood group"],
+    "correctAnswer": 2,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does CPR stand for?",
+    "options": [
+      "Cardiac Pulmonary Recovery",
+      "Cardiopulmonary Resuscitation",
+      "Cardiac Pressure Response",
+      "Clinical Pulmonary Resuscitation"
+    ],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of precaution is used for patients with infectious diseases?",
+    "options": ["Standard precautions", "Dietary precautions", "Exercise precautions", "Sleep precautions"],
+    "correctAnswer": 0,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which route of medication administration involves injecting medicine into a muscle?",
+    "options": ["Intravenous", "Intramuscular", "Oral", "Sublingual"],
+    "correctAnswer": 1,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which device is commonly used to measure oxygen saturation?",
+    "options": ["Pulse oximeter", "Glucometer", "Thermometer", "Spirometer"],
+    "correctAnswer": 0,
+    "category": "Nursing Foundation",
+    "courseId": "nursing",
+    "subjectId": "nursing-foundation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the largest organ of the human body?",
+    "options": ["Liver", "Skin", "Heart", "Lung"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many bones are present in the adult human skeleton approximately?",
+    "options": ["106", "206", "306", "406"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which bone is commonly known as the thigh bone?",
+    "options": ["Tibia", "Femur", "Humerus", "Radius"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ is primarily responsible for filtering blood and producing urine?",
+    "options": ["Liver", "Kidney", "Heart", "Pancreas"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which chamber of the heart pumps oxygenated blood to the body?",
+    "options": ["Right atrium", "Right ventricle", "Left atrium", "Left ventricle"],
+    "correctAnswer": 3,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which part of the respiratory system is the main site of gas exchange?",
+    "options": ["Trachea", "Bronchi", "Alveoli", "Larynx"],
+    "correctAnswer": 2,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ produces bile?",
+    "options": ["Pancreas", "Liver", "Stomach", "Kidney"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which part of the brain is mainly responsible for balance and coordination?",
+    "options": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which blood vessel carries oxygenated blood from the heart to the body?",
+    "options": ["Vein", "Artery", "Capillary", "Venule"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which gland is known as the master gland of the endocrine system?",
+    "options": ["Thyroid", "Pituitary", "Adrenal", "Pancreas"],
+    "correctAnswer": 1,
+    "category": "Anatomy",
+    "courseId": "nursing",
+    "subjectId": "anatomy",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which hormone lowers blood glucose levels?",
+    "options": ["Glucagon", "Insulin", "Adrenaline", "Thyroxine"],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "nursing",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which part of the nervous system controls involuntary activities such as heartbeat?",
+    "options": ["Autonomic nervous system", "Somatic nervous system", "Skeletal system", "Sensory system"],
+    "correctAnswer": 0,
+    "category": "Physiology",
+    "courseId": "nursing",
+    "subjectId": "physiology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary function of red blood cells?",
+    "options": ["Fight infection", "Clot blood", "Transport oxygen", "Produce hormones"],
+    "correctAnswer": 2,
+    "category": "Physiology",
+    "courseId": "nursing",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which hormone is mainly responsible for the 'fight or flight' response?",
+    "options": ["Insulin", "Adrenaline", "Insulin-like growth factor", "Melatonin"],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "nursing",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the normal resting respiratory rate for an adult approximately?",
+    "options": ["4–8 breaths/min", "12–20 breaths/min", "30–40 breaths/min", "50–60 breaths/min"],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "nursing",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which hormone is produced by the thyroid gland?",
+    "options": ["Insulin", "Thyroxine", "Adrenaline", "Growth hormone"],
+    "correctAnswer": 1,
+    "category": "Physiology",
+    "courseId": "nursing",
+    "subjectId": "physiology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organ is responsible for most drug metabolism in the human body?",
+    "options": ["Heart", "Liver", "Lung", "Spleen"],
+    "correctAnswer": 1,
+    "category": "Pharmacology",
+    "courseId": "nursing",
+    "subjectId": "pharmacology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which route of drug administration generally provides the fastest systemic effect?",
+    "options": ["Oral", "Intravenous", "Topical", "Rectal"],
+    "correctAnswer": 1,
+    "category": "Pharmacology",
+    "courseId": "nursing",
+    "subjectId": "pharmacology",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which term describes an unwanted effect of a medication?",
+    "options": ["Therapeutic effect", "Adverse effect", "Dose response", "Indication"],
+    "correctAnswer": 1,
+    "category": "Pharmacology",
+    "courseId": "nursing",
+    "subjectId": "pharmacology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which drug class is commonly used to reduce fever and mild pain?",
+    "options": ["Antipyretics", "Antibiotics", "Anticoagulants", "Antacids"],
+    "correctAnswer": 0,
+    "category": "Pharmacology",
+    "courseId": "nursing",
+    "subjectId": "pharmacology",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Antibiotics are primarily used to treat infections caused by:",
+    "options": ["Bacteria", "Viruses only", "Physical injuries", "Vitamin deficiency"],
+    "correctAnswer": 0,
+    "category": "Pharmacology",
+    "courseId": "nursing",
+    "subjectId": "pharmacology",
+    "difficulty": "easy"
+  }
+]

@@ -1,0 +1,401 @@
+[
+  {
+    "question": "What is the full form of RBI?",
+    "options": [
+      "Reserve Bank of India",
+      "Regional Bank of India",
+      "Reserve Banking Institution",
+      "Rural Bank of India"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Where is the headquarters of the Reserve Bank of India located?",
+    "options": ["New Delhi", "Mumbai", "Kolkata", "Chennai"],
+    "correctAnswer": 1,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which institution is responsible for regulating monetary policy in India?",
+    "options": ["SEBI", "RBI", "NABARD", "IRDAI"],
+    "correctAnswer": 1,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does SBI stand for?",
+    "options": [
+      "State Bank of India",
+      "Standard Bank of India",
+      "State Banking Institution",
+      "Scheduled Bank of India"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the full form of NEFT?",
+    "options": [
+      "National Electronic Funds Transfer",
+      "National Easy Fund Transfer",
+      "New Electronic Fund Transaction",
+      "National Exchange Fund Transfer"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the full form of RTGS?",
+    "options": [
+      "Real Time Gross Settlement",
+      "Rapid Transfer Gross System",
+      "Real Transfer Government Service",
+      "Reserve Transfer Gross Settlement"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the full form of UPI?",
+    "options": [
+      "Unified Payments Interface",
+      "Universal Payment India",
+      "United Payments Institution",
+      "Unified Processing Interface"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organization operates the UPI system in India?",
+    "options": ["RBI", "NPCI", "SEBI", "SBI"],
+    "correctAnswer": 1,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does KYC stand for?",
+    "options": [
+      "Know Your Customer",
+      "Keep Your Cash",
+      "Know Your Credit",
+      "Keep Your Customer"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which document is commonly used as proof of identity for KYC?",
+    "options": ["Aadhaar", "Shopping bill", "Bus ticket", "Restaurant menu"],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a savings account mainly used for?",
+    "options": [
+      "Personal saving and transactions",
+      "Only business loans",
+      "Only foreign trade",
+      "Printing currency"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a fixed deposit?",
+    "options": [
+      "A deposit kept for a fixed period at an agreed interest rate",
+      "A type of loan",
+      "A credit card facility",
+      "A type of insurance"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does ATM stand for?",
+    "options": [
+      "Automated Teller Machine",
+      "Automatic Transfer Machine",
+      "Any Time Money",
+      "Automated Transaction Method"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main function of a bank?",
+    "options": [
+      "Accept deposits and provide loans",
+      "Manufacture vehicles",
+      "Produce electricity",
+      "Build roads"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a loan?",
+    "options": [
+      "Money borrowed that must generally be repaid",
+      "Money deposited in a bank",
+      "A type of tax",
+      "A type of currency"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the interest paid on a loan?",
+    "options": [
+      "Cost of borrowing money",
+      "Bank deposit",
+      "Government subsidy",
+      "Cash reserve"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the full form of NPA in banking?",
+    "options": [
+      "Non-Performing Asset",
+      "National Payment Account",
+      "New Performing Asset",
+      "Net Payment Authority"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which institution is known as the central bank of India?",
+    "options": [
+      "State Bank of India",
+      "Reserve Bank of India",
+      "Punjab National Bank",
+      "Bank of Baroda"
+    ],
+    "correctAnswer": 1,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is inflation?",
+    "options": [
+      "A general rise in prices",
+      "A fall in population",
+      "An increase in rainfall",
+      "A decrease in exports"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which organization regulates the securities market in India?",
+    "options": ["RBI", "SEBI", "NABARD", "NPCI"],
+    "correctAnswer": 1,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the full form of NABARD?",
+    "options": [
+      "National Bank for Agriculture and Rural Development",
+      "National Banking Authority for Rural Development",
+      "National Agricultural Bank and Rural Department",
+      "National Bank Association for Rural Development"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the full form of IMPS?",
+    "options": [
+      "Immediate Payment Service",
+      "Instant Money Processing System",
+      "Indian Money Payment Service",
+      "Immediate Processing Settlement"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which payment system allows instant bank-to-bank transfers in India?",
+    "options": ["IMPS", "Cheque", "Demand Draft", "Passbook"],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a debit card primarily linked to?",
+    "options": [
+      "Bank account",
+      "Loan account only",
+      "Insurance policy",
+      "Demat account only"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a credit card primarily used for?",
+    "options": [
+      "Borrowing for purchases up to a credit limit",
+      "Depositing cash only",
+      "Opening a savings account",
+      "Printing bank statements"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does EMI stand for?",
+    "options": [
+      "Equated Monthly Instalment",
+      "Electronic Money Interface",
+      "Equal Money Investment",
+      "Estimated Monthly Interest"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of account is generally used by businesses for frequent transactions?",
+    "options": [
+      "Current Account",
+      "Savings Account",
+      "Fixed Deposit",
+      "Recurring Deposit"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a recurring deposit?",
+    "options": [
+      "Regular deposits made for a fixed period",
+      "A one-time loan",
+      "A type of credit card",
+      "A government tax"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a cheque?",
+    "options": [
+      "A written instruction to a bank to make a payment",
+      "A type of loan",
+      "A digital currency",
+      "A tax document"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a negotiable banking instrument?",
+    "options": ["Cheque", "Aadhaar card", "ATM PIN", "Passbook"],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a bank's cash reserve maintained with the RBI called?",
+    "options": [
+      "Cash Reserve Ratio",
+      "Statutory Liquidity Ratio",
+      "Bank Rate",
+      "Repo Rate"
+    ],
+    "correctAnswer": 0,
+    "category": "Banking Awareness",
+    "courseId": "banking",
+    "subjectId": "banking-awareness",
+    "difficulty": "medium"
+  }
+]
