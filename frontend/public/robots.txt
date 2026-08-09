@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quizmaster-1-kqc7.onrender.com/sitemap.xml
