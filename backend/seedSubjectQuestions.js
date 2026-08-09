@@ -19596,9 +19596,66 @@ const seedQuestions = async () => {
       // If item contains nested questions array
       if (Array.isArray(item.questions)) {
         item.questions.forEach((q) => {
+          let subjectId = item.subjectId || item.subject;
+
+          // ============================================
+          // CLASS 1–10 SUBJECT ID NORMALIZATION
+          // According to CourseQuiz.jsx
+          // ============================================
+
+          if (
+            /^class-(10|[1-9])$/.test(item.courseId)
+          ) {
+            const subjectMap = {
+              // Mathematics
+              mathematics: "maths",
+              mathematics: "maths",
+              math: "maths",
+              maths: "maths",
+              "गणित": "maths",
+              "ଗଣିତ": "maths",
+
+              // Science
+              science: "science",
+              "विज्ञान": "science",
+              "ବିଜ୍ଞାନ": "science",
+
+              // English
+              english: "english",
+              "अंग्रेजी": "english",
+              "ଇଂରାଜୀ": "english",
+
+              // EVS
+              evs: "evs",
+              "environmental studies": "evs",
+              "environment studies": "evs",
+              "पर्यावरण अध्ययन": "evs",
+              "ପରିବେଶ ଅଧ୍ୟୟନ": "evs",
+
+              // Social Science
+              "social science": "social-science",
+              "social-science": "social-science",
+              "social studies": "social-science",
+              "सामाजिक विज्ञान": "social-science",
+              "ସାମାଜିକ ବିଜ୍ଞାନ": "social-science",
+
+              // General Knowledge
+              gk: "gk",
+              "general knowledge": "gk",
+              "सामान्य ज्ञान": "gk",
+              "ସାଧାରଣ ଜ୍ଞାନ": "gk",
+            };
+
+            const normalizedSubject =
+              String(subjectId).trim().toLowerCase();
+
+            subjectId =
+              subjectMap[normalizedSubject] || subjectId;
+          }
+
           formattedQuestions.push({
             courseId: item.courseId,
-            subjectId: item.subjectId || item.subject,
+            subjectId: subjectId,
             question: q.question,
             options: q.options,
             correctAnswer: q.correctAnswer,
@@ -19610,9 +19667,65 @@ const seedQuestions = async () => {
 
       // If item itself is a question
       else if (item.question) {
+        let subjectId = item.subjectId || item.subject;
+
+        // ============================================
+        // CLASS 1–10 SUBJECT ID NORMALIZATION
+        // According to CourseQuiz.jsx
+        // ============================================
+
+        if (
+          /^class-(10|[1-9])$/.test(item.courseId)
+        ) {
+          const subjectMap = {
+            // Mathematics
+            mathematics: "maths",
+            math: "maths",
+            maths: "maths",
+            "गणित": "maths",
+            "ଗଣିତ": "maths",
+
+            // Science
+            science: "science",
+            "विज्ञान": "science",
+            "ବିଜ୍ଞାନ": "science",
+
+            // English
+            english: "english",
+            "अंग्रेजी": "english",
+            "ଇଂରାଜୀ": "english",
+
+            // EVS
+            evs: "evs",
+            "environmental studies": "evs",
+            "environment studies": "evs",
+            "पर्यावरण अध्ययन": "evs",
+            "ପରିବେଶ ଅଧ୍ୟୟନ": "evs",
+
+            // Social Science
+            "social science": "social-science",
+            "social-science": "social-science",
+            "social studies": "social-science",
+            "सामाजिक विज्ञान": "social-science",
+            "ସାମାଜିକ ବିଜ୍ଞାନ": "social-science",
+
+            // General Knowledge
+            gk: "gk",
+            "general knowledge": "gk",
+            "सामान्य ज्ञान": "gk",
+            "ସାଧାରଣ ଜ୍ଞାନ": "gk",
+          };
+
+          const normalizedSubject =
+            String(subjectId).trim().toLowerCase();
+
+          subjectId =
+            subjectMap[normalizedSubject] || subjectId;
+        }
+
         formattedQuestions.push({
           courseId: item.courseId,
-          subjectId: item.subjectId || item.subject,
+          subjectId: subjectId,
           question: item.question,
           options: item.options,
           correctAnswer: item.correctAnswer,
