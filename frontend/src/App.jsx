@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
@@ -19,10 +18,11 @@ import Terms from "./pages/Terms";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CourseQuiz from "./pages/CourseQuiz";
+import WhatWeProvide from "./pages/WhatWeProvide";
 
 /* =========================
    SCROLL TO TOP
-   ========================= */
+========================= */
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -88,6 +88,15 @@ function App() {
         <Route
           path="/contact"
           element={<Contact />}
+        />
+
+        {/* =========================
+            WHAT WE PROVIDE
+            ========================= */}
+
+        <Route
+          path="/what-we-provide"
+          element={<WhatWeProvide />}
         />
 
         {/* =========================

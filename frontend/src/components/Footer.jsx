@@ -1,113 +1,77 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 function Footer() {
   return (
-    <footer
-      style={{
-        background: "linear-gradient(135deg,#0F172A,#1E3A8A,#2563EB)",
-        color: "#fff",
-        marginTop: "60px",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1200px",
-          margin: "auto",
-          padding: "50px 25px 25px",
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
-            gap: "35px",
-          }}
-        >
-          {/* Logo */}
-          <div>
-            <h2 style={{ color: "#FFD700" }}>🧠 QuizMaster</h2>
+    <footer className="quizmaster-footer">
+      <div className="footer-container">
+        <div className="footer-grid">
 
-            <p
-              style={{
-                color: "#CBD5E1",
-                lineHeight: "1.8",
-                marginTop: "15px",
-              }}
-            >
+          {/* Logo */}
+          <div className="footer-column footer-brand">
+            <h2>🧠 QuizMaster</h2>
+
+            <p>
               India's Smart Quiz Platform for{" "}
               <strong>Class 1 to 12</strong> and major competitive
               exams across all sectors including{" "}
-              <strong>JEE, NEET, GATE, UPSC, SSC, Banking, Railway,
-              Police, Defence, Government Exams</strong> and many
-              more.
+              <strong>
+                JEE, NEET, GATE, UPSC, SSC, Banking, Railway,
+                Police, Defence, Government Exams
+              </strong>{" "}
+              and many more.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 style={{ color: "#FFD700" }}>Quick Links</h3>
+          <div className="footer-column">
+            <h3>Quick Links</h3>
 
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px",
-                marginTop: "15px",
-              }}
-            >
-              <Link style={linkStyle} to="/">
+            <div className="footer-links">
+              <Link to="/">
                 🏠 Home
               </Link>
 
-              <Link style={linkStyle} to="/about">
+              <Link to="/about">
                 👨 About
               </Link>
 
-              <Link style={linkStyle} to="/leaderboard">
+              <Link to="/leaderboard">
                 🏆 Leaderboard
+              </Link>
+
+              {/* NEW */}
+              <Link to="/what-we-provide">
+                📚 What We Provide
               </Link>
             </div>
           </div>
 
           {/* Legal */}
-          <div>
-            <h3 style={{ color: "#FFD700" }}>Legal</h3>
+          <div className="footer-column">
+            <h3>Legal</h3>
 
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px",
-                marginTop: "15px",
-              }}
-            >
-              <Link style={linkStyle} to="/privacy-policy">
+            <div className="footer-links">
+              <Link to="/privacy-policy">
                 🔒 Privacy Policy
               </Link>
 
-              <Link style={linkStyle} to="/terms">
+              <Link to="/terms">
                 📜 Terms & Conditions
               </Link>
 
-              <Link style={linkStyle} to="/contact">
+              <Link to="/contact">
                 📩 Contact Us
               </Link>
             </div>
           </div>
 
           {/* Contact */}
-          <div>
-            <h3 style={{ color: "#FFD700" }}>Contact</h3>
+          <div className="footer-column">
+            <h3>Contact</h3>
 
-            <p
-              style={{
-                color: "#CBD5E1",
-                lineHeight: "2",
-                marginTop: "15px",
-              }}
-            >
+            <p className="footer-contact">
               📧 nabakishorebehera57@gmail.com
               <br />
               📍 Mitrapur, Balasore,
@@ -117,20 +81,9 @@ function Footer() {
           </div>
         </div>
 
-        <hr
-          style={{
-            margin: "35px 0 20px",
-            border: "none",
-            borderTop: "1px solid rgba(255,255,255,.2)",
-          }}
-        />
+        <hr className="footer-divider" />
 
-        <p
-          style={{
-            textAlign: "center",
-            color: "#CBD5E1",
-          }}
-        >
+        <p className="footer-bottom">
           © {new Date().getFullYear()} QuizMaster. All Rights Reserved.
           <br />
           Made with ❤️ by <strong>Nabakishore Behera</strong>
@@ -140,11 +93,4 @@ function Footer() {
   );
 }
 
-const linkStyle = {
-  color: "#E2E8F0",
-  textDecoration: "none",
-  transition: "0.3s",
-};
-
 export default Footer;
-
