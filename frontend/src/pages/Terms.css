@@ -1,0 +1,741 @@
+
+/* =========================================================
+   QUIZMASTER — TERMS & CONDITIONS
+   PREMIUM + FULLY MOBILE RESPONSIVE
+========================================================= */
+
+.terms-page {
+  min-height: 100vh;
+  padding: 70px 20px;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.32),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(124, 58, 237, 0.28),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #020617 0%,
+      #0f172a 45%,
+      #1e3a8a 100%
+    );
+
+  font-family: "Poppins", sans-serif;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.terms-container {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 50px;
+
+  color: #fff;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  box-sizing: border-box;
+
+  animation: termsFadeUp 0.7s ease;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.terms-header {
+  text-align: center;
+}
+
+
+.terms-icon {
+  width: 72px;
+  height: 72px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  font-size: 32px;
+
+  box-shadow:
+    0 15px 35px rgba(37, 99, 235, 0.35);
+}
+
+
+.terms-header h1 {
+  margin: 0;
+
+  color: #ffd700;
+
+  font-size: 44px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+.terms-updated {
+  margin: 10px 0 28px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.terms-intro {
+  max-width: 800px;
+
+  margin: auto;
+
+  color: #dbeafe;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.terms-divider {
+  height: 1px;
+
+  margin: 40px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.25),
+      transparent
+    );
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.terms-section {
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 20px;
+
+  margin-bottom: 42px;
+}
+
+
+.terms-number {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background:
+    rgba(56, 189, 248, 0.12);
+
+  border:
+    1px solid rgba(56, 189, 248, 0.25);
+
+  color: #38bdf8;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+
+.terms-section h2 {
+  margin: 0 0 15px;
+
+  color: #38bdf8;
+
+  font-size: 25px;
+  font-weight: 750;
+}
+
+
+.terms-section p {
+  margin: 0 0 15px;
+
+  color: #dbe4f0;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   INFO / WARNING
+========================================================= */
+
+.terms-info-box,
+.terms-warning {
+  margin: 20px 0;
+
+  padding: 18px 20px;
+
+  border-radius: 16px;
+
+  color: #cbd5e1;
+
+  line-height: 1.7;
+
+  font-size: 14px;
+}
+
+
+.terms-info-box {
+  background:
+    rgba(37, 99, 235, 0.1);
+
+  border-left:
+    4px solid #38bdf8;
+}
+
+
+.terms-warning {
+  background:
+    rgba(245, 158, 11, 0.09);
+
+  border-left:
+    4px solid #f59e0b;
+}
+
+
+/* =========================================================
+   FAIR PLAY GRID
+========================================================= */
+
+.fair-play-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 15px;
+
+  margin: 20px 0;
+}
+
+
+.fair-play-grid > div {
+  padding: 20px;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.1);
+
+  transition: 0.3s ease;
+}
+
+
+.fair-play-grid > div:hover {
+  transform: translateY(-5px);
+
+  background:
+    rgba(56, 189, 248, 0.08);
+
+  border-color:
+    rgba(56, 189, 248, 0.3);
+}
+
+
+.fair-play-grid span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 24px;
+}
+
+
+.fair-play-grid strong {
+  display: block;
+
+  color: #fff;
+
+  font-size: 16px;
+}
+
+
+.fair-play-grid p {
+  margin: 5px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   PROHIBITED LIST
+========================================================= */
+
+.prohibited-list {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 20px 0;
+}
+
+
+.prohibited-list li {
+  position: relative;
+
+  margin-bottom: 10px;
+
+  padding: 13px 15px 13px 42px;
+
+  border-radius: 13px;
+
+  background:
+    rgba(255, 255, 255, 0.05);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+.prohibited-list li::before {
+  content: "×";
+
+  position: absolute;
+
+  left: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(239, 68, 68, 0.15);
+
+  color: #f87171;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.terms-contact {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 50px;
+
+  padding: 28px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.18),
+      rgba(124, 58, 237, 0.18)
+    );
+
+  border:
+    1px solid rgba(255, 255, 255, 0.14);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.terms-contact-icon {
+  width: 58px;
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 17px;
+
+  background:
+    rgba(255, 215, 0, 0.12);
+
+  font-size: 25px;
+}
+
+
+.terms-contact h2 {
+  margin: 0 0 8px;
+
+  color: #ffd700;
+
+  font-size: 21px;
+}
+
+
+.terms-contact p {
+  margin: 0 0 8px;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+.terms-contact a {
+  color: #38bdf8;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  word-break: break-word;
+
+  transition: 0.3s ease;
+}
+
+
+.terms-contact a:hover {
+  color: #7dd3fc;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.terms-bottom {
+  margin-top: 40px;
+
+  padding-top: 25px;
+
+  text-align: center;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.terms-bottom p {
+  margin: 0 0 12px;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+.terms-bottom span {
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes termsFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .terms-page {
+    padding: 35px 14px;
+  }
+
+  .terms-container {
+    padding: 30px 22px;
+
+    border-radius: 24px;
+  }
+
+  .terms-header h1 {
+    font-size: 34px;
+  }
+
+  .terms-intro {
+    font-size: 15px;
+
+    line-height: 1.8;
+  }
+
+  .terms-section {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+  }
+
+  .terms-number {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 13px;
+  }
+
+  .terms-section h2 {
+    font-size: 22px;
+  }
+
+  .terms-section p {
+    font-size: 15px;
+
+    line-height: 1.8;
+  }
+
+  .fair-play-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .terms-contact {
+    align-items: flex-start;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .terms-page {
+    padding: 20px 10px;
+  }
+
+  .terms-container {
+    padding: 25px 16px;
+
+    border-radius: 20px;
+  }
+
+  .terms-icon {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 18px;
+
+    font-size: 27px;
+  }
+
+  .terms-header h1 {
+    font-size: 29px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .terms-updated {
+    font-size: 12px;
+
+    margin-bottom: 20px;
+  }
+
+  .terms-intro {
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+  .terms-divider {
+    margin: 30px 0;
+  }
+
+  .terms-section {
+    margin-bottom: 30px;
+  }
+
+  .terms-section h2 {
+    font-size: 19px;
+
+    line-height: 1.4;
+  }
+
+  .terms-section p {
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+  .terms-info-box,
+  .terms-warning {
+    padding: 14px;
+
+    font-size: 12px;
+  }
+
+  .fair-play-grid > div {
+    padding: 17px;
+  }
+
+  .fair-play-grid strong {
+    font-size: 15px;
+  }
+
+  .fair-play-grid p {
+    font-size: 12px;
+  }
+
+  .prohibited-list li {
+    padding: 11px 12px 11px 38px;
+
+    font-size: 12px;
+  }
+
+  .prohibited-list li::before {
+    left: 11px;
+  }
+
+  .terms-contact {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+  }
+
+  .terms-contact h2 {
+    font-size: 18px;
+  }
+
+  .terms-contact p,
+  .terms-contact a {
+    font-size: 13px;
+  }
+
+  .terms-bottom {
+    margin-top: 30px;
+  }
+
+  .terms-bottom p {
+    font-size: 12px;
+  }
+
+  .terms-bottom span {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .terms-page {
+    padding: 15px 7px;
+  }
+
+  .terms-container {
+    padding: 22px 13px;
+  }
+
+  .terms-header h1 {
+    font-size: 26px;
+  }
+
+  .terms-section h2 {
+    font-size: 18px;
+  }
+
+  .terms-section p {
+    font-size: 13px;
+  }
+}

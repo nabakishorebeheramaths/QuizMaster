@@ -1,160 +1,199 @@
 import React from "react";
+import "./About.css";
 
 function About() {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background:
-          "linear-gradient(135deg,#0F172A 0%,#1E3A8A 45%,#2563EB 100%)",
-        padding: "60px 20px",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "950px",
-          margin: "auto",
-          background: "rgba(255,255,255,0.12)",
-          backdropFilter: "blur(15px)",
-          borderRadius: "25px",
-          padding: "45px",
-          color: "#fff",
-          boxShadow: "0 15px 40px rgba(0,0,0,.35)",
-          border: "1px solid rgba(255,255,255,.15)",
-        }}
-      >
-        <h1
-          style={{
-            textAlign: "center",
-            fontSize: "42px",
-            color: "#FFD700",
-            marginBottom: "10px",
-          }}
-        >
-          🚀 About QuizMaster
-        </h1>
+    <div className="about-page">
+      <div className="about-card">
 
-        <p
-          style={{
-            textAlign: "center",
-            fontSize: "18px",
-            color: "#CBD5E1",
-            marginBottom: "40px",
-          }}
-        >
-          India's Smart Quiz Platform for GATE, Placements and Competitive
-          Exam Preparation.
-        </p>
+        {/* HERO */}
+        <div className="about-hero">
+          <div className="about-icon">🚀</div>
 
-        <h2 style={{ color: "#38BDF8" }}>🎯 Our Mission</h2>
+          <h1>About QuizMaster</h1>
 
-        <p style={{ lineHeight: "1.9", color: "#E2E8F0" }}>
-          QuizMaster is dedicated to helping students prepare for GATE,
-          placements, aptitude tests, reasoning, engineering mathematics, and
-          competitive examinations through high-quality daily quizzes. Our
-          mission is to make learning simple, engaging, and accessible for
-          everyone.
-        </p>
+          <p>
+            India's Smart Quiz Platform for GATE, Placements and
+            Competitive Exam Preparation.
+          </p>
 
-        <h2 style={{ color: "#38BDF8", marginTop: "35px" }}>
-          ⭐ What We Offer
-        </h2>
+          <div className="about-badges">
+            <span>🎓 Learn</span>
+            <span>🧠 Practice</span>
+            <span>🏆 Compete</span>
+          </div>
+        </div>
 
-        <ul style={{ lineHeight: "2", fontSize: "17px", color: "#E2E8F0" }}>
-          <li>📘 Daily Quiz (30 Questions)</li>
-          <li>⚡ GATE Level ECE Questions</li>
-          <li>🧠 Aptitude & Reasoning</li>
-          <li>📐 Engineering Mathematics</li>
-          <li>📰 Current Affairs</li>
-          <li>📈 Performance Analysis</li>
-          <li>🏆 Daily Leaderboard</li>
-          <li>📱 Mobile Friendly Experience</li>
-        </ul>
+        <div className="about-divider" />
 
-        <h2 style={{ color: "#38BDF8", marginTop: "35px" }}>
-          💡 Why QuizMaster?
-        </h2>
+        {/* MISSION */}
+        <section className="about-section">
+          <div className="section-icon">🎯</div>
 
-        <p style={{ lineHeight: "1.9", color: "#E2E8F0" }}>
-          Every registered user receives the same set of daily quiz questions,
-          ensuring fairness and healthy competition. QuizMaster focuses on
-          improving concepts through consistent practice rather than rote
-          memorization.
-        </p>
+          <div>
+            <h2>Our Mission</h2>
 
-        <h2 style={{ color: "#38BDF8", marginTop: "35px" }}>
-          🌍 Our Vision
-        </h2>
+            <p>
+              QuizMaster is dedicated to helping students prepare for GATE,
+              placements, aptitude tests, reasoning, engineering mathematics,
+              and competitive examinations through high-quality daily
+              quizzes. Our mission is to make learning simple, engaging,
+              and accessible for everyone.
+            </p>
+          </div>
+        </section>
 
-        <p style={{ lineHeight: "1.9", color: "#E2E8F0" }}>
-          Our vision is to become one of India's most trusted online quiz
-          platforms for engineering students and competitive exam aspirants by
-          delivering quality educational content every day.
-        </p>
+        {/* WHAT WE OFFER */}
+        <section className="about-section">
+          <div className="section-icon">⭐</div>
 
-        {/* About Creator */}
+          <div className="about-content">
+            <h2>What We Offer</h2>
 
-        <div
-          style={{
-            marginTop: "40px",
-            background: "rgba(255,255,255,.08)",
-            borderRadius: "18px",
-            padding: "25px",
-          }}
-        >
-          <h2 style={{ color: "#FFD700" }}>
-            👨‍💻 About the Creator
-          </h2>
+            <div className="offer-grid">
+              <div className="offer-item">
+                <span>📘</span>
+                <p>Daily Quiz with 30 Questions</p>
+              </div>
 
-          <p style={{ lineHeight: "1.9", color: "#E2E8F0" }}>
+              <div className="offer-item">
+                <span>⚡</span>
+                <p>GATE Level ECE Questions</p>
+              </div>
+
+              <div className="offer-item">
+                <span>🧠</span>
+                <p>Aptitude & Reasoning</p>
+              </div>
+
+              <div className="offer-item">
+                <span>📐</span>
+                <p>Engineering Mathematics</p>
+              </div>
+
+              <div className="offer-item">
+                <span>📰</span>
+                <p>Current Affairs</p>
+              </div>
+
+              <div className="offer-item">
+                <span>📈</span>
+                <p>Performance Analysis</p>
+              </div>
+
+              <div className="offer-item">
+                <span>🏆</span>
+                <p>Daily Leaderboard</p>
+              </div>
+
+              <div className="offer-item">
+                <span>📱</span>
+                <p>Mobile Friendly Experience</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* WHY QUIZMASTER */}
+        <section className="about-section">
+          <div className="section-icon">💡</div>
+
+          <div>
+            <h2>Why QuizMaster?</h2>
+
+            <p>
+              Every registered user receives the same set of daily quiz
+              questions, ensuring fairness and healthy competition.
+              QuizMaster focuses on improving concepts through consistent
+              practice rather than rote memorization.
+            </p>
+          </div>
+        </section>
+
+        {/* VISION */}
+        <section className="about-section">
+          <div className="section-icon">🌍</div>
+
+          <div>
+            <h2>Our Vision</h2>
+
+            <p>
+              Our vision is to become one of India's most trusted online quiz
+              platforms for engineering students and competitive exam
+              aspirants by delivering quality educational content every day.
+            </p>
+          </div>
+        </section>
+
+        {/* CREATOR */}
+        <section className="about-highlight">
+          <div className="highlight-header">
+            <span>👨‍💻</span>
+            <h2>About the Creator</h2>
+          </div>
+
+          <p>
             Hello! I'm <strong>Nabakishore Behera</strong>, the creator of
             <strong> QuizMaster</strong>. I am a B.Tech Electronics and
             Communication Engineering (ECE) student who enjoys software
             development and building educational platforms.
           </p>
 
-          <p style={{ lineHeight: "1.9", color: "#E2E8F0" }}>
-            I created QuizMaster to help students prepare for GATE, placements,
-            aptitude, reasoning, engineering mathematics, and current affairs
-            through daily practice quizzes. My goal is to make learning more
-            interactive, engaging, and accessible.
+          <p>
+            I created QuizMaster to help students prepare for GATE,
+            placements, aptitude, reasoning, engineering mathematics, and
+            current affairs through daily practice quizzes. My goal is to
+            make learning more interactive, engaging, and accessible.
           </p>
 
-          <p style={{ lineHeight: "1.9", color: "#E2E8F0" }}>
-            📍 I am from <strong>Mitrapur, Balasore, Odisha, India</strong>.
-            Through QuizMaster, I hope to support students across the country in
-            improving their knowledge and achieving their academic and career
-            goals.
+          <p>
+            📍 I am from{" "}
+            <strong>Mitrapur, Balasore, Odisha, India</strong>. Through
+            QuizMaster, I hope to support students across the country in
+            improving their knowledge and achieving their academic and
+            career goals.
           </p>
-        </div>
+        </section>
 
-        {/* Contact */}
+        {/* CONTACT */}
+        <section className="about-highlight contact-highlight">
+          <div className="highlight-header">
+            <span>📩</span>
+            <h2>Contact Information</h2>
+          </div>
 
-        <div
-          style={{
-            marginTop: "40px",
-            background: "rgba(255,255,255,.08)",
-            borderRadius: "18px",
-            padding: "25px",
-          }}
-        >
-          <h2 style={{ color: "#FFD700" }}>
-            📩 Contact Information
-          </h2>
+          <div className="contact-item">
+            <span>📧</span>
+            <div>
+              <small>Email</small>
+              <strong>nabakishorebehera57@gmail.com</strong>
+            </div>
+          </div>
 
-          <p style={{ color: "#E2E8F0" }}>
-            📧 <strong>Email:</strong> nabakishorebehera57@gmail.com
-          </p>
+          <div className="contact-item">
+            <span>📍</span>
+            <div>
+              <small>Location</small>
+              <strong>Mitrapur, Balasore, Odisha, India</strong>
+            </div>
+          </div>
 
-          <p style={{ color: "#E2E8F0" }}>
-            📍 <strong>Location:</strong> Mitrapur, Balasore, Odisha, India
-          </p>
-
-          <p style={{ color: "#CBD5E1", marginTop: "15px" }}>
+          <p className="thank-you">
             Thank you for visiting <strong>QuizMaster</strong>. We appreciate
             your support and wish you success in your learning journey. ❤️
           </p>
+        </section>
+
+        {/* FINAL MESSAGE */}
+        <div className="about-footer-message">
+          <span>🧠</span>
+          <h3>Learn More. Practice More. Achieve More.</h3>
+          <p>
+            Start your quiz journey with QuizMaster and keep improving every
+            day.
+          </p>
         </div>
+
       </div>
     </div>
   );
