@@ -6,31 +6,26 @@ function QuestionCard({
   selectedAnswer,
 }) {
   return (
-    <div className="question-card">
-
+    <div className="question-options">
       <h2>{question.question}</h2>
 
-      {question.options.map((option, index) => (
+      {question.options.map((option, index) => {
+        const isSelected = selectedAnswer === index;
 
-        <button
-          key={index}
-          className={
-            selectedAnswer !== null
-              ? index === question.correctAnswer
-                ? "option-btn correct"
-                : index === selectedAnswer
-                ? "option-btn wrong"
-                : "option-btn"
-              : "option-btn"
-          }
-          onClick={() => onAnswer(index)}
-          disabled={selectedAnswer !== null}
-        >
-          {option}
-        </button>
-
-      ))}
-
+        return (
+          <button
+            key={`${question._id}-${index}`}
+            type="button"
+            className={`option-btn ${
+              isSelected ? "selected" : ""
+            }`}
+            onClick={() => onAnswer(index)}
+            disabled={selectedAnswer !== null}
+          >
+            {option}
+          </button>
+        );
+      })}
     </div>
   );
 }

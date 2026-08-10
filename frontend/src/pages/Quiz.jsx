@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -65,7 +66,7 @@ function Quiz() {
       let response;
 
       // =================================================
-      // DAILY QUIZ
+      // DAILY LIVE QUIZ
       // =================================================
 
       if (quizInfo.quizType === "daily") {
@@ -137,12 +138,21 @@ function Quiz() {
   // =====================================================
 
   const handleAnswer = (index) => {
-    setSelectedAnswer(index);
+    // Prevent changing answer after selection
+    if (selectedAnswer !== null) {
+      return;
+    }
 
     const current =
       questions[currentQuestion];
 
-    if (!current) return;
+    if (!current) {
+      return;
+    }
+
+    // Only store the user's selected option.
+    // Correct answer is NOT revealed here.
+    setSelectedAnswer(index);
 
     const answerData = {
       questionId: current._id,
@@ -247,7 +257,9 @@ function Quiz() {
     const current =
       questions[currentQuestion];
 
-    if (!current) return;
+    if (!current) {
+      return;
+    }
 
     // =================================================
     // CHECK CURRENT ANSWER
@@ -320,7 +332,9 @@ function Quiz() {
     const current =
       questions[currentQuestion];
 
-    if (!current) return;
+    if (!current) {
+      return;
+    }
 
     let updatedScore = score;
 
@@ -349,8 +363,7 @@ function Quiz() {
     if (selectedAnswer !== null) {
       const answerData = {
         questionId: current._id,
-        selectedAnswer:
-          selectedAnswer,
+        selectedAnswer: selectedAnswer,
         correctAnswer:
           current.correctAnswer,
       };
@@ -416,18 +429,14 @@ function Quiz() {
 
   if (loading) {
     return (
-      <div className="quiz-page">
-        <div className="quiz-container">
-          <div className="quiz-loading">
-            <h2>
-              Loading Questions...
-            </h2>
+      <div className="quiz-container">
+        <div className="loading-card">
+          <h2>Loading Questions...</h2>
 
-            <p>
-              Please wait while the quiz
-              is being prepared.
-            </p>
-          </div>
+          <p>
+            Please wait while the quiz
+            is being prepared.
+          </p>
         </div>
       </div>
     );
@@ -439,49 +448,47 @@ function Quiz() {
 
   if (questions.length === 0) {
     return (
-      <div className="quiz-page">
-        <div className="quiz-container">
-          <div className="quiz-loading">
-            <h2>
-              No Questions Found
-            </h2>
+      <div className="quiz-container">
+        <div className="loading-card">
+          <h2>No Questions Found</h2>
 
-            <p>
-              {quizInfo.quizType ===
-              "subject"
-                ? `No questions are currently available for ${quizInfo.subject || "this subject"}.`
-                : "Today's quiz is currently unavailable."}
-            </p>
+          <p>
+            {quizInfo.quizType ===
+            "subject"
+              ? `No questions are currently available for ${
+                  quizInfo.subject ||
+                  "this subject"
+                }.`
+              : "Today's quiz is currently unavailable."}
+          </p>
 
-            <div
-              style={{
-                display: "flex",
-                gap: "10px",
-                justifyContent:
-                  "center",
-                flexWrap: "wrap",
-              }}
+          <div
+            style={{
+              display: "flex",
+              gap: "10px",
+              justifyContent: "center",
+              flexWrap: "wrap",
+            }}
+          >
+            <button
+              className="submit-btn"
+              onClick={fetchQuestions}
             >
-              <button
-                className="submit-btn"
-                onClick={fetchQuestions}
-              >
-                🔄 Try Again
-              </button>
+              🔄 Try Again
+            </button>
 
-              <button
-                className="submit-btn"
-                onClick={() =>
-                  navigate(
-                    quizInfo.courseId
-                      ? `/course/${quizInfo.courseId}`
-                      : "/course"
-                  )
-                }
-              >
-                ← Back to Course
-              </button>
-            </div>
+            <button
+              className="submit-btn"
+              onClick={() =>
+                navigate(
+                  quizInfo.courseId
+                    ? `/course/${quizInfo.courseId}`
+                    : "/course"
+                )
+              }
+            >
+              ← Back to Course
+            </button>
           </div>
         </div>
       </div>
@@ -516,85 +523,82 @@ function Quiz() {
   // =====================================================
 
   return (
-    <div className="quiz-page">
-      <div className="quiz-container">
+    <div className="quiz-container">
 
-        {/* =============================================
-            COURSE / SUBJECT INFORMATION
-        ============================================= */}
+      {/* =============================================
+          COURSE / SUBJECT INFORMATION
+      ============================================= */}
 
-        {quizInfo.courseName && (
-          <div className="quiz-context">
+      {quizInfo.courseName && (
+        <div className="quiz-context">
+          <span>
+            🎓 {quizInfo.courseName}
+          </span>
 
+          {quizInfo.subject && (
             <span>
-              🎓 {quizInfo.courseName}
+              📚 {quizInfo.subject}
             </span>
-
-            {quizInfo.subject && (
-              <span>
-                📚 {quizInfo.subject}
-              </span>
-            )}
-
-          </div>
-        )}
-
-        {/* =============================================
-            QUIZ TYPE
-        ============================================= */}
-
-        <div className="quiz-type">
-          {quizInfo.quizType ===
-          "subject"
-            ? "📚 Subject Quiz"
-            : "🟢 Daily Live Quiz"}
+          )}
         </div>
+      )}
 
-        {/* =============================================
-            TIMER
-        ============================================= */}
+      {/* =============================================
+          QUIZ TYPE
+      ============================================= */}
 
-        <Timer
-          timeLeft={timeLeft}
-          setTimeLeft={setTimeLeft}
-          onTimeUp={handleTimeUp}
+      <div className="quiz-type">
+        {quizInfo.quizType ===
+        "subject"
+          ? "📚 Subject Quiz"
+          : "🟢 Daily Live Quiz"}
+      </div>
+
+      {/* =============================================
+          TIMER
+      ============================================= */}
+
+      <Timer
+        timeLeft={timeLeft}
+        setTimeLeft={setTimeLeft}
+        onTimeUp={handleTimeUp}
+      />
+
+      {/* =============================================
+          QUESTION CARD
+      ============================================= */}
+
+      <div className="question-card">
+
+        <h2>
+          Question{" "}
+          {currentQuestion + 1}{" "}
+          / {questions.length}
+        </h2>
+
+        <QuestionCard
+          question={current}
+          onAnswer={handleAnswer}
+          selectedAnswer={
+            selectedAnswer
+          }
         />
 
-        {/* =============================================
-            QUESTION CARD
-        ============================================= */}
+        {/* =========================================
+            NEXT / FINISH BUTTON
+        ========================================= */}
 
-        <div className="question-card">
+        <button
+          type="button"
+          className="submit-btn"
+          onClick={nextQuestion}
+        >
+          {currentQuestion ===
+          questions.length - 1
+            ? "Finish Quiz"
+            : "Next Question →"}
+        </button>
 
-          <h2>
-            Question{" "}
-            {currentQuestion + 1}{" "}
-            / {questions.length}
-          </h2>
-
-          <QuestionCard
-            question={current}
-            onAnswer={handleAnswer}
-            selectedAnswer={
-              selectedAnswer
-            }
-          />
-
-          {/* =========================================
-              NEXT / FINISH BUTTON
-          ========================================= */}
-
-          <button
-            className="submit-btn"
-            onClick={nextQuestion}
-          >
-            {currentQuestion ===
-            questions.length - 1
-              ? "Finish Quiz"
-              : "Next Question →"}
-          </button>
-
-        </div>
       </div>
     </div>
   );
