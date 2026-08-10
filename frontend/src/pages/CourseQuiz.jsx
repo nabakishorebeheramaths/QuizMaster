@@ -13,89 +13,98 @@ function CourseQuiz() {
 
   const courseCategories = [
     {
-      id: "school",
-      icon: "🏫",
-      title: "School Classes",
+  id: "school",
+  icon: "🏫",
+  title: "School Classes",
+  description:
+    "Class 1 to Class 12 quizzes for all major subjects.",
+  courses: [
+    {
+      id: "class-1",
+      name: "Class 1",
+      icon: "📘",
       description:
-        "Class 1 to Class 12 quizzes for all major subjects.",
-      courses: [
-        {
-          id: "class-1",
-          name: "Class 1",
-          icon: "📘",
-          description: "Basic learning & general knowledge",
-        },
-        {
-          id: "class-2",
-          name: "Class 2",
-          icon: "📗",
-          description: "Basic Mathematics, English & EVS",
-        },
-        {
-          id: "class-3",
-          name: "Class 3",
-          icon: "📕",
-          description: "School subjects & general knowledge",
-        },
-        {
-          id: "class-4",
-          name: "Class 4",
-          icon: "📙",
-          description: "Mathematics, Science, English & more",
-        },
-        {
-          id: "class-5",
-          name: "Class 5",
-          icon: "📚",
-          description: "School level practice quizzes",
-        },
-        {
-          id: "class-6",
-          name: "Class 6",
-          icon: "🎒",
-          description:
-            "Mathematics, Science, Social Science & English",
-        },
-        {
-          id: "class-7",
-          name: "Class 7",
-          icon: "🎒",
-          description: "Academic practice quizzes",
-        },
-        {
-          id: "class-8",
-          name: "Class 8",
-          icon: "🎒",
-          description: "School examination preparation",
-        },
-        {
-          id: "class-9",
-          name: "Class 9",
-          icon: "📖",
-          description:
-            "CBSE, ICSE & State Board preparation",
-        },
-        {
-          id: "class-10",
-          name: "Class 10",
-          icon: "📖",
-          description: "Board examination practice",
-        },
-        {
-          id: "class-11",
-          name: "Class 11",
-          icon: "🎓",
-          description: "Science, Commerce & Arts",
-        },
-        {
-          id: "class-12",
-          name: "Class 12",
-          icon: "🎓",
-          description: "Board & entrance preparation",
-        },
-      ],
+        "Basic learning, Mathematics, English & EVS",
     },
-
+    {
+      id: "class-2",
+      name: "Class 2",
+      icon: "📗",
+      description:
+        "Basic Mathematics, English, EVS & General Knowledge",
+    },
+    {
+      id: "class-3",
+      name: "Class 3",
+      icon: "📕",
+      description:
+        "Mathematics, English, EVS & General Knowledge",
+    },
+    {
+      id: "class-4",
+      name: "Class 4",
+      icon: "📙",
+      description:
+        "Mathematics, Science, English & Social Science",
+    },
+    {
+      id: "class-5",
+      name: "Class 5",
+      icon: "📚",
+      description:
+        "Mathematics, Science, English & Social Science",
+    },
+    {
+      id: "class-6",
+      name: "Class 6",
+      icon: "🎒",
+      description:
+        "Mathematics, Science, English & Social Science",
+    },
+    {
+      id: "class-7",
+      name: "Class 7",
+      icon: "🎒",
+      description:
+        "Mathematics, Science, English & Social Science",
+    },
+    {
+      id: "class-8",
+      name: "Class 8",
+      icon: "🎒",
+      description:
+        "Mathematics, Science, English & Social Science",
+    },
+    {
+      id: "class-9",
+      name: "Class 9",
+      icon: "📖",
+      description:
+        "Mathematics, Science, English & Social Science",
+    },
+    {
+      id: "class-10",
+      name: "Class 10",
+      icon: "📖",
+      description:
+        "Board Mathematics, Science, English & Social Science",
+    },
+    {
+      id: "class-11",
+      name: "Class 11",
+      icon: "🎓",
+      description:
+        "Physics, Chemistry, Mathematics & Biology",
+    },
+    {
+      id: "class-12",
+      name: "Class 12",
+      icon: "🎓",
+      description:
+        "Physics, Chemistry, Mathematics & Biology",
+    },
+  ],
+},
     {
       id: "engineering",
       icon: "⚙️",
@@ -830,201 +839,215 @@ function getSubjects(courseId) {
     // SCHOOL
     // =================================================
 
-    "class-1": commonSchoolSubjects.primary,
-    "class-2": commonSchoolSubjects.primary,
-    "class-3": commonSchoolSubjects.primary,
-    "class-4": commonSchoolSubjects.middle,
-    "class-5": commonSchoolSubjects.middle,
-    "class-6": commonSchoolSubjects.middle,
-    "class-7": commonSchoolSubjects.middle,
-    "class-8": commonSchoolSubjects.middle,
+   // =================================================
+// SCHOOL
+// =================================================
 
-    "class-9": [
-      {
-        id: "maths",
-        name: "Mathematics",
-        icon: "🔢",
-        description:
-          "Class 9 Mathematics",
-      },
-      {
-        id: "science",
-        name: "Science",
-        icon: "🔬",
-        description:
-          "Physics, Chemistry & Biology",
-      },
-      {
-        id: "english",
-        name: "English",
-        icon: "📖",
-        description:
-          "English language & literature",
-      },
-      {
-        id: "social-science",
-        name: "Social Science",
-        icon: "🌍",
-        description:
-          "History, geography, civics & economics",
-      },
-    ],
+"class-1": commonSchoolSubjects.primary,
 
-    "class-10": [
-      {
-        id: "maths",
-        name: "Mathematics",
-        icon: "🔢",
-        description:
-          "Board Mathematics",
-      },
-      {
-        id: "science",
-        name: "Science",
-        icon: "🔬",
-        description:
-          "Physics, Chemistry & Biology",
-      },
-      {
-        id: "english",
-        name: "English",
-        icon: "📖",
-        description:
-          "Board English",
-      },
-      {
-        id: "social-science",
-        name: "Social Science",
-        icon: "🌍",
-        description:
-          "History, geography, civics & economics",
-      },
-    ],
+"class-2": commonSchoolSubjects.primary,
 
-    "class-11": [
-      {
-        id: "physics",
-        name: "Physics",
-        icon: "⚡",
-        description:
-          "Class 11 Physics",
-      },
-      {
-        id: "chemistry",
-        name: "Chemistry",
-        icon: "🧪",
-        description:
-          "Class 11 Chemistry",
-      },
-      {
-        id: "mathematics",
-        name: "Mathematics",
-        icon: "📐",
-        description:
-          "Class 11 Mathematics",
-      },
-      {
-        id: "biology",
-        name: "Biology",
-        icon: "🧬",
-        description:
-          "Class 11 Biology",
-      },
-    ],
+"class-3": commonSchoolSubjects.primary,
 
-    "class-12": [
-      {
-        id: "physics",
-        name: "Physics",
-        icon: "⚡",
-        description:
-          "Class 12 Physics",
-      },
-      {
-        id: "chemistry",
-        name: "Chemistry",
-        icon: "🧪",
-        description:
-          "Class 12 Chemistry",
-      },
-      {
-        id: "mathematics",
-        name: "Mathematics",
-        icon: "📐",
-        description:
-          "Class 12 Mathematics",
-      },
-      {
-        id: "biology",
-        name: "Biology",
-        icon: "🧬",
-        description:
-          "Class 12 Biology",
-      },
-    ],
+"class-4": commonSchoolSubjects.middle,
 
+"class-5": commonSchoolSubjects.middle,
+
+"class-6": commonSchoolSubjects.middle,
+
+"class-7": commonSchoolSubjects.middle,
+
+"class-8": commonSchoolSubjects.middle,
+
+"class-9": [
+  {
+    id: "maths",
+    name: "Mathematics",
+    icon: "🔢",
+    description:
+      "Class 9 Mathematics",
+  },
+  {
+    id: "science",
+    name: "Science",
+    icon: "🔬",
+    description:
+      "Physics, Chemistry & Biology",
+  },
+  {
+    id: "english",
+    name: "English",
+    icon: "📖",
+    description:
+      "English language & literature",
+  },
+  {
+    id: "social-science",
+    name: "Social Science",
+    icon: "🌍",
+    description:
+      "History, Geography, Civics & Economics",
+  },
+],
+
+"class-10": [
+  {
+    id: "maths",
+    name: "Mathematics",
+    icon: "🔢",
+    description:
+      "Board Mathematics",
+  },
+  {
+    id: "science",
+    name: "Science",
+    icon: "🔬",
+    description:
+      "Physics, Chemistry & Biology",
+  },
+  {
+    id: "english",
+    name: "English",
+    icon: "📖",
+    description:
+      "Board English",
+  },
+  {
+    id: "social-science",
+    name: "Social Science",
+    icon: "🌍",
+    description:
+      "History, Geography, Civics & Economics",
+  },
+],
+
+"class-11": [
+  {
+    id: "physics",
+    name: "Physics",
+    icon: "⚡",
+    description:
+      "Class 11 Physics",
+  },
+  {
+    id: "chemistry",
+    name: "Chemistry",
+    icon: "🧪",
+    description:
+      "Class 11 Chemistry",
+  },
+  {
+    id: "mathematics",
+    name: "Mathematics",
+    icon: "📐",
+    description:
+      "Class 11 Mathematics",
+  },
+  {
+    id: "biology",
+    name: "Biology",
+    icon: "🧬",
+    description:
+      "Class 11 Biology",
+  },
+],
+
+"class-12": [
+  {
+    id: "physics",
+    name: "Physics",
+    icon: "⚡",
+    description:
+      "Class 12 Physics",
+  },
+  {
+    id: "chemistry",
+    name: "Chemistry",
+    icon: "🧪",
+    description:
+      "Class 12 Chemistry",
+  },
+  {
+    id: "mathematics",
+    name: "Mathematics",
+    icon: "📐",
+    description:
+      "Class 12 Mathematics",
+  },
+  {
+    id: "biology",
+    name: "Biology",
+    icon: "🧬",
+    description:
+      "Class 12 Biology",
+  },
+],
     // =================================================
     // ENGINEERING
     // =================================================
 
-    btech: [
-      {
-        id: "engineering-mathematics",
-        name: "Engineering Mathematics",
-        icon: "📐",
-        description:
-          "Engineering Mathematics",
-      },
-      {
-        id: "digital-electronics",
-        name: "Digital Electronics",
-        icon: "🔌",
-        description:
-          "Digital logic & electronics",
-      },
-      {
-        id: "analog-electronics",
-        name: "Analog Electronics",
-        icon: "📡",
-        description:
-          "Analog circuits & devices",
-      },
-      {
-        id: "programming",
-        name: "Programming",
-        icon: "💻",
-        description:
-          "Programming & problem solving",
-      },
-      {
-        id: "data-structures",
-        name: "Data Structures",
-        icon: "🗂️",
-        description:
-          "DSA concepts",
-      },
-      {
-        id: "computer-networks",
-        name: "Computer Networks",
-        icon: "🌐",
-        description:
-          "Networking fundamentals",
-      },
-      {
-        id: "aptitude",
-        name: "Aptitude",
-        icon: "🧠",
-        description:
-          "Quantitative & logical aptitude",
-      },
-      {
-        id: "ece-core",
-        name: "ECE Core",
-        icon: "📻",
-        description:
-          "Electronics & communication",
-      },
-    ],
+   // =================================================
+// ENGINEERING
+// =================================================
+
+btech: [
+  {
+    id: "engineering-mathematics",
+    name: "Engineering Mathematics",
+    icon: "📐",
+    description:
+      "Calculus, differential equations, linear algebra & probability",
+  },
+  {
+    id: "digital-electronics",
+    name: "Digital Electronics",
+    icon: "🔌",
+    description:
+      "Digital logic, Boolean algebra & digital circuits",
+  },
+  {
+    id: "analog-electronics",
+    name: "Analog Electronics",
+    icon: "📡",
+    description:
+      "Analog circuits, diodes, transistors & amplifiers",
+  },
+  {
+    id: "programming",
+    name: "Programming",
+    icon: "💻",
+    description:
+      "C, C++, programming fundamentals & problem solving",
+  },
+  {
+    id: "data-structures",
+    name: "Data Structures",
+    icon: "🗂️",
+    description:
+      "Arrays, linked lists, stacks, queues, trees & graphs",
+  },
+  {
+    id: "computer-networks",
+    name: "Computer Networks",
+    icon: "🌐",
+    description:
+      "Networking fundamentals, protocols & communication",
+  },
+  {
+    id: "aptitude",
+    name: "Aptitude",
+    icon: "🧠",
+    description:
+      "Quantitative aptitude, logical reasoning & verbal ability",
+  },
+  {
+    id: "ece-core",
+    name: "ECE Core",
+    icon: "📻",
+    description:
+      "Electronic devices, communication systems & ECE fundamentals",
+  },
+],
 
     be: [
       {
