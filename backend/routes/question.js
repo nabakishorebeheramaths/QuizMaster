@@ -4,8 +4,8 @@ import Question from "../models/Question.js";
 const router = express.Router();
 
 // =====================================================
-// SUPPORTED COURSES
-// ONLY CLASS 1-12 + B.TECH
+// CLASS 1-12 + B.TECH
+// DO NOT CHANGE THIS LOGIC
 // =====================================================
 
 const supportedCourses = new Set([
@@ -63,6 +63,17 @@ const normalizeSubjectId = (subjectId) => {
 };
 
 // =====================================================
+// ESCAPE REGEX
+// =====================================================
+
+const escapeRegex = (value) => {
+  return String(value).replace(
+    /[.*+?^${}()|[\]\\]/g,
+    "\\$&"
+  );
+};
+
+// =====================================================
 // GET COURSE / SUBJECT QUESTIONS
 // =====================================================
 
@@ -103,35 +114,101 @@ router.get("/", async (req, res) => {
       .toLowerCase();
 
     // =================================================
-    // ONLY CLASS 1-12 + B.TECH
-    // =================================================
-
-    if (!supportedCourses.has(normalizedCourseId)) {
-      console.log(
-        `⚠️ Unsupported course: ${normalizedCourseId}`
-      );
-
-      return res.status(400).json({
-        success: false,
-        message:
-          "Only Class 1-12 and B.Tech are supported.",
-      });
-    }
-
-    // =================================================
     // NORMALIZE SUBJECT
     // =================================================
 
     const normalizedSubjectId =
       normalizeSubjectId(subjectId);
 
+    // =================================================
+    // LOG REQUEST
+    // =================================================
+
     console.log(
       `🔎 Loading questions: ${normalizedCourseId} / ${normalizedSubjectId}`
     );
 
     // =================================================
-    // LOAD DIRECTLY FROM MONGODB
+    // CLASS 1-12 + B.TECH
     // =================================================
+    // IMPORTANT:
+    // EXISTING LOGIC IS PRESERVED.
+    // =================================================
+
+    if (supportedCourses.has(normalizedCourseId)) {
+      let questions = await Question.find({
+        courseId: normalizedCourseId,
+        subjectId: normalizedSubjectId,
+      }).lean();
+
+      // -----------------------------------------------
+      // CASE-INSENSITIVE FALLBACK
+      // -----------------------------------------------
+
+      if (questions.length === 0) {
+        questions = await Question.find({
+          courseId: {
+            $regex: `^${escapeRegex(
+              normalizedCourseId
+            )}$`,
+            $options: "i",
+          },
+
+          subjectId: {
+            $regex: `^${escapeRegex(
+              normalizedSubjectId
+            )}$`,
+            $options: "i",
+          },
+        }).lean();
+      }
+
+      console.log(
+        `📖 ${normalizedCourseId} / ${normalizedSubjectId}: ${questions.length} questions found`
+      );
+
+      // -----------------------------------------------
+      // RANDOMIZE
+      // -----------------------------------------------
+
+      const shuffled = [...questions].sort(
+        () => Math.random() - 0.5
+      );
+
+      // -----------------------------------------------
+      // MAX 30
+      // -----------------------------------------------
+
+      const selectedQuestions =
+        shuffled.slice(0, 30);
+
+      console.log(
+        `📚 ${normalizedCourseId}: ${selectedQuestions.length} questions loaded`
+      );
+
+      return res.status(200).json({
+        success: true,
+        courseId: normalizedCourseId,
+        subjectId: normalizedSubjectId,
+        quizType: "subject",
+        count: selectedQuestions.length,
+        questions: selectedQuestions,
+      });
+    }
+
+    // =================================================
+    // OTHER COURSES
+    // =================================================
+    // JEE / NEET / NURSING / COMMERCE / ARTS /
+    // ENGINEERING BRANCHES / ETC.
+    //
+    // DO NOT BLOCK THEM.
+    // LOAD DIRECTLY FROM MONGODB.
+    // =================================================
+
+    console.log(
+      `🌐 Loading additional course: ${normalizedCourseId}`
+    );
 
     let questions = await Question.find({
       courseId: normalizedCourseId,
@@ -139,18 +216,22 @@ router.get("/", async (req, res) => {
     }).lean();
 
     // =================================================
-    // FALLBACK CASE-INSENSITIVE SEARCH
+    // CASE-INSENSITIVE FALLBACK
     // =================================================
 
     if (questions.length === 0) {
       questions = await Question.find({
         courseId: {
-          $regex: `^${normalizedCourseId}$`,
+          $regex: `^${escapeRegex(
+            normalizedCourseId
+          )}$`,
           $options: "i",
         },
 
         subjectId: {
-          $regex: `^${normalizedSubjectId}$`,
+          $regex: `^${escapeRegex(
+            normalizedSubjectId
+          )}$`,
           $options: "i",
         },
       }).lean();
@@ -173,7 +254,7 @@ router.get("/", async (req, res) => {
     );
 
     // =================================================
-    // MAX 30 QUESTIONS
+    // MAXIMUM 30
     // =================================================
 
     const selectedQuestions =
@@ -197,6 +278,10 @@ router.get("/", async (req, res) => {
     });
 
   } catch (error) {
+    // =================================================
+    // ERROR
+    // =================================================
+
     console.error(
       "❌ Question Route Error:",
       error.message
