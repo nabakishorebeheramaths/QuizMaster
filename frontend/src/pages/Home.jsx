@@ -59,23 +59,20 @@ function Home() {
 
           <div className="info">
 
-            <div>
-              <h3 className="rainbow-text">1000+</h3>
-              <small>Questions</small>
-            </div>
+            <h3 className="rainbow-text">30,000+</h3>
+<small>Verified Questions</small>
+<div>
+  <h3 className="rainbow-text">100+</h3>
+  <small>Categories</small>
+</div>
 
-            <div>
-              <h3 className="rainbow-text">10+</h3>
-              <small>Categories</small>
-            </div>
+</div>
 
-          </div>
+</div>
 
-        </div>
+</div>
 
-      </div>
-
-    </section>
+</section>
   );
 }
 
