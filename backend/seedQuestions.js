@@ -1,6 +1,8 @@
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({
+  path: "./backend/.env",
+});
 
 import mongoose from "mongoose";
 import connectDB from "./config/db.js";
@@ -6025,8 +6027,13 @@ const seed = async () => {
       `✅ ${cleanQuestions.length} Daily Quiz questions inserted successfully`
     );
 
-    console.log("🎯 Daily Quiz questions are completely separate from courses.");
-    console.log("🔄 No-repeat cycle will be handled by Daily Quiz API.");
+    console.log(
+      "🎯 Daily Quiz questions are completely separate from courses."
+    );
+
+    console.log(
+      "🔄 No-repeat cycle will be handled by Daily Quiz API."
+    );
 
     await mongoose.connection.close();
 

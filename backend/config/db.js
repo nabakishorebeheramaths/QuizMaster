@@ -1,12 +1,25 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
-    console.log("✅ MongoDB Connected Successfully");
+    const mongoURI = process.env.MONGO_URI;
+
+    if (!mongoURI) {
+      throw new Error(
+        "MONGO_URI is missing. Please check your .env file."
+      );
+    }
+
+    await mongoose.connect(mongoURI);
+
+    console.log("🍃 MongoDB Connected Successfully");
   } catch (error) {
-    console.log("❌ MongoDB Connection Error:");
-    console.log(error.message);
+    console.error("❌ MongoDB Connection Error:");
+    console.error(error.message);
+
     process.exit(1);
   }
 };
