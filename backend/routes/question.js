@@ -137,32 +137,66 @@ router.get("/", async (req, res) => {
 
     if (supportedCourses.has(normalizedCourseId)) {
       let questions = await Question.find({
-        courseId: normalizedCourseId,
-        subjectId: normalizedSubjectId,
-      }).lean();
+  courseId: normalizedCourseId,
+}).lean();
 
-      // -----------------------------------------------
-      // CASE-INSENSITIVE FALLBACK
-      // -----------------------------------------------
+// -----------------------------------------------
+// SUBJECT MATCHING
+// Supports:
+// maths / math / mathematics
+// evs / environmental-science
+// computer-networks / Computer Networks
+// -----------------------------------------------
 
-      if (questions.length === 0) {
-        questions = await Question.find({
-          courseId: {
-            $regex: `^${escapeRegex(
-              normalizedCourseId
-            )}$`,
-            $options: "i",
-          },
+questions = questions.filter((question) => {
+  const requestedSubject = normalizeSubjectId(
+    normalizedSubjectId
+  )
+    .replace(/[\s_-]+/g, "")
+    .toLowerCase();
 
-          subjectId: {
-            $regex: `^${escapeRegex(
-              normalizedSubjectId
-            )}$`,
-            $options: "i",
-          },
-        }).lean();
-      }
+  const possibleSubjects = [
+    question.subjectId,
+    question.subject,
+    question.subjectName,
+    question.category,
+  ]
+    .filter(
+      (value) =>
+        value !== undefined &&
+        value !== null &&
+        value !== ""
+    )
+    .map((value) =>
+      String(value)
+        .trim()
+        .toLowerCase()
+        .replace(/[\s_-]+/g, "")
+    );
 
+  return possibleSubjects.some((subject) => {
+    if (subject === requestedSubject) {
+      return true;
+    }
+
+    // mathematics → maths
+    if (
+      requestedSubject === "maths" &&
+      subject === "mathematics"
+    ) {
+      return true;
+    }
+
+    if (
+      requestedSubject === "mathematics" &&
+      subject === "maths"
+    ) {
+      return true;
+    }
+
+    return false;
+  });
+});
       console.log(
         `📖 ${normalizedCourseId} / ${normalizedSubjectId}: ${questions.length} questions found`
       );
