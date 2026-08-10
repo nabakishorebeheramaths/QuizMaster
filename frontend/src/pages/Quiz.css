@@ -1,3 +1,4 @@
+
 /* =========================================================
    QUIZ PAGE - PREMIUM RESPONSIVE
 ========================================================= */
@@ -13,11 +14,8 @@
 .quiz-container {
   width: 100%;
   min-height: calc(100vh - 72px);
-
   max-width: 100%;
-
   margin: 0 auto;
-
   padding: 35px 20px;
 
   background:
@@ -43,7 +41,6 @@
   align-items: center;
 
   position: relative;
-
   overflow-x: hidden;
 }
 
@@ -59,7 +56,6 @@
   flex-wrap: wrap;
 
   gap: 10px;
-
   margin-bottom: 12px;
 }
 
@@ -69,20 +65,17 @@
   justify-content: center;
 
   padding: 8px 13px;
-
   border-radius: 20px;
 
   color: #ffffff;
 
   background: rgba(255, 255, 255, 0.14);
-
   border: 1px solid rgba(255, 255, 255, 0.2);
 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
   font-size: 13px;
-
   font-weight: 700;
 
   box-shadow:
@@ -95,23 +88,19 @@
 
 .quiz-type {
   width: fit-content;
-
   max-width: 100%;
 
   margin: 5px auto 15px;
-
   padding: 8px 15px;
 
   border-radius: 20px;
 
   background: rgba(255, 255, 255, 0.18);
-
   border: 1px solid rgba(255, 255, 255, 0.2);
 
   color: #ffffff;
 
   font-size: 13px;
-
   font-weight: 800;
 
   text-align: center;
@@ -128,13 +117,11 @@
   width: 125px;
 
   margin: 12px auto 20px;
-
   padding: 12px 14px;
 
   text-align: center;
 
   font-size: 21px;
-
   font-weight: 900;
 
   color: #ffffff;
@@ -157,7 +144,6 @@
   -webkit-backdrop-filter: blur(10px);
 
   position: relative;
-
   z-index: 2;
 }
 
@@ -249,21 +235,47 @@
 }
 
 /* =========================================================
-   QUESTION NUMBER
+   QUESTION CONTENT
 ========================================================= */
 
-.question-card h2 {
-  margin: 0 0 22px;
+.question-content {
+  width: 100%;
+}
 
-  color: #111827;
+/* =========================================================
+   QUESTION TEXT - RAINBOW
+========================================================= */
+
+.rainbow-question {
+  margin: 0 0 22px;
 
   font-size: 22px;
 
   font-weight: 850;
 
-  line-height: 1.35;
+  line-height: 1.45;
 
   letter-spacing: -0.3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff0080,
+      #ff8a00,
+      #ffe600,
+      #00d4ff,
+      #7c3aed,
+      #ff0080
+    );
+
+  background-size: 300% auto;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  animation: rainbowText 5s linear infinite;
 }
 
 /* =========================================================
@@ -274,6 +286,7 @@
   display: flex;
 
   align-items: center;
+  justify-content: space-between;
 
   width: 100%;
 
@@ -336,6 +349,24 @@
    SELECTED / CORRECT / WRONG
 ========================================================= */
 
+.option-btn.selected {
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #4f46e5
+    );
+
+  border-color: transparent;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 7px 18px rgba(37, 99, 235, 0.25);
+
+  transform: translateY(-1px);
+}
+
 .option-btn.correct {
   background:
     linear-gradient(
@@ -370,12 +401,147 @@
 
 .option-btn:disabled {
   cursor: not-allowed;
-
   opacity: 0.85;
 }
 
 /* =========================================================
-   SUBMIT / NEXT BUTTON
+   ANSWER ICON
+========================================================= */
+
+.answer-icon {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+
+  margin-left: 10px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  font-size: 15px;
+  font-weight: 900;
+}
+
+/* =========================================================
+   ANSWER RESULT
+========================================================= */
+
+.answer-result {
+  width: 100%;
+
+  margin-top: 18px;
+
+  padding: 16px;
+
+  border-radius: 13px;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  text-align: center;
+
+  animation: answerAppear 0.3s ease;
+}
+
+.answer-result-correct {
+  background:
+    rgba(34, 197, 94, 0.1);
+
+  border: 1px solid
+    rgba(34, 197, 94, 0.3);
+
+  color: #15803d;
+}
+
+.answer-result-wrong {
+  background:
+    rgba(239, 68, 68, 0.1);
+
+  border: 1px solid
+    rgba(239, 68, 68, 0.3);
+
+  color: #b91c1c;
+}
+
+/* =========================================================
+   CORRECT ANSWER BOX
+========================================================= */
+
+.correct-answer-box {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  margin-top: 12px;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border: 1px solid
+    rgba(124, 58, 237, 0.15);
+}
+
+.correct-answer-label {
+  font-size: 12px;
+
+  font-weight: 800;
+
+  color: #64748b;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   CORRECT ANSWER - RAINBOW
+========================================================= */
+
+.rainbow-correct-answer {
+  display: block;
+
+  font-size: 17px;
+
+  font-weight: 900;
+
+  line-height: 1.4;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff0080,
+      #ff8a00,
+      #ffe600,
+      #00d4ff,
+      #7c3aed,
+      #ff0080
+    );
+
+  background-size: 300% auto;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  animation: rainbowText 5s linear infinite;
+}
+
+/* =========================================================
+   SUBMIT / NEXT / CHECK BUTTON
 ========================================================= */
 
 .submit-btn {
@@ -442,7 +608,7 @@
 }
 
 /* =========================================================
-   QUESTION ANIMATION
+   ANIMATIONS
 ========================================================= */
 
 @keyframes questionAppear {
@@ -463,6 +629,28 @@
   }
 }
 
+@keyframes rainbowText {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 300% center;
+  }
+}
+
+@keyframes answerAppear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* =========================================================
    TABLET
 ========================================================= */
@@ -480,7 +668,7 @@
     border-radius: 20px;
   }
 
-  .question-card h2 {
+  .rainbow-question {
     font-size: 20px;
   }
 
@@ -559,7 +747,7 @@
       0 15px 35px rgba(0, 0, 0, 0.18);
   }
 
-  .question-card h2 {
+  .rainbow-question {
     margin-bottom: 17px;
 
     font-size: 18px;
@@ -591,6 +779,16 @@
     border-radius: 11px;
 
     font-size: 14px;
+  }
+
+  .answer-result {
+    padding: 14px;
+
+    font-size: 14px;
+  }
+
+  .rainbow-correct-answer {
+    font-size: 16px;
   }
 }
 
@@ -639,7 +837,7 @@
     border-radius: 16px;
   }
 
-  .question-card h2 {
+  .rainbow-question {
     font-size: 17px;
 
     margin-bottom: 15px;
@@ -662,6 +860,10 @@
 
     border-radius: 10px;
   }
+
+  .rainbow-correct-answer {
+    font-size: 15px;
+  }
 }
 
 /* =========================================================
@@ -677,7 +879,7 @@
     padding: 18px 11px;
   }
 
-  .question-card h2 {
+  .rainbow-question {
     font-size: 16px;
   }
 
@@ -693,6 +895,10 @@
     font-size: 12px;
 
     min-height: 45px;
+  }
+
+  .rainbow-correct-answer {
+    font-size: 14px;
   }
 }
 
@@ -718,6 +924,25 @@
     box-shadow: none;
   }
 
+  .option-btn.selected {
+    background:
+      linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+      );
+
+    color: #ffffff;
+
+    border-color: transparent;
+
+    box-shadow:
+      0 7px 18px
+      rgba(37, 99, 235, 0.25);
+
+    transform: none;
+  }
+
   .submit-btn:hover {
     transform: none;
   }
@@ -739,50 +964,12 @@
   .question-card,
   .option-btn,
   .submit-btn,
-  .progress-fill {
+  .progress-fill,
+  .rainbow-question,
+  .rainbow-correct-answer,
+  .answer-result {
     animation: none !important;
 
     transition: none !important;
-  }
-}
-/* =========================================================
-   SELECTED OPTION
-   ========================================================= */
-
-.option-btn.selected {
-  background: linear-gradient(
-    135deg,
-    #2563eb,
-    #4f46e5
-  );
-
-  border-color: transparent;
-
-  color: #ffffff;
-
-  box-shadow:
-    0 7px 18px rgba(37, 99, 235, 0.25);
-
-  transform: translateY(-1px);
-}
-
-/* Selected option on touch devices */
-
-@media (hover: none) and (pointer: coarse) {
-  .option-btn.selected {
-    background: linear-gradient(
-      135deg,
-      #2563eb,
-      #4f46e5
-    );
-
-    color: #ffffff;
-
-    border-color: transparent;
-
-    box-shadow:
-      0 7px 18px rgba(37, 99, 235, 0.25);
-
-    transform: none;
   }
 }

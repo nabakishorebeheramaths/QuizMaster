@@ -9,12 +9,15 @@ function Timer({
   const timeUpCalled = useRef(false);
 
   useEffect(() => {
-    // Reset guard whenever a new timer starts
+    // Reset the guard whenever a new timer starts
     if (timeLeft > 0) {
       timeUpCalled.current = false;
     }
 
-    // Time finished
+    // =====================================================
+    // TIME FINISHED
+    // =====================================================
+
     if (timeLeft <= 0) {
       if (!timeUpCalled.current) {
         timeUpCalled.current = true;
@@ -24,7 +27,10 @@ function Timer({
       return;
     }
 
-    // Countdown
+    // =====================================================
+    // COUNTDOWN
+    // =====================================================
+
     const timer = setTimeout(() => {
       setTimeLeft((previousTime) => {
         if (previousTime <= 1) {
@@ -35,13 +41,17 @@ function Timer({
       });
     }, 1000);
 
+    // =====================================================
+    // CLEANUP
+    // =====================================================
+
     return () => {
       clearTimeout(timer);
     };
   }, [timeLeft, setTimeLeft, onTimeUp]);
 
   return (
-    <div className="timer" aria-live="polite">
+    <div className="timer">
       ⏰ {timeLeft}s
     </div>
   );

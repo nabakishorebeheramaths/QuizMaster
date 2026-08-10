@@ -40,6 +40,10 @@ function Quiz() {
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
 
+  // NEW:
+  // Controls whether the current answer has been checked.
+  const [answerChecked, setAnswerChecked] = useState(false);
+
   const [showResult, setShowResult] = useState(false);
   const [answers, setAnswers] = useState([]);
 
@@ -59,6 +63,7 @@ function Quiz() {
       setCurrentQuestion(0);
       setScore(0);
       setSelectedAnswer(null);
+      setAnswerChecked(false);
       setAnswers([]);
       setShowResult(false);
       setTimeLeft(30);
@@ -134,12 +139,17 @@ function Quiz() {
   };
 
   // =====================================================
-  // HANDLE ANSWER
+  // HANDLE ANSWER SELECTION
   // =====================================================
 
   const handleAnswer = (index) => {
     // Prevent changing answer after selection
     if (selectedAnswer !== null) {
+      return;
+    }
+
+    // Prevent selecting after answer has been checked
+    if (answerChecked) {
       return;
     }
 
@@ -150,13 +160,39 @@ function Quiz() {
       return;
     }
 
-    // Only store the user's selected option.
-    // Correct answer is NOT revealed here.
+    // Only select the option.
+    // Correct answer is NOT revealed yet.
     setSelectedAnswer(index);
+  };
+
+  // =====================================================
+  // CHECK ANSWER
+  // =====================================================
+
+  const checkAnswer = () => {
+    if (selectedAnswer === null) {
+      alert("Please select an answer first.");
+      return;
+    }
+
+    if (answerChecked) {
+      return;
+    }
+
+    const current =
+      questions[currentQuestion];
+
+    if (!current) {
+      return;
+    }
+
+    // =================================================
+    // SAVE CURRENT ANSWER
+    // =================================================
 
     const answerData = {
       questionId: current._id,
-      selectedAnswer: index,
+      selectedAnswer: selectedAnswer,
       correctAnswer: current.correctAnswer,
     };
 
@@ -172,6 +208,21 @@ function Quiz() {
         answerData,
       ];
     });
+
+    // =================================================
+    // CHECK ANSWER
+    // =================================================
+
+    if (
+      selectedAnswer ===
+      current.correctAnswer
+    ) {
+      setScore((previousScore) =>
+        previousScore + 1
+      );
+    }
+
+    setAnswerChecked(true);
   };
 
   // =====================================================
@@ -254,6 +305,11 @@ function Quiz() {
       return;
     }
 
+    if (!answerChecked) {
+      alert("Please check your answer first.");
+      return;
+    }
+
     const current =
       questions[currentQuestion];
 
@@ -262,22 +318,7 @@ function Quiz() {
     }
 
     // =================================================
-    // CHECK CURRENT ANSWER
-    // =================================================
-
-    let updatedScore = score;
-
-    if (
-      selectedAnswer ===
-      current.correctAnswer
-    ) {
-      updatedScore++;
-    }
-
-    setScore(updatedScore);
-
-    // =================================================
-    // SAVE CURRENT ANSWER
+    // GET CURRENT ANSWERS
     // =================================================
 
     const answerData = {
@@ -296,6 +337,10 @@ function Quiz() {
 
     setAnswers(updatedAnswers);
 
+    // Score was already updated when answer was checked.
+    // Use current score for final submission.
+    const finalScore = score;
+
     // =================================================
     // NEXT QUESTION
     // =================================================
@@ -309,6 +354,7 @@ function Quiz() {
       );
 
       setSelectedAnswer(null);
+      setAnswerChecked(false);
       setTimeLeft(30);
     } else {
       // =================================================
@@ -316,7 +362,7 @@ function Quiz() {
       // =================================================
 
       await submitQuiz(
-        updatedScore,
+        finalScore,
         updatedAnswers
       );
 
@@ -333,6 +379,12 @@ function Quiz() {
       questions[currentQuestion];
 
     if (!current) {
+      return;
+    }
+
+    // If answer was already checked,
+    // do not score it again.
+    if (answerChecked) {
       return;
     }
 
@@ -393,6 +445,7 @@ function Quiz() {
       );
 
       setSelectedAnswer(null);
+      setAnswerChecked(false);
       setTimeLeft(30);
     } else {
       // =================================================
@@ -416,6 +469,7 @@ function Quiz() {
     setCurrentQuestion(0);
     setScore(0);
     setSelectedAnswer(null);
+    setAnswerChecked(false);
     setTimeLeft(30);
     setShowResult(false);
     setAnswers([]);
@@ -430,7 +484,7 @@ function Quiz() {
   if (loading) {
     return (
       <div className="quiz-container">
-        <div className="loading-card">
+        <div>
           <h2>Loading Questions...</h2>
 
           <p>
@@ -449,7 +503,7 @@ function Quiz() {
   if (questions.length === 0) {
     return (
       <div className="quiz-container">
-        <div className="loading-card">
+        <div>
           <h2>No Questions Found</h2>
 
           <p>
@@ -582,22 +636,41 @@ function Quiz() {
           selectedAnswer={
             selectedAnswer
           }
+          answerChecked={
+            answerChecked
+          }
         />
+
+        {/* =========================================
+            CHECK ANSWER BUTTON
+        ========================================= */}
+
+        {!answerChecked && (
+          <button
+            type="button"
+            className="submit-btn check-answer-btn"
+            onClick={checkAnswer}
+          >
+            ✓ Check Answer
+          </button>
+        )}
 
         {/* =========================================
             NEXT / FINISH BUTTON
         ========================================= */}
 
-        <button
-          type="button"
-          className="submit-btn"
-          onClick={nextQuestion}
-        >
-          {currentQuestion ===
-          questions.length - 1
-            ? "Finish Quiz"
-            : "Next Question →"}
-        </button>
+        {answerChecked && (
+          <button
+            type="button"
+            className="submit-btn"
+            onClick={nextQuestion}
+          >
+            {currentQuestion ===
+            questions.length - 1
+              ? "Finish Quiz"
+              : "Next Question →"}
+          </button>
+        )}
 
       </div>
     </div>
