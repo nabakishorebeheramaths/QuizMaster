@@ -4,8 +4,7 @@ dotenv.config();
 
 import mongoose from "mongoose";
 import connectDB from "./config/db.js";
-import Question from "./models/Question.js";
-import DailyQuiz from "./models/DailyQuiz.js";
+import DailyQuestion from "./models/DailyQuestion.js";
 
 const questions = [
  
@@ -5994,46 +5993,49 @@ difficulty:"Hard"
 ];
 
 const seed = async () => {
+  try {
+    await connectDB();
 
-try {
+    console.log("📚 Daily Quiz Question Count:", questions.length);
 
-await connectDB();
+    // ==========================================
+    // CLEAR ONLY DAILY QUIZ QUESTIONS
+    // ==========================================
+    await DailyQuestion.deleteMany({});
 
-await Question.deleteMany({});
-console.log("🗑️ Old questions deleted");
-await DailyQuiz.deleteMany({});
+    console.log("🗑️ Old Daily Quiz questions deleted");
 
-console.log("Question count:", questions.length);
+    // ==========================================
+    // CLEAN QUESTIONS
+    // ==========================================
+    const cleanQuestions = questions.map((q) => ({
+      question: q.question,
+      options: q.options,
+      correctAnswer: Number(q.correctAnswer),
+      category: q.category || "General Knowledge",
+      difficulty: q.difficulty || "Medium",
+    }));
 
+    // ==========================================
+    // INSERT ONLY INTO DAILY QUESTION COLLECTION
+    // ==========================================
+    await DailyQuestion.insertMany(cleanQuestions);
 
-const cleanQuestions = questions.map((q)=>({
+    console.log(
+      `✅ ${cleanQuestions.length} Daily Quiz questions inserted successfully`
+    );
 
-  question: q.question,
-  options: q.options,
-  correctAnswer: Number(q.correctAnswer),
-  category: q.category || "General Knowledge",
-  difficulty: q.difficulty || "Medium"
+    console.log("🎯 Daily Quiz questions are completely separate from courses.");
+    console.log("🔄 No-repeat cycle will be handled by Daily Quiz API.");
 
-}));
+    await mongoose.connection.close();
 
+    console.log("🔌 MongoDB connection closed");
+  } catch (err) {
+    console.error("❌ Daily Quiz seed error:", err);
 
-await Question.insertMany(cleanQuestions);
-
-console.log("✅ Questions inserted successfully");
-
-
-mongoose.connection.close();
-
-
-} catch(err){
-
-console.log(err);
-
-mongoose.connection.close();
-
-}
-
+    await mongoose.connection.close();
+  }
 };
-
 
 seed();
