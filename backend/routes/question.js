@@ -1,3 +1,4 @@
+
 import express from "express";
 import { loadCourseQuestions } from "../utils/questionLoader.js";
 
@@ -15,6 +16,10 @@ router.get("/", async (req, res) => {
       quizType,
     } = req.query;
 
+    // =====================================================
+    // SUBJECT QUIZ
+    // =====================================================
+
     if (quizType === "subject") {
       if (!courseId || !subjectId) {
         return res.status(400).json({
@@ -23,24 +28,65 @@ router.get("/", async (req, res) => {
         });
       }
 
-      // Directly load course JSON
-      const courseQuestions =
+      // =====================================================
+      // LOAD COURSE QUESTIONS
+      // =====================================================
+
+      const loadedQuestions =
         loadCourseQuestions(courseId);
 
-      // Subject questions
-      const questions = courseQuestions.filter(
-        (question) =>
-          question.subjectId === subjectId
+      // IMPORTANT:
+      // Make sure we always work with an array.
+      // This prevents:
+      // "courseQuestions.filter is not a function"
+      const courseQuestions = Array.isArray(
+        loadedQuestions
+      )
+        ? loadedQuestions
+        : Array.isArray(loadedQuestions?.questions)
+        ? loadedQuestions.questions
+        : [];
+
+      console.log(
+        `📚 ${courseId}: ${courseQuestions.length} questions loaded`
       );
 
-      // Randomize
+      // =====================================================
+      // FILTER SUBJECT QUESTIONS
+      // =====================================================
+
+      const questions = courseQuestions.filter(
+        (question) =>
+          String(question.subjectId)
+            .trim()
+            .toLowerCase() ===
+          String(subjectId)
+            .trim()
+            .toLowerCase()
+      );
+
+      console.log(
+        `📖 ${courseId} / ${subjectId}: ${questions.length} questions found`
+      );
+
+      // =====================================================
+      // RANDOMIZE
+      // =====================================================
+
       const shuffled = [...questions].sort(
         () => Math.random() - 0.5
       );
 
-      // Maximum 30
+      // =====================================================
+      // MAXIMUM 30 QUESTIONS
+      // =====================================================
+
       const selectedQuestions =
         shuffled.slice(0, 30);
+
+      // =====================================================
+      // RESPONSE
+      // =====================================================
 
       return res.status(200).json({
         success: true,
@@ -52,6 +98,10 @@ router.get("/", async (req, res) => {
       });
     }
 
+    // =====================================================
+    // INVALID REQUEST
+    // =====================================================
+
     return res.status(400).json({
       success: false,
       message:
@@ -60,13 +110,15 @@ router.get("/", async (req, res) => {
 
   } catch (error) {
     console.error(
-      "❌ Course JSON Question Error:",
+      "❌ Question Route Error:",
       error.message
     );
 
     return res.status(500).json({
       success: false,
-      message: error.message,
+      message:
+        "Failed to load course questions",
+      error: error.message,
     });
   }
 });
