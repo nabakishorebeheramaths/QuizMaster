@@ -4,7 +4,7 @@ dns.setServers(["8.8.8.8", "1.1.1.1"]);
 dns.setDefaultResultOrder("ipv4first");
 
 import express from "express";
-import cors from "cors";
+
 import dotenv from "dotenv";
 
 import authRoutes from "./routes/authRoutes.js";
@@ -37,14 +37,26 @@ const app = express();
 
 connectDB();
 
-app.use(
-  cors({
-    origin: "https://quizmaster.naba.workers.dev",
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+const allowedOrigin = "https://quizmaster.naba.workers.dev";
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", allowedOrigin);
+  res.header("Access-Control-Allow-Credentials", "true");
+  res.header(
+    "Access-Control-Allow-Methods",
+    "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+  );
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization"
+  );
+
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
 
 app.use(express.json());
 
@@ -53,24 +65,7 @@ app.use("/api/quiz", quizRoutes);
 app.use("/api/questions", questionRoute);
 app.use("/api/daily-quiz", dailyQuizRoutes);
 app.use("/api/contact", contactRoutes);
-/*
-========================================
-HEALTH CHECK
-========================================
-*/
 
 app.get("/", (req, res) => {
   res.send("🚀 Daily Quiz Backend is Running...");
-});
-
-/*
-========================================
-SERVER
-========================================
-*/
-
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
 });
