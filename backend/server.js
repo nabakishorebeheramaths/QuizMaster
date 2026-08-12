@@ -33,27 +33,13 @@ MIDDLEWARE
 ========================================
 */
 
-const allowedOrigins = [
-  "https://quizmaster.naba.workers.dev",
-  "https://quizmaster-1-kqc7.onrender.com",
-  "http://localhost:5173",
-];
+const app = express();
+
+connectDB();
 
 app.use(
   cors({
-    origin: (origin, callback) => {
-      // Allow requests with no Origin header
-      // (Postman, server-to-server, etc.)
-      if (!origin) {
-        return callback(null, true);
-      }
-
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-
-      return callback(new Error("Not allowed by CORS"));
-    },
+    origin: "https://quizmaster.naba.workers.dev",
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -62,22 +48,11 @@ app.use(
 
 app.use(express.json());
 
-/*
-========================================
-API ROUTES
-========================================
-*/
-
 app.use("/api/auth", authRoutes);
-
 app.use("/api/quiz", quizRoutes);
-
 app.use("/api/questions", questionRoute);
-
 app.use("/api/daily-quiz", dailyQuizRoutes);
-
 app.use("/api/contact", contactRoutes);
-
 /*
 ========================================
 HEALTH CHECK
