@@ -4,7 +4,7 @@ dns.setServers(["8.8.8.8", "1.1.1.1"]);
 dns.setDefaultResultOrder("ipv4first");
 
 import express from "express";
-
+import cors from "cors";
 import dotenv from "dotenv";
 
 import authRoutes from "./routes/authRoutes.js";
@@ -19,53 +19,122 @@ dotenv.config();
 
 const app = express();
 
-/*
-========================================
-DATABASE
-========================================
-*/
+const PORT = process.env.PORT || 5000;
+
+/* =========================
+   DATABASE
+========================= */
 
 connectDB();
 
-/*
-========================================
-MIDDLEWARE
-========================================
-*/
+/* =========================
+   CORS
+========================= */
 
-const app = express();
+const allowedOrigins = [
+  "https://quizmaster.naba.workers.dev",
+  "http://localhost:5173",
+];
 
-connectDB();
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      // Allow requests without Origin header
+      // (Postman, curl, server-to-server)
+      if (!origin) {
+        return callback(null, true);
+      }
 
-const allowedOrigin = "https://quizmaster.naba.workers.dev";
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", allowedOrigin);
-  res.header("Access-Control-Allow-Credentials", "true");
-  res.header(
-    "Access-Control-Allow-Methods",
-    "GET,POST,PUT,PATCH,DELETE,OPTIONS"
-  );
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Content-Type, Authorization"
-  );
+      return callback(new Error("Not allowed by CORS"));
+    },
 
-  if (req.method === "OPTIONS") {
-    return res.sendStatus(204);
-  }
+    credentials: true,
 
-  next();
-});
+    methods: [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE",
+      "OPTIONS",
+    ],
+
+    allowedHeaders: [
+      "Content-Type",
+      "Authorization",
+    ],
+  })
+);
+
+/* =========================
+   BODY PARSER
+========================= */
 
 app.use(express.json());
 
+/* =========================
+   API ROUTES
+========================= */
+
 app.use("/api/auth", authRoutes);
+
 app.use("/api/quiz", quizRoutes);
+
 app.use("/api/questions", questionRoute);
+
 app.use("/api/daily-quiz", dailyQuizRoutes);
+
 app.use("/api/contact", contactRoutes);
 
+/* =========================
+   HEALTH CHECK
+========================= */
+
 app.get("/", (req, res) => {
-  res.send("🚀 Daily Quiz Backend is Running...");
+  res.status(200).send("🚀 Daily Quiz Backend is Running...");
+});
+
+/* =========================
+   404 HANDLER
+========================= */
+
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    message: "API route not found",
+    path: req.originalUrl,
+  });
+});
+
+/* =========================
+   ERROR HANDLER
+========================= */
+
+app.use((err, req, res, next) => {
+  console.error("❌ Server Error:", err);
+
+  if (err.message === "Not allowed by CORS") {
+    return res.status(403).json({
+      success: false,
+      message: "CORS origin not allowed",
+      origin: req.headers.origin || null,
+    });
+  }
+
+  res.status(500).json({
+    success: false,
+    message: "Internal server error",
+  });
+});
+
+/* =========================
+   START SERVER
+========================= */
+
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
