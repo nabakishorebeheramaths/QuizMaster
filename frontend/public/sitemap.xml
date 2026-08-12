@@ -1,28 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- =========================================
+       QUIZMASTER MAIN WEBSITE
+  ========================================== -->
+
   <url>
-    <loc>https://quizmaster-1-kqc7.onrender.com/</loc>
+    <loc>https://quizmaster.naba.workers.dev/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+
+  <!-- =========================================
+       MAIN INFORMATION PAGES
+  ========================================== -->
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://quizmaster-1-kqc7.onrender.com/about</loc>
+    <loc>https://quizmaster.naba.workers.dev/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://quizmaster-1-kqc7.onrender.com/contact</loc>
+    <loc>https://quizmaster.naba.workers.dev/what-we-provide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://quizmaster-1-kqc7.onrender.com/what-we-provide</loc>
+    <loc>https://quizmaster.naba.workers.dev/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://quizmaster-1-kqc7.onrender.com/privacy-policy</loc>
+    <loc>https://quizmaster.naba.workers.dev/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+
+  <!-- =========================================
+       DAILY QUIZ
+  ========================================== -->
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/quiz</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  <!-- =========================================
+       EDUCATION & COURSE QUIZZES
+       QUIZMASTER - INDIA
+  ========================================== -->
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/courses</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  <!-- =========================================
+       SCHOOL EDUCATION
+  ========================================== -->
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-1-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://quizmaster-1-kqc7.onrender.com/terms</loc>
+    <loc>https://quizmaster.naba.workers.dev/class-2-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-3-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-4-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-5-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-6-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-7-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-8-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-9-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-10-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-11-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/class-12-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <!-- =========================================
+       COMPETITIVE EXAM QUIZZES
+  ========================================== -->
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/jee-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/neet-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/gate-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  <!-- =========================================
+       POPULAR QUIZ SUBJECTS
+  ========================================== -->
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/maths-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/aptitude-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/reasoning-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/english-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/current-affairs-quiz</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/general-knowledge-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <!-- =========================================
+       ENGINEERING & PROFESSIONAL COURSES
+  ========================================== -->
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/engineering-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/technology-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/medical-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/commerce-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/arts-humanities-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://quizmaster.naba.workers.dev/diploma-quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+ 
 
 </urlset>

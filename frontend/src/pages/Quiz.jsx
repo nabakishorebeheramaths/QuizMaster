@@ -27,7 +27,33 @@ function Quiz() {
     quizType: location.state?.quizType || "daily",
   };
 
-  // =====================================================
+  // ==================// =====================================================
+// SEO - DYNAMIC QUIZ PAGE TITLE & DESCRIPTION
+// =====================================================
+
+useEffect(() => {
+  const quizTitle =
+    quizInfo.subject ||
+    quizInfo.courseName ||
+    "Daily Quiz";
+
+  document.title = `${quizTitle} Quiz | QuizMaster`;
+
+  const description = document.querySelector(
+    'meta[name="description"]'
+  );
+
+  if (description) {
+    description.setAttribute(
+      "content",
+      `Practice ${quizTitle} questions online with QuizMaster. Test your knowledge, improve your skills and challenge yourself with daily quiz questions.`
+    );
+  }
+}, [
+  quizInfo.subject,
+  quizInfo.courseName,
+  quizInfo.quizType,
+]);
   // STATES
   // =====================================================
 
