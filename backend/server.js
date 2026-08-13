@@ -32,8 +32,9 @@ connectDB();
 ========================= */
 
 const allowedOrigins = [
-  "https://quizmaster.naba.workers.dev",
-  "http://localhost:5173",
+  "https://quizmaster-1-kqc7.onrender.com", // Render frontend
+  "https://quizmaster.com",           // Custom domain, if connected
+  "http://localhost:5173",            // Local development
 ];
 
 app.use(
@@ -53,6 +54,8 @@ app.use(
     },
 
     credentials: true,
+  })
+);
 
     methods: [
       "GET",
