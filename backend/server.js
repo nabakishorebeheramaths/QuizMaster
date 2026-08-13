@@ -32,16 +32,24 @@ connectDB();
 ========================= */
 
 const allowedOrigins = [
-  "https://quizmaster-1-kqc7.onrender.com", // Render frontend
-  "https://quizmaster.com",           // Custom domain, if connected
-  "http://localhost:5173",            // Local development
+  // Render frontend
+  "https://quizmaster-1-kqc7.onrender.com",
+
+  // Old Cloudflare frontend
+  "https://quizmaster.naba.workers.dev",
+
+  // Custom domain - keep for future use
+  "https://quizmaster.com",
+
+  // Local development
+  "http://localhost:5173",
 ];
 
 app.use(
   cors({
     origin: function (origin, callback) {
       // Allow requests without Origin header
-      // (Postman, curl, server-to-server)
+      // Postman, curl, server-to-server requests
       if (!origin) {
         return callback(null, true);
       }
@@ -50,12 +58,12 @@ app.use(
         return callback(null, true);
       }
 
+      console.log("❌ CORS blocked origin:", origin);
+
       return callback(new Error("Not allowed by CORS"));
     },
 
     credentials: true,
-  })
-);
 
     methods: [
       "GET",
@@ -70,6 +78,8 @@ app.use(
       "Content-Type",
       "Authorization",
     ],
+
+    optionsSuccessStatus: 204,
   })
 );
 
